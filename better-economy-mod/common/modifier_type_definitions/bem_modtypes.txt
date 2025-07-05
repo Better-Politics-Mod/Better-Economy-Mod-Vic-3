@@ -15,3 +15,21 @@ building_group_bg_subsistence_ranching_employee_mult = {
 	color = neutral
 	percent = yes
 }
+
+building_employment_laborers_mult = {
+	decimals=0
+	color=bad
+    percent=yes
+}
+
+building_employment_machinists_mult = {
+	decimals=0
+	color=bad
+    percent=yes
+}
+
+building_employment_engineers_mult = {
+	decimals=0
+	color=bad
+	percent=yes
+}
