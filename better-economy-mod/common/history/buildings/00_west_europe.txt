@@ -928,7 +928,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=15
+						levels=150
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -981,7 +981,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
+						levels=13
 						region="STATE_HOME_COUNTIES"
 					}
 					country={
@@ -998,7 +998,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=10
+						levels=15
 						region="STATE_HOME_COUNTIES"
 					}
 					country={
@@ -1039,7 +1039,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=15
+						levels=20
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1096,7 +1096,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=2
+						levels=6
 					}
 				}
 				reserves=1
@@ -1107,11 +1107,76 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=15
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=20
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_disabled_distillery" "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=5
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_steel_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=5
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_glassworks"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=5
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_ceramics" "pm_leaded_glass" "pm_manual_glassblowing"  }
+			}
+			create_building={
+				building="building_motor_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=3
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_engines" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -1280,7 +1345,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -1388,6 +1453,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					country={
+						country="c:GBR"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains" "pm_wooden_passenger_carriages"  }
 			}
 		}
 	}
@@ -1590,7 +1666,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=4
+						levels=8
 						region="STATE_YORKSHIRE"
 					}
 				}
@@ -1864,7 +1940,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
