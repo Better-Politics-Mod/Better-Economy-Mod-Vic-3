@@ -7,6 +7,9 @@ on_game_started = {
 on_bem_game_started = {
 	effect = {
 		every_country = {
+			limit = {
+				is_player = yes
+			}
 			add_modifier = {
 				name = bem_more_private_construction
 			}
@@ -16,6 +19,21 @@ on_bem_game_started = {
 
 on_monthly_pulse_state = {
 	effect = {
+		if = {
+			limit = {
+				owner = {
+					is_player = yes
+					NOT = {
+						has_modifier = bem_more_private_construction
+					}
+				}
+			}
+			owner = {
+				add_modifier = {
+					name = bem_more_private_construction
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_modifier = bem_urbanization_boost
@@ -47,5 +65,25 @@ on_monthly_pulse_state = {
 			}
 		}
 
+		random_scope_building = {
+			limit = {
+				is_building_type = building_urban_center
+			}
+			save_scope_value_as = {
+				name = govadlv
+				value = {
+					value = level
+					divide = 3
+					ceiling = yes
+				}
+			}
+		}
+
+		create_building = {
+			building = building_government_administration
+			level = scope:govadlv
+		}
+		bem_private_investment_oa = yes
+		bem_do_state_building = yes
 	}
 }

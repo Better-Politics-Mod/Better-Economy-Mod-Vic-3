@@ -40,7 +40,7 @@ lead = {
 }
 
 assets = {
-	texture = "gfx/interface/icons/goods_icons/services.dds"
+	texture = "gfx/interface/icons/goods_icons/assets.dds"
 	cost = 100
 	category = luxury
 

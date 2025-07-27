@@ -1,0 +1,102 @@
+# add_to_queue
+# name : name of the queue
+# value : value to add to the queue
+# MAX 2000 ELEMENTS AT ONCE 
+add_to_queue = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable_list = $name$
+			}
+			has_variable = $name$_ptr
+		}
+		remove_variable = $name$_ptr
+	}
+	# After 2000 it overflows
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_variable = $name$_ptr }
+				var:$name$_ptr > 2000
+			}
+		}
+		set_variable = {
+			name = $name$_ptr
+			value = 2
+		}
+	}
+	add_to_dict = {
+		dict  = $name$
+		key   = var:$name$_ptr
+		value = $value$
+	}
+	change_variable = {
+		name  = $name$_ptr
+		add = 1
+	}
+}
+
+
+# pop_from_queue
+# name : name of the queue
+pop_from_queue = {
+	clear_variable_list = com_queue_api_temp
+	ordered_in_list = {
+		variable = $name$
+		order_by = 1
+		min = 1
+		prev = { add_to_variable_list = {
+			name = com_queue_api_temp
+			target = prev
+		} }
+	}
+	clear_variable_list = $name$
+	every_in_list = {
+		variable = com_queue_api_temp
+		prev = { add_to_variable_list = {
+			name = $name$
+			target = prev
+		} }
+	}
+	clear_variable_list = com_queue_api_temp
+}
+
+remove_index_from_queue = {
+	clear_variable_list = com_queue_api_temp
+	save_scope_value_as = {
+		name = counter
+		value = 0
+	}
+	ordered_in_list = {
+		variable = $name$
+		order_by = 1
+		min = 0
+		if = {
+			limit = {
+				NOT = {
+					scope:counter = $n$
+				}
+			}
+			prev = { add_to_variable_list = {
+				name = com_queue_api_temp
+				target = prev
+			} }	
+		}
+		save_scope_value_as = {
+			name = counter
+			value = {
+				value = scope:counter
+				add = 1
+			}
+		}
+	}
+	clear_variable_list = $name$
+	every_in_list = {
+		variable = com_queue_api_temp
+		prev = { add_to_variable_list = {
+			name = $name$
+			target = prev
+		} }
+	}
+	clear_variable_list = com_queue_api_temp
+}

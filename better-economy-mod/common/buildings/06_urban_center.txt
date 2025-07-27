@@ -15,6 +15,7 @@ building_urban_center = {
 		pmg_street_lighting
 		pmg_public_transport
 		pmg_urban_clergy
+		pmg_bem_urban_infrastructure
 	}
 
 	buildable = no

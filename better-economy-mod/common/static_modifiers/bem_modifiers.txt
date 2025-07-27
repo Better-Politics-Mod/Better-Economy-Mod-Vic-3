@@ -1,6 +1,6 @@
 bem_more_private_construction = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	country_private_construction_allocation_mult = 0.1
+	country_construction_add = -99999
 }
 
 bem_urbanization_boost = {
@@ -25,7 +25,6 @@ state_rural_nerf = {
 	building_group_bg_subsistence_agriculture_employee_mult = 1.5
 	building_group_bg_subsistence_ranching_employee_mult = 2
 	state_lumpen_dependent_wage_mult = -0.8
-	state_construction_mult = -0.95
 }
 
 bem_capitalist_investment = {

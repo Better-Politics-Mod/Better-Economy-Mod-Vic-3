@@ -1,0 +1,173 @@
+bem_add_building_to_queue = {
+	# scope:target_building => building_type
+	# ROOT = state
+
+	# converts scope target_building to a number
+	# we should have scope building_hash
+	bem_buildahash = yes
+
+	add_to_queue = {
+		name = bem_state_building_queue
+		value = scope:building_hash
+	}
+
+	bem_save_state_building_page_1_DBG = yes
+
+}
+
+bem_save_state_building_at_pos = {
+	# scope:position => number
+	# $var => variable name
+	remove_variable = $var$
+
+	if = {
+		limit = {
+			variable_list_size = {
+				name = bem_state_building_queue
+				value > scope:position
+			}
+		}
+		ordered_in_list = {
+			variable = bem_state_building_queue
+			order_by = 1
+			position = scope:position
+			save_scope_as = kvp
+		}
+
+		save_scope_value_as = {
+			name = bkey
+			value = bem_kvp_as_val
+		}
+
+		bem_buildaunhash = yes
+
+		set_variable = {
+			name = $var$
+			value = scope:building_tp
+		}
+	}
+}
+
+bem_save_state_building_page = {
+	# scope:offset => number
+	# page 1-4
+	save_scope_value_as = {
+		name = position
+		value = {
+			value = 0
+			add = scope:offset
+		}
+	}
+	bem_save_state_building_at_pos = { var = bem_queue_ptr_$p1$ }
+	save_scope_value_as = {
+		name = position
+		value = {
+			value = 1
+			add = scope:offset
+		}
+	}
+	bem_save_state_building_at_pos = { var = bem_queue_ptr_$p2$ }
+	save_scope_value_as = {
+		name = position
+		value = {
+			value = 2
+			add = scope:offset
+		}
+	}
+	bem_save_state_building_at_pos = { var = bem_queue_ptr_$p3$ }
+	save_scope_value_as = {
+		name = position
+		value = {
+			value = 3
+			add = scope:offset
+		}
+	}
+	bem_save_state_building_at_pos = { var = bem_queue_ptr_$p4$ }
+
+}
+
+bem_save_state_building_page_1_DBG = {
+	save_scope_value_as = {
+		name = offset
+		value = 0
+	}
+	bem_save_state_building_page = {
+		p1 = 0
+		p2 = 1
+		p3 = 2
+		p4 = 3
+	}
+}
+
+bem_origin_state_building = {
+	if = {
+		limit = {
+			has_variable = bem_queue_ptr_0
+			NOT = {
+				has_variable = bem_queue_ctr
+			}
+		}
+		set_variable = {
+			name = bem_queue_ctr
+			value = bem_months_to_completion_max
+		}
+		round_variable = {
+			name = bem_queue_ctr
+			nearest = 1
+		}
+	}
+
+}
+
+bem_do_state_building = {
+	bem_origin_state_building = yes
+	if = {
+		limit = {
+			has_variable = bem_queue_ctr
+		}
+		change_variable = {
+			name = bem_queue_ctr
+			subtract = 1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = bem_queue_ctr
+			var:bem_queue_ctr <= 0
+		}
+		var:bem_queue_ptr_0 = {
+			save_scope_as = target_building
+		}
+		random_scope_building = {
+			limit = {
+				type = scope:target_building
+			}
+			save_scope_value_as = {
+				name = prevlev
+				value = {
+					value = level
+					multiply = country_ownership_fraction
+					round = yes
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = level
+			value = {
+				value = scope:prevlev
+				add = 1
+			}
+		}
+		remove_variable = bem_queue_ptr_0
+		remove_variable = bem_queue_ptr_1
+		remove_variable = bem_queue_ptr_2
+		remove_variable = bem_queue_ptr_3
+		remove_variable = bem_queue_ctr
+		bem_buildagen = yes
+		pop_from_queue = {
+			name = bem_state_building_queue
+		}
+		bem_save_state_building_page_1_DBG = yes
+		bem_origin_state_building = yes
+	}
+}

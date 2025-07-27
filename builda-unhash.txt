@@ -1,0 +1,751 @@
+
+    if = { limit = { scope:bkey = 0 }
+        bt:building_angkor_wat = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 1 }
+        bt:building_argebam = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 2 }
+        bt:building_arms_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 3 }
+        bt:building_artillery_foundries = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 4 }
+        bt:building_arts_academy = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 5 }
+        bt:building_automotive_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 6 }
+        bt:building_banana_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 7 }
+        bt:building_barracks = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 8 }
+        bt:building_big_ben = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 9 }
+        bt:building_capitol_hill = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 10 }
+        bt:building_central_park = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 11 }
+        bt:building_chemical_plants = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 12 }
+        bt:building_chichen_itza = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 13 }
+        bt:building_coal_mine = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 14 }
+        bt:building_coffee_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 15 }
+        bt:building_company_headquarter = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 16 }
+        bt:building_company_hq = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 17 }
+        bt:building_company_regional_headquarter = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 18 }
+        bt:building_company_regional_hq = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 19 }
+        bt:building_conscription_center = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 20 }
+        bt:building_construction_2x2_entity = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 21 }
+        bt:building_construction_3x3_entity = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 22 }
+        bt:building_construction_sector = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 23 }
+        bt:building_construction_skyscraper_entity = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 24 }
+        bt:building_cotton_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 25 }
+        bt:building_cristo_redentor = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 26 }
+        bt:building_dye_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 27 }
+        bt:building_easter_island_heads = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 28 }
+        bt:building_eiffel_tower = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 29 }
+        bt:building_electrics_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 30 }
+        bt:building_entity = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 31 }
+        bt:building_explosives_factory = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 32 }
+        bt:building_eye_of_sahara = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 33 }
+        bt:building_financial_district = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 34 }
+        bt:building_fishing_wharf = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 35 }
+        bt:building_food_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 36 }
+        bt:building_forbidden_city = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 37 }
+        bt:building_furniture_manufacturies = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 38 }
+        bt:building_giza_necropolis = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 39 }
+        bt:building_glassworks = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 40 }
+        bt:building_gold_fields = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 41 }
+        bt:building_gold_mine = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 42 }
+        bt:building_government_administration = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 43 }
+        bt:building_group = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 44 }
+        bt:building_hagia_sophia = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 45 }
+        bt:building_halloween_castledracula = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 46 }
+        bt:building_icons = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 47 }
+        bt:building_iron_mine = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 48 }
+        bt:building_khaju_bridge = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 49 }
+        bt:building_lead_mine = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 50 }
+        bt:building_livestock_ranch = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 51 }
+        bt:building_logging_camp = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 52 }
+        bt:building_machu_picchu = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 53 }
+        bt:building_maize_farm = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 54 }
+        bt:building_manor_house = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 55 }
+        bt:building_manor_houses = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 56 }
+        bt:building_martandsuntemple = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 57 }
+        bt:building_military_shipyards = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 58 }
+        bt:building_millet_farm = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 59 }
+        bt:building_mosque_of_djenne = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 60 }
+        bt:building_motor_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 61 }
+        bt:building_munition_plants = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 62 }
+        bt:building_naval_base = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 63 }
+        bt:building_observatorygreenwich = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 64 }
+        bt:building_oil_rig = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 65 }
+        bt:building_opium_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 66 }
+        bt:building_panama_canal = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 67 }
+        bt:building_panel_bg_farming = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 68 }
+        bt:building_panel_bg_fishing = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 69 }
+        bt:building_panel_bg_harbour = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 70 }
+        bt:building_panel_bg_heavy_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 71 }
+        bt:building_panel_bg_light_industry = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 72 }
+        bt:building_panel_bg_military = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 73 }
+        bt:building_panel_bg_mining = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 74 }
+        bt:building_panel_bg_monuments = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 75 }
+        bt:building_panel_bg_oil = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 76 }
+        bt:building_panel_bg_plantations = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 77 }
+        bt:building_panel_bg_railways = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 78 }
+        bt:building_paper_mills = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 79 }
+        bt:building_petra = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 80 }
+        bt:building_port = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 81 }
+        bt:building_power_bloc_statue = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 82 }
+        bt:building_power_plant = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 83 }
+        bt:building_powerblock_statue = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 84 }
+        bt:building_railway = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 85 }
+        bt:building_rice_farm = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 86 }
+        bt:building_rubber_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 87 }
+        bt:building_rye_farm = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 88 }
+        bt:building_saint_basils_cathedral = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 89 }
+        bt:building_shipyards = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 90 }
+        bt:building_silk_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 91 }
+        bt:building_skyscraper = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 92 }
+        bt:building_statue_of_liberty = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 93 }
+        bt:building_steel_mills = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 94 }
+        bt:building_subsistence_farm_fish = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 95 }
+        bt:building_subsistence_farm_fruit = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 96 }
+        bt:building_subsistence_farm_grain = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 97 }
+        bt:building_subsistence_farm_meat = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 98 }
+        bt:building_subsistence_farm_rice = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 99 }
+        bt:building_subsistence_farms = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 100 }
+        bt:building_subsistence_fishing_villages = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 101 }
+        bt:building_subsistence_orchards = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 102 }
+        bt:building_subsistence_pastures = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 103 }
+        bt:building_subsistence_rice_paddies = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 104 }
+        bt:building_suez_canal = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 105 }
+        bt:building_sugar_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 106 }
+        bt:building_sulfur_mine = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 107 }
+        bt:building_synthetics_plants = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 108 }
+        bt:building_taj_mahal = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 109 }
+        bt:building_tea_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 110 }
+        bt:building_temple_of_poseidon = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 111 }
+        bt:building_textile_mills = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 112 }
+        bt:building_tobacco_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 113 }
+        bt:building_tooling_workshops = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 114 }
+        bt:building_trade_center = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 115 }
+        bt:building_type = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 116 }
+        bt:building_university = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 117 }
+        bt:building_urban_center = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 118 }
+        bt:building_vatican_city = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 119 }
+        bt:building_victoria_terminus = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 120 }
+        bt:building_vineyard_plantation = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 121 }
+        bt:building_wat_arun = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 122 }
+        bt:building_whaling_station = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 123 }
+        bt:building_wheat_farm = {
+            save_scope_as = building_tp
+        }
+    }
+    
+    if = { limit = { scope:bkey = 124 }
+        bt:building_white_house = {
+            save_scope_as = building_tp
+        }
+    }
+    

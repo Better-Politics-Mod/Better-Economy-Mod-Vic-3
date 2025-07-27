@@ -1132,7 +1132,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=10
+						levels=35
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1145,7 +1145,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=5
+						levels=10
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1915,7 +1915,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=22
 						region="STATE_MIDLANDS"
 					}
 				}

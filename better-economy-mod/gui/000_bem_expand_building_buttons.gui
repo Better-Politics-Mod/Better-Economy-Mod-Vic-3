@@ -1,0 +1,1156 @@
+# COPY-PASTED FOR NOW
+@panel_width_minus_10 = 530			# used to be 450
+@panel_width = 540  				# used to be 460
+@panel_width_half = 270				# used to be 230
+@panel_width_half_minus_10 = 260		# used to be 220
+@panel_width_plus_10 = 550  		# used to be 470
+@panel_width_plus_14 = 554			# used to be 474
+@panel_width_plus_14_half = 277		# used to be 237
+@panel_width_plus_20 = 560			# used to be 480
+@panel_width_plus_30 = 570			# used to be 490
+@panel_width_plus_70 = 610			# used to be 530
+
+@building_process_item_width = 200
+
+
+template visible_if_produces {
+	#buildings that produce goods, provide modifiers, or are military buildings "make" something, so show arrows etc
+	visible = "[Or( Building.IsMilitaryBuilding, Or( Not(IsDataModelEmpty(Building.GetProducedModifiers.GetEntries)), Not(IsDataModelEmpty(Building.AccessProducedGoods)) ))]"  
+}
+
+types building_panels
+{
+	type bem_building_queue = flowcontainer {
+		direction = vertical
+		minimumsize = { @panel_width_plus_14_half 80 }
+
+		textbox = {
+			#using = fontsize_small
+			visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_0').IsSet]"
+			text = "bem_completing_loc"
+			tooltip = "bem_conpow_tt"
+			parentanchor = hcenter
+			align = nobaseline
+			layoutpolicy_horizontal = expanding
+			autoresize = yes
+			margin_left = 10
+		}
+		
+		flowcontainer = {
+			direction = vertical
+			layoutpolicy_horizontal = expanding
+			hbox = {
+				minimumsize = { @panel_width_plus_14_half 36 }
+				margin = { 10 6 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				spacing = 5
+				visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_0').IsSet]"
+				datacontext = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_0').GetBuildingType]"
+				expand = {}
+				hbox = {
+					margin = { 0 8 }
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						minimumsize = { 8 0 }
+					}
+					icon = {
+						size = { 32 32 }
+						texture = "[BuildingType.GetIcon]"
+					}
+					expand = {}
+					background = {
+							#visible = "[GreaterThan_CFixedPoint(ConstructionQueueElement.GetConstructionSpeed, '(CFixedPoint)0')]"
+						using = paper_bg
+						margin_right = -4
+					}
+					close_button_large = {
+						size = { 28 28 }
+						#parentanchor = right|vcenter
+						onclick = "[GetScriptedGui('bem_remove_queue').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).AddScope('index', MakeScopeValue('(CFixedPoint)0')).End )]"
+					}
+					hbox = {
+						minimumsize = { 16 -1 }
+					}
+				}
+				expand = {}
+			}
+		}
+
+		flowcontainer = {
+			direction = vertical
+			layoutpolicy_horizontal = expanding
+			hbox = {
+				minimumsize = { @panel_width_plus_14_half 36 }
+				margin = { 10 6 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				spacing = 5
+				visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_1').IsSet]"
+				datacontext = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_1').GetBuildingType]"
+				expand = {}
+				hbox = {
+					margin = { 0 8 }
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						minimumsize = { 8 0 }
+					}
+					icon = {
+						size = { 32 32 }
+						texture = "[BuildingType.GetIcon]"
+					}
+					expand = {}
+					background = {
+							#visible = "[GreaterThan_CFixedPoint(ConstructionQueueElement.GetConstructionSpeed, '(CFixedPoint)0')]"
+						using = paper_bg
+						margin_right = -4
+					}
+					close_button_large = {
+						size = { 28 28 }
+						#parentanchor = right|vcenter
+						onclick = "[GetScriptedGui('bem_remove_queue').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).AddScope('index', MakeScopeValue('(CFixedPoint)1')).End )]"
+					}
+					hbox = {
+						minimumsize = { 16 -1 }
+					}
+				}
+				expand = {}
+			}
+		}
+
+		flowcontainer = {
+			direction = vertical
+			layoutpolicy_horizontal = expanding
+			hbox = {
+				minimumsize = { @panel_width_plus_14_half 36 }
+				margin = { 10 6 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				spacing = 5
+				visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_2').IsSet]"
+				datacontext = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_2').GetBuildingType]"
+				expand = {}
+				hbox = {
+					margin = { 0 8 }
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						minimumsize = { 8 0 }
+					}
+					icon = {
+						size = { 32 32 }
+						texture = "[BuildingType.GetIcon]"
+					}
+					expand = {}
+					background = {
+							#visible = "[GreaterThan_CFixedPoint(ConstructionQueueElement.GetConstructionSpeed, '(CFixedPoint)0')]"
+						using = paper_bg
+						margin_right = -4
+					}
+					close_button_large = {
+						size = { 28 28 }
+						#parentanchor = right|vcenter
+						onclick = "[GetScriptedGui('bem_remove_queue').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).AddScope('index', MakeScopeValue('(CFixedPoint)2')).End )]"
+					}
+					hbox = {
+						minimumsize = { 16 -1 }
+					}
+				}
+				expand = {}
+			}
+		}
+
+		flowcontainer = {
+			direction = vertical
+			layoutpolicy_horizontal = expanding
+			hbox = {
+				minimumsize = { @panel_width_plus_14_half 36 }
+				margin = { 10 6 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				spacing = 5
+				visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_3').IsSet]"
+				datacontext = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_3').GetBuildingType]"
+				expand = {}
+				hbox = {
+					margin = { 0 8 }
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						minimumsize = { 8 0 }
+					}
+					icon = {
+						size = { 32 32 }
+						texture = "[BuildingType.GetIcon]"
+					}
+					expand = {}
+					background = {
+							#visible = "[GreaterThan_CFixedPoint(ConstructionQueueElement.GetConstructionSpeed, '(CFixedPoint)0')]"
+						using = paper_bg
+						margin_right = -4
+					}
+					close_button_large = {
+						size = { 28 28 }
+						#parentanchor = right|vcenter
+						onclick = "[GetScriptedGui('bem_remove_queue').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).AddScope('index', MakeScopeValue('(CFixedPoint)3')).End )]"
+					}
+					hbox = {
+						minimumsize = { 16 -1 }
+					}
+				}
+				expand = {}
+
+			}
+		}
+	}
+
+	type bem_govpms = container {
+		minimumsize = { @panel_width_half_minus_10 50 }
+
+		flowcontainer = {
+
+			parentanchor = vcenter
+			direction = vertical
+			margin_top = 3
+			margin_bottom = 3
+		}
+		vbox = {
+			layoutpolicy_vertical = expanding
+			textbox = {
+				using = fontsize_medium
+				raw_text = "Government Budget"
+				#parentanchor = left|vcenter
+				align = left|nobaseline
+				autoresize = yes
+				margin_bottom = 6
+			}
+            divider_clean = {
+				size = { 180 1 }
+			}
+			hbox = {
+				minimumsize = { -1 6 }
+			}
+			hbox = {
+				using = set_level_bar_background
+				size = { @panel_width_half_minus_10 32 }
+				maximumsize = { @panel_width_half_minus_10 32 }
+						# literally just a regular button in the flowcontainer
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_very_low.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tono_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tono_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_no_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_low.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tolow_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tolow_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_low_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_medium.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tomoderate_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tomoderate_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_moderate_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_high.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tohigh_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tohigh_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_high_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_very_high.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tovery_high_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tovery_high_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_very_high_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+			}
+		}
+	}
+
+	type bem_conpms = container {
+		minimumsize = { @panel_width_half_minus_10 50 }
+
+		flowcontainer = {
+
+			parentanchor = vcenter
+			direction = vertical
+			margin_top = 3
+			margin_bottom = 3
+		}
+		vbox = {
+			layoutpolicy_vertical = expanding
+			textbox = {
+				using = fontsize_medium
+				raw_text = "Construction Infrastructure"
+				#parentanchor = left|vcenter
+				align = left|nobaseline
+				autoresize = yes
+				margin_bottom = 6
+			}
+            divider_clean = {
+				size = { 180 1 }
+			}
+			hbox = {
+				minimumsize = { -1 6 }
+			}
+			hbox = {
+				using = set_level_bar_background
+				size = { @panel_width_half_minus_10 32 }
+				maximumsize = { @panel_width_half_minus_10 32 }
+						# literally just a regular button in the flowcontainer
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_very_low.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tol0_con').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tol0_con').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_l0_con').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_low.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tol1_con').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tol1_con').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_l1_con').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_medium.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tol2_con').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tol2_con').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_l2_con').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_high.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tol3_con').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tol3_con').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_l3_con').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+				bem_spending_level = {
+					blockoverride "button_texture" {
+						texture = "gfx/interface/budget/budget_set_very_high.dds"
+					}
+					blockoverride "tooltip" {
+						tooltip = "[GetScriptedGui('bem_tol4_con').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "click" {
+						onclick = "[GetScriptedGui('bem_tol4_con').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+					blockoverride "is_selected_visibility" {
+						visible = "[GetScriptedGui('bem_l4_con').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+					}
+				}
+			}
+		}
+	}
+
+	type bem_spending_level = widget {
+		size = { 30 28 }
+		button = {
+			size = { 30 28 }
+			
+			parentanchor = hcenter|top
+			block "button_texture" {
+				texture = "gfx/interface/budget/budget_set_high.dds"
+			}
+			block "tooltip" {
+				tooltip = "[GetScriptedGui('bem_tono_government_spending').ExecuteTooltip( GuiScope.SetRoot(State.MakeScope ).End )]"
+			}
+			block "click" {
+				onclick = "[GetScriptedGui('bem_tono_government_spending').Execute( GuiScope.SetRoot(State.MakeScope ).End )]"
+			}
+		}
+
+		### SELECTED FRAME
+		widget = {
+			block "selected_frame_size" {
+				size = { 37 35 }
+			}
+			parentanchor = center
+
+			block "is_selected_visibility" {
+				visible = "[GetScriptedGui('bem_no_government_spending').IsValid( GuiScope.SetRoot(State.MakeScope ).End )]"
+			}
+			
+			state = {
+				name = _show
+				duration = 0.35
+				alpha = 1
+			}
+			state = {
+				name = _hide
+				duration = 0
+				alpha = 0
+			}
+
+			icon = {
+				using = highlighted_square_selection
+			}
+		}
+				### SELECTED (icon)
+		button = {
+			block "button_texture" {}
+
+			block "is_selected_visibility" {}
+
+			block "selected_texture_size" {
+				size = { 28 28 }
+			}
+
+			parentanchor = center
+		}
+	}
+
+	type bem_set_level_bar_item = widget {
+		block "size" {
+			size = { 35 32 }
+		}
+
+		using = tooltip_above
+
+
+		### BUTTON
+		button = {
+			parentanchor = center
+
+			block "button_size" {
+				size = { 35 32 }
+			}
+			#onclick = "[ScriptedGui.Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).End )]"
+
+			block "click" {}
+			#block "is_clickable_alpha" {}
+
+			button = {
+				block "button_texture" {}
+				block "click" {}
+				#onclick = "[ScriptedGui.Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope ).End )]"
+
+				block "texture_size" {
+					size = { 28 28 }
+				}
+
+				parentanchor = center
+			}
+		}
+
+		### SELECTED FRAME
+		widget = {
+			block "selected_frame_size" {
+				size = { 37 35 }
+			}
+			parentanchor = center
+
+			block "is_selected_visibility" {}
+			
+			state = {
+				name = _show
+				duration = 0.35
+				alpha = 1
+			}
+			state = {
+				name = _hide
+				duration = 0
+				alpha = 0
+			}
+
+			icon = {
+				using = highlighted_square_selection
+			}
+		}
+		
+		### SELECTED (icon)
+		button = {
+			block "button_texture" {}
+
+			block "is_selected_visibility" {}
+
+			block "selected_texture_size" {
+				size = { 28 28 }
+			}
+
+			parentanchor = center
+		}
+	}
+
+	type state_panel_buildings_content = flowcontainer {
+		ignoreinvisible = yes
+		direction = vertical
+		using = default_list_position
+		spacing = 10
+
+
+		default_header_2texts = {
+			visible = no
+			blockoverride "text1" {
+				text = "BUILDINGS"
+			}
+		}
+
+		default_header = {
+			blockoverride "text" {
+				text = "BEM_STATE_CONSTRUCTION"
+			}
+		}
+
+
+		flowcontainer = {
+			direction = horizontal
+
+
+			bem_building_queue = {}
+			
+			flowcontainer = {
+				direction = vertical
+				flowcontainer = {
+					direction = vertical
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						minimumsize = { @panel_width_plus_14_half 80 }
+						margin = { 10 6 }
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+
+						spacing = 5
+						#visible = "[StatesPanel.GetState.MakeScope.Var('bem_queue_ptr_0').IsSet]"
+						datacontext = "[StatesPanel.AccessState.AccessBuilding( GetBuildingType('building_government_administration').GetKey )]"
+						vbox = {
+							bem_govpms = {}
+							hbox = {
+								minimumsize = { -1 16 }
+								maximumsize = { -1 16 }
+							}
+							bem_conpms = {}
+						}
+
+						expand = {}
+						hbox = {
+							margin = { 0 8 }
+							layoutpolicy_horizontal = expanding
+						}
+
+						expand = {}
+					}
+				}
+				
+			}
+		}
+
+		default_header = {
+			blockoverride "text" {
+				text = "URBAN_PART_OF_STATE"
+			}
+				
+			# grid/list toggle
+			button_icon_round_toggle = {
+				size = { 29 29 }
+				parentanchor = right|vcenter
+				position = { -10 0 }
+
+				blockoverride "on_click" {
+					onclick = "[GetVariableSystem.Toggle('buildings_list')]"
+				}
+				blockoverride "view_1" {
+					visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
+				}
+				blockoverride "view_2" {
+					visible = "[GetVariableSystem.Exists('buildings_list')]"
+				}
+				blockoverride "icon_1" {
+					texture = "gfx/interface/buttons/button_icons/grid.dds"
+				}
+				blockoverride "icon_2" {
+					texture = "gfx/interface/buttons/button_icons/list.dds"
+				}
+				blockoverride "tooltip_1" {
+					tooltip = "TOOLTIP_VIEW_LIST"
+				}
+				blockoverride "tooltip_2" {
+					tooltip = "TOOLTIP_VIEW_GRID"
+				}
+			}
+		}
+
+		### URBAN BUILDINGS
+		flowcontainer = {
+			parentanchor = hcenter
+			direction = vertical
+			visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
+			using = default_content_fade
+			spacing = 10
+
+			flowcontainer = {
+				parentanchor = hcenter
+				direction = vertical
+
+				divider_clean = {}
+
+				header_building_item = {
+					datacontext = "[StatesPanel.AccessBuilding('building_urban_center')]"
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					blockoverride "text" {
+						text = "TOTAL_URBAN_CENTERS"
+					}
+				}
+
+				divider_clean = {
+					visible = "[GreaterThan_int32(StatesPanel.AccessBuilding('building_trade_center').GetExpansionLevel, '(int32)0')]"
+				}
+
+				header_building_item = {
+					visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+					datacontext = "[StatesPanel.AccessBuilding('building_trade_center')]"
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					blockoverride "text" {
+						text = "TOTAL_TRADE_CENTER"
+					}
+				}
+
+				divider_clean = {
+					visible = "[GreaterThan_int32(StatesPanel.AccessBuilding('building_manor_house').GetExpansionLevel, '(int32)0')]"
+				}
+
+				header_building_item = {
+					visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+					datacontext = "[StatesPanel.AccessBuilding('building_manor_house')]"
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					blockoverride "text" {
+						text = "TOTAL_MANOR_HOUSE"
+					}
+				}
+
+				divider_clean = {
+					visible = "[GreaterThan_int32(StatesPanel.AccessBuilding('building_financial_district').GetExpansionLevel, '(int32)0')]"
+				}
+
+				header_building_item = {
+					visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+					datacontext = "[StatesPanel.AccessBuilding('building_financial_district')]"
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					blockoverride "text" {
+						text = "TOTAL_FINANCIAL_DISTRICT"
+					}
+				}
+
+				com_owner_building_header_list = {}
+
+				divider_clean = {}
+			}
+
+			### URBAN BUILDINGS
+			container = {
+				datamodel = "[State.AccessCappedRuralBuildings]"
+
+				dynamicgridbox = {
+					name = "urban_building_list"
+					datamodel = "[State.AccessUrbanBuildings]"
+					datamodel_wrap = 4
+					flipdirection = yes
+
+					item = {
+						building_item = {}
+					}
+				}
+
+				widget = {
+					size = { 135 180 }
+					visible = "[GetPlayer.HasForeignInvestmentRights(State.GetOwner)]"
+					enabled = "[GreaterThan_int32( StatesPanel.AccessState.GetNumConstructableUrbanBuildings,'(int32)0')]"
+					position = "[StatesPanel.CalcBuildUrbanBuildingsButtonPosition]"
+
+					button_icon_plus_square = {
+						enabled = "[Not(IsDataModelEmpty(StatesPanel.GetState.GetPotentialUrbanBuildings))]"
+						size = { 135 170 }
+						tooltip = "BUILD_URBAN_BUILDING"
+						onclick = "[StatesPanel.ToggleBuildUrbanBuildingsMenu(PdxGuiWidget.AccessSelf)]"
+
+
+						blockoverride "icon_size" {
+							size = { 80 80 }
+						}
+					}
+
+					textbox = {
+						using = fontsize_mega
+						raw_text = "#BOLD [StatesPanel.AccessState.GetNumConstructableUrbanBuildings|+]#!"
+						parentanchor = right
+						align = hcenter|nobaseline
+						autoresize = yes
+						position = { -12 4 }
+
+						background = {
+							using = blurry_dark_background
+						}
+					}
+				}
+			}
+		}
+
+		### URBAN BUILDINGS LIST VERSION
+		flowcontainer = {
+			visible = "[GetVariableSystem.Exists('buildings_list')]"
+			parentanchor = hcenter
+			direction = vertical
+			using = default_content_fade
+
+			buildings_list_item = {
+				datacontext = "[StatesPanel.AccessBuilding('building_urban_center')]"
+			}
+
+			buildings_list_item = {
+				visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+				datacontext = "[StatesPanel.AccessBuilding('building_trade_center')]"
+			}
+
+			buildings_list_item = {
+				visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+				datacontext = "[StatesPanel.AccessBuilding('building_manor_house')]"
+			}
+
+			buildings_list_item = {
+				visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
+				datacontext = "[StatesPanel.AccessBuilding('building_financial_district')]"
+			}
+
+			com_owner_building_list = {}
+
+			buildings_list = {
+				blockoverride "datamodel" {
+					datamodel = "[State.AccessUrbanBuildings]"
+				}
+			}
+
+			button_icon_plus_square = {
+				visible = "[State.GetCountry.IsLocalPlayer]"
+				enabled = "[GreaterThan_int32( StatesPanel.AccessState.GetNumConstructableUrbanBuildings,'(int32)0')]"
+				size = { @panel_width 45 }
+				tooltip = "BUILD_URBAN_BUILDING"
+				onclick = "[StatesPanel.ToggleBuildUrbanBuildingsMenu(PdxGuiWidget.AccessSelf)]"
+				blockoverride "icon_size" {
+					size = { 45 100% }
+				}
+
+				textbox = {
+					using = fontsize_large
+					raw_text = "#BOLD [StatesPanel.AccessState.GetNumConstructableUrbanBuildings|+]#!"
+					parentanchor = right
+					align = hcenter|nobaseline
+					autoresize = yes
+					position = { -10 2 }
+
+					background = {
+						using = blurry_dark_background
+					}
+				}
+			}
+		}
+
+		### RESOURCE BUILDINGS
+		default_header = {
+			visible = "[Not(IsDataModelEmpty( State.AccessCappedRuralBuildings ))]"
+			blockoverride "text" {
+				text = "RESOURCE"
+			}
+		}
+
+		flowcontainer = {
+			visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
+			parentanchor = hcenter
+			minimumsize = { @panel_width -1 }
+			direction = vertical
+			using = default_content_fade
+
+			fixedgridbox = {
+				datamodel = "[State.AccessCappedRuralBuildings]"
+				addcolumn = 135
+				addrow = 210
+				datamodel_wrap = 4
+				flipdirection = yes
+
+				item = {
+					building_item = {}
+				}
+			}
+		}
+
+		### RESOURCE LIST VERSION
+		flowcontainer = {
+			visible = "[And( GetVariableSystem.Exists('buildings_list'), Not(IsDataModelEmpty(State.AccessCappedRuralBuildings)))]"
+			using = default_content_fade
+			parentanchor = hcenter
+			direction = vertical
+
+			buildings_list = {
+				blockoverride "datamodel" {
+					datamodel = "[State.AccessCappedRuralBuildings]"
+				}
+			}
+		}
+
+		### AGRICULTURE
+		default_header = {
+			blockoverride "text" {
+				text = "AGRICULTURE"
+			}
+		}
+
+		flowcontainer = {
+			visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
+			using = default_content_fade
+			minimumsize = { @panel_width -1 }
+			using = default_list_position
+			direction = vertical
+			spacing = 10
+
+			flowcontainer = {
+				parentanchor = hcenter
+				direction = vertical
+
+				divider_clean = {}
+
+				### UNUSED ARABLE LAND
+				header_building_item = {
+					datacontext = "[StatesPanel.AccessSubsistenceBuilding]"
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					blockoverride "text" {
+						text = "UNUSED_ARABLE"
+					}
+				}
+
+				divider_clean = {}
+			}
+
+			fixedgridbox = {
+				datamodel = "[State.AccessUncappedRuralBuildings]"
+				addcolumn = 135
+				addrow = 210
+				datamodel_wrap = 4
+				flipdirection = yes
+
+				item = {
+					building_item = {}
+				}
+			}
+		}
+
+		### AGRICULTURE LIST VERSION
+		flowcontainer = {
+			direction = vertical
+			using = default_list_position
+			visible = "[GetVariableSystem.Exists('buildings_list')]"
+			using = default_content_fade
+
+			buildings_list = {
+				blockoverride "datamodel" {
+					datamodel = "[State.AccessUncappedRuralBuildings]"
+				}
+			}
+
+			buildings_list_item = {
+				datacontext = "[StatesPanel.AccessSubsistenceBuilding]"
+			}
+		}
+
+		### DEVELOPMENT
+		default_header = {
+			blockoverride "text" {
+				text = "INFRA_PART_OF_STATE"
+			}
+		}
+
+		state_panel_button_unclickable = {
+			visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
+			using = default_list_position
+			using = default_content_fade
+
+			container = {
+				minimumsize = { @panel_width -1 }
+				resizeparent = yes
+
+				flowcontainer = {
+					direction = vertical
+					spacing = 10
+
+					flowcontainer = {
+						parentanchor = hcenter
+						direction = vertical
+
+						divider_clean = {
+							visible = no
+						}
+
+						header_building_item = {
+							visible = no
+							datacontext = "[StatesPanel.AccessBuilding('building_barracks')]"
+
+							tooltipwidget = {
+								FancyTooltip_Building = {}
+							}
+
+							blockoverride "text" {
+								text = "TOTAL_BARRACKS"
+							}
+						}
+
+						divider_clean = {}
+
+						header_building_item = {
+							datacontext = "[StatesPanel.AccessBuilding('building_conscription_center')]"
+
+							tooltipwidget = {
+								FancyTooltip_Building = {}
+							}
+
+							blockoverride "text" {
+								text = "TOTAL_CONSCRIPTION_CENTER"
+							}
+						}
+
+						divider_clean = {}
+
+						header_building_item = {
+							visible = no
+							datacontext = "[StatesPanel.AccessBuilding('building_naval_base')]"
+
+							tooltipwidget = {
+								FancyTooltip_Building = {}
+							}
+
+							blockoverride "text" {
+								text = "TOTAL_NAVAL_BASE"
+							}
+						}
+
+						divider_clean = {
+							visible = no
+						}
+					}
+
+					fixedgridbox = {
+						datamodel = "[State.AccessDevelopmentBuildings]"
+						addcolumn = 135
+						addrow = 210
+						datamodel_wrap = 4
+						flipdirection = yes
+
+						item = {
+							building_item = {}
+						}
+					}
+				}
+			}
+		}
+
+		### DEVELOPMENT LIST VERSION
+		flowcontainer = {
+			visible = "[GetVariableSystem.Exists('buildings_list')]"
+			using = default_content_fade
+			margin_top = 5
+			margin_bottom = 10
+			direction = vertical
+			parentanchor = hcenter
+
+			buildings_list_item = {
+				datacontext = "[StatesPanel.AccessBuilding('building_barracks')]"
+			}
+
+			buildings_list_item = {
+				datacontext = "[StatesPanel.AccessBuilding('building_conscription_center')]"
+			}
+
+			buildings_list_item = {
+				datacontext = "[StatesPanel.AccessBuilding('building_naval_base')]"
+			}
+
+			buildings_list = {
+				blockoverride "datamodel" {
+					datamodel = "[State.AccessDevelopmentBuildings]"
+				}
+			}
+		}
+	}
+    type expand_building_button = widget {
+		name = "tutorial_highlight_expand"
+
+		block "button_size" {
+			size = { 28 28 }
+		}
+
+		tooltip = "[Building.GetQueueConstructionTooltip]"
+
+		block "expand_button_visibility" {
+			visible = "[Building.IsPotentialQueueConstruction]"
+		}
+
+		button_icon_plus_action = { #regular expansion
+			visible = "[Building.GetState.GetOwner.IsLocalPlayer]"
+
+			size = { 100% 100% }
+
+			onclick = "[GetScriptedGui('bem_build_building').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_building', Building.GetBuildingType.MakeScope).AddScope('target_state', Building.GetState.MakeScope).End )]"
+			enabled = "[IsValid( Building.QueueConstruction )]"
+		}
+
+		button_icon_round_action = { #foreign investment
+ 			visible = "[Not(Building.GetState.GetOwner.IsLocalPlayer)]"
+
+ 			size = { 100% 100% }
+
+			blockoverride "icon_size" {
+				size = { 75% 75% }
+			}
+			
+			blockoverride "icon" {
+				texture = "gfx/interface/buttons/button_icons/foreign_invest.dds"
+			}
+
+			blockoverride "sound" {
+				using = increase_button_sound
+			}
+
+			onclick = "[GetScriptedGui('bem_build_building').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_building', Building.MakeScope).AddScope('target_state', Building.GetState.MakeScope).End )]"
+			enabled = "[IsValid( Building.QueueConstruction )]"
+		}		
+	}
+
+	type expand_building_button_with_military = button_icon_plus_action {
+
+		block "button_size" {
+			size = { 28 28 }
+		}
+
+		tooltip = "[Building.GetQueueMilitaryConstructionTooltip( MilitaryFormation.Self, CombatUnitType.Self )]"
+		onclick = "[Execute( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+		enabled = "[IsValid( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+
+		block "expand_button_visibility" {
+			visible = "[And( Building.IsExpandable, Or( Not(Building.HasReachedLevelCap), IsValid(Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self )) ))]"
+		}
+
+		button_icon_plus_action = { #regular expansion
+			visible = "[Building.GetState.GetOwner.IsLocalPlayer]"
+
+			block "button_size" {
+				size = { 28 28 }
+			}
+
+			onclick = "[Execute( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+			enabled = "[IsValid( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+		}
+
+		button_icon_round_action = { #foreign investment
+ 			visible = "[Not(Building.GetState.GetOwner.IsLocalPlayer)]"
+
+ 			block "button_size" {
+				size = { 28 28 }
+			}
+
+			blockoverride "icon_size" {
+				size = { 75% 75% }
+			}
+			
+			blockoverride "icon" {
+				texture = "gfx/interface/buttons/button_icons/foreign_invest.dds"
+			}
+
+			blockoverride "sound" {
+				using = increase_button_sound
+			}
+
+			onclick = "[Execute( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+			enabled = "[IsValid( Building.QueueMilitaryConstruction( MilitaryFormation.Self, CombatUnitType.Self ) )]"
+		}		
+	}
+}

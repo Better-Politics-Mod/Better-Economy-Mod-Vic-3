@@ -1,4 +1,4 @@
-﻿pm_market_stalls = {
+pm_market_stalls = {
 	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
 
 	building_modifiers = {
@@ -496,6 +496,129 @@ pm_oil-fired_plant = {
 			building_employment_laborers_add = 20
 			building_employment_machinists_add = 60
 			building_employment_engineers_add = 20
+		}
+	}
+}
+
+
+# BEM
+
+# BEM
+pm_bem_no_construction_infrastructure = {
+	texture = "gfx/interface/icons/production_method_icons/no_construction_infrastructure.dds"
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+
+}
+pm_bem_basic_construction_infrastructure = {
+	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_wood_add = 80
+			goods_input_fabric_add = 20
+			goods_input_tools_add = 20
+			goods_output_assets_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_power_add = 1
+			state_infrastructure_add = 1
+		}
+	}
+
+}
+
+pm_bem_construction_sites = {
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_wood_add = 150
+			goods_input_tools_add = 70
+			goods_output_assets_add = 65
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 25
+			building_employment_machinists_add = 15
+			building_employment_engineers_add = 10
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_power_add = 2
+			state_infrastructure_add = 2
+		}
+	}
+}
+
+pm_bem_organized_works = {
+	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_steel_add = 80
+			goods_input_glass_add = 40
+			goods_input_tools_add = 60
+			goods_input_explosives_add = 10
+			goods_output_assets_add = 125
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 15
+			building_employment_machinists_add = 20
+			building_employment_engineers_add = 15
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_power_add = 5
+			state_infrastructure_add = 5
+		}
+	}
+}
+
+pm_bem_industrial_sites = {
+	texture = "gfx/interface/icons/production_method_icons/unused/financial_district.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_steel_add = 120
+			goods_input_glass_add = 60
+			goods_input_tools_add = 80
+			goods_input_explosives_add = 10
+			goods_input_electricity_add = 40
+			goods_output_assets_add = 200
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 15
+			building_employment_engineers_add = 35
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_power_add = 10
+			state_infrastructure_add = 10
 		}
 	}
 }

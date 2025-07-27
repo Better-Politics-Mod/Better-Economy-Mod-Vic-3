@@ -19,3 +19,79 @@ bem_urbanization_rate = {
 	divide = 8000
 	max = 1
 }
+
+bem_kvp_as_val = {
+	value = scope:kvp
+	subtract = {
+		value = {
+			value = scope:kvp
+			divide = key_shift
+			floor = yes
+		}
+		multiply = key_shift
+	}
+}
+
+bem_current_conpow = {
+	value = modifier:state_construction_power_add
+	add = bem_fromnumbuls
+	multiply = {
+		value = 1
+		add = modifier:state_construction_mult
+	}
+}
+
+bem_fromnumbuls = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_queue_ptr_0
+		}
+		every_scope_building = {
+			limit = {
+				type = prev.var:bem_queue_ptr_0
+			}
+			add = {
+				value = 2.5
+				multiply = level
+			}
+		}
+	}
+	max = 15
+}
+
+bem_months_to_completion_max_r = {
+	value = bem_current_conpow
+	add = 20
+	divide = 120
+}
+
+# m = ((x+20)/120)^3
+bem_months_to_completion_max = {
+	value = 1
+	divide = {
+		value = bem_number_produced_max_r
+	}
+	min = 1
+}
+
+bem_number_months_left = {
+	value = bem_months_to_completion_max
+	if = {
+		limit = {
+			has_variable = bem_queue_ctr
+		}
+		value = var:bem_queue_ctr
+	}
+}
+
+bem_number_produced_max_r = {
+	value = bem_months_to_completion_max_r
+	multiply = bem_months_to_completion_max_r
+}
+
+bem_number_produced_max = {
+	value = bem_number_produced_max_r
+	min = 1
+	max = 20
+}

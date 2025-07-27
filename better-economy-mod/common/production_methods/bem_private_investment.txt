@@ -1,0 +1,13 @@
+pm_bem_private_investment = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	building_modifiers = {
+		level_scaled = {
+            goods_input_assets_add = 50
+			#goods_output_gold_add = 100
+		}
+		unscaled = {
+			building_employment_clerks_add = 1
+		}
+	}
+}

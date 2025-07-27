@@ -110,8 +110,8 @@
 	COUNTRY_MIN_CREDIT_SCALED = 100	  			# Added to the total Building Cash Reserves to determine credit limit (multiplied by GDP)
 	CREDIT_RATIO_MAX_OVERRUN = 0.01 			# Countries can accumulate this percentage more of a debt "hole" than their credit limit when in default
 	GOLD_RESERVE_RATIO_AT_START = 0.5			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
-	BUILDING_INITIAL_WAGE_WEEKS = 1				# A building will not adjust its wages for the first this many weeks of its existence
-	MAX_WAGE_STEP_CHANGE = 0.3					# Wage rates can change at most this much each week
+	BUILDING_INITIAL_WAGE_WEEKS = 3				# A building will not adjust its wages for the first this many weeks of its existence
+	MAX_WAGE_STEP_CHANGE = 0.1					# Wage rates can change at most this much each week
 	SUBSIDIES_MIN_GAIN = 0						# If a building is subsidized, it will always collect enough subsidies to ensure at least this weekly cash reserve growth
 	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly min hiring limit applied in a building per profession as a ratio of full employment
 	DEFAULT_MAX_HIRING_RATE = 0.2 				# Default weekly max hiring limit applied in a building per profession as a ratio of full employment
@@ -124,8 +124,8 @@
 	BUILDING_LOWER_WAGES_TARGET_WEALTH_MULT = 1.1 # Buildings will consider lowering wages if all significant pops working in them have this * the target wealth to expected SoL ratio
 	BUILDING_PREFER_LAYOFFS_TARGET_WEALTH_MULT = 0.5 # Buildings will prefer laying off pops if any significant pops working in them have this * the target wealth to expected SoL ratio or below
 	BUILDING_DEFAULT_MIN_EARNINGS_TO_HIRE_EMPLOYEES = 3  # Non-subsidized buildings will not hire if it would result in their annual earnings/employee falling below this threshold (default value, can be overridden for building group)
-	BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.3	# Required profit margin to consider raising wages for SoL or employment reasons, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
-	BUILDING_PROFIT_TARGET_TO_LOWER_WAGES = 0.2	# If profit margin is this or below, buildings should lower their wages, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
+	BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.5	# Required profit margin to consider raising wages for SoL or employment reasons, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
+	BUILDING_PROFIT_TARGET_TO_LOWER_WAGES = 0.3	# If profit margin is this or below, buildings should lower their wages, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
 	BUILDING_PROFIT_TARGET_TO_WITHDRAW_CASH = 0.2	# If profit margin is this or below, buildings should withdraw money from the cash reserves to make up the difference
 	BUILDING_PROFIT_TARGET_TO_HIRE_EMPLOYEES = 0.25	# If profit margin is this or above, buildings should try to hire new workers
 	OWNERSHIP_BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.5	# Overrides BUILDING_PROFIT_TARGET_TO_RAISE_WAGES for buildings that own other buildings
@@ -150,7 +150,7 @@
 	QUALITY_OF_LIFE_MAX = 100
 	SUBSISTENCE_OUTPUT_AVERAGE_WAGE_RATE_FACTOR = 150   # Each 1.0 of subsistence output counts as this much wage rate when setting normal wages
 	PEASANT_STARTING_WAGE_RATE_FACTOR = 1.0		# For the sake of calculating starting normal wages, treat peasants as having this pop type wage multiplier
-	STARTING_WAGE_RATE_MULTIPLIER = 0.2			# Starting wage rate is multiplied by this (for easy balancing)
+	STARTING_WAGE_RATE_MULTIPLIER = 0.5			# Starting wage rate is multiplied by this (for easy balancing)
 	STARTING_WAGE_RATE_SUBSISTENCE_MULTIPLIER = 0.5		# STARTING_WAGE_RATE_MULTIPLIER is further multiplied by this for subsistence buildings
 	NORMAL_WAGE_RATE_FALLBACK = 500.0			# If it's impossible to compute a normal wage rate (e.g. if every incorporated pop works in government buildings) set it to this (weekly £ per POP_SIZE_PACKAGE employees)
 	MINIMUM_WAGE_RATE = 10.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
@@ -331,4 +331,7 @@ NPops = {
 	JOB_SATISFACTION_LOSSES_BASE = 50
 	JOB_SATISFACTION_GOVERNMENT = 70
 	NUM_WEALTH_LEVELS = 200
+}
+NAI = {
+	BUILDING_PRIVATIZATION_CHANCE = 100
 }

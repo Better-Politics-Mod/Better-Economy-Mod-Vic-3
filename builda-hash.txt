@@ -1,0 +1,876 @@
+
+    if = { limit = { scope:target_building = bt:building_angkor_wat }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 0
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_argebam }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 1
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_arms_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 2
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_artillery_foundries }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 3
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_arts_academy }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 4
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_automotive_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 5
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_banana_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 6
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_barracks }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 7
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_big_ben }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 8
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_capitol_hill }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 9
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_central_park }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 10
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_chemical_plants }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 11
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_chichen_itza }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 12
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_coal_mine }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 13
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_coffee_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 14
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_company_headquarter }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 15
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_company_hq }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 16
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_company_regional_headquarter }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 17
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_company_regional_hq }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 18
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_conscription_center }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 19
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_construction_2x2_entity }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 20
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_construction_3x3_entity }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 21
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_construction_sector }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 22
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_construction_skyscraper_entity }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 23
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_cotton_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 24
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_cristo_redentor }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 25
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_dye_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 26
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_easter_island_heads }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 27
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_eiffel_tower }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 28
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_electrics_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 29
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_entity }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 30
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_explosives_factory }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 31
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_eye_of_sahara }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 32
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_financial_district }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 33
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_fishing_wharf }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 34
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_food_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 35
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_forbidden_city }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 36
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_furniture_manufacturies }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 37
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_giza_necropolis }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 38
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_glassworks }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 39
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_gold_fields }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 40
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_gold_mine }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 41
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_government_administration }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 42
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_group }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 43
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_hagia_sophia }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 44
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_halloween_castledracula }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 45
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_icons }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 46
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_iron_mine }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 47
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_khaju_bridge }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 48
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_lead_mine }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 49
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_livestock_ranch }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 50
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_logging_camp }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 51
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_machu_picchu }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 52
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_maize_farm }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 53
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_manor_house }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 54
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_manor_houses }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 55
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_martandsuntemple }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 56
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_military_shipyards }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 57
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_millet_farm }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 58
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_mosque_of_djenne }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 59
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_motor_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 60
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_munition_plants }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 61
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_naval_base }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 62
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_observatorygreenwich }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 63
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_oil_rig }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 64
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_opium_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 65
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panama_canal }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 66
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_farming }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 67
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_fishing }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 68
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_harbour }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 69
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_heavy_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 70
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_light_industry }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 71
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_military }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 72
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_mining }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 73
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_monuments }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 74
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_oil }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 75
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_plantations }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 76
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_panel_bg_railways }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 77
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_paper_mills }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 78
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_petra }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 79
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_port }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 80
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_power_bloc_statue }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 81
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_power_plant }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 82
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_powerblock_statue }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 83
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_railway }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 84
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_rice_farm }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 85
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_rubber_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 86
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_rye_farm }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 87
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_saint_basils_cathedral }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 88
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_shipyards }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 89
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_silk_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 90
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_skyscraper }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 91
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_statue_of_liberty }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 92
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_steel_mills }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 93
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farm_fish }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 94
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farm_fruit }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 95
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farm_grain }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 96
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farm_meat }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 97
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farm_rice }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 98
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_farms }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 99
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_fishing_villages }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 100
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_orchards }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 101
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_pastures }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 102
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_subsistence_rice_paddies }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 103
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_suez_canal }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 104
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_sugar_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 105
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_sulfur_mine }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 106
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_synthetics_plants }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 107
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_taj_mahal }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 108
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_tea_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 109
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_temple_of_poseidon }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 110
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_textile_mills }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 111
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_tobacco_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 112
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_tooling_workshops }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 113
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_trade_center }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 114
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_type }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 115
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_university }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 116
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_urban_center }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 117
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_vatican_city }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 118
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_victoria_terminus }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 119
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_vineyard_plantation }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 120
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_wat_arun }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 121
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_whaling_station }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 122
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_wheat_farm }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 123
+        }
+    }
+        
+    if = { limit = { scope:target_building = bt:building_white_house }
+        save_scope_variable_as = {
+            name = building_hash
+            value = 124
+        }
+    }
+        
