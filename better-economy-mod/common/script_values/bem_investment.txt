@@ -94,17 +94,13 @@ bem_roi = {
 }
 
 bem_rchg_mult = {
-	value = 20
-	divide = bem_economy_heat
+	value = 0.5
 	if = {
 		limit = {
-			bem_roi_change < 0
+			bem_roi_change < 0.1
 		}
+		multiply = 100
 	}
-	else = {
-		divide = 1.5
-	}
-	divide = 10
 }
 
 bem_roi_change = {
