@@ -74,20 +74,18 @@ def weight_standard_clothing [wealth] {
 }
 
 def weight_services [wealth] {
-    if ($wealth > 10 and $wealth < 30) {
-        12 * $wealth - 113
-    } else if ($wealth >= 30 and $wealth < 45) {
-        247
+    if ($wealth > 6) {
+        8 * $wealth - 50
     } else {
         0
     }
 }
 
 def popneed_intoxicants [wealth] {
-    if ($wealth > 0 and $wealth < 30) {
-        7 * $wealth
-    } else if ($wealth >= 30) {
-        210
+    if ($wealth > 0 and $wealth < 50) {
+        4 * $wealth
+    } else if ($wealth >= 50) {
+        4 * 50
     } else {
         0
     }
