@@ -21,7 +21,6 @@ on_bem_game_started = {
 					NOT = { has_technology_researched = mutual_funds }
 				}
 				every_scope_state = {
-					limit = { is_building_type = building_financial_district }
 					activate_production_method = {
                 		building_type = building_financial_district
                 		production_method = pm_financial_district_joint_stock
@@ -33,7 +32,6 @@ on_bem_game_started = {
 					has_technology_researched = mutual_funds
 				}
 				every_scope_state = {
-					limit = { is_building_type = building_financial_district }
 					activate_production_method = {
                 		building_type = building_financial_district
                 		production_method = pm_financial_district_publicly_traded
@@ -134,7 +132,11 @@ bem_on_acquired_technology = {
 					NOT = { has_technology_researched = mutual_funds }
 				}
 				every_scope_state = {
-					limit = { is_building_type = building_financial_district }
+					limit = {
+						b:building_financial_district = { 
+								has_active_production_method = pm_financial_district_privately_owned 
+							}
+						}
 					activate_production_method = {
                 		building_type = building_financial_district
                 		production_method = pm_financial_district_joint_stock
@@ -146,7 +148,14 @@ bem_on_acquired_technology = {
 					has_technology_researched = mutual_funds
 				}
 				every_scope_state = {
-					limit = { is_building_type = building_financial_district }
+					limit = {
+						b:building_financial_district = {
+								OR = {
+									has_active_production_method = pm_financial_district_privately_owned 
+									has_active_production_method = pm_financial_district_joint_stock
+								}
+							}
+						}
 					activate_production_method = {
                 		building_type = building_financial_district
                 		production_method = pm_financial_district_publicly_traded

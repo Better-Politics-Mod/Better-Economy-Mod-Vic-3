@@ -41,3 +41,6 @@
   bem_market_crash_events.1.a: "There is little we can do."
   bem_capitalist_investment: "Capital Savings"
   bem_capitalist_fear: "Capital Flight"
+
+  bem_joint_stock_adjustment: "In Market Adjustment Period"
+  bem_publicly_traded_adjustment: "In Market Adjustment Period"

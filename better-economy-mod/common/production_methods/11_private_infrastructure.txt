@@ -490,6 +490,7 @@ pm_financial_district_joint_stock = {
 
 	unlocking_technologies = { joint_stock_companies }
 	unlocking_production_methods = { pm_financial_district_joint_stock }
+	timed_modifiers = { bem_joint_stock_adjustment }
 
 	building_modifiers = {
 		level_scaled = {
@@ -511,6 +512,7 @@ pm_financial_district_publicly_traded = {
 
 	unlocking_technologies = { mutual_funds }
 	unlocking_production_methods = { pm_financial_district_publicly_traded }
+	timed_modifiers = { bem_publicly_traded_adjustment }
 
 	building_modifiers = {
 		level_scaled = {
