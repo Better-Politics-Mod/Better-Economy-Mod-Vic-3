@@ -10,6 +10,18 @@ goods_output_assets_add = {
 	percent=no
 }
 
+goods_input_stocks_add = {
+	decimals=0
+	color=bad
+	percent=no
+}
+
+goods_output_stocks_add = {
+	decimals=0
+	color=bad
+	percent=no
+}
+
 building_employment_peasants_mult = {
 	decimals=0
 	color=neutral

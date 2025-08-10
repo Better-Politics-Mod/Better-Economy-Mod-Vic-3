@@ -95,12 +95,6 @@ bem_roi = {
 
 bem_rchg_mult = {
 	value = 0.5
-	if = {
-		limit = {
-			bem_roi_change < 0.1
-		}
-		multiply = 100
-	}
 }
 
 bem_roi_change = {

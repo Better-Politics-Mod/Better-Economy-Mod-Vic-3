@@ -456,5 +456,11 @@ popneed_financial_services = {
 
 	entry = {
 		goods = assets
+
+		weight = 0.5
+	}
+
+	entry = {
+		goods = stocks
 	}
 }

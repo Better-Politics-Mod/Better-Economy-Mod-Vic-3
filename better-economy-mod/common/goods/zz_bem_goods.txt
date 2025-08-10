@@ -50,6 +50,16 @@ assets = {
 	consumption_tax_cost = 1000
 }
 
+stocks = {
+	texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
+	cost = 1000
+	category = luxury
+
+	prestige_factor = 150
+
+	consumption_tax_cost = 1000
+}
+
 
 wood = {
 	texture = "gfx/interface/icons/goods_icons/wood.dds"
