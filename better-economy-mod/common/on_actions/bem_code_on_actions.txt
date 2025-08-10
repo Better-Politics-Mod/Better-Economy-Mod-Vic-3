@@ -14,6 +14,33 @@ on_bem_game_started = {
 				name = bem_more_private_construction
 			}
 		}
+		every_country = {
+			if = {
+				limit = {
+					has_technology_researched = joint_stock_companies
+					NOT = { has_technology_researched = mutual_funds }
+				}
+				every_scope_state = {
+					limit = { is_building_type = building_financial_district }
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_joint_stock
+            		}
+				}
+			}
+			if = {
+				limit = {
+					has_technology_researched = mutual_funds
+				}
+				every_scope_state = {
+					limit = { is_building_type = building_financial_district }
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_publicly_traded
+            		}
+				}
+			}
+		}
 	}
 }
 
@@ -90,5 +117,41 @@ on_bem_monthly_pulse_state = {
 		}
 		bem_private_investment_oa = yes
 		bem_do_state_building = yes
+	}
+}
+
+on_acquired_technology = {
+	on_actions = {
+		bem_on_acquired_technology
+	}
+}
+
+bem_on_acquired_technology = {
+	effect = {
+		if = {
+			limit = {
+					has_technology_researched = joint_stock_companies
+					NOT = { has_technology_researched = mutual_funds }
+				}
+				every_scope_state = {
+					limit = { is_building_type = building_financial_district }
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_joint_stock
+            		}
+				}
+		}
+		if = {
+			limit = {
+					has_technology_researched = mutual_funds
+				}
+				every_scope_state = {
+					limit = { is_building_type = building_financial_district }
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_publicly_traded
+            		}
+				}
+		}
 	}
 }

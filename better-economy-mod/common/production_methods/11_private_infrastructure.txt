@@ -470,6 +470,8 @@ pm_financial_district_privately_owned = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 	replacement_if_valid = pm_financial_district_principle_divine_economics_2
 
+	unlocking_production_methods = { pm_financial_district_privately_owned }
+
 	building_modifiers = {
 		level_scaled = {
 			building_employment_capitalists_add = 5
@@ -483,10 +485,32 @@ pm_financial_district_privately_owned = {
 	}
 }
 
+pm_financial_district_joint_stock = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = { joint_stock_companies }
+	unlocking_production_methods = { pm_financial_district_joint_stock }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 5
+			building_employment_bureaucrats_add = 1
+			building_employment_clerks_add = 2
+			building_employment_shopkeepers_add = 1
+			goods_output_stocks_add = 0.5
+			goods_input_assets_add = 5
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
 pm_financial_district_publicly_traded = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
 	unlocking_technologies = { mutual_funds }
+	unlocking_production_methods = { pm_financial_district_publicly_traded }
 
 	building_modifiers = {
 		level_scaled = {

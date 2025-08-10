@@ -1,0 +1,16 @@
+﻿l_english:
+  pmg_bem_gov_services: "Government Service Spending"
+  pmg_bem_urban_infrastructure: "Urban Construction Infrastructure"
+  pm_bem_no_spending: "No Spending"
+	pm_bem_low_spending: "Low Spending"
+	pm_bem_moderate_spending: "Moderate Spending"
+	pm_bem_high_spending: "High Spending"
+	pm_bem_very_high_spending: "Very High Spending"
+  
+  pm_bem_no_construction_infrastructure: "No Construction Infrastructure"
+  pm_bem_basic_construction_infrastructure: "Basic Construction Infrastructure"
+  pm_bem_construction_sites: "Construction Sites"
+  pm_bem_organized_works: "Organized Works"
+  pm_bem_industrial_sites: "Industrial Sites"
+
+  pm_financial_district_joint_stock: "Joint Stock"
