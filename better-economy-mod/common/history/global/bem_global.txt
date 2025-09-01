@@ -1,0 +1,71 @@
+﻿
+GLOBAL = {
+	every_country = {
+			if = {
+				limit = {
+					has_technology_researched = joint_stock_companies
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_joint_stock
+            		}
+				}
+			}
+			if = {
+				limit = {
+					has_technology_researched = mutual_funds
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_financial_district
+                		production_method = pm_financial_district_publicly_traded
+            		}
+				}
+			}
+            if = {
+				limit = {
+					has_technology_researched = urban_planning
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_urban_center
+                		production_method = pm_bem_basic_construction_infrastructure
+            		}
+				}
+			}
+            if = {
+				limit = {
+					has_technology_researched = modern_sewerage
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_urban_center
+                		production_method = pm_bem_construction_sites
+            		}
+				}
+			}
+            if = {
+				limit = {
+					has_technology_researched = steel_frame_buildings
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_urban_center
+                		production_method = pm_bem_organized_works
+            		}
+				}
+			}
+            if = {
+				limit = {
+					has_technology_researched = elevator
+				}
+				every_scope_state = {
+					activate_production_method = {
+                		building_type = building_urban_center
+                		production_method = pm_bem_industrial_sites
+            		}
+				}
+			}
+		}
+}

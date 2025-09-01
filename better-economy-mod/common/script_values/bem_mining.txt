@@ -1,0 +1,21 @@
+﻿bem_mining_efficiency_mult = {
+    value = level
+    if = {
+        limit = {is_building_group = bg_coal_mining}
+        prev = {divide = var:bg_coal_mining_potentials}
+    }
+    if = {
+        limit = {is_building_group = bg_iron_mining}
+        prev = {divide = var:bg_iron_mining_potentials}
+    }
+    if = {
+        limit = {is_building_group = bg_sulfur_mining}
+        prev = {divide = var:bg_sulfur_mining_potentials}
+    }
+    if = {
+        limit = {is_building_group = bg_lead_mining}
+        prev = {divide = var:bg_lead_mining_potentials}
+    }
+    multiply = 3
+    subtract = 0.3 
+}

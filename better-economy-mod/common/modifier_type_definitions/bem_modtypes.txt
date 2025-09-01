@@ -1,3 +1,9 @@
+goods_input_tools_mult={
+	decimals=1
+	color=bad
+	percent=yes
+}
+
 goods_input_assets_add = {
 	decimals=0
 	color=bad

@@ -1,4 +1,4 @@
-on_game_started = {
+﻿on_game_started = {
 	on_actions = {
 		on_bem_game_started
 	}
@@ -13,30 +13,16 @@ on_bem_game_started = {
 			add_modifier = {
 				name = bem_more_private_construction
 			}
+			add_investment_pool = bem_initial_investment_pool
 		}
-		every_country = {
-			if = {
-				limit = {
-					has_technology_researched = joint_stock_companies
-					NOT = { has_technology_researched = mutual_funds }
-				}
-				every_scope_state = {
-					activate_production_method = {
-                		building_type = building_financial_district
-                		production_method = pm_financial_district_joint_stock
-            		}
-				}
-			}
-			if = {
-				limit = {
-					has_technology_researched = mutual_funds
-				}
-				every_scope_state = {
-					activate_production_method = {
-                		building_type = building_financial_district
-                		production_method = pm_financial_district_publicly_traded
-            		}
-				}
+
+		every_state = {
+			update_all_cached_potentials = yes
+			every_scope_building = {update_mining_efficiency = yes}
+			create_building = {
+				building = building_bem_private_construction_investor
+				level = bem_state_investment_levels
+				reserves = 1
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-bem_build_building = {
+﻿bem_build_building = {
 	scope = country
 
 	saved_scopes = {

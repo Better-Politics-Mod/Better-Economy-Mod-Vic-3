@@ -13,9 +13,6 @@
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
 			building_employment_laborers_add = 450
-			building_employment_laborers_mult = 0.01
-			building_employment_machinists_mult = 0.01
-			building_employment_engineers_mult = 0.01
 		}
 	}
 }
@@ -47,9 +44,6 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 			building_employment_laborers_add = 375
 			building_employment_machinists_add = 50
 			building_employment_engineers_add = 25
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -81,9 +75,6 @@ pm_condensing_engine_pump_building_coal_mine = {
 			building_employment_laborers_add = 300
 			building_employment_machinists_add = 100
 			building_employment_engineers_add = 50
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -116,9 +107,6 @@ pm_diesel_pump_building_coal_mine = {
 			building_employment_laborers_add = 225
 			building_employment_machinists_add = 150
 			building_employment_engineers_add = 75
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -138,9 +126,6 @@ pm_picks_and_shovels_building_iron_mine = {
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
 			building_employment_laborers_add = 450
-			building_employment_laborers_mult = 0.01
-			building_employment_machinists_mult = 0.01
-			building_employment_engineers_mult = 0.01
 		}
 	}
 }
@@ -173,9 +158,6 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 			building_employment_laborers_add = 375
 			building_employment_machinists_add = 50
 			building_employment_engineers_add = 25
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -208,9 +190,6 @@ pm_condensing_engine_pump_building_iron_mine = {
 			building_employment_laborers_add = 300
 			building_employment_machinists_add = 100
 			building_employment_engineers_add = 50
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -243,9 +222,6 @@ pm_diesel_pump_building_iron_mine = {
 			building_employment_laborers_add = 225
 			building_employment_machinists_add = 150
 			building_employment_engineers_add = 75
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -265,9 +241,6 @@ pm_picks_and_shovels_building_lead_mine = {
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
 			building_employment_laborers_add = 450
-			building_employment_laborers_mult = 0.01
-			building_employment_machinists_mult = 0.01
-			building_employment_engineers_mult = 0.01
 		}
 	}
 }
@@ -299,9 +272,6 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 			building_employment_laborers_add = 375
 			building_employment_machinists_add = 50
 			building_employment_engineers_add = 25
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -333,9 +303,6 @@ pm_condensing_engine_pump_building_lead_mine = {
 			building_employment_laborers_add = 300
 			building_employment_machinists_add = 100
 			building_employment_engineers_add = 50
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -367,9 +334,6 @@ pm_diesel_pump_building_lead_mine = {
 			building_employment_laborers_add = 225
 			building_employment_machinists_add = 150
 			building_employment_engineers_add = 75
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -389,9 +353,6 @@ pm_picks_and_shovels_building_sulfur_mine = {
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
 			building_employment_laborers_add = 450
-			building_employment_laborers_mult = 0.01
-			building_employment_machinists_mult = 0.01
-			building_employment_engineers_mult = 0.01
 		}
 	}
 }
@@ -423,9 +384,6 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 			building_employment_laborers_add = 375
 			building_employment_machinists_add = 50
 			building_employment_engineers_add = 25
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -457,9 +415,6 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 			building_employment_laborers_add = 300
 			building_employment_machinists_add = 100
 			building_employment_engineers_add = 50
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -491,9 +446,6 @@ pm_diesel_pump_building_sulfur_mine = {
 			building_employment_laborers_add = 225
 			building_employment_machinists_add = 150
 			building_employment_engineers_add = 75
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 }
@@ -513,9 +465,6 @@ pm_picks_and_shovels_building_gold_mine = {
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
 			building_employment_laborers_add = 450
-			building_employment_laborers_mult = 0.01
-			building_employment_machinists_mult = 0.01
-			building_employment_engineers_mult = 0.01
 		}
 	}
 
@@ -553,9 +502,6 @@ pm_atmospheric_engine_pump_building_gold_mine = {
 			building_employment_laborers_add = 375
 			building_employment_machinists_add = 50
 			building_employment_engineers_add = 25
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 
 		}
 	}
@@ -594,7 +540,6 @@ pm_condensing_engine_pump_building_gold_mine = {
 			building_employment_laborers_add = 300
 			building_employment_machinists_add = 100
 			building_employment_engineers_add = 50
-			building_employment_laborers_mult =0.05
 		}
 	}
 
@@ -632,9 +577,6 @@ pm_diesel_pump_building_gold_mine = {
 			building_employment_laborers_add = 225
 			building_employment_machinists_add = 150
 			building_employment_engineers_add = 75
-			building_employment_laborers_mult = 0.025
-			building_employment_machinists_mult = 0.025
-			building_employment_engineers_mult = 0.025
 		}
 	}
 

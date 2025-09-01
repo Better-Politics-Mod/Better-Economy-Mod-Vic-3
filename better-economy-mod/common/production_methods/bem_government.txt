@@ -11,8 +11,16 @@ pm_bem_low_spending = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = -5
+			country_bureaucracy_add = 5
 		}
+	}
+
+	unlocking_laws = {
+		law_interventionism
+		law_extraction_economy
+		law_command_economy
+		law_cooperative_ownership
+		law_agrarianism
 	}
 
 	building_modifiers = {
@@ -36,8 +44,15 @@ pm_bem_moderate_spending = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = -10
+			country_bureaucracy_add = 10
 		}
+	}
+
+	unlocking_laws = {
+		law_interventionism
+		law_extraction_economy
+		law_command_economy
+		law_cooperative_ownership
 	}
 
 	building_modifiers = {
@@ -59,9 +74,16 @@ pm_bem_high_spending = {
 		mutual_funds
 	}
 
+	unlocking_laws = {
+		law_interventionism
+		law_extraction_economy
+		law_command_economy
+		law_cooperative_ownership
+	}
+
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = -15
+			country_bureaucracy_add = 15
 		}
 	}
 
@@ -84,9 +106,16 @@ pm_bem_very_high_spending = {
 		international_exchange_standards
 	}
 
+	unlocking_laws = {
+		law_interventionism
+		law_extraction_economy
+		law_command_economy
+		law_cooperative_ownership
+	}
+
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = -20
+			country_bureaucracy_add = 20
 		}
 	}
 

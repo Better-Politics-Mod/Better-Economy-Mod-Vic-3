@@ -1,4 +1,4 @@
-pm_market_stalls = {
+﻿pm_market_stalls = {
 	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
 
 	building_modifiers = {
@@ -11,6 +11,12 @@ pm_market_stalls = {
 			building_employment_laborers_add = 350
 			building_employment_clerks_add = 90
 			building_employment_shopkeepers_add = 40
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_economy_of_scale_level_cap_add = 1
 		}
 	}
 }
@@ -32,6 +38,12 @@ pm_market_squares = {
 			building_employment_laborers_add = 300
 			building_employment_clerks_add = 140
 			building_employment_shopkeepers_add = 40
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_economy_of_scale_level_cap_add = 1
 		}
 	}
 }
@@ -56,6 +68,12 @@ pm_covered_markets = {
 			building_employment_shopkeepers_add = 40
 		}
 	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_economy_of_scale_level_cap_add = 1
+		}
+	}
 }
 
 pm_arcades = {
@@ -77,6 +95,12 @@ pm_arcades = {
 			building_employment_laborers_add = 100
 			building_employment_clerks_add = 300
 			building_employment_shopkeepers_add = 100
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_economy_of_scale_level_cap_add = 1
 		}
 	}
 
@@ -538,6 +562,7 @@ pm_bem_basic_construction_infrastructure = {
 			goods_input_wood_add = 80
 			goods_input_fabric_add = 20
 			goods_input_tools_add = 20
+			goods_input_stocks_add = 1
 			goods_output_assets_add = 30
 		}
 
@@ -570,8 +595,11 @@ pm_bem_construction_sites = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 150
-			goods_input_tools_add = 70
+			goods_input_wood_add = 80
+			goods_input_iron_add = 50
+			goods_input_steel_add = 10
+			goods_input_tools_add = 50
+			goods_input_stocks_add = 2
 			goods_output_assets_add = 65
 		}
 
@@ -604,10 +632,12 @@ pm_bem_organized_works = {
 
 	building_modifiers = {
 		workforce_scaled = {
+			goods_input_iron_add = 20
 			goods_input_steel_add = 80
 			goods_input_glass_add = 40
 			goods_input_tools_add = 60
 			goods_input_explosives_add = 10
+			goods_input_stocks_add = 4
 			goods_output_assets_add = 125
 		}
 
@@ -644,6 +674,7 @@ pm_bem_industrial_sites = {
 			goods_input_tools_add = 80
 			goods_input_explosives_add = 10
 			goods_input_electricity_add = 40
+			goods_input_stocks_add = 6
 			goods_output_assets_add = 200
 		}
 

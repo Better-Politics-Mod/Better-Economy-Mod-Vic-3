@@ -1,4 +1,4 @@
-bem_nationalize = {
+﻿bem_nationalize = {
     name = "bem_nationalize"
 	desc = "bem_nationalize_desc"
 
