@@ -10,26 +10,54 @@ bem_build_army = {
 	}
 
 	when_taken = {
-		create_military_formation = {
-			hq_region = root.capital.region
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				count = 5
-				state_region = root.capital.state_region
+		every_scope_state = {
+			save_scope_as = military_state
+			owner = {
+				create_military_formation = {
+					type = fleet
+					hq_region = root.capital.region
+					combat_unit = {
+						type = unit_type:combat_unit_type_frigate
+						count = 1
+						state_region = scope:military_state.state_region
+					}
+				}
+				create_military_formation = {
+					type = fleet
+					hq_region = root.capital.region
+					combat_unit = {
+						type = unit_type:combat_unit_type_man_o_war
+						count = 1
+						state_region = scope:military_state.state_region
+					}
+				}
+				hidden_effect = {
+					add_treasury = -50000
+				}
+			}
+		}
+		show_as_tooltip = {
+			add_treasury = {
+				value = -50000
+				multiply = {
+					value = 0
+					every_scope_state = {
+						add = 1
+					}
+				}
 			}
 		}
 		set_variable = {
 			name = bpm_built_army
-			days = 60
+			days = 180
 		}
-		add_treasury = -50000
 	}
 
 	ai_chance = {
 		value = 0
 		if = {
 			limit = {
-				gold_reserves > 50000
+				gold_reserves > 500000
 			}
 			add = 999
 		}
@@ -48,36 +76,62 @@ bem_build_navy = {
 	}
 
 	when_taken = {
-		create_military_formation = {
-			type = fleet
-			hq_region = root.capital.region
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				count = 2
-				state_region = root.capital.state_region
+		every_scope_state = {
+			limit = {
+				is_coastal = yes
+			}
+			save_scope_as = coastal_state
+			owner = {
+				create_military_formation = {
+					type = fleet
+					hq_region = root.capital.region
+					combat_unit = {
+						type = unit_type:combat_unit_type_frigate
+						count = 1
+						state_region = scope:coastal_state.state_region
+					}
+				}
+				create_military_formation = {
+					type = fleet
+					hq_region = root.capital.region
+					combat_unit = {
+						type = unit_type:combat_unit_type_man_o_war
+						count = 1
+						state_region = scope:coastal_state.state_region
+					}
+				}
+				hidden_effect = {
+					add_treasury = -100000
+				}
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = root.capital.region
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				count = 2
-				state_region = root.capital.state_region
+
+		show_as_tooltip = {
+			add_treasury = {
+				value = -100000
+				multiply = {
+					value = 0
+					every_scope_state = {
+						limit = {
+							is_coastal = yes
+						}
+						add = 1
+					}
+				}
 			}
 		}
+		
 		set_variable = {
 			name = bpm_built_army
-			days = 60
+			days = 180
 		}
-		add_treasury = -200000
 	}
 
 	ai_chance = {
 		value = 0
 		if = {
 			limit = {
-				gold_reserves > 200000
+				gold_reserves > 5000000
 			}
 			add = 999
 		}

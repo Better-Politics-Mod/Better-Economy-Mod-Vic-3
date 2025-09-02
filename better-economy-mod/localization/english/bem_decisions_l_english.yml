@@ -1,3 +1,5 @@
 ﻿l_english:
   bem_build_army: "Build Army"
+  bem_build_army_desc: "Increase your military forces to defend against potential threats."
   bem_build_navy: "Build Navy"
+  bem_build_navy_desc: "Expand your naval capabilities to protect your maritime interests."
