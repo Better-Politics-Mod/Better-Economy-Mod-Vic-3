@@ -1,0 +1,85 @@
+bem_build_army = {
+	is_shown = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {
+			has_variable = bpm_built_army
+		}
+	}
+
+	when_taken = {
+		create_military_formation = {
+			hq_region = root.capital.region
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				count = 5
+				state_region = root.capital.state_region
+			}
+		}
+		set_variable = {
+			name = bpm_built_army
+			days = 60
+		}
+		add_treasury = -50000
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				gold_reserves > 50000
+			}
+			add = 999
+		}
+	}
+}
+
+bem_build_navy = {
+	is_shown = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {
+			has_variable = bpm_built_army
+		}
+	}
+
+	when_taken = {
+		create_military_formation = {
+			type = fleet
+			hq_region = root.capital.region
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				count = 2
+				state_region = root.capital.state_region
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = root.capital.region
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				count = 2
+				state_region = root.capital.state_region
+			}
+		}
+		set_variable = {
+			name = bpm_built_army
+			days = 60
+		}
+		add_treasury = -200000
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				gold_reserves > 200000
+			}
+			add = 999
+		}
+	}
+}
