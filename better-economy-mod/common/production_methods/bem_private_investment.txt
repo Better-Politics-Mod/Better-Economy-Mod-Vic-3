@@ -1,14 +1,46 @@
-pm_bem_private_investment = {
-	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+﻿pm_bem_private_investment = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
 	building_modifiers = {
 		level_scaled = {
-            goods_input_assets_add = 40
-			goods_input_stocks_add = 1
-			#goods_output_gold_add = 100
+            goods_input_assets_add = 50
+			goods_output_stocks_add = 5
 		}
 		unscaled = {
 			building_employment_clerks_add = 1
+		}
+	}
+}
+
+pm_bem_industrial_investment = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	building_modifiers = {
+		level_scaled = {
+            goods_output_assets_add = 2
+			goods_input_stocks_add = 0.2
+		}
+	}
+}
+
+pm_bem_resource_investment = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	building_modifiers = {
+		level_scaled = {
+            goods_output_assets_add = 1
+			goods_input_stocks_add = 0.1
+		}
+	}
+}
+
+pm_bem_service_investment = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	building_modifiers = {
+		level_scaled = {
+            goods_output_assets_add = 3
+			goods_input_stocks_add = 0.3
 		}
 	}
 }

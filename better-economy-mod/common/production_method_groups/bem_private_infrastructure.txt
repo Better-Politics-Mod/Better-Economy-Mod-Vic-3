@@ -1,7 +1,7 @@
 ﻿pmg_ownership_building_financial_district = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	ai_selection = most_productive
-
+	is_hidden_when_unavailable = yes
 	production_methods = {
 		pm_financial_district_privately_owned
 		pm_financial_district_joint_stock

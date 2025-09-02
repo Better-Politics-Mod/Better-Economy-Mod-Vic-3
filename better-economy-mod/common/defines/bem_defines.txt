@@ -114,8 +114,8 @@
 	MAX_WAGE_STEP_CHANGE = 0.1					# Wage rates can change at most this much each week
 	SUBSIDIES_MIN_GAIN = 0						# If a building is subsidized, it will always collect enough subsidies to ensure at least this weekly cash reserve growth
 	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly min hiring limit applied in a building per profession as a ratio of full employment
-	DEFAULT_MAX_HIRING_RATE = 0.2 				# Default weekly max hiring limit applied in a building per profession as a ratio of full employment
-	HIRING_RANGE_WEEKLY_CHANGE = 0.01 			# Weekly hiring range of a building is decreased or increased by this based on whether it is failing to hire at its current rate or not
+	DEFAULT_MAX_HIRING_RATE = 0.5 				# Default weekly max hiring limit applied in a building per profession as a ratio of full employment
+	HIRING_RANGE_WEEKLY_CHANGE = 0.02 			# Weekly hiring range of a building is decreased or increased by this based on whether it is failing to hire at its current rate or not
 	EMPLOYMENT_PROPORTIONALITY_LIMIT = 0.1		# A building cannot have a difference of ratio of full employment between any two professions greater than this limit
 	MINIMUM_EMPLOYEES = 10						# If a building has fewer employees than this, it will always attempt to hire
 	BUILDING_RAISE_WAGES_DIVIDEND_INCOME_FACTOR = 0.5 # A pop with dividend income has its wealth multiplied by 1 - ( the fraction of their income that is dividends * this ) to ensure buildings don't start wage dumping just because all employees are getting dividends
@@ -139,10 +139,10 @@
 	BUILDING_WEEKS_BETWEEN_PAY_CHANGES = 0		# Cooldown between changes in pay, so buildings don't overcompensate for a temporary change in circumstances. If the building is unprofitable it uses BUILDING_WEEKS_BETWEEN_PAY_CHANGES_WHEN_UNPROFITABLE instead.
 	BUILDING_WEEKS_BETWEEN_PAY_CHANGES_WHEN_UNPROFITABLE = 0 # Cooldown between changes in pay, so buildings don't overcompensate for a temporary change in circumstances. Only used when unprofitable.
 	MIN_RAISE_TO_HIRE = 0.12					# The minimum required increase in wages for an employee to switch jobs (1.0 = +100% = x2)
-	BASE_RESOURCE_DISCOVER_CHANCE = 0.02 		# Per day (1.0 = 1%)
+	BASE_RESOURCE_DISCOVER_CHANCE = 0.015 		# Per day (1.0 = 1%)
 	EMPLOYMENT_RESOURCE_DEPLETE_CHANCE = 0.005	# Multiplied by number of fully employed levels of the building
-	RESOURCE_DISCOVER_MIN_FRACTION = 0.2		# Min fraction of resources that will be discovered for each successful roll
-	RESOURCE_DISCOVER_MAX_FRACTION = 0.5		# Max fraction of resources that will be discovered for each successful roll
+	RESOURCE_DISCOVER_MIN_FRACTION = 0.1		# Min fraction of resources that will be discovered for each successful roll
+	RESOURCE_DISCOVER_MAX_FRACTION = 0.3		# Max fraction of resources that will be discovered for each successful roll
 	FULLY_DISCOVERED_RESOURCE_DEPLETE_CHANCE_MULT = 1.0 # The chance of a resource depleting is multiplied by this when all of the resource has been discovered
 	RESOURCE_DEPLETE_MIN_AMOUNT = 2				# Min amount of resources that will be depleted for each successful roll
 	RESOURCE_DEPLETE_MAX_AMOUNT = 5				# Max amount of resources that will be depleted for each successful roll
@@ -282,7 +282,7 @@
 	COMPANY_PROSPERITY_WEEKLY_DECREASE_SCALED_MAX = 0.8			# Min value for weekly prosperity decrease from employed levels
 	COMPANY_COUNTRY_CONSTRUCTION_BONUS_MULT = 0.2				# Multiplier for company countries
 	NATIONALIZATION_PER_LEVEL_COST = 500				# How much it costs to nationalize one level of a building per construction point
-	PRIVATIZATION_PER_LEVEL_COST = 250					# How much it costs to privatize one level of a building per construction point
+	PRIVATIZATION_PER_LEVEL_COST = 0.1					# How much it costs to privatize one level of a building per construction point
 	MIN_FAKE_CONSTRUCTION_COST = 100					# Min construction cost for the matters of nationalization and privatization
 	COMPANY_COUNT_OF_REGIONAL_HQ_TYPES = 3				# Count of building types in state reserved for flavored companies
 
@@ -330,6 +330,11 @@ NPops = {
 	JOB_SATISFACTION_LOSSES_MIN_MULT = -5
 	JOB_SATISFACTION_LOSSES_BASE = 50
 	JOB_SATISFACTION_GOVERNMENT = 70
+	MIGRATION_PULL_FROM_LIVING_STANDARD = 6
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT = 0.2
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT_MAX = 15
+	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT = 0.2
+	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT_MAX = 40
 }
 NAI = {
 	BUILDING_PRIVATIZATION_CHANCE = 100

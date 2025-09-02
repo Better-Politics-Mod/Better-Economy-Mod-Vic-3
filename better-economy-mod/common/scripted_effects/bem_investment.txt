@@ -1,4 +1,4 @@
-bem_private_investment_oa = {
+﻿bem_private_investment_oa = {
 	if = {
 		limit = {
 			has_building = building_bem_private_construction_investor

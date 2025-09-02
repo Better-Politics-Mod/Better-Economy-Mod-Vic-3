@@ -1,4 +1,4 @@
-
+﻿
 sulfur = {
 	texture = "gfx/interface/icons/goods_icons/sulfur.dds"
 	cost = 15
@@ -46,6 +46,7 @@ assets = {
 
 	prestige_factor = 15
 	local = yes
+	#traded_quantity = 2
 
 	consumption_tax_cost = 1000
 }
@@ -56,7 +57,7 @@ stocks = {
 	category = luxury
 
 	prestige_factor = 150
-
+	traded_quantity = 0.75
 	consumption_tax_cost = 1000
 }
 

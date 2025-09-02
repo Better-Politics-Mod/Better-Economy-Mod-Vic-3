@@ -11,6 +11,7 @@
 		pmg_hardwood
 		pmg_equipment
 		pmg_transportation_building_logging_camp
+		pmg_bem_resource_investment
 	}
 	ownership_type = self
 	can_build_private = {
@@ -38,6 +39,7 @@ building_rubber_plantation = {
 	production_method_groups = {
 		pmg_base_building_rubber_plantation
 		pmg_train_automation_building_rubber_plantation
+		pmg_bem_resource_investment
 	}
 	ownership_type = self
 
@@ -53,6 +55,7 @@ building_fishing_wharf = {
 	production_method_groups = {
 		pmg_base_building_fishing_wharf
 		pmg_refrigeration_building_fishing_wharf
+		pmg_bem_resource_investment
 	}
 	can_build_private = {
 		always = no
@@ -80,6 +83,7 @@ building_whaling_station = {
 	production_method_groups = {
 		pmg_base_building_whaling_station
 		pmg_refrigeration_building_whaling_station
+		pmg_bem_resource_investment
 	}
 
 	potential = {
@@ -107,6 +111,7 @@ building_oil_rig = {
 	production_method_groups = {
 		pmg_base_building_oil_rig
 		pmg_transportation_building_oil_rig
+		pmg_bem_resource_investment
 	}
 	ownership_type = self
 

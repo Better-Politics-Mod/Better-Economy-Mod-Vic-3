@@ -1,4 +1,4 @@
-bem_add_building_to_queue = {
+﻿bem_add_building_to_queue = {
 	# scope:target_building => building_type
 	# ROOT = state
 

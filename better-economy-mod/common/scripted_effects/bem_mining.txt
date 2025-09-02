@@ -1,0 +1,65 @@
+﻿update_cached_potential = {
+	bg:$bg$ = {
+		save_temporary_scope_as = group
+	}
+    set_variable = {
+	    name = $bg$_potentials
+	    value = 0
+	}
+	while = {
+	    limit = {
+		    "num_potential_resources(scope:group)" != var:$bg$_potentials
+	    }
+	    change_variable = {
+    		name = $bg$_potentials
+         	add = 1
+    	}
+    }
+}
+
+update_all_cached_potentials = {
+	if = {
+		limit = {
+			OR = {
+				has_potential_resource = bg:bg_iron_mining
+				has_potential_resource = bg:bg_coal_mining
+				has_potential_resource = bg:bg_sulfur_mining
+				has_potential_resource = bg:bg_lead_mining
+			}
+		}
+		update_cached_potential = {
+			bg = bg_iron_mining
+		}
+		update_cached_potential = {
+			bg = bg_coal_mining
+		}
+		update_cached_potential = {
+			bg = bg_sulfur_mining
+		}
+		update_cached_potential = {
+			bg = bg_lead_mining
+		}
+	}
+}
+
+update_mining_efficiency = {
+	if = {
+		limit = {
+			OR = {
+				is_building_group = bg_coal_mining
+				is_building_group = bg_iron_mining
+				is_building_group = bg_sulfur_mining
+				is_building_group = bg_lead_mining
+			}
+		}
+		remove_modifier = bem_mining_efficiency
+		set_local_variable = {
+			name = mult
+			value = bem_mining_efficiency_mult
+		}
+		add_modifier = {
+			name = bem_mining_efficiency
+			multiplier = local_var:mult
+		}
+	}
+}

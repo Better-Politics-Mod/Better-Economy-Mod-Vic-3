@@ -1,4 +1,4 @@
-
+﻿
 
 bem_buildagen_subsubp = {
     set_variable = raa
@@ -15,6 +15,7 @@ bem_buildagen_subsubp = {
                 }
             }
         }
+        every_scope_building = {update_mining_efficiency = yes}
     }
 }
 

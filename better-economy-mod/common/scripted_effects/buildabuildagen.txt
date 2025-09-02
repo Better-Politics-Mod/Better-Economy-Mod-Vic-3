@@ -1,4 +1,4 @@
-bem_buildagen_subp = {
+﻿bem_buildagen_subp = {
     if = { limit = { scope:target_building = bt:$building$ }
     bem_buildagen_subsubp = {
         n = 1

@@ -1,0 +1,6 @@
+﻿l_english:
+  building_iron_mine_discovered_resource: "Iron"
+  building_coal_mine_discovered_resource: "Coal"
+  building_lead_mine_discovered_resource: "Lead"
+  building_sulfur_mine_discovered_resource: "Sulfur"
+  building_bem_private_construction_investor: "Private Investment"

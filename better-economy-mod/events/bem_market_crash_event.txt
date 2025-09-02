@@ -1,4 +1,4 @@
-namespace = bem_market_crash_events
+﻿namespace = bem_market_crash_events
 
 bem_market_crash_events.1 = { #Heir falls in love with unbecomingly unacceptable pop. The horror!
 	type = country_event
@@ -24,6 +24,7 @@ bem_market_crash_events.1 = { #Heir falls in love with unbecomingly unacceptable
 	trigger = {
 		# sorry losers
 		diff_from_equi > 0.25
+		NOT = { has_modifier = bem_capitalist_fear }
 	}
 
 	immediate = {
@@ -47,7 +48,7 @@ bem_market_crash_events.1 = { #Heir falls in love with unbecomingly unacceptable
 		name = bem_market_crash_events.1.a
 		add_investment_pool = {
 			value = investment_pool
-			divide = -1
+			divide = -2
 		}
 		set_variable = {
 			name = bem_economy_heat

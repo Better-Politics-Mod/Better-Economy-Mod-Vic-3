@@ -1,4 +1,4 @@
-je_bem_borrowing = {
+﻿je_bem_borrowing = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	group = je_group_internal_affairs

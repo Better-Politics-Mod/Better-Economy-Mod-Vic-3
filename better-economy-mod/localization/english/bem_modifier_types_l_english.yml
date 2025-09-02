@@ -1,0 +1,7 @@
+﻿l_english:
+  goods_input_tools_mult: "Building @tools! Tools input"
+  goods_input_tools_mult_desc: "A bonus or penalty to the amount of @tools! Tools consumed by buildings"
+  goods_input_assets_mult: "Building @assets! Financial Assets input"
+  goods_input_assets_mult_desc: "A bonus or penalty to the amount of @assets! Financial Assets consumed by buildings"
+  goods_output_stocks_mult: "Building @stocks! Stocks output"
+  goods_output_stocks_mult_desc: "A bonus or penalty to the amount of @stocks! Stocks produced by buildings"

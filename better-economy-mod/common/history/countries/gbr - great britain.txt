@@ -104,6 +104,6 @@
 			set_company_state_region = s:STATE_HOME_COUNTIES
 			add_owned_country = c:BIC #links the country to this company
 		}
-
+		add_investment_pool = 1000000000
 	}
 }

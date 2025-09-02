@@ -1,4 +1,4 @@
-bem_country_total_urbanization = {
+﻿bem_country_total_urbanization = {
 	value = 0
 	every_scope_state = {
 		add = total_urbanization
@@ -154,4 +154,9 @@ bem_economy_heat = {
 		}
 		add = var:bem_economy_heat
 	}
+}
+
+bem_initial_investment_pool = {
+	value = gdp
+	multiply = 10
 }
