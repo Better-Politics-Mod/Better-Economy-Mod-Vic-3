@@ -14,19 +14,9 @@ bem_build_army = {
 			save_scope_as = military_state
 			owner = {
 				create_military_formation = {
-					type = fleet
 					hq_region = root.capital.region
 					combat_unit = {
-						type = unit_type:combat_unit_type_frigate
-						count = 1
-						state_region = scope:military_state.state_region
-					}
-				}
-				create_military_formation = {
-					type = fleet
-					hq_region = root.capital.region
-					combat_unit = {
-						type = unit_type:combat_unit_type_man_o_war
+						type = unit_type:combat_unit_type_irregular_infantry
 						count = 1
 						state_region = scope:military_state.state_region
 					}
