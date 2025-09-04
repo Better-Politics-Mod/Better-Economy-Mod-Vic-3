@@ -101,20 +101,39 @@ on_bem_monthly_pulse_state = {
 		}
 		if = {
 			limit = {NOT = {has_variable_list = bem_state_building_queue}}
-			ordered_scope_building = {
-				limit = {
-					is_buildable = yes
-					type = {
-						NOT = {
-							OR = {
-								this = bt:building_naval_base
-								this = bt:building_barracks
+			if = {
+				limit = {infrastructure_delta > 2}
+				ordered_scope_building = {
+					limit = {
+						is_buildable = yes
+						type = {
+							NOT = {
+								OR = {
+									this = bt:building_naval_base
+									this = bt:building_barracks
+								}
 							}
 						}
 					}
+					order_by = bem_profit_per_level
+					type = {save_scope_as = target_building}
+					prev = {bem_add_building_to_queue = yes}
 				}
-				order_by = bem_profit_per_level
-				type = {save_scope_as = target_building}
+			}
+			else_if = {
+				limit = {
+					owner = {has_technology_researched = railways}
+					# b:building_railway = {occupancy >= 0.9}
+					}
+				bt:building_railway = {save_scope_as = target_building}
+				prev = {bem_add_building_to_queue = yes}
+			}
+			else_if = {
+				limit = {
+					is_coastal = yes
+					# b:building_port = {occupancy >= 0.9}
+					}
+				bt:building_port = {save_scope_as = target_building}
 				prev = {bem_add_building_to_queue = yes}
 			}
 		}
