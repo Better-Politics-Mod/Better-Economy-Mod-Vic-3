@@ -96,3 +96,8 @@ bem_number_produced_max = {
 	max = 20
 	ceiling = yes
 }
+
+bem_profit_per_level = {
+	value = weekly_profit
+	divide = level
+}
