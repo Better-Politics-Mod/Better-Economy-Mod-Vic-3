@@ -12,7 +12,6 @@ bem_build_army = {
 	when_taken = {
 		every_scope_state = {
 			save_scope_as = military_state
-			owner = {
 				# create_military_formation = {
 				# 	type = army
 				# 	hq_region = root.capital.region
@@ -37,7 +36,8 @@ bem_build_army = {
 				create_building = {
 					building = building_barracks
 					level = scope:exlvl
-				}		
+				}	
+			owner = {	
 				hidden_effect = {
 					add_treasury = -50000
 				}
