@@ -22,20 +22,21 @@ bem_build_army = {
 				# 		state_region = scope:military_state.state_region
 				# 	}
 				# }
-				create_building = {
-					building = building_barracks
-					level = {
+				save_scope_value_as = {
+					name = exlvl
+					value = {
+						value = 1
 						if = {
 							limit = {
 								has_building = building_barracks
 							}
-							value = b:building_barracks.level
+							add = b:building_barracks.level
 						}
-						else = {
-							value = 0
-						}
-						add = 1
 					}
+				}
+				create_building = {
+					building = building_barracks
+					level = scope:exlvl
 				}		
 				hidden_effect = {
 					add_treasury = -50000
