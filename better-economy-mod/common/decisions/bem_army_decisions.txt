@@ -13,14 +13,30 @@ bem_build_army = {
 		every_scope_state = {
 			save_scope_as = military_state
 			owner = {
-				create_military_formation = {
-					hq_region = root.capital.region
-					combat_unit = {
-						type = unit_type:combat_unit_type_irregular_infantry
-						count = 1
-						state_region = scope:military_state.state_region
+				# create_military_formation = {
+				# 	type = army
+				# 	hq_region = root.capital.region
+				# 	combat_unit = {
+				# 		type = unit_type:combat_unit_type_irregular_infantry
+				# 		count = 1
+				# 		state_region = scope:military_state.state_region
+				# 	}
+				# }
+				create_building = {
+					building = building_barracks
+					level = {
+						if = {
+							limit = {
+								has_building = building_barracks
+							}
+							value = b:building_barracks.level
+						}
+						else = {
+							value = 0
+						}
+						add = 1
 					}
-				}
+				}		
 				hidden_effect = {
 					add_treasury = -50000
 				}
