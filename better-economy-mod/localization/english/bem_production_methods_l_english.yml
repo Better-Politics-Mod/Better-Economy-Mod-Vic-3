@@ -1,5 +1,8 @@
 ﻿l_english:
   pmg_bem_gov_services: "Government Economic Stimulus"
+  pmg_bem_gov_plan: "Economic Planning"
+  pm_bem_no_gov_plan: "No Economic Planning"
+  pmg_bem_gov_plan: "Economic Planning"
   pm_bem_no_spending: "No Investment"
 	pm_bem_low_spending: "Low Investment"
 	pm_bem_moderate_spending: "Moderate Investment"

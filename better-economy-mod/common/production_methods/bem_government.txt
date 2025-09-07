@@ -130,3 +130,41 @@ pm_bem_very_high_spending = {
 		}
 	}
 }
+
+
+pm_bem_no_gov_plan = {
+	texture = "gfx/interface/icons/production_method_icons/no_admin_spending.dds"
+
+	unlocking_laws = {
+		law_traditionalism
+		law_interventionism
+		law_agrarianism
+		law_industry_banned
+		law_extraction_economy
+		law_laissez_faire
+		law_cooperative_ownership
+	}
+}
+
+pmg_bem_gov_plan = {
+	texture = "gfx/interface/icons/production_method_icons/unused/elected_bureaucrats.dds"
+
+	unlocking_technologies = {
+		central_planning
+	}
+
+	unlocking_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_stocks_add = 5
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 50
+			building_employment_bureaucrats_add = 50
+		}
+	}
+}

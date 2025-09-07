@@ -10,3 +10,13 @@
 		pm_bem_very_high_spending
 	}
 }
+
+pmg_bem_gov_plan = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_bem_no_gov_plan
+		pm_bem_gov_plan
+	}
+}
