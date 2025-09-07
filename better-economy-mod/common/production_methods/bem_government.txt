@@ -143,11 +143,13 @@ pm_bem_gov_has_plan = {
 		law_command_economy
 	}
 
-	building_modifiers = {
+	country_modifiers = {
 		workforce_scaled = {
-			goods_output_stocks_add = 5
+			country_minting_add = 6000
 		}
+	}
 
+	building_modifiers = {
 		level_scaled = {
 			building_employment_clerks_add = 50
 			building_employment_bureaucrats_add = 50
