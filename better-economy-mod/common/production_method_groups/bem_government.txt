@@ -17,6 +17,6 @@ pmg_bem_gov_plan = {
 
 	production_methods = {
 		pm_bem_no_gov_plan
-		pm_bem_gov_plan
+		pm_bem_gov_has_plan
 	}
 }
