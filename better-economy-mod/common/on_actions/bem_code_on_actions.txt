@@ -17,7 +17,6 @@ on_bem_game_started = {
 		}
 
 		every_state = {
-			update_all_cached_potentials = yes
 			every_scope_building = {update_mining_efficiency = yes}
 			create_building = {
 				building = building_bem_private_construction_investor

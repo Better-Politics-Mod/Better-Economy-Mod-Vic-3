@@ -2,20 +2,20 @@
     value = level
     if = {
         limit = {is_building_group = bg_coal_mining}
-        prev = {divide = var:bg_coal_mining_potentials}
+        prev = {divide = "num_potential_resources(bg:bg_coal_mining)"}
     }
     if = {
         limit = {is_building_group = bg_iron_mining}
-        prev = {divide = var:bg_iron_mining_potentials}
+        prev = {divide = "num_potential_resources(bg:bg_iron_mining)"}
     }
     if = {
         limit = {is_building_group = bg_sulfur_mining}
-        prev = {divide = var:bg_sulfur_mining_potentials}
+        prev = {divide = "num_potential_resources(bg:bg_sulfur_mining)"}
     }
     if = {
         limit = {is_building_group = bg_lead_mining}
-        prev = {divide = var:bg_lead_mining_potentials}
+        prev = {divide = "num_potential_resources(bg:bg_lead_mining)"}
     }
-    multiply = 3
+    multiply = 2
     subtract = 0.3 
 }
