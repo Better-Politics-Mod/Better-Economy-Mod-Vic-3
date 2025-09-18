@@ -47,15 +47,15 @@
 	MIN_SPOT_PRESTIGE_AWARD = 3					# How many spots on the goods leaderboard get awarded Prestige
 
 	MIN_GOODS_PRICE	= 1							# A good cannot have a lower base price than this
-	PRICE_RANGE = 0.75							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
+	PRICE_RANGE = 0.9							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
 	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
 
 	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.5		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
-	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.01  	# Goods shortage penalty increases by this fraction of the target each day
-    GOODS_SHORTAGE_PENALTY_DECREASE_SPEED = 0.01  	# Goods shortage penalty goes down by this fraction of GOODS_SHORTAGE_PENALTY_MAX each day
-    GOODS_SHORTAGE_PENALTY_MIN = 0.05			# Goods shortage penalty can't be lower than this if there is any shortage
-	GOODS_SHORTAGE_PENALTY_MAX = 0.5			# Goods shortage penalty can't be higher than this, so long as all the input goods exist in some quantity
-	GOODS_SHORTAGE_PENALTY_MISSING_INPUTS = 0.75  # This penalty is applied when an input good is missing entirely from local supply
+	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.05  	# Goods shortage penalty increases by this fraction of the target each day
+    GOODS_SHORTAGE_PENALTY_DECREASE_SPEED = 0.05  	# Goods shortage penalty goes down by this fraction of GOODS_SHORTAGE_PENALTY_MAX each day
+    GOODS_SHORTAGE_PENALTY_MIN = 0.1			# Goods shortage penalty can't be lower than this if there is any shortage
+	GOODS_SHORTAGE_PENALTY_MAX = 2  			# Goods shortage penalty can't be higher than this, so long as all the input goods exist in some quantity
+	GOODS_SHORTAGE_PENALTY_MISSING_INPUTS = 2   # This penalty is applied when an input good is missing entirely from local supply
 	GOODS_SHORTAGE_PENALTY_MILITARY_BUILDING_SPEED_MULT = 5.0 # Shortage penalties increase and decrease at this multiplier rate for military buildings
 
 	POP_NEED_BASIC_FOOD = "popneed_basic_food"
