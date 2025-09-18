@@ -145,7 +145,7 @@ pm_bem_gov_has_plan = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_minting_add = 6000
+			country_minting_add = 60000
 		}
 	}
 
