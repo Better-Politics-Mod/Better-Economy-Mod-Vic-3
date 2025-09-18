@@ -1515,7 +1515,7 @@ pm_rayon = {
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -100
 			building_employment_machinists_add = 100
 		}
 	}
