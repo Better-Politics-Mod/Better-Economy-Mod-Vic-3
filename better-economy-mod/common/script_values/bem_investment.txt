@@ -19,7 +19,7 @@ bem_country_total_investment_levels = {
 bem_state_investment_levels = {
 	value = owner.bem_country_total_investment_levels
 	multiply = bem_state_urbanization_share
-	ceiling = yes
+	subtract = 1
 }
 
 bem_heat_forth = {
@@ -34,6 +34,7 @@ bem_heat_forth = {
 bem_investment_weekly_loss = {
 	if = {
 		value = bem_state_investment_levels
+		add = 1
 		multiply = {
 			value = -1000
 			multiply = owner.bem_economy_heat
