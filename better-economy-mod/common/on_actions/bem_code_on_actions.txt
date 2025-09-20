@@ -20,8 +20,7 @@ on_bem_game_started = {
 			every_scope_building = {update_mining_efficiency = yes}
 			create_building = {
 				building = building_bem_private_construction_investor
-				level = bem_state_investment_levels
-				reserves = 1
+				level = 1
 			}
 		}
 	}

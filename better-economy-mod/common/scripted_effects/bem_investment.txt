@@ -1,15 +1,14 @@
 ﻿bem_private_investment_oa = {
-	if = {
-		limit = {
-			has_building = building_bem_private_construction_investor
-			bem_building_level_diff >= 10
+	b:building_bem_private_construction_investor = {
+		remove_modifier = bem_investment_mult
+		set_local_variable = {
+			name = mult
+			value = prev.bem_state_investment_levels
 		}
-		remove_building = building_bem_private_construction_investor
-	}
-	create_building = {
-		building = building_bem_private_construction_investor
-		level = bem_state_investment_levels
-		reserves = 1
+		add_modifier = {
+			name = bem_investment_mult
+			multiplier = local_var:mult
+		}
 	}
 	owner = {
 		add_investment_pool = prev.bem_investment_weekly_loss

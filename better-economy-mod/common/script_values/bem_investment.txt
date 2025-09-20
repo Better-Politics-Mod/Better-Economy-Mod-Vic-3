@@ -33,10 +33,7 @@ bem_heat_forth = {
 
 bem_investment_weekly_loss = {
 	if = {
-		limit = {
-			has_building = building_bem_private_construction_investor
-		}
-		value = b:building_bem_private_construction_investor.level
+		value = bem_state_investment_levels
 		multiply = {
 			value = -1000
 			multiply = owner.bem_economy_heat
@@ -82,11 +79,6 @@ bem_total_investment_weekly_loss = {
 	every_scope_state = {
 		add = bem_investment_weekly_loss
 	}
-}
-
-bem_building_level_diff = {
-	value = b:building_bem_private_construction_investor.level
-	subtract = bem_state_investment_levels
 }
 
 bem_roi = {

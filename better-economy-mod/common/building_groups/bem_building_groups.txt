@@ -8,7 +8,7 @@
 	urbanization = 0
 	infrastructure_usage_per_level = 0
 	stateregion_max_level = no
-	cash_reserves_max = 1000000
+	cash_reserves_max = 0
 }
 
 bg_service = {
