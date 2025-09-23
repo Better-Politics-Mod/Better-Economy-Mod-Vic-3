@@ -10,7 +10,7 @@ texticon = {
 }
 
 texticon = {
-	icon = stocks
+	icon = credit
 	iconsize = {
 		texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
 		size = { 25 25 }

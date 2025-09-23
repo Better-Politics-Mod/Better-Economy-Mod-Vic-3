@@ -538,7 +538,7 @@ pm_bem_basic_construction_infrastructure = {
 			goods_input_wood_add = 80
 			goods_input_fabric_add = 20
 			goods_input_tools_add = 20
-			goods_input_stocks_add = 1
+			goods_input_credit_add = 1
 			goods_output_assets_add = 30
 		}
 
@@ -575,7 +575,7 @@ pm_bem_construction_sites = {
 			goods_input_iron_add = 50
 			goods_input_steel_add = 10
 			goods_input_tools_add = 50
-			goods_input_stocks_add = 2
+			goods_input_credit_add = 2
 			goods_output_assets_add = 65
 		}
 
@@ -613,7 +613,7 @@ pm_bem_organized_works = {
 			goods_input_glass_add = 40
 			goods_input_tools_add = 60
 			goods_input_explosives_add = 10
-			goods_input_stocks_add = 4
+			goods_input_credit_add = 4
 			goods_output_assets_add = 125
 		}
 
@@ -650,7 +650,7 @@ pm_bem_industrial_sites = {
 			goods_input_tools_add = 80
 			goods_input_explosives_add = 10
 			goods_input_electricity_add = 40
-			goods_input_stocks_add = 6
+			goods_input_credit_add = 6
 			goods_output_assets_add = 200
 		}
 

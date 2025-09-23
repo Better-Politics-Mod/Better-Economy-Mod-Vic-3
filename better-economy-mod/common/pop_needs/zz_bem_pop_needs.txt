@@ -479,7 +479,7 @@ popneed_financial_services = {
 	}
 
 	entry = {
-		goods = stocks
+		goods = credit
 
 		weight = 2
 

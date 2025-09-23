@@ -45,3 +45,6 @@
   bem_joint_stock_adjustment: "In Market Adjustment Period"
   bem_publicly_traded_adjustment: "In Market Adjustment Period"
   bem_mining_efficiency: "Mining Efficiency"
+  bem_investment_level: "Investment Pool"
+  bem_investment_mult: "Investment Pool"
+  bem_investment_stock: "Investment Pool"

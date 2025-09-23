@@ -4,7 +4,7 @@
 	building_modifiers = {
 		level_scaled = {
             goods_input_assets_add = 50
-			goods_output_stocks_add = 5
+			goods_output_credit_add = 5
 		}
 		unscaled = {
 			building_employment_laborers_add = 1000
@@ -18,7 +18,7 @@ pm_bem_industrial_investment = {
 	building_modifiers = {
 		level_scaled = {
             goods_output_assets_add = 2
-			goods_input_stocks_add = 0.2
+			goods_input_credit_add = 0.2
 		}
 	}
 }
@@ -29,7 +29,7 @@ pm_bem_resource_investment = {
 	building_modifiers = {
 		level_scaled = {
             goods_output_assets_add = 1
-			goods_input_stocks_add = 0.1
+			goods_input_credit_add = 0.1
 		}
 	}
 }
@@ -40,7 +40,7 @@ pm_bem_service_investment = {
 	building_modifiers = {
 		level_scaled = {
             goods_output_assets_add = 3
-			goods_input_stocks_add = 0.3
+			goods_input_credit_add = 0.3
 		}
 	}
 }

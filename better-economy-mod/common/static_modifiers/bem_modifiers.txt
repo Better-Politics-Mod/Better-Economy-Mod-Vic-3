@@ -56,13 +56,13 @@ bem_can_nationalize = {
 bem_joint_stock_adjustment = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	goods_input_assets_mult = -1
-	goods_output_stocks_mult = -1
+	goods_output_credit_mult = -1
 }
 
 bem_publicly_traded_adjustment = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	goods_input_assets_mult = -0.5
-	goods_output_stocks_mult = -0.5
+	goods_output_credit_mult = -0.5
 }
 
 bem_mining_efficiency = {
@@ -72,17 +72,17 @@ bem_mining_efficiency = {
 
 bem_investment_level = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	goods_input_stocks_mult = 1
-	goods_output_assets_mult = 1
+	goods_input_credit_mult = 0.01
+	goods_output_assets_mult = 0.01
 }
 
 bem_investment_stock = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_sell_orders_stocks_add = 2
+	state_sell_orders_credit_add = 0.01
 }
 
 bem_investment_mult = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	goods_input_assets_mult = 1
-	goods_output_stocks_mult = 1
+	goods_output_credit_mult = 1
 }

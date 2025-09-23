@@ -52,7 +52,7 @@ assets = {
 	consumption_tax_cost = 1000
 }
 
-stocks = {
+credit = {
 	texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
 	cost = 1000
 	category = luxury
