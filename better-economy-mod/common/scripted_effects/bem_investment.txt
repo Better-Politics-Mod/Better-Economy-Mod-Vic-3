@@ -1,5 +1,5 @@
 ﻿bem_private_investment_oa = {
-	save_scope_value_as = {
+	set_variable = {
 		name = multi
 		value = {
 			value = bem_state_investment_levels
@@ -10,9 +10,15 @@
 		remove_modifier = bem_investment_level
 		add_modifier = {
 			name = bem_investment_level
-			multiplier = scope:multi
+			multiplier = ROOT.var:multi
 		}
 	}
+	remove_modifier = bem_investment_stock
+	add_modifier = {
+		name = bem_investment_stock
+		multiplier = ROOT.var:multi
+	}
+	remove_variable = multi
 	owner = {
 		add_investment_pool = prev.bem_investment_weekly_loss
 	}

@@ -72,7 +72,13 @@ bem_mining_efficiency = {
 
 bem_investment_level = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	goods_input_stocks_mult = 1
 	goods_output_assets_mult = 1
+}
+
+bem_investment_stock = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_sell_orders_stocks_add = 5
 }
 
 bem_investment_mult = {

@@ -16,6 +16,18 @@ goods_output_assets_mult={
 	percent=yes
 }
 
+state_sell_orders_stocks_add = {
+	decimals=0
+	color=good
+	percent=no
+}
+
+goods_input_stocks_mult={
+	decimals=1
+	color=neutral
+	percent=yes
+}
+
 goods_output_assets_add = {
 	decimals=0
 	color=bad
