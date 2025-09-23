@@ -8,6 +8,13 @@
 	}
 	every_scope_building = {
 		remove_modifier = bem_investment_level
+	}
+	every_scope_building = {
+		limit = {
+			NOT = {
+				is_building_type = building_urban_center
+			}
+		}
 		add_modifier = {
 			name = bem_investment_level
 			multiplier = ROOT.var:multi

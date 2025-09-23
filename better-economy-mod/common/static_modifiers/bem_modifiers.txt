@@ -78,7 +78,7 @@ bem_investment_level = {
 
 bem_investment_stock = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_sell_orders_stocks_add = 5
+	state_sell_orders_stocks_add = 2
 }
 
 bem_investment_mult = {
