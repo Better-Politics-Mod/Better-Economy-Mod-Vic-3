@@ -484,6 +484,6 @@ popneed_financial_services = {
 		weight = 2
 
 		max_supply_share = 1.0
-		min_supply_share = 0.0
+		min_supply_share = 0.8
 	}
 }
