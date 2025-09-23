@@ -18,9 +18,19 @@ on_bem_game_started = {
 
 		every_state = {
 			every_scope_building = {update_mining_efficiency = yes}
-			create_building = {
-				building = building_bem_private_construction_investor
-				level = 1
+			save_scope_value_as = {
+				name = multi
+				value = {
+					value = bem_state_investment_levels
+					subtract = 1
+				}
+			}
+			every_scope_building = {
+				remove_modifier = bem_investment_level
+				add_modifier = {
+					name = bem_investment_level
+					multiplier = scope:multi
+				}
 			}
 		}
 	}

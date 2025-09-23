@@ -10,6 +10,12 @@ goods_input_assets_add = {
 	percent=no
 }
 
+goods_output_assets_mult={
+	decimals=1
+	color=neutral
+	percent=yes
+}
+
 goods_output_assets_add = {
 	decimals=0
 	color=bad

@@ -43,6 +43,7 @@ assets = {
 	texture = "gfx/interface/icons/goods_icons/assets.dds"
 	cost = 100
 	category = luxury
+	fixed_price = yes
 
 	prestige_factor = 15
 	local = yes

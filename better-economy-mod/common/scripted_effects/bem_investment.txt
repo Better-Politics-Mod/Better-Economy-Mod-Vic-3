@@ -1,13 +1,16 @@
 ﻿bem_private_investment_oa = {
-	b:building_bem_private_construction_investor = {
-		remove_modifier = bem_investment_mult
-		set_local_variable = {
-			name = mult
-			value = prev.bem_state_investment_levels
+	save_scope_value_as = {
+		name = multi
+		value = {
+			value = bem_state_investment_levels
+			subtract = 1
 		}
+	}
+	every_scope_building = {
+		remove_modifier = bem_investment_level
 		add_modifier = {
-			name = bem_investment_mult
-			multiplier = local_var:mult
+			name = bem_investment_level
+			multiplier = scope:multi
 		}
 	}
 	owner = {
