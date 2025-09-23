@@ -131,6 +131,7 @@ STATE_COURLAND = {
 	}
 	capped_resources = {
 		bg_logging = 28
+		bg_fishing = 6
 	}
 	naval_exit_id = 3000
 }
@@ -138,11 +139,15 @@ STATE_KAUNAS = {
 	id = 153
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
+		"x00E0A0"
 		"x0980C8"
 		"x0B6577"
 		"x21F318"
 		"x232B98"
 		"x406DC9"
+		"x4177AF"
+		"x4678E5"
+		"x577C69"
 		"x6175AD"
 		"x629C46"
 		"x7A5D64"
@@ -150,6 +155,7 @@ STATE_KAUNAS = {
 		"x80D858"
 		"x95171C"
 		"xA8FF51"
+		"xA916E3"
 		"xAF73F2"
 		"xBFE867"
 		"xC0A0A0"
@@ -169,6 +175,7 @@ STATE_KAUNAS = {
 	}
 	capped_resources = {
 		bg_logging = 32
+		bg_fishing = 2
 	}
 	naval_exit_id = 3000
 }
@@ -176,18 +183,14 @@ STATE_VILNIUS = {
 	id = 800
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
-		"x00E0A0"
 		"x0161A0"
-		"x4177AF"
 		"x41E061"
-		"x4678E5"
-		"x577C69"
-		"xA916E3"
 		"xF2CB3D"
 	}
 	city = "xF2CB3D"
 	farm = "x41E061"
 	wood = "x0161A0"
+	mine = "x0161A0"
 	arable_land = 31
 	arable_resources = {
 		"bg_rye_farms"
@@ -378,6 +381,8 @@ STATE_ALAND = {
 	city = "xE04161"
 	port = "x459052"
 	farm = "x459052"
+	mine = "x459052"
+	wood = "x459052"
 	arable_land = 2
 	arable_resources = {
 		"bg_rye_farms"
@@ -1554,6 +1559,7 @@ STATE_CRIMEA = {
 	}
 	traits = {
 		"state_trait_black_soil"
+		"state_trait_natural_harbors"
 	}
 	city = "x31E0E0"
 	port = "xB0DFDF"
@@ -4026,6 +4032,10 @@ STATE_TAMBOV = {
 STATE_RYAZAN = {
 	id = 817
 	subsistence_building = "building_subsistence_farms"
+	city = "x14830F"
+	farm = "xE1114E"
+	mine = "xC6A70B"
+	wood = "x92470A"
 	provinces = {
 		"x089C80"
 		"x0F54C0"
@@ -7381,6 +7391,10 @@ STATE_ELIZAVETPOL = {
 STATE_STAVROPOL = {
 	id = 835
 	subsistence_building = "building_subsistence_farms"
+	city = "xE0E16A"
+	farm = "xB3593A"
+	mine = "x1ED727"
+	wood = "x7685A4"
 	provinces = {
 		"x1ED727"
 		"x32FEBA"
@@ -7431,6 +7445,10 @@ STATE_STAVROPOL = {
 STATE_CHUVASHIA = {
 	id = 837
 	subsistence_building = "building_subsistence_farms"
+	city = "x83DB48"
+	farm = "xD6E65F"
+	mine = "x811458"
+	wood = "xE89369"
 	provinces = {
 		"x062B1B"
 		"x0D7D00"

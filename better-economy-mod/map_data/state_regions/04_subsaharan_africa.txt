@@ -1383,11 +1383,11 @@ STATE_LINDI = {
 STATE_ZANZIBAR = {
 	id = 224
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x16F859"
-		"x21A090"
-		"x22D39E"
-		"x35554F"
 		"x414325"
 		"x438029"
 		"x6021AF"
@@ -1396,22 +1396,17 @@ STATE_ZANZIBAR = {
 		"x6B7D25"
 		"x7D05E3"
 		"x93DC46"
-		"x941594"
-		"x9E9F57"
 		"xA06030"
 		"xA50F53"
-		"xC52E48"
-		"xC53497"
 		"xE020B0"
 		"xE0D920"
-		"xE23000"
 		"xE60324"
 		"xF87B77"
 	}
 	traits = {
 		"state_trait_malaria"
 	}
-	city = "xE0D920"
+	city = "xE020B0"
 	port = "xA50F53"
 	farm = "x93DC46"
 	mine = "x16F859"
@@ -1582,10 +1577,13 @@ STATE_KENYA = {
 		"x08B945"
 		"x0AF9FB"
 		"x19CFEC"
+		"x21A090"
+		"x22D39E"
 		"x28843B"
 		"x2F7464"
 		"x30D3AC"
 		"x33566A"
+		"x35554F"
 		"x356777"
 		"x405F8E"
 		"x40DE9B"
@@ -1610,11 +1608,13 @@ STATE_KENYA = {
 		"x89BA83"
 		"x8FF25F"
 		"x90F646"
+		"x941594"
 		"x95C403"
 		"x996D62"
 		"x9A78B7"
 		"x9AE44A"
 		"x9BA0B4"
+		"x9E9F57"
 		"x9FDE2D"
 		"xA02190"
 		"xA0A011"
@@ -1629,6 +1629,8 @@ STATE_KENYA = {
 		"xBD067F"
 		"xBFCF3E"
 		"xC2118A"
+		"xC52E48"
+		"xC53497"
 		"xC80CAC"
 		"xC8B790"
 		"xC95AAB"
@@ -1636,6 +1638,7 @@ STATE_KENYA = {
 		"xD775AC"
 		"xD8A2A3"
 		"xE007A1"
+		"xE23000"
 		"xE5F986"
 		"xECA4C0"
 		"xF59538"
@@ -1651,6 +1654,20 @@ STATE_KENYA = {
 	farm = "x6B52F1"
 	mine = "x89BA83"
 	wood = "xF59538"
+	prime_land = {
+		"x35554F"
+		"x941594"
+		"x22D39E"
+		"x5C1ADA"
+		"x6CCF4B"
+		"x6B52F1"
+		"xA02190"
+		"x21A090"
+		"x9E9F57"
+		"xC53497"
+		"xC52E48"
+		"xE23000"
+	}
 	arable_land = 80
 	arable_resources = {
 		"bg_millet_farms"
@@ -1666,7 +1683,7 @@ STATE_KENYA = {
 	}
 	capped_resources = {
 		bg_logging = 24
-		bg_fishing = 5
+		bg_fishing = 10
 	}
 	resource = {
 		type = "bg_rubber"
@@ -2729,6 +2746,7 @@ STATE_EQUATORIA = {
 	}
 	traits = {
 		"state_trait_malaria"
+		"state_trait_white_nile"
 	}
 	prime_land = {
 		"xF9F832"
@@ -5347,6 +5365,9 @@ STATE_EASTERN_CAPE = {
 STATE_CAPE_COLONY = {
 	id = 261
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x026A9C"
 		"x0C9F79"

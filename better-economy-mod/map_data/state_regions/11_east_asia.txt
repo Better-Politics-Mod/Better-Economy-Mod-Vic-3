@@ -3460,6 +3460,7 @@ STATE_SUZHOU = {
 	}
 	traits = {
 		"state_trait_yangtze_river"
+		"state_trait_natural_harbors"
 	}
 	city = "xB01101"
 	port = "x301000"
@@ -4115,6 +4116,11 @@ STATE_CAMBODIA = {
 		"xFA2C44"
 		"xFB565E"
 	}
+	prime_land = {
+		"xEFEF20"
+		"x2E84A3"
+		"x65369D"
+	}
 	traits = {
 		"state_trait_indochinese_forest"
 		"state_trait_mekong_river"
@@ -4122,7 +4128,7 @@ STATE_CAMBODIA = {
 	city = "xD45279"
 	port = "x7A5B5E"
 	farm = "xE2C782"
-	mine = "xF0FC47"
+	mine = "x20D113"
 	wood = "xC2C8CF"
 	arable_land = 35
 	arable_resources = {
@@ -4179,6 +4185,7 @@ STATE_BANGKOK = {
 	}
 	traits = {
 		"state_trait_chao_phraya_delta"
+		"state_trait_natural_harbors"
 	}
 	city = "x10AFE0"
 	port = "x10AFE0"
@@ -4296,11 +4303,11 @@ STATE_ANNAM = {
 	traits = {
 		"state_trait_indochinese_forest"
 	}
-	city = "xA01EF1"
-	port = "x2A870A"
-	farm = "xB070A0"
+	city = "xB070A0"
+	port = "xA01EF1"
+	farm = "x2A870A"
 	mine = "xEDBFB1"
-	wood = "x307020"
+	wood = "x5109BC"
 	arable_land = 60
 	arable_resources = {
 		"bg_rice_farms"
@@ -4365,6 +4372,18 @@ STATE_MEKONG = {
 		"xE5A4DA"
 		"xFD66E6"
 	}
+	prime_land = {
+		"x246E58"
+		"x4923A3"
+		"x223DD3"
+		"xDF070D"
+		"x1D9718"
+		"x4080B0"
+		"x474B0B"
+		"xE5A4DA"
+		"x00C0B0"
+		"x7D46C6"
+	}
 	traits = {
 		"state_trait_mekong_delta"
 		"state_trait_indochinese_forest"
@@ -4374,7 +4393,7 @@ STATE_MEKONG = {
 	farm = "x3C8C22"
 	mine = "x1C5BE6"
 	wood = "x246E58"
-	arable_land = 45
+	arable_land = 60
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -4453,9 +4472,9 @@ STATE_LAOS = {
 		"state_trait_mekong_river"
 	}
 	city = "x1E6D3C"
-	farm = "x21D9CC"
+	farm = "xC8AFB5"
 	mine = "xF03D75"
-	wood = "xDE87E1"
+	wood = "xB0EF20"
 	arable_land = 40
 	arable_resources = {
 		"bg_rice_farms"
@@ -4612,6 +4631,7 @@ STATE_NAKHON_RATCHASIMA = {
 	}
 	capped_resources = {
 		bg_logging = 100
+		bg_fishing = 6
 	}
 	resource = {
 		type = "bg_rubber"
@@ -5038,6 +5058,8 @@ STATE_RYUKYU_ISLANDS = {
 	city = "xF0F061"
 	port = "xF0D080"
 	farm = "xF0F061"
+	mine = "xF0F061"
+	wood = "xF0F061"
 	arable_land = 15
 	arable_resources = {
 		"bg_rice_farms"

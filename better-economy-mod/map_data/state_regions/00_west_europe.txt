@@ -416,6 +416,8 @@ STATE_GOTLAND = {
 	city = "xF93B61"
 	port = "x21C0E0"
 	farm = "xF93B61"
+	mine = "xF93B61"
+	wood = "xF93B61"
 	arable_land = 3
 	arable_resources = {
 		"bg_rye_farms"
@@ -2182,6 +2184,7 @@ STATE_NORMANDY = {
 	}
 	traits = {
 		"state_trait_seine_river"
+		"state_trait_natural_harbors"
 	}
 	city = "x9020C0"
 	port = "xA786BB"
@@ -2556,6 +2559,7 @@ STATE_BURGUNDY = {
 	}
 	traits = {
 		"state_trait_loire_river"
+		"state_trait_great_terroir"
 	}
 	city = "x8C3297"
 	farm = "x8329EC"
@@ -2592,7 +2596,7 @@ STATE_CHAMPAGNE = {
 		"xEFBF20"
 	}
 	traits = {
-		"state_trait_good_soils"
+		"state_trait_great_terroir"
 	}
 	city = "xD6A06D"
 	farm = "xEF00DF"
@@ -3004,6 +3008,7 @@ STATE_BOHEMIA = {
 	}
 	capped_resources = {
 		bg_logging = 68
+		bg_gold_mining = 5
 	}
 	resource = {
 		type = "bg_coal_mining"
@@ -3014,6 +3019,11 @@ STATE_BOHEMIA = {
 		type = "bg_iron_mining"
 		discovered_amount = 45
 		undiscovered_amount = 135
+	}
+	resource = {
+		type = "bg_lead_mining"
+		discovered_amount = 8
+		undiscovered_amount = 24
 	}
 }
 STATE_MORAVIA = {
@@ -3026,10 +3036,8 @@ STATE_MORAVIA = {
 		"x1D088E"
 		"x49C8F7"
 		"x4B3444"
-		"x71E080"
 		"xD9A784"
 		"xEF6080"
-		"xF0E080"
 	}
 	city = "xD9A784"
 	farm = "xEF6080"
@@ -3147,7 +3155,7 @@ STATE_SOUTH_TYROL = {
 	farm = "xD0BF60"
 	mine = "x039D0F"
 	wood = "xD040E0"
-	arable_land = 15
+	arable_land = 30
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
@@ -3161,6 +3169,8 @@ STATE_POMERANIA = {
 	id = 57
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
+		"x0180A0"
+		"x3E3572"
 		"x19AE19"
 		"x3C26DD"
 		"x567452"
@@ -3216,7 +3226,7 @@ STATE_ELBE = {
 	}
 	traits = {
 		"state_trait_elbe_river"
-		"state_trait_bremerhaven"
+		"state_trait_hamburger_hafen"
 	}
 	city = "x587297"
 	port = "x68BE66"
@@ -3429,6 +3439,7 @@ STATE_RHINELAND = {
 	}
 	traits = {
 		"state_trait_rhine_river"
+		"state_trait_great_terroir"
 	}
 	city = "x904020"
 	farm = "x707505"
@@ -3812,7 +3823,6 @@ STATE_SAXONY = {
 		"x43CE26"
 		"x5141A0"
 		"x51C021"
-		"x614121"
 		"x66FE0A"
 		"x795368"
 		"x917939"
@@ -3826,7 +3836,6 @@ STATE_SAXONY = {
 		"xD0C021"
 		"x66FE0A"
 		"x169073"
-		"x614121"
 		"xAFDFBF"
 		"x917939"
 		"x43CE26"

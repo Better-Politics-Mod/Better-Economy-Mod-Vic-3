@@ -8,7 +8,9 @@
 	city = "x700080"
 	port = "x700080"
 	farm = "x44578C"
-	arable_land = 1
+	mine = "x44578C"
+	wood = "x44578C"
+	arable_land = 3
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -2011,6 +2013,7 @@ STATE_WASHINGTON = {
 	capped_resources = {
 		bg_logging = 68
 		bg_fishing = 6
+		bg_whaling = 3
 	}
 	naval_exit_id = 3154
 	resource = {
@@ -2120,6 +2123,7 @@ STATE_OREGON = {
 	capped_resources = {
 		bg_logging = 80
 		bg_fishing = 5
+		bg_whaling = 3
 	}
 	naval_exit_id = 3154
 }
@@ -4136,6 +4140,8 @@ STATE_DELAWARE = {
 	city = "xEBA646"
 	port = "xEBA646"
 	farm = "xEBA646"
+	mine = "xEBA646"
+	wood = "xEBA646"
 	arable_land = 15
 	arable_resources = {
 		"bg_maize_farms"
@@ -4350,6 +4356,8 @@ STATE_RHODE_ISLAND = {
 	city = "x939ACE"
 	port = "x939ACE"
 	farm = "x939ACE"
+	wood = "x939ACE"
+	mine = "x939ACE"
 	arable_land = 10
 	arable_resources = {
 		"bg_wheat_farms"
@@ -4380,6 +4388,7 @@ STATE_CONNECTICUT = {
 	port = "x7DE678"
 	farm = "x3040C0"
 	wood = "x9D3A73"
+	mine = "x9D3A73"
 	arable_land = 15
 	arable_resources = {
 		"bg_wheat_farms"
@@ -4784,6 +4793,8 @@ STATE_HAWAIIAN_ISLANDS = {
 	city = "xB5403E"
 	port = "x492B26"
 	farm = "x6090C0"
+	mine = "x6090C0"
+	wood = "x6090C0"
 	arable_land = 15
 	arable_resources = {
 		"bg_rice_farms"
@@ -12199,6 +12210,8 @@ STATE_BERMUDA = {
 	city = "xE55147"
 	port = "x169E2D"
 	farm = "x169E2D"
+	mine = "x169E2D"
+	wood = "x169E2D"
 	arable_land = 10
 	arable_resources = {
 		"bg_livestock_ranches"
@@ -12374,6 +12387,9 @@ STATE_TEXAS = {
 		"xFDD38C"
 		"xFE0821"
 		"xFE4703"
+	}
+	traits = {
+		"state_trait_rio_grande_river"
 	}
 	city = "x1B9E2A"
 	port = "x803040"
@@ -12628,6 +12644,9 @@ STATE_ARIZONA = {
 STATE_NEW_MEXICO = {
 	id = 325
 	subsistence_building = "building_subsistence_pastures"
+	traits = {
+		"state_trait_rio_grande_river"
+	}
 	provinces = {
 		"x00E2A7"
 		"x0957D1"
@@ -12863,6 +12882,7 @@ STATE_CALIFORNIA = {
 	capped_resources = {
 		bg_logging = 52
 		bg_fishing = 14
+		bg_whaling = 6
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -13023,6 +13043,7 @@ STATE_CHIHUAHUA = {
 	}
 	traits = {
 		"state_trait_sierra_madre_oriental"
+		"state_trait_rio_grande_river"
 	}
 	city = "x2B7E93"
 	farm = "x04C43F"
@@ -13114,6 +13135,9 @@ STATE_RIO_GRANDE = {
 		"xF9A35E"
 		"xFC72E1"
 		"xFEC6A5"
+	}
+	traits = {
+		"state_trait_rio_grande_river"
 	}
 	city = "x766F08"
 	port = "xE96480"
@@ -13630,6 +13654,7 @@ STATE_JALISCO = {
 	}
 	traits = {
 		"state_trait_sierra_madre_occidental"
+		"state_trait_natural_harbors"
 	}
 	city = "xE34EE3"
 	port = "x3F0A44"
@@ -13811,6 +13836,7 @@ STATE_BAJA_CALIFORNIA = {
 	capped_resources = {
 		bg_logging = 8
 		bg_fishing = 6
+		bg_whaling = 4
 	}
 	naval_exit_id = 3153
 }

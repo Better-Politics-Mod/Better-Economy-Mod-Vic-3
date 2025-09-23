@@ -1,6 +1,9 @@
 ﻿STATE_MALAYA = {
 	id = 540
 	subsistence_building = "building_subsistence_rice_paddies"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x0080B0"
 		"x08673B"
@@ -702,6 +705,9 @@ STATE_SOUTH_SUMATRA = {
 STATE_ACEH = {
 	id = 547
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x07B7F0"
 		"x0DDF49"
@@ -1488,6 +1494,8 @@ STATE_NAURU = {
 	city = "x418382"
 	port = "xC041F0"
 	farm = "x418382"
+	mine = "x418382"
+	wood = "x418382"
 	arable_land = 5
 	arable_resources = {
 		"bg_rice_farms"
@@ -1517,6 +1525,7 @@ STATE_FIJI = {
 	port = "x61A3E3"
 	farm = "x53FA6E"
 	wood = "x53FA6E"
+	mine = "x53FA6E"
 	arable_land = 5
 	arable_resources = {
 		"bg_rice_farms"
@@ -1545,6 +1554,7 @@ STATE_VANUATU = {
 	port = "x504090"
 	farm = "x75A377"
 	wood = "x5178BC"
+	mine = "x5178BC"
 	arable_land = 5
 	arable_resources = {
 		"bg_rice_farms"
@@ -1576,6 +1586,7 @@ STATE_KANAK = {
 	port = "x302090"
 	farm = "x665AAF"
 	wood = "x302090"
+	mine = "x302090"
 	arable_land = 5
 	arable_resources = {
 		"bg_rice_farms"
@@ -1610,6 +1621,8 @@ STATE_BOUGAINVILLE = {
 	city = "x97FBC3"
 	port = "x97FBC3"
 	farm = "x9BC5AD"
+	mine = "x9BC5AD"
+	wood = "x9BC5AD"
 	arable_land = 5
 	arable_resources = {
 		"bg_rice_farms"

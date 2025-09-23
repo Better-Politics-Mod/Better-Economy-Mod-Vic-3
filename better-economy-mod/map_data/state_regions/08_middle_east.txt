@@ -444,6 +444,9 @@ STATE_ABU_DHABI = {
 STATE_YEMEN = {
 	id = 401
 	subsistence_building = "building_subsistence_pastures"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x00E3EF"
 		"x02B35C"
@@ -952,6 +955,8 @@ STATE_CYPRUS = {
 	city = "x40B020"
 	port = "xBF3020"
 	farm = "x79685E"
+	mine = "x79685E"
+	wood = "x79685E"
 	arable_land = 9
 	arable_resources = {
 		"bg_wheat_farms"
@@ -2320,6 +2325,9 @@ STATE_HUDAVENDIGAR = {
 STATE_AYDIN = {
 	id = 425
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_natural_harbors"
+	}
 	provinces = {
 		"x15CC91"
 		"x205020"
@@ -2363,6 +2371,9 @@ STATE_AYDIN = {
 STATE_KONYA = {
 	id = 426
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_anatolian_plateau"
+	}
 	provinces = {
 		"x02FE8B"
 		"x04C595"
@@ -2433,6 +2444,10 @@ STATE_KONYA = {
 STATE_KASTAMONU = {
 	id = 427
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_pontus"
+		"state_trait_zonguldak_basin"
+	}
 	provinces = {
 		"x1D8401"
 		"x312F4B"
@@ -2579,6 +2594,9 @@ STATE_ADANA = {
 STATE_TRABZON = {
 	id = 430
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_pontus"
+	}
 	provinces = {
 		"x001080"
 		"x009080"
@@ -2680,6 +2698,9 @@ STATE_ERZURUM = {
 STATE_ANKARA = {
 	id = 432
 	subsistence_building = "building_subsistence_farms"
+	traits = {
+		"state_trait_anatolian_plateau"
+	}
 	provinces = {
 		"x03F8EA"
 		"x04F350"

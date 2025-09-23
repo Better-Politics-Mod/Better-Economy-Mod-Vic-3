@@ -202,6 +202,7 @@
 	traits = {
 		"state_trait_great_dividing_range"
 		"state_trait_murray_darling_basin"
+		"state_trait_natural_harbors"
 	}
 	city = "xFDFB3F"
 	port = "xAEFFEB"

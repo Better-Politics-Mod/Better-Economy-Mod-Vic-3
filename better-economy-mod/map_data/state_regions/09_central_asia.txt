@@ -170,9 +170,6 @@ STATE_AZERBAIJAN = {
 		"xD77566"
 		"xE7B07C"
 	}
-	traits = {
-		"state_trait_caucasus_mountains"
-	}
 	city = "x6EB08E"
 	farm = "x493F0B"
 	mine = "x0E8C3E"
@@ -1910,7 +1907,6 @@ STATE_EASTERN_HIMALAYAS = {
 		"state_trait_himalayas_mountains"
 	}
 	city = "xDA7F32"
-	port = "xDA7F32"
 	farm = "xDA7F32"
 	mine = "xDA7F32"
 	wood = "xDA7F32"

@@ -1850,6 +1850,7 @@ STATE_URUGUAY = {
 	traits = {
 		"state_trait_uruguay_river"
 		"state_trait_pampas"
+		"state_trait_natural_harbors"
 	}
 	city = "x302DDA"
 	port = "xA46ED2"
@@ -1860,8 +1861,6 @@ STATE_URUGUAY = {
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
-		"bg_coffee_plantations"
-		"bg_tobacco_plantations"
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
@@ -2204,6 +2203,7 @@ STATE_BUENOS_AIRES = {
 	}
 	traits = {
 		"state_trait_pampas"
+		"state_trait_natural_harbors"
 	}
 	city = "x365A5B"
 	port = "x672B93"
