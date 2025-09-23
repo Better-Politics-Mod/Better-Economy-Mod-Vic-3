@@ -23,6 +23,7 @@ bem_market_crash_events.1 = { #Heir falls in love with unbecomingly unacceptable
 
 	trigger = {
 		# sorry losers
+		game_date > 1836.7.1
 		diff_from_equi > 0.25
 		NOT = { has_modifier = bem_capitalist_fear }
 	}
