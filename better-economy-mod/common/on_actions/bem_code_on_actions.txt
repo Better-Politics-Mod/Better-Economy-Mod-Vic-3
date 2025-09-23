@@ -13,6 +13,9 @@ on_bem_game_started = {
 			add_modifier = {
 				name = bem_more_private_construction
 			}
+		}
+
+		every_country = {
 			add_investment_pool = bem_initial_investment_pool
 		}
 
