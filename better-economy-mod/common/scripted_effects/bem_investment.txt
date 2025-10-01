@@ -1,9 +1,15 @@
 ﻿bem_private_investment_oa = {
-	set_variable = {
+	set_local_variable = {
 		name = multi
 		value = {
 			value = bem_state_investment_levels
 			subtract = 1
+		}
+	}
+	set_local_variable = {
+		name = mult
+		value = {
+			value = bem_state_investment_levels
 		}
 	}
 	every_scope_building = {
@@ -11,21 +17,22 @@
 	}
 	every_scope_building = {
 		limit = {
-			NOT = {
-				is_building_type = building_urban_center
+			OR = {
+				has_active_production_method = pm_bem_industrial_investment
+				has_active_production_method = pm_bem_resource_investment
+				has_active_production_method = pm_bem_service_investment
 			}
 		}
 		add_modifier = {
 			name = bem_investment_level
-			multiplier = ROOT.var:multi
+			multiplier = local_var:multi
 		}
 	}
 	remove_modifier = bem_investment_stock
 	add_modifier = {
 		name = bem_investment_stock
-		multiplier = ROOT.var:multi
+		multiplier = local_var:mult
 	}
-	remove_variable = multi
 	owner = {
 		add_investment_pool = prev.bem_investment_weekly_loss
 	}
