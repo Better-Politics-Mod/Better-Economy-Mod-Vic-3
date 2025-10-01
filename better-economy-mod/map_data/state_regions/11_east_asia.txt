@@ -1630,6 +1630,7 @@ STATE_OUTER_MANCHURIA = {
 	arable_land = 25
 	arable_resources = {
 		"bg_livestock_ranches"
+		"bg_rye_farms"
 	}
 	capped_resources = {
 		bg_logging = 80
@@ -4748,7 +4749,6 @@ STATE_HOKKAIDO = {
 	wood = "x86757A"
 	arable_land = 25
 	arable_resources = {
-		"bg_rice_farms"
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 	}

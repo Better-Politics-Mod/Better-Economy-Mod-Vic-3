@@ -602,7 +602,6 @@ STATE_OULU = {
 	wood = "x9AB681"
 	arable_land = 8
 	arable_resources = {
-		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
@@ -884,7 +883,6 @@ STATE_KOLA = {
 	wood = "xA09A15"
 	arable_land = 2
 	arable_resources = {
-		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {

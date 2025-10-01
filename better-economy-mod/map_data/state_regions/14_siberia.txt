@@ -7800,7 +7800,6 @@ STATE_YAKUTSK = {
 	wood = "xDF23A0"
 	arable_land = 14
 	arable_resources = {
-		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {

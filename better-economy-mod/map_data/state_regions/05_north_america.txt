@@ -147,6 +147,7 @@ STATE_NEW_YORK = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 		"bg_vineyard_plantations"
+		"bg_tobacco_plantations"
 	}
 	capped_resources = {
 		bg_logging = 80
@@ -1914,7 +1915,7 @@ STATE_ALASKA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 44
+		bg_logging = 360
 		bg_whaling = 8
 		bg_fishing = 10
 	}
@@ -2011,7 +2012,7 @@ STATE_WASHINGTON = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 68
+		bg_logging = 160
 		bg_fishing = 6
 		bg_whaling = 3
 	}
@@ -2121,7 +2122,7 @@ STATE_OREGON = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 80
+		bg_logging = 200
 		bg_fishing = 5
 		bg_whaling = 3
 	}
@@ -3351,7 +3352,7 @@ STATE_MINNESOTA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 80
+		bg_logging = 160
 	}
 	resource = {
 		type = "bg_iron_mining"
@@ -3427,9 +3428,10 @@ STATE_WISCONSIN = {
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
+		"bg_tobacco_plantations"
 	}
 	capped_resources = {
-		bg_logging = 92
+		bg_logging = 140
 	}
 	resource = {
 		type = "bg_iron_mining"
@@ -3484,9 +3486,10 @@ STATE_INDIANA = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
 		"bg_vineyard_plantations"
+		"bg_tobacco_plantations"
 	}
 	capped_resources = {
-		bg_logging = 72
+		bg_logging = 112
 	}
 	resource = {
 		type = "bg_coal_mining"
@@ -3563,7 +3566,7 @@ STATE_MICHIGAN = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 80
+		bg_logging = 200
 	}
 	resource = {
 		type = "bg_iron_mining"
@@ -3625,7 +3628,7 @@ STATE_OHIO = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 56
+		bg_logging = 120
 	}
 	resource = {
 		type = "bg_oil_extraction"
@@ -4328,7 +4331,7 @@ STATE_ILLINOIS = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 44
+		bg_logging = 88
 	}
 	resource = {
 		type = "bg_coal_mining"
@@ -4483,7 +4486,7 @@ STATE_NEW_HAMPSHIRE = {
 		"bg_tobacco_plantations"
 	}
 	capped_resources = {
-		bg_logging = 36
+		bg_logging = 56
 		bg_whaling = 2
 		bg_fishing = 2
 	}
@@ -4514,7 +4517,7 @@ STATE_VERMONT = {
 		"bg_tobacco_plantations"
 	}
 	capped_resources = {
-		bg_logging = 24
+		bg_logging = 56
 	}
 	resource = {
 		type = "bg_iron_mining"
@@ -4569,7 +4572,7 @@ STATE_MAINE = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 68
+		bg_logging = 140
 		bg_whaling = 4
 		bg_fishing = 8
 	}
@@ -5305,7 +5308,7 @@ STATE_ONTARIO = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 92
+		bg_logging = 360
 	}
 	resource = {
 		type = "bg_oil_extraction"
@@ -5375,7 +5378,7 @@ STATE_NEW_BRUNSWICK = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 44
+		bg_logging = 120
 		bg_fishing = 8
 	}
 	naval_exit_id = 3017
@@ -6189,7 +6192,7 @@ STATE_QUEBEC = {
 		"bg_tobacco_plantations"
 	}
 	capped_resources = {
-		bg_logging = 92
+		bg_logging = 400
 		bg_whaling = 4
 		bg_fishing = 8
 	}
@@ -6378,7 +6381,7 @@ STATE_NEWFOUNDLAND = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 32
+		bg_logging = 96
 		bg_whaling = 6
 		bg_fishing = 10
 	}
@@ -6708,7 +6711,7 @@ STATE_ALBERTA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 92
+		bg_logging = 280
 	}
 	resource = {
 		type = "bg_oil_extraction"
@@ -7159,7 +7162,7 @@ STATE_BRITISH_COLUMBIA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 68
+		bg_logging = 360
 		bg_whaling = 6
 		bg_fishing = 9
 	}
@@ -7464,7 +7467,7 @@ STATE_SASKATCHEWAN = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 24
+		bg_logging = 160
 	}
 	resource = {
 		type = "bg_oil_extraction"
@@ -7761,7 +7764,7 @@ STATE_MANITOBA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 60
+		bg_logging = 128
 		bg_fishing = 5
 	}
 	resource = {
@@ -8432,7 +8435,7 @@ STATE_YUKON_TERRITORY = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 44
+		bg_logging = 100
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -10083,7 +10086,7 @@ STATE_NORTHWEST_TERRITORIES = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 44
+		bg_logging = 160
 	}
 	resource = {
 		type = "bg_iron_mining"
@@ -12197,7 +12200,7 @@ STATE_NUNAVUT = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 36
+		bg_logging = 32
 	}
 }
 STATE_BERMUDA = {
@@ -12880,7 +12883,7 @@ STATE_CALIFORNIA = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 52
+		bg_logging = 180
 		bg_fishing = 14
 		bg_whaling = 6
 	}

@@ -446,6 +446,7 @@ STATE_YEMEN = {
 	subsistence_building = "building_subsistence_pastures"
 	traits = {
 		"state_trait_natural_harbors"
+		"state_trait_yemeni_highlands"
 	}
 	provinces = {
 		"x00E3EF"
@@ -970,6 +971,16 @@ STATE_CYPRUS = {
 		bg_fishing = 5
 	}
 	naval_exit_id = 3034
+	resource = {
+		type = "bg_iron_mining"
+		discovered_amount = 5
+		undiscovered_amount = 15
+	}
+	resource = {
+		type = "bg_sulfur_mining"
+		discovered_amount = 5
+		undiscovered_amount = 15
+	}
 }
 STATE_TRANSJORDAN = {
 	id = 405
@@ -1251,6 +1262,7 @@ STATE_MOSUL = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 		"bg_cotton_plantations"
+		"bg_tobacco_plantations"
 	}
 	resource = {
 		type = "bg_oil_extraction"

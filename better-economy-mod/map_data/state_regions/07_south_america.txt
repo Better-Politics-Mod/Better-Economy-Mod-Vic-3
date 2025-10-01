@@ -637,6 +637,10 @@ STATE_ANTIOQUIA = {
 		bg_fishing = 8
 	}
 	resource = {
+		type = "bg_rubber"
+		undiscovered_amount = 8
+	}
+	resource = {
 		type = "bg_oil_extraction"
 		undiscovered_amount = 20
 	}
@@ -906,6 +910,10 @@ STATE_CAUCA = {
 		bg_fishing = 6
 		bg_whaling = 2
 	}
+	resource = {
+		type = "bg_rubber"
+		undiscovered_amount = 6
+	}
 	naval_exit_id = 3155
 	resource = {
 		type = "bg_coal_mining"
@@ -1005,6 +1013,8 @@ STATE_PASTAZA = {
 		"bg_coffee_plantations"
 		"bg_dye_plantations"
 		"bg_sugar_plantations"
+		"bg_banana_plantations"
+		"bg_tobacco_plantations"
 	}
 	capped_resources = {
 		bg_logging = 100
@@ -4509,6 +4519,7 @@ STATE_GOIAS = {
 		"bg_tobacco_plantations"
 		"bg_sugar_plantations"
 		"bg_banana_plantations"
+		"bg_coffee_plantations"
 	}
 	capped_resources = {
 		bg_logging = 64
