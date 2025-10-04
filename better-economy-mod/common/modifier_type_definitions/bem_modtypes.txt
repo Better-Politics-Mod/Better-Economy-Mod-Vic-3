@@ -28,6 +28,12 @@ goods_input_credit_mult={
 	percent=yes
 }
 
+goods_output_credit_mult={
+	decimals=1
+	color=neutral
+	percent=yes
+}
+
 goods_output_assets_add = {
 	decimals=0
 	color=bad

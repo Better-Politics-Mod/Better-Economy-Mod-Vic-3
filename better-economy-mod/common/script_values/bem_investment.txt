@@ -13,6 +13,12 @@ bem_state_urbanization_share = {
 
 bem_country_total_investment_levels = {
 	value = investment_pool
+	if = {
+		limit = {
+			has_law = law_type:law_command_economy
+		}
+		value = gold_reserves
+	}
 	divide = 1000000
 }
 

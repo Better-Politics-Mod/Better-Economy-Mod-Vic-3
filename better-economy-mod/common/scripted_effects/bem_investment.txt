@@ -28,6 +28,27 @@
 			multiplier = local_var:multi
 		}
 	}
+	if = {
+		limit = {
+			NOT = {
+				has_building = building_bem_bank
+			}
+		}
+		create_building = {
+			building = building_bem_bank
+			level = 1
+		}
+	}
+	every_scope_building = {
+		limit = {
+			is_building_type = building_bem_bank
+		}
+		remove_modifier = bem_bank_modi
+		add_modifier = {
+			name = bem_bank_modi
+			multiplier = local_var:multi
+		}
+	}
 	remove_modifier = bem_investment_stock
 	add_modifier = {
 		name = bem_investment_stock

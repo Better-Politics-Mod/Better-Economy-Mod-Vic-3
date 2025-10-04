@@ -86,3 +86,8 @@ bem_investment_mult = {
 	goods_input_assets_mult = 1
 	goods_output_credit_mult = 1
 }
+
+bem_bank_modi = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	goods_output_credit_mult = 1
+}

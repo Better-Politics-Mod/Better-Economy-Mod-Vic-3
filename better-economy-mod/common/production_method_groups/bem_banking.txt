@@ -1,0 +1,8 @@
+pmg_bem_private_banking = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_bem_base_credit_production
+	}
+}

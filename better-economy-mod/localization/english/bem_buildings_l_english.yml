@@ -4,3 +4,6 @@
   building_lead_mine_discovered_resource: "Lead"
   building_sulfur_mine_discovered_resource: "Sulfur"
   building_bem_private_construction_investor: "Private Investment"
+
+  pm_bem_base_credit_production: "Base Credit Production"
+  building_bem_bank: "Bank"

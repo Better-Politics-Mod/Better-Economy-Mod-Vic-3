@@ -1,0 +1,10 @@
+pm_bem_base_credit_production = {
+	texture = "gfx/interface/icons/production_method_icons/unused/elected_bureaucrats.dds"
+	building_modifiers = {
+		unscaled = {
+			building_employment_clerks_add = 1000
+			building_employment_bureaucrats_add = 500
+			goods_output_credit_add = 1
+		}
+	}
+}
