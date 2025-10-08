@@ -2,6 +2,8 @@
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	country_construction_add = -10
 	country_private_construction_allocation_mult = 2
+	country_company_throughput_bonus_add = -0.2
+	country_company_construction_efficiency_bonus_add = -0.5
 }
 
 bem_urbanization_boost = {
@@ -90,4 +92,17 @@ bem_investment_mult = {
 bem_bank_modi = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	goods_output_credit_mult = 1
+}
+
+bem_company_nerf = {
+	country_company_throughput_bonus_add = -0.2
+	country_company_construction_efficiency_bonus_add = -0.5
+}
+
+prestige_ranking = {
+
+}
+
+top_prestige_ranking = {
+
 }
