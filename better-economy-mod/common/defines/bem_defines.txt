@@ -280,7 +280,7 @@
 	COMPANY_PROSPERITY_WEEKLY_DECREASE_BASE = -1.0				# Base amount of prosperity decrease towards target value each week
 	COMPANY_PROSPERITY_WEEKLY_DECREASE_SCALED = 0.02			# Prosperity decrease towards target value each week, for each fully employed building level the company has
 	COMPANY_PROSPERITY_WEEKLY_DECREASE_SCALED_MAX = 0.8			# Min value for weekly prosperity decrease from employed levels
-	COMPANY_COUNTRY_CONSTRUCTION_BONUS_MULT = 0.2				# Multiplier for company countries
+	COMPANY_COUNTRY_CONSTRUCTION_BONUS_MULT = 0				# Multiplier for company countries
 	NATIONALIZATION_PER_LEVEL_COST = 500				# How much it costs to nationalize one level of a building per construction point
 	PRIVATIZATION_PER_LEVEL_COST = 0.1					# How much it costs to privatize one level of a building per construction point
 	MIN_FAKE_CONSTRUCTION_COST = 100					# Min construction cost for the matters of nationalization and privatization

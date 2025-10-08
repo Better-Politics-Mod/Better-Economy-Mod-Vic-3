@@ -7,15 +7,6 @@
 on_bem_game_started = {
 	effect = {
 		every_country = {
-			limit = {
-				is_player = yes
-			}
-			add_modifier = {
-				name = bem_more_private_construction
-			}
-		}
-
-		every_country = {
 			add_investment_pool = bem_initial_investment_pool
 		}
 
@@ -46,21 +37,6 @@ on_monthly_pulse_state = {
 }
 on_bem_monthly_pulse_state = {
 	effect = {
-		if = {
-			limit = {
-				owner = {
-					is_player = yes
-					NOT = {
-						has_modifier = bem_more_private_construction
-					}
-				}
-			}
-			owner = {
-				add_modifier = {
-					name = bem_more_private_construction
-				}
-			}
-		}
 		if = {
 			limit = {
 				has_modifier = bem_urbanization_boost
