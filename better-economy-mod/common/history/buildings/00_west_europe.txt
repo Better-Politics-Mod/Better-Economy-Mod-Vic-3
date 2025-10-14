@@ -2977,6 +2977,10 @@
 				reserves=1
 				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
 			}
+			create_building={
+				building="building_the_tax_wall"
+				level=1
+			}
 		}
 	}
 	s:STATE_PROVENCE={
