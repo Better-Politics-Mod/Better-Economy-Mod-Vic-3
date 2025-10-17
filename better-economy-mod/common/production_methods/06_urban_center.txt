@@ -13,6 +13,12 @@
 			building_employment_shopkeepers_add = 40
 		}
 	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_tax_capacity_add = 10
+		}
+	}
 }
 
 pm_market_squares = {
@@ -32,6 +38,12 @@ pm_market_squares = {
 			building_employment_laborers_add = 300
 			building_employment_clerks_add = 140
 			building_employment_shopkeepers_add = 40
+		}
+	}
+	
+	state_modifiers = {
+		level_scaled = {
+			state_tax_capacity_add = 10
 		}
 	}
 }
@@ -56,6 +68,12 @@ pm_covered_markets = {
 			building_employment_shopkeepers_add = 40
 		}
 	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_tax_capacity_add = 10
+		}
+	}
 }
 
 pm_arcades = {
@@ -77,6 +95,12 @@ pm_arcades = {
 			building_employment_laborers_add = 100
 			building_employment_clerks_add = 300
 			building_employment_shopkeepers_add = 100
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_tax_capacity_add = 10
 		}
 	}
 

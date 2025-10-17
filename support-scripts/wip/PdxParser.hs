@@ -1,8 +1,7 @@
-module Main where
+module PdxParser where
 import Data.Char
 import Control.Applicative
 import Control.Monad
-import System.Environment (getArgs)
 
 data PdxValue = PdxBool Bool
     | PdxNumber Double
@@ -104,7 +103,7 @@ ws = spanP isSpace
 
 pdxArray :: Parser PdxValue
 pdxArray = PdxArray <$> (charP '{' *> ws *> elements <* ws <* charP '}')
-    where elements = sepBy (spanP isSpace) pdxValue
+    where elements = sepBy ws pdxValue
 
 intLiteral :: Parser String
 intLiteral = notNull (spanP isDigit)
@@ -119,15 +118,8 @@ pdxPair = PdxPair <$> pair
 pdxValue :: Parser PdxValue
 pdxValue = pdxArray <|> pdxPair <|> pdxBool <|> pdxNumber <|> pdxString
 
-parseFile :: FilePath -> Parser a -> IO (Maybe a)
-parseFile fileName parser = do
-    input <- readFile fileName
-    let brIn = "{" ++ input ++ "}"
-    return (snd <$> runParser parser brIn)
+stripComments :: String -> String
+stripComments = unlines . map (takeWhile (/= '#')) . lines
 
-main :: IO ()
-main = do
-    args <- getArgs
-    let arg = head args
-    result <- parseFile arg pdxValue
-    print result
+parseFile :: FilePath -> Parser a -> IO (Maybe a)
+parseFile fileName parser = (snd <$>) . runParser parser . ("{" ++) . (++ "}") . stripComments <$> readFile fileName

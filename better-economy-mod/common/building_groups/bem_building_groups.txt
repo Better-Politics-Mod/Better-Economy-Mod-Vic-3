@@ -156,3 +156,12 @@ bg_sulfur_mining = {
 
 	discoverable_resource = yes
 }
+
+bg_monuments = {
+	parent_group = bg_government
+	lens = special
+	inheritable_construction = yes
+	economy_of_scale = no
+
+	urbanization = 0
+}

@@ -10,6 +10,53 @@ on_bem_game_started = {
 			add_investment_pool = bem_initial_investment_pool
 		}
 
+		every_country = {
+			limit = {any_subject_or_below = {exists = yes}}
+			every_direct_subject = {
+				prev = {
+					create_diplomatic_pact = {
+						country = prev
+						type = grant_own_market
+					}
+				}
+			}
+		}
+
+		every_country = {
+			limit = {
+				NOT = {this = this.overlord}
+				is_subject = true
+				}
+			create_treaty = {  
+				name = bem_subject_market_treaty
+				first_country = this
+				second_country = this.overlord
+				is_draft = no
+				articles_to_create = {
+					{  
+						article = overlord_trade_privilege
+						source_country = this
+						target_country = this.overlord
+					}
+					{  
+						article = overlord_trade_privilege
+						source_country = this.overlord
+						target_country = this
+					}
+					{  
+						article = overlord_transit_rights
+						source_country = this
+						target_country = this.overlord
+					}
+					{  
+						article = overlord_transit_rights
+						source_country = this.overlord
+						target_country = this
+					}
+				}
+			}
+		}
+		
 		every_state = {
 			every_scope_building = {update_mining_efficiency = yes}
 			save_scope_value_as = {
@@ -25,6 +72,14 @@ on_bem_game_started = {
 					name = bem_investment_level
 					multiplier = scope:multi
 				}
+			}
+		}
+
+		every_state = {
+			limit = {is_capital = yes}
+			create_building = {
+				building = building_consec_dummy
+				level = 1
 			}
 		}
 	}
@@ -64,20 +119,6 @@ on_bem_monthly_pulse_state = {
 				multiplier = {
 					value = 1
 					subtract = bem_urbanization_rate
-				}
-			}
-		}
-
-		random_scope_building = {
-			limit = {
-				is_building_type = building_urban_center
-			}
-			save_scope_value_as = {
-				name = govadlv
-				value = {
-					value = level
-					divide = 3
-					ceiling = yes
 				}
 			}
 		}
@@ -172,6 +213,52 @@ bem_on_acquired_technology = {
                 		production_method = pm_financial_district_publicly_traded
             		}
 				}
+		}
+	}
+}
+
+on_become_subject = {
+	on_actions = {
+		bem_on_become_subject
+	}
+}
+
+bem_on_become_subject = {
+	effect = {
+		overlord = {
+			create_diplomatic_pact = {
+				country = prev
+				type = grant_own_market
+			}
+		}
+
+		create_treaty = {  
+			name = bem_subject_market_treaty
+			first_country = this
+			second_country = this.overlord
+			is_draft = no
+			articles_to_create = {
+				{  
+					article = overlord_trade_privilege
+					source_country = this
+					target_country = this.overlord
+				}
+				{  
+					article = overlord_trade_privilege
+					source_country = this.overlord
+					target_country = this
+				}
+				{  
+					article = overlord_transit_rights
+					source_country = this
+					target_country = this.overlord
+				}
+				{  
+					article = overlord_transit_rights
+					source_country = this.overlord
+					target_country = this
+				}
+			}
 		}
 	}
 }

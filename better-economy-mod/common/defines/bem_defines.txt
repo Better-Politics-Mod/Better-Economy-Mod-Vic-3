@@ -1,9 +1,13 @@
-﻿NEconomy = {
+﻿NCountry = {
+	CONSTRUCTION_CAMP_BUILDING = "building_consec_dummy"
+}
+
+NEconomy = {
 	MIN_CONSTRUCTION_EFFICIENCY = 0.05					# Construction efficiency cannot go below this amount
 
 	# The more times you run this the more accurate setup will be for Pop wealth compared to income
 	NUM_TIMES_TO_INITIALIZE_WEALTH = 10
-	NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION = 10 # Extra times that separate trade update step is run
+	NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION = 20 # Extra times that separate trade update step is run
 
 	COUNTRY_GDP_MODIFIER_DIVISOR = 10000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000		# The country_gdp modifier multiplier cannot be higher than this
@@ -32,7 +36,7 @@
 
 	AUTO_DOWNSIZE_BUILDING_MIN_EMPTY_PRIVATE_LEVELS = 1.0							# A (non Trade Center) building must be missing at least this many privately held levels of employment to start considering auto-downsizing (both this and the below requirement are applied)
 	AUTO_DOWNSIZE_BUILDING_MIN_EMPTY_FRACTION = 0.1						# A (non Trade Center) building must be missing at least this many levels of employment (in relative numbers) to start considering auto-downsizing (both this and the above requirement are applied)
-	AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY_FRACTION = 0.1				# A Trade Center must have at least this much unused Trade Capacity (as a fraction of the whole) to consider auto downsizing
+	AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY_FRACTION = 1				# A Trade Center must have at least this much unused Trade Capacity (as a fraction of the whole) to consider auto downsizing
 	AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY = 20						# A Trade Center must have at least this much unused Trade Capacity (in absolute numbers) to consider auto downsizing
 	AUTO_DOWNSIZE_BUILDING_MONTHS_TO_WAIT = 6							# After a building decides to start auto-downsizing, wait this many months before actually starting to downsize, in case conditions change
 
@@ -48,9 +52,9 @@
 
 	MIN_GOODS_PRICE	= 1							# A good cannot have a lower base price than this
 	PRICE_RANGE = 0.9							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
-	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
+	BUY_SELL_DIFF_AT_MAX_FACTOR = 3				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
 
-	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.5		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
+	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.33		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
 	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.05  	# Goods shortage penalty increases by this fraction of the target each day
     GOODS_SHORTAGE_PENALTY_DECREASE_SPEED = 0.05  	# Goods shortage penalty goes down by this fraction of GOODS_SHORTAGE_PENALTY_MAX each day
     GOODS_SHORTAGE_PENALTY_MIN = 0.1			# Goods shortage penalty can't be lower than this if there is any shortage
@@ -79,14 +83,14 @@
 	# This much of relative advantage translates into a multiplier on price
 	# Applied to the delta between relative advantage and 1
 	# For example, if TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER is 0.5 and relative advantage is 2, then the price multiplier is 1 + ( ( 2 - 1 ) * 0.5 ) = 1.5
-	TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER = 0.25
+	TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER = 0.5
 
 	TRADE_CENTER_ADVANTAGE_BASE = 100 										# Base amount of advantage that Trade Centers have
 	TRADE_CENTER_ADVANTAGE_MARKET_AREA_PRODUCTION_FACTOR = 200 				# Trade Centers get this amount of export advantage for market area production (scaled against global production/consumption, multiplied by Market Access)
 	TRADE_ADVANTAGE_COMPANY_CHARTER_FACTOR = 50								# Company charters get this amount of export advantage for market production
 	TRADE_CENTER_ADVANTAGE_MARKET_PRESTIGE_GOOD_FACTOR = 100 				# Trade Centers get this amount of export advantage based on the fraction of goods production in their market that is prestige goods (prestige goods have no effect on import advantage)
-	TRADE_CENTER_ADVANTAGE_TRADE_AGREEMENT_FACTOR = 100 					# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade is from markets covered by trade agreements
-	TRADE_CENTER_ADVANTAGE_TREATY_PORT_FACTOR = 200 						# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade from Treaty Ports owned by their parent country
+	TRADE_CENTER_ADVANTAGE_TRADE_AGREEMENT_FACTOR = 200 					# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade is from markets covered by trade agreements
+	TRADE_CENTER_ADVANTAGE_TREATY_PORT_FACTOR = 250 						# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade from Treaty Ports owned by their parent country
 
 	# Only one of the penalties below is ever applied, in the following priority order: Embargo, War, Lack of Interest
 	TRADE_CENTER_ADVANTAGE_NO_INTEREST_FACTOR = -50 						# Trade Centers lose this amount of export/import advantage, scaled against % of opposite-direction trade is from markets where the owner has no interest
@@ -95,14 +99,14 @@
 
 	# Weights for Trade Center preference in importing/exporting to other specific Trade Centers
 	TRADE_CENTER_PREFERENCE_BASE = 1										# Base weight in preference for each other Trade Center
-	TRADE_CENTER_PREFERENCE_SAME_POWER_BLOC_MULTIPLIER = 0.5				# Added to weight multiplier if both Trade Centers are part of the same Power Bloc
-	TRADE_CENTER_PREFERENCE_TRADE_AGREEMENT_MULTIPLIER = 4.0				# Added to weight multiplier for each Trade Agreement between the two countries
+	TRADE_CENTER_PREFERENCE_SAME_POWER_BLOC_MULTIPLIER = 2.0				# Added to weight multiplier if both Trade Centers are part of the same Power Bloc
+	TRADE_CENTER_PREFERENCE_TRADE_AGREEMENT_MULTIPLIER = 5.0				# Added to weight multiplier for each Trade Agreement between the two countries
 	TRADE_CENTER_PREFERENCE_EMBARGO_DIVISOR = 2.0							# Added to weight divisor for each Embargo between the two countries
 	TRADE_CENTER_PREFERENCE_NO_INTEREST_DIVISOR = 0.25						# Added to weight divisor for each side that lacks an Interest in the other's market
 	TRADE_CENTER_PREFERENCE_DISTANCE_DIVISOR = 0.25							# Weight is divided by 1 + ( distance in sea nodes * this ) between the two Trade Centers' hubs, this is done last after other multipliers/divisors
 
 	MARKET_SHARE_FROM_GDP = 1.0					# Get this many points of market share per pound of GDP in states
-	MARKET_SHARE_MARKET_CONTROLLER_FACTOR = 1.33	# Market controller's market points count for this much more
+	MARKET_SHARE_MARKET_CONTROLLER_FACTOR = 2	# Market controller's market points count for this much more
 	MARKET_SHARE_MARKET_ACCESS_BASE = 0.5		# How much of market points is always gained regardless of market access
 	MARKET_SHARE_MARKET_ACCESS_SCALED = 0.5		# How much of market points is gained based on market access
 
@@ -124,8 +128,8 @@
 	BUILDING_LOWER_WAGES_TARGET_WEALTH_MULT = 1.1 # Buildings will consider lowering wages if all significant pops working in them have this * the target wealth to expected SoL ratio
 	BUILDING_PREFER_LAYOFFS_TARGET_WEALTH_MULT = 0.5 # Buildings will prefer laying off pops if any significant pops working in them have this * the target wealth to expected SoL ratio or below
 	BUILDING_DEFAULT_MIN_EARNINGS_TO_HIRE_EMPLOYEES = 3  # Non-subsidized buildings will not hire if it would result in their annual earnings/employee falling below this threshold (default value, can be overridden for building group)
-	BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.5	# Required profit margin to consider raising wages for SoL or employment reasons, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
-	BUILDING_PROFIT_TARGET_TO_LOWER_WAGES = 0.3	# If profit margin is this or below, buildings should lower their wages, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
+	BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.2111	# Required profit margin to consider raising wages for SoL or employment reasons, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
+	BUILDING_PROFIT_TARGET_TO_LOWER_WAGES = 0.1999	# If profit margin is this or below, buildings should lower their wages, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
 	BUILDING_PROFIT_TARGET_TO_WITHDRAW_CASH = 0.2	# If profit margin is this or below, buildings should withdraw money from the cash reserves to make up the difference
 	BUILDING_PROFIT_TARGET_TO_HIRE_EMPLOYEES = 0.25	# If profit margin is this or above, buildings should try to hire new workers
 	OWNERSHIP_BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.5	# Overrides BUILDING_PROFIT_TARGET_TO_RAISE_WAGES for buildings that own other buildings
@@ -335,7 +339,37 @@ NPops = {
 	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT_MAX = 15
 	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT = 0.2
 	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT_MAX = 40
+
+	#INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 2000
+}
+NPolitics = {
+	#STATE_BUREAUCRACY_BASE_COST = 10		# The base cost per incorporated state
+	#STATE_BUREAUCRACY_POP_BASE_COST = 4		# The base BUR multiplier per population multiple
+	#STATE_BUREAUCRACY_POP_MULTIPLE = 20000	# Number of people BUR cost is based on
 }
 NAI = {
 	BUILDING_PRIVATIZATION_CHANCE = 100
+
+	AUTONOMOUS_TRADE_RANDOM_FACTOR = 0.25		# The higher this is, the more random autonomous trade will be in goods selection
+	AUTONOMOUS_TRADE_STICKYNESS = 1.5 			# A new trade has to generate at least this many times more revenue to replace an older trade when trade capacity is fully used up
+	AUTONOMOUS_TRADE_WEEKS_BEFORE_TRADE_REDUCTION = 6 # For this many weeks after increasing trade in a good, a state won't reduce the trade volume for that same good, so that effects such as goods substitution have time to kick in
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE = 1 # If a current trade has lower desirability than this per base traded quantity, decrease trade volume
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE = 10 # If a new trade has lower desirability than this per base traded quantity, don't increase trade volume
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_INITIALIZATION_MULTIPLIER = 0.75 # During bookmark initialization, desirability requirements for trade are multiplied by this
+
+	# When determining trade potential for a good in a state, the revenue per unit is normalized against the good base cost * this, to account for the fact that revenue will drop as trades increase
+	AUTONOMOUS_TRADE_POTENTIAL_REVENUE_BASE_COST_FACTOR = 1
+
+	# Factors that impact desirability for trades
+	# The base desirability of a trade is equal to revenue per traded quantity after tariffs and subventions
+	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR = 5 # Desire for a trade is increased by ( subventions as percentage * this ), this is an additional factor on top of the impact on revenue. This is also applied in reverse for subventions in the opposite direction (ie, export subventions reduce desire for imports)
+	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR_NEW_GOODS_MULT = 20.0 # The subventions impact on desire for a trade is multiplied by this for importing goods that don't exist in the market
+	AUTONOMOUS_TRADE_DESIRE_TARIFFS_FACTOR = 5 # Desire for a trade is decreased by ( tariffs as percentage * this ), this is an additional factor on top of the impact on revenue
+	AUTONOMOUS_TRADE_DESIRE_OPPOSITE_MARKET_SHARE_FACTOR = 0 # Desire for a trade is changed by this * the share of opposite-direction trade in the world market coming from the country
+	AUTONOMOUS_TRADE_DESIRE_SHORTAGE_FACTOR = 300 # Desire to import goods in shortage is increased by this, scaled by the severity of the shortage penalty
+
+	# Whenever a Trade Center successfully excecutes a trade, it uses up one of its weekly trades
+	# Whenever it *fails* to execute a trade, it uses up this fraction of its total amount of weekly trades
+	# This is so that Trade Centers with hundreds of weekly trades do not try and trade over and over again, using up tons of performance for no gain
+	AUTONOMOUS_TRADE_WEEKLY_TRADES_FRACTION_USED_FOR_FAILED_TRADE = 0.2
 }

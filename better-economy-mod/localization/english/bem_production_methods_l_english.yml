@@ -26,3 +26,8 @@
   pm_bem_industrial_sites: "Industrial Sites"
 
   pm_financial_district_joint_stock: "Joint Stock"
+
+  pmg_base_building_the_tax_wall: "$pm_base$"
+  pmg_base_building_consec_dummy: "$pm_base$"
+  pm_base_building_the_tax_wall: "Municipal Customs"
+  pm_base_building_consec_dummy: "#r Emanating Machinic Desire#!\n#lore For reasons long forgotten to history, this structure provides the necessary psychic plasm for investment to occur. It has been here for as long as anyone living can remember, and no written records document its origin. Previous administrations have attempted to demolish it only to be stunned when all financial activity within the country abruptly grinds to a halt, only to scramble to re-erect the building in order to restart the economy. Mysterious as it may be, this tower is here to stay.#!"

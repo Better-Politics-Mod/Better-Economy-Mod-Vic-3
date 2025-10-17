@@ -11,7 +11,7 @@ building_port = {
 
 	production_method_groups = {
 		pmg_base_building_port
-		pmg_bem_service_investment
+		#pmg_bem_service_investment
 	}
 
 	required_construction = construction_cost_medium
@@ -44,7 +44,7 @@ building_railway = {
 	production_method_groups = {
 		pmg_base_building_railway
 		pmg_passenger_trains
-		pmg_bem_service_investment
+		#pmg_bem_service_investment
 	}
 	can_build_private = {
 		always = no
@@ -210,7 +210,7 @@ building_trade_center = {
 	production_method_groups = {
 		pmg_base_building_trade_center
 		pmg_trade_quantity_trade_center
-		pmg_bem_service_investment
+		#pmg_bem_service_investment
 	}
 
 	can_build_government = {

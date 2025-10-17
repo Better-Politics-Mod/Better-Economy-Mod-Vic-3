@@ -47,3 +47,7 @@
   bem_investment_level: "Investment Pool"
   bem_investment_mult: "Investment Pool"
   bem_investment_stock: "Investment Pool"
+
+  bem_subject_market_treaty: "Overlord Preferential Trade"
+  overlord_transit_rights: "Overlord Transit Rights"
+  overlord_trade_privilege: "Overlord Trade Privilege"

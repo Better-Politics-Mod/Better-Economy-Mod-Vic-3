@@ -1,0 +1,64 @@
+﻿grant_own_market = {
+	requires_approval = no
+	groups= {
+		overlord
+		power_bloc_leader
+	}
+
+	texture = "gfx/interface/icons/diplomatic_action_icons/grant_market_independence.dds"
+	confirmation_sound = "event:/SFX/UI/MapInteraction/SubjectInteractions/diplomatic_action_subjects_05_grant_own_market_benign"
+
+	potential = {
+		scope:target_country = {
+			market = prev.market
+			root.power_bloc = {
+				NOT = {
+					has_principle = principle_market_unification_3
+				}
+			}
+		}
+	}
+
+	possible = {
+		NOT = { market.owner = scope:target_country }
+		OR = {
+			AND = { # the target controls the market and the requester is independent
+				scope:target_country = {
+					is_subject = no
+				}
+				market.owner = root
+			}
+			scope:target_country = {
+				is_direct_subject_of = root
+			}
+		}
+	}
+
+	pact = {
+		cost = 0
+
+		market_owner = second_country
+
+		requirement_to_maintain = {
+			trigger = {
+				scope:target_country = {
+					OR = {
+						is_direct_subject_of = root
+						power_bloc.power_bloc_leader ?= root
+					}
+				}
+			}
+		}
+
+		actor_can_break = {
+			always = no
+		}
+	}
+
+	ai = {
+		evaluation_chance = {
+			value = 0
+		}
+	}
+}
+

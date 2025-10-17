@@ -3,11 +3,13 @@ pm_base_building_the_tax_wall = {
 
 	is_hidden_when_unavailable = yes
 
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
 			state_tax_capacity_add = 30
             state_radicals_from_political_movements_mult = 0.05
             state_radicals_from_sol_change_mult = 0.05
+			state_trade_advantage_mult = -0.05
+			state_market_access_price_impact = -0.01
 		}
 	}
 
@@ -18,5 +20,17 @@ pm_base_building_the_tax_wall = {
 		level_scaled = {
 			building_employment_soldiers_add = 100
 		}
+	}
+}
+
+pm_base_building_consec_dummy = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	state_modifiers = {
+	}
+
+	building_modifiers = {
 	}
 }

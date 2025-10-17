@@ -1,0 +1,49 @@
+﻿building_the_tax_wall = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/customs.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+
+	can_build_private = {
+		always = no
+	}
+	production_method_groups = {
+		pmg_base_building_the_tax_wall
+	}
+
+	required_construction = construction_cost_monument
+
+	potential = {
+		always = no
+	}
+
+	ai_value = 10000
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_consec_dummy = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/skyscraper.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+
+	can_build_private = {
+		always = no
+	}
+	production_method_groups = {
+		pmg_base_building_consec_dummy
+	}
+
+	required_construction = construction_cost_monument
+
+	potential = {
+		always = no
+	}
+
+	ai_value = 10000
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
