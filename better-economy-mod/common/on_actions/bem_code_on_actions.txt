@@ -81,6 +81,22 @@ on_bem_game_started = {
 				building = building_consec_dummy
 				level = 1
 			}
+			create_building = {
+				building = building_trade_center
+				level = 1
+			}
+		}
+
+		every_country = {
+			save_scope_as = company_owner
+			scope:company_owner = {
+				owning_company ?= {
+					remove_owned_country = scope:company_owner
+					owner ?= {
+						remove_company = prev.type
+					}
+				}
+			}
 		}
 	}
 }

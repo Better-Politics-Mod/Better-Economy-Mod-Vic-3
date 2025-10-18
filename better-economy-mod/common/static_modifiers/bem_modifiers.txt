@@ -48,6 +48,7 @@
 
 	country_company_throughput_bonus_add = 0
 	country_company_construction_efficiency_bonus_add = 0
+	country_max_companies_add = -1000
 
 	country_max_weekly_construction_progress_add = 10
 
