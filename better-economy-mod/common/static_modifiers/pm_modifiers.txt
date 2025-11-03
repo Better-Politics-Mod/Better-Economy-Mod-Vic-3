@@ -1,0 +1,27 @@
+urban_artisans = {
+	goods_input_fabric_add = 8.5
+	goods_input_wood_add = 8.5
+	goods_input_grain_add = 5
+	goods_input_meat_add = 1
+	goods_input_fish_add = 1
+    goods_input_iron_add = 2.5
+
+	goods_output_clothes_add = 6
+	goods_output_luxury_clothes_add = 0.5
+	goods_output_furniture_add = 3
+	goods_output_luxury_furniture_add = 0.5
+	goods_output_groceries_add = 7
+	goods_output_liquor_add = 3
+	goods_output_paper_add = 4
+	goods_output_services_add = 3
+    goods_output_tools_add = 7
+	goods_output_hardwood_add = 4
+	goods_output_glass_add = 3
+	goods_output_engines_add = 0.5
+	goods_output_steel_add = 2
+    
+	building_employment_laborers_add = 9000
+	building_employment_shopkeepers_add = 1000
+}
+			
+			

@@ -7,7 +7,7 @@ NEconomy = {
 
 	# The more times you run this the more accurate setup will be for Pop wealth compared to income
 	NUM_TIMES_TO_INITIALIZE_WEALTH = 10
-	NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION = 20 # Extra times that separate trade update step is run
+	NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION = 200 # Extra times that separate trade update step is run
 
 	COUNTRY_GDP_MODIFIER_DIVISOR = 10000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000		# The country_gdp modifier multiplier cannot be higher than this
@@ -38,7 +38,7 @@ NEconomy = {
 	AUTO_DOWNSIZE_BUILDING_MIN_EMPTY_FRACTION = 0.1						# A (non Trade Center) building must be missing at least this many levels of employment (in relative numbers) to start considering auto-downsizing (both this and the above requirement are applied)
 	AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY_FRACTION = 1				# A Trade Center must have at least this much unused Trade Capacity (as a fraction of the whole) to consider auto downsizing
 	AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY = 20						# A Trade Center must have at least this much unused Trade Capacity (in absolute numbers) to consider auto downsizing
-	AUTO_DOWNSIZE_BUILDING_MONTHS_TO_WAIT = 6							# After a building decides to start auto-downsizing, wait this many months before actually starting to downsize, in case conditions change
+	AUTO_DOWNSIZE_BUILDING_MONTHS_TO_WAIT = 6000							# After a building decides to start auto-downsizing, wait this many months before actually starting to downsize, in case conditions change
 
 	# Pollution Impact = (GeneratedPollution (StateRegion) / (DIVISOR_BASE + DIVISOR_ARABLE_LAND_MULT * SQRT(ArableLand (State Region)))/POLLUTION_MAX
 	POLLUTION_TARGET_DIVISOR_BASE = 50					# Base value to divide total pollution generation by for calculating state region pollution target level
@@ -83,7 +83,7 @@ NEconomy = {
 	# This much of relative advantage translates into a multiplier on price
 	# Applied to the delta between relative advantage and 1
 	# For example, if TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER is 0.5 and relative advantage is 2, then the price multiplier is 1 + ( ( 2 - 1 ) * 0.5 ) = 1.5
-	TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER = 0.5
+	TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER = 0.3
 
 	TRADE_CENTER_ADVANTAGE_BASE = 100 										# Base amount of advantage that Trade Centers have
 	TRADE_CENTER_ADVANTAGE_MARKET_AREA_PRODUCTION_FACTOR = 200 				# Trade Centers get this amount of export advantage for market area production (scaled against global production/consumption, multiplied by Market Access)
@@ -151,14 +151,14 @@ NEconomy = {
 	RESOURCE_DEPLETE_MIN_AMOUNT = 2				# Min amount of resources that will be depleted for each successful roll
 	RESOURCE_DEPLETE_MAX_AMOUNT = 5				# Max amount of resources that will be depleted for each successful roll
 	QUALITY_OF_LIFE_MIN = 1
-	QUALITY_OF_LIFE_MAX = 100
+	QUALITY_OF_LIFE_MAX = 200
 	SUBSISTENCE_OUTPUT_AVERAGE_WAGE_RATE_FACTOR = 150   # Each 1.0 of subsistence output counts as this much wage rate when setting normal wages
 	PEASANT_STARTING_WAGE_RATE_FACTOR = 1.0		# For the sake of calculating starting normal wages, treat peasants as having this pop type wage multiplier
-	STARTING_WAGE_RATE_MULTIPLIER = 0.5			# Starting wage rate is multiplied by this (for easy balancing)
+	#STARTING_WAGE_RATE_MULTIPLIER = 0			# Starting wage rate is multiplied by this (for easy balancing)
 	STARTING_WAGE_RATE_SUBSISTENCE_MULTIPLIER = 0.5		# STARTING_WAGE_RATE_MULTIPLIER is further multiplied by this for subsistence buildings
-	NORMAL_WAGE_RATE_FALLBACK = 500.0			# If it's impossible to compute a normal wage rate (e.g. if every incorporated pop works in government buildings) set it to this (weekly £ per POP_SIZE_PACKAGE employees)
-	MINIMUM_WAGE_RATE = 10.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
-	MAXIMUM_WAGE_RATE = 100000.0				# The absolute maximum that a building's wage rate can be increased to.
+	#NORMAL_WAGE_RATE_FALLBACK = 1.0			# If it's impossible to compute a normal wage rate (e.g. if every incorporated pop works in government buildings) set it to this (weekly £ per POP_SIZE_PACKAGE employees)
+	#MINIMUM_WAGE_RATE = 1.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
+	#MAXIMUM_WAGE_RATE = 1.0				# The absolute maximum that a building's wage rate can be increased to.
 	CREDIT_RATIO_HEALTH_THRESHOLD = 0.5			# If the principal is smaller than this ratio of the total credit, the economy is considered to be healthy
 	GOLD_RESERVE_MIN = 1000						# If Gold Reserves are computed to be lower than this, it's instead set to this
 	GOLD_RESERVE_LIMIT_FACTOR = 0.2				# The base factor of annual GDP that should be provided as a Gold Reserve
@@ -311,7 +311,7 @@ NEconomy = {
 	COUNTRY_MONOPOLY_MAX_COUNT = 5						# Maximum number of country monopolies a country can have
 	COUNTRY_MONOPOLY_AUTHORITY_COST = 100				# Cost of establishing a country monopoly
 
-	WORLD_MARKET_MONOPOLY_MIN_SHARE	= 0.5				# For a market to be considered to have a world market monopoly, it has to control a greater share of exports than this
+	WORLD_MARKET_MONOPOLY_MIN_SHARE	= 0.9				# For a market to be considered to have a world market monopoly, it has to control a greater share of exports than this
 	MONOPOLY_PRICE_IMPACT = 0.2							# The price of a good is increased by this multiplier based on how much of its supply is considered to be under a monopoly
 
 	PRIVATIZATION_DISCOUNT_MONOPOLY = 0.2				# The cost of privatizing a building is multiplied by this for companies with a monopoly on that building type
@@ -319,6 +319,8 @@ NEconomy = {
 	PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS = 0.2			# Bonus to throughput, scaled against proportion of input goods base value that is prestige goods
 }
 NPops = {
+	NUM_WEALTH_LEVELS = 200
+	
 	JOB_SATISFACTION_BASE = -160
 	JOB_SATISFACTION_FOR_NEWLY_HIRED = 1000
 	JOB_SATISFACTION_PER_SOL_ABOVE_EXPECTED_SOL = 3
@@ -350,22 +352,19 @@ NPolitics = {
 NAI = {
 	BUILDING_PRIVATIZATION_CHANCE = 100
 
-	AUTONOMOUS_TRADE_RANDOM_FACTOR = 0.25		# The higher this is, the more random autonomous trade will be in goods selection
+	AUTONOMOUS_TRADE_RANDOM_FACTOR = 0.1		# The higher this is, the more random autonomous trade will be in goods selection
 	AUTONOMOUS_TRADE_STICKYNESS = 1.5 			# A new trade has to generate at least this many times more revenue to replace an older trade when trade capacity is fully used up
-	AUTONOMOUS_TRADE_WEEKS_BEFORE_TRADE_REDUCTION = 6 # For this many weeks after increasing trade in a good, a state won't reduce the trade volume for that same good, so that effects such as goods substitution have time to kick in
-	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE = 1 # If a current trade has lower desirability than this per base traded quantity, decrease trade volume
-	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE = 10 # If a new trade has lower desirability than this per base traded quantity, don't increase trade volume
+	AUTONOMOUS_TRADE_WEEKS_BEFORE_TRADE_REDUCTION = 4 # For this many weeks after increasing trade in a good, a state won't reduce the trade volume for that same good, so that effects such as goods substitution have time to kick in
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE = 50 # If a current trade has lower desirability than this per base traded quantity, decrease trade volume
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE = 100 # If a new trade has lower desirability than this per base traded quantity, don't increase trade volume
 	AUTONOMOUS_TRADE_MIN_DESIRABILITY_INITIALIZATION_MULTIPLIER = 0.75 # During bookmark initialization, desirability requirements for trade are multiplied by this
-
-	# When determining trade potential for a good in a state, the revenue per unit is normalized against the good base cost * this, to account for the fact that revenue will drop as trades increase
-	AUTONOMOUS_TRADE_POTENTIAL_REVENUE_BASE_COST_FACTOR = 1
 
 	# Factors that impact desirability for trades
 	# The base desirability of a trade is equal to revenue per traded quantity after tariffs and subventions
-	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR = 5 # Desire for a trade is increased by ( subventions as percentage * this ), this is an additional factor on top of the impact on revenue. This is also applied in reverse for subventions in the opposite direction (ie, export subventions reduce desire for imports)
+	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR = 10 # Desire for a trade is increased by ( subventions as percentage * this ), this is an additional factor on top of the impact on revenue. This is also applied in reverse for subventions in the opposite direction (ie, export subventions reduce desire for imports)
 	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR_NEW_GOODS_MULT = 20.0 # The subventions impact on desire for a trade is multiplied by this for importing goods that don't exist in the market
 	AUTONOMOUS_TRADE_DESIRE_TARIFFS_FACTOR = 5 # Desire for a trade is decreased by ( tariffs as percentage * this ), this is an additional factor on top of the impact on revenue
-	AUTONOMOUS_TRADE_DESIRE_OPPOSITE_MARKET_SHARE_FACTOR = 0 # Desire for a trade is changed by this * the share of opposite-direction trade in the world market coming from the country
+	AUTONOMOUS_TRADE_DESIRE_OPPOSITE_MARKET_SHARE_FACTOR = -100 # Desire for a trade is changed by this * the share of opposite-direction trade in the world market coming from the country
 	AUTONOMOUS_TRADE_DESIRE_SHORTAGE_FACTOR = 300 # Desire to import goods in shortage is increased by this, scaled by the severity of the shortage penalty
 
 	# Whenever a Trade Center successfully excecutes a trade, it uses up one of its weekly trades

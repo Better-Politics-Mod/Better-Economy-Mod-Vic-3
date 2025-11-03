@@ -1,0 +1,4 @@
+used_trade_capacity = {
+	value = state_trade
+	divide = 15
+}

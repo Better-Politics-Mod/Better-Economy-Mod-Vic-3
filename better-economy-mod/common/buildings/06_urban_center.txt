@@ -15,7 +15,8 @@ building_urban_center = {
 		pmg_street_lighting
 		pmg_public_transport
 		pmg_urban_clergy
-		pmg_bem_urban_infrastructure
+		#pmg_bem_urban_infrastructure
+		#pmg_trade_quantity_trade_center
 	}
 
 	can_build_private = {
@@ -49,7 +50,7 @@ building_arts_academy = {
 		pmg_base_building_arts_academy
 		pmg_ownership_building_arts_academy
 		pmg_principle_freedom_of_movement_3
-		pmg_bem_service_investment
+		#pmg_bem_service_investment
 	}
 	can_build_private = {
 		always = no

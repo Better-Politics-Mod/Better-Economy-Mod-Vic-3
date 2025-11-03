@@ -64,6 +64,30 @@ goods_output_credit_mult={
 	percent=yes
 }
 
+goods_input_construction_add = {
+	decimals=0
+	color=neutral
+	percent=no
+}
+
+goods_input_construction_mult={
+	decimals=1
+	color=neutral
+	percent=yes
+}
+
+goods_output_construction_add = {
+	decimals=0
+	color=neutral
+	percent=no
+}
+
+goods_output_construction_mult={
+	decimals=1
+	color=neutral
+	percent=yes
+}
+
 building_employment_peasants_mult = {
 	decimals=0
 	color=neutral

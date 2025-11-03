@@ -12,7 +12,7 @@ def polstrength [wealth] {
 }
 
 def total_expenditures [wealth] {
-    1.09 ** (50 + 1.3 * $wealth) + 30
+    (1.095 ** (50 + 1 * $wealth) + 75) * 15
 } 
 
 def weight_basic_food [wealth] {
@@ -204,5 +204,5 @@ def 'to pdxscript' []: record -> string {
 | str join "\n"
 }
 
-1..99 | reduce --fold {} {|i| insert $"wealth_($i)" {political_strength: (polstrength $i), goods: (goods $i)}}
+1..200 | reduce --fold {} {|i| insert $"wealth_($i)" {political_strength: (polstrength $i), goods: (goods $i)}}
 | to pdxscript | save -f "../better-economy-mod/common/buy_packages/zz_bem_buy_packages.txt"

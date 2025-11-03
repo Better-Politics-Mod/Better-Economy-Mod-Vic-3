@@ -73,6 +73,14 @@ on_bem_game_started = {
 					multiplier = scope:multi
 				}
 			}
+			set_local_variable = {
+				name = mult
+				value = used_trade_capacity
+			}
+			add_modifier = {
+				name = bem_trade
+				multiplier = local_var:mult
+			}
 		}
 
 		every_state = {

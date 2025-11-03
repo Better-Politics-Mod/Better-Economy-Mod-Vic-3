@@ -117,8 +117,19 @@
 				name = bem_previous_roi
 				value = owner.bem_roi
 			}
-			
-
+			owner = {
+				every_scope_state = {
+					set_local_variable = {
+						name = mult
+						value = used_trade_capacity
+					}
+					remove_modifier = bem_trade
+					add_modifier = {
+						name = bem_trade
+						multiplier = local_var:mult
+					}
+				}
+			}
 		}
 	}
 

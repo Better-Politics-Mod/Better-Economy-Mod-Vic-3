@@ -1,0 +1,24 @@
+pm_canal = {
+	texture = "gfx/interface/icons/production_method_icons/canals.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 10
+		}
+	}
+	state_modifiers = {
+		level_scaled = {
+			state_migration_pull_mult = 0.02
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 6
+			goods_input_coal_add = 6.75
+		}
+		level_scaled = {
+			building_employment_clerks_add = 200
+			building_employment_machinists_add = 250
+			building_employment_bureaucrats_add = 50
+		}
+	}
+}

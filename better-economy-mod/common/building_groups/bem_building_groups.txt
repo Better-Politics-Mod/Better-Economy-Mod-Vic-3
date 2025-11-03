@@ -33,20 +33,14 @@ bg_banking = {
 
 bg_service = {
 	category = urban
-
 	land_usage = urban
-
 	always_possible = yes
-
 	auto_place_buildings = yes
-
 	always_self_owning = no
-
 	economy_of_scale = no
-
 	default_building = building_urban_center
-
 	cash_reserves_max = 25000
+	has_trade_revenue = yes
 }
 
 bg_financial_districts = {
@@ -98,7 +92,7 @@ bg_owner_buildings = {
 
 	cash_reserves_max = 10000
 
-	urbanization = 1
+	urbanization = 0
 
 	infrastructure_usage_per_level = 0
 
@@ -109,59 +103,14 @@ bg_owner_buildings = {
 	}
 }
 
-bg_coal_mining = {
-	parent_group = bg_mining
-	
-	default_building = building_coal_mine
-
-	can_use_slaves = yes
-
-	capped_by_resources = yes
-
-	discoverable_resource = yes
-}
-
-bg_iron_mining = {
-	parent_group = bg_mining
-	
-	default_building = building_iron_mine
-
-	can_use_slaves = yes
-
-	capped_by_resources = yes
-
-	discoverable_resource = yes
-}
-
-bg_lead_mining = {
-	parent_group = bg_mining
-	
-	default_building = building_lead_mine
-
-	can_use_slaves = yes
-
-	capped_by_resources = yes
-
-	discoverable_resource = yes
-}
-
-bg_sulfur_mining = {
-	parent_group = bg_mining
-	
-	default_building = building_sulfur_mine
-
-	can_use_slaves = yes
-
-	capped_by_resources = yes
-
-	discoverable_resource = yes
-}
-
-bg_monuments = {
-	parent_group = bg_government
-	lens = special
-	inheritable_construction = yes
+bg_trade = {
+	parent_group = bg_private_infrastructure
+	stateregion_max_level = no
+	lens = trade
+	subsidized = no
+	has_trade_revenue = no
 	economy_of_scale = no
-
-	urbanization = 0
+	default_building = building_trade_center
+	can_use_slaves = yes
+	infrastructure_usage_per_level = 0.05
 }

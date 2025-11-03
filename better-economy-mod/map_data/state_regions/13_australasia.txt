@@ -1,4 +1,4 @@
-﻿STATE_NEW_SOUTH_WALES = {
+STATE_NEW_SOUTH_WALES = {
 	id = 558
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
@@ -209,7 +209,7 @@
 	farm = "x8B56F5"
 	mine = "x24AEFA"
 	wood = "x799B34"
-	arable_land = 40
+	arable_land = 400
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
@@ -219,9 +219,11 @@
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 28
-		bg_whaling = 4
-		bg_fishing = 8
+		bg_coal_mining = 800
+		bg_iron_mining = 360
+		bg_logging = 70
+		bg_whaling = 40
+		bg_fishing = 80
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -233,16 +235,6 @@
 		undiscovered_amount = 30
 	}
 	naval_exit_id = 3122
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 80
-		undiscovered_amount = 240
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
 }
 STATE_VICTORIA = {
 	id = 559
@@ -316,7 +308,7 @@ STATE_VICTORIA = {
 	farm = "xCC9C60"
 	mine = "xC04012"
 	wood = "xC21B54"
-	arable_land = 40
+	arable_land = 400
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
@@ -326,9 +318,10 @@ STATE_VICTORIA = {
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 44
-		bg_whaling = 3
-		bg_fishing = 8
+		bg_sulfur_mining = 240
+		bg_logging = 110
+		bg_whaling = 30
+		bg_fishing = 80
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -336,11 +329,6 @@ STATE_VICTORIA = {
 		undiscovered_amount = 6
 	}
 	naval_exit_id = 3122
-	resource = {
-		type = "bg_sulfur_mining"
-		discovered_amount = 24
-		undiscovered_amount = 72
-	}
 }
 STATE_TASMANIA = {
 	id = 1022
@@ -376,7 +364,7 @@ STATE_TASMANIA = {
 	farm = "xEC439A"
 	mine = "x05B74C"
 	wood = "xBB312B"
-	arable_land = 15
+	arable_land = 150
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
@@ -386,9 +374,11 @@ STATE_TASMANIA = {
 		"bg_opium_plantations"
 	}
 	capped_resources = {
-		bg_logging = 32
-		bg_whaling = 2
-		bg_fishing = 6
+		bg_iron_mining = 150
+		bg_lead_mining = 150
+		bg_logging = 80
+		bg_whaling = 20
+		bg_fishing = 60
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -396,16 +386,6 @@ STATE_TASMANIA = {
 		undiscovered_amount = 6
 	}
 	naval_exit_id = 3122
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 15
-		undiscovered_amount = 45
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 15
-		undiscovered_amount = 45
-	}
 }
 STATE_QUEENSLAND = {
 	id = 560
@@ -876,7 +856,7 @@ STATE_QUEENSLAND = {
 	farm = "x0E58D6"
 	mine = "x57456E"
 	wood = "xA70E88"
-	arable_land = 20
+	arable_land = 200
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
@@ -885,21 +865,13 @@ STATE_QUEENSLAND = {
 		"bg_sugar_plantations"
 	}
 	capped_resources = {
-		bg_logging = 20
-		bg_whaling = 3
-		bg_fishing = 12
+		bg_iron_mining = 450
+		bg_lead_mining = 450
+		bg_logging = 50
+		bg_whaling = 30
+		bg_fishing = 120
 	}
 	naval_exit_id = 3124
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 45
-		undiscovered_amount = 135
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 45
-		undiscovered_amount = 135
-	}
 }
 STATE_SOUTH_AUSTRALIA = {
 	id = 561
@@ -1220,32 +1192,20 @@ STATE_SOUTH_AUSTRALIA = {
 	farm = "xC53983"
 	mine = "x6F472E"
 	wood = "xD471D4"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_whaling = 2
-		bg_fishing = 6
+		bg_iron_mining = 300
+		bg_lead_mining = 360
+		bg_sulfur_mining = 600
+		bg_whaling = 20
+		bg_fishing = 60
 	}
 	naval_exit_id = 3121
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 30
-		undiscovered_amount = 90
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
-	resource = {
-		type = "bg_sulfur_mining"
-		discovered_amount = 60
-		undiscovered_amount = 180
-	}
 }
 STATE_WESTERN_AUSTRALIA = {
 	id = 562
@@ -1978,16 +1938,18 @@ STATE_WESTERN_AUSTRALIA = {
 	farm = "x98FA26"
 	mine = "x8D829F"
 	wood = "x74551C"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 		"bg_vineyard_plantations"
 	}
 	capped_resources = {
-		bg_logging = 16
-		bg_whaling = 3
-		bg_fishing = 9
+		bg_coal_mining = 400
+		bg_iron_mining = 300
+		bg_logging = 40
+		bg_whaling = 30
+		bg_fishing = 90
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -1995,16 +1957,6 @@ STATE_WESTERN_AUSTRALIA = {
 		undiscovered_amount = 8
 	}
 	naval_exit_id = 3123
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 40
-		undiscovered_amount = 120
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 30
-		undiscovered_amount = 90
-	}
 }
 STATE_NORTHERN_TERRITORY = {
 	id = 563
@@ -2452,15 +2404,15 @@ STATE_NORTHERN_TERRITORY = {
 	farm = "xF943B8"
 	mine = "x3F7FA7"
 	wood = "xA4B8B3"
-	arable_land = 10
+	arable_land = 100
 	arable_resources = {
 		"bg_livestock_ranches"
 		"bg_cotton_plantations"
 	}
 	capped_resources = {
-		bg_logging = 20
-		bg_whaling = 2
-		bg_fishing = 6
+		bg_logging = 50
+		bg_whaling = 20
+		bg_fishing = 60
 	}
 	naval_exit_id = 3126
 }
@@ -2512,15 +2464,17 @@ STATE_NORTH_ISLAND = {
 	farm = "xEBB583"
 	mine = "x59DF28"
 	wood = "x0AA01A"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 44
-		bg_whaling = 3
-		bg_fishing = 8
+		bg_coal_mining = 280
+		bg_iron_mining = 270
+		bg_logging = 110
+		bg_whaling = 30
+		bg_fishing = 80
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -2528,16 +2482,6 @@ STATE_NORTH_ISLAND = {
 		undiscovered_amount = 4
 	}
 	naval_exit_id = 3122
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 28
-		undiscovered_amount = 84
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 27
-		undiscovered_amount = 81
-	}
 }
 STATE_SOUTH_ISLAND = {
 	id = 565
@@ -2603,15 +2547,15 @@ STATE_SOUTH_ISLAND = {
 	farm = "x6A5DDE"
 	mine = "xD040B0"
 	wood = "x50F19B"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_wheat_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 28
-		bg_whaling = 4
-		bg_fishing = 10
+		bg_logging = 70
+		bg_whaling = 40
+		bg_fishing = 100
 	}
 	resource = {
 		type = "bg_gold_fields"

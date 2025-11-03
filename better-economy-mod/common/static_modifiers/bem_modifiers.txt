@@ -67,6 +67,9 @@
 
 	state_trade_advantage_from_capacity_add = 0.0005
 	state_max_trade_advantage_from_capacity_add = 0.2
+
+	state_weekly_trades_add = 10
+	state_trade_capacity_add = 999999999
 	
 	country_party_whip_impact_add = 0.5
 }
@@ -163,4 +166,13 @@ prestige_ranking = {
 }
 
 top_prestige_ranking = {
+}
+
+economy_of_scale = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_throughput_add = 0.001
+}
+
+bem_trade = {
+	state_weekly_trades_add = 0.25
 }

@@ -208,9 +208,10 @@ building_trade_center = {
 	icon = "gfx/interface/icons/building_icons/building_trade_center.dds"
 
 	production_method_groups = {
-		pmg_base_building_trade_center
-		pmg_trade_quantity_trade_center
+		#pmg_base_building_trade_center
+		#pmg_trade_quantity_trade_center
 		#pmg_bem_service_investment
+		pmg_dummy
 	}
 
 	can_build_government = {

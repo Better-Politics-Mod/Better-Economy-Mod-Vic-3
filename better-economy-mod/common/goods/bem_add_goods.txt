@@ -1,0 +1,32 @@
+﻿assets = {
+	texture = "gfx/interface/icons/goods_icons/assets.dds"
+	cost = 1500
+	category = luxury
+	fixed_price = yes
+
+	prestige_factor = 15
+	local = yes
+	traded_quantity = 1
+
+	consumption_tax_cost = 1000
+}
+
+credit = {
+	texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
+	cost = 15000
+	category = luxury
+
+	prestige_factor = 150
+	traded_quantity = 0.1
+	consumption_tax_cost = 1000
+}
+
+construction = {
+	texture = "gfx/interface/icons/goods_icons/construction.dds"
+	cost = 100
+	category = industrial
+
+	prestige_factor = 8
+	local = yes
+	consumption_tax_cost = 300
+}

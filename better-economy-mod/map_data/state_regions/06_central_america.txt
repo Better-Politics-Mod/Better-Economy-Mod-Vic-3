@@ -1,4 +1,4 @@
-﻿STATE_SAN_SALVADOR = {
+STATE_SAN_SALVADOR = {
 	id = 338
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
@@ -15,7 +15,7 @@
 	farm = "xB0D0C7"
 	mine = "xB0D0C7"
 	wood = "x107040"
-	arable_land = 25
+	arable_land = 250
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -26,8 +26,8 @@
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 28
-		bg_fishing = 4
+		bg_logging = 70
+		bg_fishing = 40
 	}
 	resource = {
 		type = "bg_rubber"
@@ -73,7 +73,7 @@ STATE_GUATEMALA = {
 	farm = "x65C19A"
 	mine = "x50B040"
 	wood = "xFA4B41"
-	arable_land = 40
+	arable_land = 400
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -85,19 +85,15 @@ STATE_GUATEMALA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 68
-		bg_fishing = 5
+		bg_iron_mining = 300
+		bg_logging = 170
+		bg_fishing = 50
 	}
 	resource = {
 		type = "bg_rubber"
 		undiscovered_amount = 20
 	}
 	naval_exit_id = 3026
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 30
-		undiscovered_amount = 90
-	}
 }
 STATE_HONDURAS = {
 	id = 340
@@ -135,7 +131,7 @@ STATE_HONDURAS = {
 	farm = "x55B06A"
 	mine = "x98E7D7"
 	wood = "xC77E76"
-	arable_land = 35
+	arable_land = 350
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -147,8 +143,8 @@ STATE_HONDURAS = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 60
-		bg_fishing = 8
+		bg_logging = 150
+		bg_fishing = 80
 	}
 	resource = {
 		type = "bg_rubber"
@@ -192,7 +188,7 @@ STATE_NICARAGUA = {
 	farm = "x68E7F3"
 	mine = "xC9A998"
 	wood = "x9CDB2B"
-	arable_land = 50
+	arable_land = 500
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -204,8 +200,8 @@ STATE_NICARAGUA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 56
-		bg_fishing = 5
+		bg_logging = 140
+		bg_fishing = 50
 	}
 	resource = {
 		type = "bg_rubber"
@@ -237,7 +233,7 @@ STATE_COSTA_RICA = {
 	farm = "xEF90DC"
 	mine = "x1A076A"
 	wood = "x478109"
-	arable_land = 15
+	arable_land = 150
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -248,19 +244,15 @@ STATE_COSTA_RICA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 32
-		bg_fishing = 3
+		bg_coal_mining = 240
+		bg_logging = 80
+		bg_fishing = 30
 	}
 	resource = {
 		type = "bg_rubber"
 		undiscovered_amount = 12
 	}
 	naval_exit_id = 3026
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 24
-		undiscovered_amount = 72
-	}
 }
 STATE_PANAMA = {
 	id = 343
@@ -286,7 +278,7 @@ STATE_PANAMA = {
 	farm = "x30B080"
 	mine = "x8537FE"
 	wood = "x717275"
-	arable_land = 20
+	arable_land = 200
 	arable_resources = {
 		"bg_maize_farms"
 		"bg_livestock_ranches"
@@ -295,20 +287,16 @@ STATE_PANAMA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 32
-		bg_fishing = 6
-		bg_whaling = 2
+		bg_coal_mining = 360
+		bg_logging = 80
+		bg_fishing = 60
+		bg_whaling = 20
 	}
 	resource = {
 		type = "bg_rubber"
 		undiscovered_amount = 12
 	}
 	naval_exit_id = 3026
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
 }
 STATE_HAITI = {
 	id = 344
@@ -327,7 +315,7 @@ STATE_HAITI = {
 	farm = "x0E35C0"
 	mine = "xC6C663"
 	wood = "x2FC1FC"
-	arable_land = 35
+	arable_land = 350
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -338,8 +326,8 @@ STATE_HAITI = {
 		"bg_dye_plantations"
 	}
 	capped_resources = {
-		bg_logging = 28
-		bg_fishing = 6
+		bg_logging = 70
+		bg_fishing = 60
 	}
 	resource = {
 		type = "bg_rubber"
@@ -365,7 +353,7 @@ STATE_SANTO_DOMINGO = {
 	farm = "x317080"
 	mine = "xACBDD9"
 	wood = "x317080"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -376,8 +364,8 @@ STATE_SANTO_DOMINGO = {
 		"bg_dye_plantations"
 	}
 	capped_resources = {
-		bg_logging = 44
-		bg_fishing = 7
+		bg_logging = 110
+		bg_fishing = 70
 	}
 	resource = {
 		type = "bg_rubber"
@@ -400,7 +388,7 @@ STATE_PUERTO_RICO = {
 	farm = "xB07080"
 	mine = "xB07080"
 	wood = "xB07080"
-	arable_land = 15
+	arable_land = 150
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -410,8 +398,8 @@ STATE_PUERTO_RICO = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 8
-		bg_fishing = 4
+		bg_logging = 20
+		bg_fishing = 40
 	}
 	resource = {
 		type = "bg_rubber"
@@ -433,7 +421,7 @@ STATE_BAHAMAS = {
 	farm = "x4EBC79"
 	wood = "x4EBC79"
 	mine = "x4EBC79"
-	arable_land = 10
+	arable_land = 100
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -442,7 +430,7 @@ STATE_BAHAMAS = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_fishing = 5
+		bg_fishing = 50
 	}
 	naval_exit_id = 3061
 }
@@ -475,7 +463,7 @@ STATE_WEST_INDIES = {
 	farm = "x30F080"
 	mine = "x446C63"
 	wood = "x33895B"
-	arable_land = 30
+	arable_land = 300
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -485,7 +473,7 @@ STATE_WEST_INDIES = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_fishing = 8
+		bg_fishing = 80
 	}
 	resource = {
 		type = "bg_oil_extraction"
@@ -509,7 +497,7 @@ STATE_JAMAICA = {
 	farm = "x535B49"
 	mine = "x535B49"
 	wood = "x535B49"
-	arable_land = 20
+	arable_land = 200
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -519,8 +507,8 @@ STATE_JAMAICA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 16
-		bg_fishing = 5
+		bg_logging = 40
+		bg_fishing = 50
 	}
 	resource = {
 		type = "bg_rubber"
@@ -563,7 +551,7 @@ STATE_CUBA = {
 	farm = "x152D1C"
 	mine = "x69C041"
 	wood = "x58C211"
-	arable_land = 105
+	arable_land = 1050
 	arable_resources = {
 		"bg_rice_farms"
 		"bg_livestock_ranches"
@@ -573,8 +561,10 @@ STATE_CUBA = {
 		"bg_banana_plantations"
 	}
 	capped_resources = {
-		bg_logging = 60
-		bg_fishing = 10
+		bg_coal_mining = 160
+		bg_iron_mining = 180
+		bg_logging = 150
+		bg_fishing = 100
 	}
 	resource = {
 		type = "bg_rubber"
@@ -585,14 +575,4 @@ STATE_CUBA = {
 		undiscovered_amount = 10
 	}
 	naval_exit_id = 3061
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 16
-		undiscovered_amount = 48
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 18
-		undiscovered_amount = 54
-	}
 }

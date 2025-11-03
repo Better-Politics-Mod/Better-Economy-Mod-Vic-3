@@ -19,7 +19,7 @@ building_food_industry = {
 		pmg_canning
 		pmg_distillery
 		pmg_automation_building_food_industry
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -46,7 +46,7 @@ building_textile_mills = {
 		pmg_base_building_textile_mills
 		pmg_luxury_building_textile_mills
 		pmg_automation_building_textile_mills
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -73,7 +73,7 @@ building_furniture_manufacturies = {
 		pmg_base_building_furniture_manufacturies
 		pmg_luxury_building_furniture_manufacturies
 		pmg_automation_building_furniture_manufacturies
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -98,7 +98,7 @@ building_glassworks = {
 		pmg_base_building_glassworks
 		pmg_luxury_building_glassworks
 		pmg_glassblowing
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -125,7 +125,7 @@ building_tooling_workshops = {
 	production_method_groups = {
 		pmg_base_building_tooling_workshops
 		pmg_automation_building_tooling_workshops
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -154,7 +154,7 @@ building_paper_mills = {
 	production_method_groups = {
 		pmg_base_building_paper_mills
 		pmg_automation_building_paper_mills
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -178,7 +178,7 @@ building_chemical_plants = {
 
 	production_method_groups = {
 		pmg_fertilizer_production
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -214,7 +214,7 @@ building_explosives_factory = {
 
 	production_method_groups = {
 		pmg_explosives_building_chemical_plants
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -249,7 +249,7 @@ building_synthetics_plants = {
 	production_method_groups = {
 		pmg_synthetic_dyes
 		pmg_synthetic_silk
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -286,7 +286,7 @@ building_steel_mills = {
 	production_method_groups = {
 		pmg_steelmaking_process
 		pmg_automation_building_steel_mills
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -321,7 +321,7 @@ building_motor_industry = {
 	production_method_groups = {
 		pmg_base_building_motor_industry
 		pmg_automation_building_motor_industry
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -356,7 +356,7 @@ building_shipyards = {
 	}
 	production_method_groups = {
 		pmg_base_building_shipyards
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -384,7 +384,7 @@ building_military_shipyards = {
 	}
 	production_method_groups = {
 		pmg_military_base
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -414,7 +414,7 @@ building_automotive_industry = {
 		pmg_aeroplanes
 		pmg_tanks
 		pmg_automation_building_automotive_industry
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -449,7 +449,7 @@ building_electrics_industry = {
 	production_method_groups = {
 		pmg_telephones_category
 		pmg_radios_category
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high
@@ -486,7 +486,7 @@ building_arms_industry = {
 	production_method_groups = {
 		pmg_firearms_manufacturing
 		pmg_automation_building_arms_industry
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_high
@@ -537,7 +537,7 @@ building_munition_plants = {
 	production_method_groups = {
 		pmg_base_building_munition_plants
 		pmg_automation_building_munition_plants
-		pmg_bem_industrial_investment
+		#pmg_bem_industrial_investment
 	}
 
 	required_construction = construction_cost_very_high

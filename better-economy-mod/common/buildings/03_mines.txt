@@ -16,7 +16,7 @@
 		pmg_explosives_building_coal_mine
 		pmg_steam_automation_building_coal_mine
 		pmg_train_automation_building_coal_mine
-		pmg_bem_resource_investment
+		#pmg_bem_resource_investment
 	}
 	ownership_type = self
 
@@ -42,7 +42,7 @@ building_iron_mine = {
 		pmg_explosives_building_iron_mine
 		pmg_steam_automation_building_iron_mine
 		pmg_train_automation_building_iron_mine
-		pmg_bem_resource_investment
+		#pmg_bem_resource_investment
 	}
 	ownership_type = self
 
@@ -67,7 +67,7 @@ building_lead_mine = {
 		pmg_explosives_building_lead_mine
 		pmg_steam_automation_building_lead_mine
 		pmg_train_automation_building_lead_mine
-		pmg_bem_resource_investment
+		#pmg_bem_resource_investment
 	}
 	ownership_type = self
 
@@ -92,7 +92,7 @@ building_sulfur_mine = {
 		pmg_explosives_building_sulfur_mine
 		pmg_steam_automation_building_sulfur_mine
 		pmg_train_automation_building_sulfur_mine
-		pmg_bem_resource_investment
+		#pmg_bem_resource_investment
 	}
 	ownership_type = self
 
@@ -121,7 +121,7 @@ building_gold_mine = {
 		pmg_explosives_building_gold_mine
 		pmg_steam_automation_building_gold_mine
 		pmg_train_automation_building_gold_mine
-		pmg_bem_resource_investment
+		#pmg_bem_resource_investment
 	}
 	ownership_type = self
 

@@ -1,4 +1,4 @@
-﻿STATE_URAL = {
+STATE_URAL = {
 	id = 566
 	subsistence_building = "building_subsistence_farms"
 	provinces = {
@@ -127,7 +127,6 @@
 		"xFCF282"
 	}
 	impassable = {
-	
 	}
 	traits = {
 		"state_trait_ural_iron"
@@ -136,34 +135,22 @@
 	farm = "x665888"
 	mine = "x492819"
 	wood = "x317252"
-	arable_land = 60
+	arable_land = 600
 	arable_resources = {
 		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_gold_mining = 2
-		bg_logging = 108
+		bg_coal_mining = 840
+		bg_iron_mining = 960
+		bg_lead_mining = 810
+		bg_gold_mining = 20
+		bg_logging = 270
 	}
 	resource = {
 		type = "bg_gold_fields"
 		depleted_type = "bg_gold_mining"
 		undiscovered_amount = 6
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 84
-		undiscovered_amount = 252
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 96
-		undiscovered_amount = 288
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 81
-		undiscovered_amount = 243
 	}
 }
 STATE_TOMSK = {
@@ -483,23 +470,15 @@ STATE_TOMSK = {
 	farm = "xB17826"
 	mine = "xAD226E"
 	wood = "x02FAB2"
-	arable_land = 90
+	arable_land = 900
 	arable_resources = {
 		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 104
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 85
-		undiscovered_amount = 255
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 27
-		undiscovered_amount = 81
+		bg_coal_mining = 850
+		bg_iron_mining = 270
+		bg_logging = 260
 	}
 }
 STATE_TUVA = {
@@ -582,7 +561,7 @@ STATE_TUVA = {
 	farm = "xE24AC6"
 	mine = "x8C119F"
 	wood = "x01871B"
-	arable_land = 15
+	arable_land = 150
 	traits = {
 		"state_trait_yenisei_river"
 	}
@@ -591,17 +570,9 @@ STATE_TUVA = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 56
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 44
-		undiscovered_amount = 132
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 18
-		undiscovered_amount = 54
+		bg_coal_mining = 440
+		bg_iron_mining = 180
+		bg_logging = 140
 	}
 }
 STATE_TOBOLSK = {
@@ -772,27 +743,19 @@ STATE_TOBOLSK = {
 	farm = "x3D8542"
 	mine = "xB50B04"
 	wood = "xC2DCCF"
-	arable_land = 53
+	arable_land = 530
 	arable_resources = {
 		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 120
+		bg_coal_mining = 440
+		bg_iron_mining = 100
+		bg_logging = 300
 	}
 	resource = {
 		type = "bg_oil_extraction"
 		undiscovered_amount = 60
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 44
-		undiscovered_amount = 132
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 10
-		undiscovered_amount = 30
 	}
 }
 STATE_UPPER_YENISEYSK = {
@@ -3479,22 +3442,14 @@ STATE_UPPER_YENISEYSK = {
 	farm = "x2A9999"
 	mine = "x49BC6A"
 	wood = "x38CAD7"
-	arable_land = 10
+	arable_land = 100
 	arable_resources = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 192
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 15
-		undiscovered_amount = 45
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 10
-		undiscovered_amount = 30
+		bg_coal_mining = 150
+		bg_iron_mining = 100
+		bg_logging = 480
 	}
 }
 STATE_OB = {
@@ -4316,20 +4271,16 @@ STATE_OB = {
 	farm = "x620328"
 	mine = "x565055"
 	wood = "xB28F60"
-	arable_land = 2
+	arable_land = 20
 	arable_resources = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 88
+		bg_coal_mining = 200
+		bg_logging = 220
 	}
 	resource = {
 		type = "bg_oil_extraction"
-		undiscovered_amount = 60
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 20
 		undiscovered_amount = 60
 	}
 }
@@ -5183,14 +5134,15 @@ STATE_CHUKOTKA = {
 	farm = "x521127"
 	mine = "xB8978D"
 	wood = "x633AE3"
-	arable_land = 2
+	arable_land = 20
 	arable_resources = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 52
-		bg_whaling = 3
-		bg_fishing = 9
+		bg_coal_mining = 360
+		bg_logging = 130
+		bg_whaling = 30
+		bg_fishing = 90
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -5198,11 +5150,6 @@ STATE_CHUKOTKA = {
 		undiscovered_amount = 4
 	}
 	naval_exit_id = 3128
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
 }
 STATE_KAMCHATKA = {
 	id = 576
@@ -5513,14 +5460,14 @@ STATE_KAMCHATKA = {
 	farm = "x61DF32"
 	mine = "x33BBD3"
 	wood = "x9E6A2C"
-	arable_land = 4
+	arable_land = 40
 	arable_resources = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 52
-		bg_fishing = 15
-		bg_whaling = 8
+		bg_logging = 130
+		bg_fishing = 150
+		bg_whaling = 80
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -5922,7 +5869,7 @@ STATE_OKHOTSK = {
 	farm = "x13DD66"
 	mine = "xB679E5"
 	wood = "x806D27"
-	arable_land = 2
+	arable_land = 20
 	traits = {
 		"state_trait_siberian_terrain"
 	}
@@ -5930,9 +5877,10 @@ STATE_OKHOTSK = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_fishing = 10
-		bg_whaling = 5
-		bg_logging = 40
+		bg_coal_mining = 360
+		bg_fishing = 100
+		bg_whaling = 50
+		bg_logging = 100
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -5940,11 +5888,6 @@ STATE_OKHOTSK = {
 		undiscovered_amount = 8
 	}
 	naval_exit_id = 3118
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
 }
 STATE_YAKUTSK = {
 	id = 581
@@ -7798,12 +7741,14 @@ STATE_YAKUTSK = {
 	farm = "x3DAB58"
 	mine = "xF71C2F"
 	wood = "xDF23A0"
-	arable_land = 14
+	arable_land = 140
 	arable_resources = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 92
+		bg_coal_mining = 360
+		bg_lead_mining = 160
+		bg_logging = 230
 	}
 	resource = {
 		type = "bg_gold_fields"
@@ -7813,16 +7758,6 @@ STATE_YAKUTSK = {
 	resource = {
 		type = "bg_oil_extraction"
 		undiscovered_amount = 5
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 16
-		undiscovered_amount = 48
 	}
 }
 STATE_TRANS_BAIKAL = {
@@ -8036,37 +7971,21 @@ STATE_TRANS_BAIKAL = {
 	farm = "x7576FE"
 	mine = "x2C83FA"
 	wood = "x521AC8"
-	arable_land = 36
+	arable_land = 360
 	arable_resources = {
 		"bg_rye_farms"
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 96
+		bg_coal_mining = 800
+		bg_iron_mining = 330
+		bg_lead_mining = 280
+		bg_sulfur_mining = 440
+		bg_logging = 240
 	}
 	resource = {
 		type = "bg_oil_extraction"
 		undiscovered_amount = 10
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 80
-		undiscovered_amount = 240
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 33
-		undiscovered_amount = 99
-	}
-	resource = {
-		type = "bg_lead_mining"
-		discovered_amount = 28
-		undiscovered_amount = 84
-	}
-	resource = {
-		type = "bg_sulfur_mining"
-		discovered_amount = 44
-		undiscovered_amount = 132
 	}
 }
 STATE_IRKUTSK = {
@@ -8428,7 +8347,7 @@ STATE_IRKUTSK = {
 	farm = "x391CB4"
 	mine = "x638769"
 	wood = "x982F85"
-	arable_land = 30
+	arable_land = 300
 	traits = {
 		"state_trait_angara_river"
 	}
@@ -8437,20 +8356,12 @@ STATE_IRKUTSK = {
 		"bg_livestock_ranches"
 	}
 	capped_resources = {
-		bg_logging = 120
+		bg_coal_mining = 500
+		bg_iron_mining = 360
+		bg_logging = 300
 	}
 	resource = {
 		type = "bg_oil_extraction"
 		undiscovered_amount = 10
-	}
-	resource = {
-		type = "bg_coal_mining"
-		discovered_amount = 50
-		undiscovered_amount = 150
-	}
-	resource = {
-		type = "bg_iron_mining"
-		discovered_amount = 36
-		undiscovered_amount = 108
 	}
 }

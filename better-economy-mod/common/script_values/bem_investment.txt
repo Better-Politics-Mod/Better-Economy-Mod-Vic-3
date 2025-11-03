@@ -155,5 +155,5 @@ bem_economy_heat = {
 
 bem_initial_investment_pool = {
 	value = gdp
-	multiply = 5
+	multiply = 2
 }
