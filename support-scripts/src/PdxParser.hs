@@ -131,7 +131,7 @@ opLiteral :: Parser String
 opLiteral = notNull $ spanP (`elem` "=<>!")
 
 pdxPair :: Parser PdxValue
-pdxPair = PdxPair <$> ((\key op value -> (key, op, value)) 
+pdxPair = PdxPair <$> ((,,) 
     <$> (uStringLiteral <|> intLiteral) 
     <*> (ws *> opLiteral <* ws) 
     <*> pdxValue
@@ -141,7 +141,7 @@ pdxValue :: Parser PdxValue
 pdxValue = pdxArray <|> pdxHsvArray <|> pdxPair <|> pdxBool <|> pdxNumber <|> pdxQString <|> pdxUString
 
 stripComments :: String -> String
-stripComments = concat . map (\l -> takeWhile (/= '#') l ++ "\n") . lines
+stripComments = concatMap (\l -> takeWhile (/= '#') l ++ "\n") . lines
 
 unBOM :: String -> String
 unBOM ('\xFEFF':xs) = xs
@@ -171,7 +171,140 @@ toPdxScriptIndent n v = case v of
     indent :: Int -> String
     indent n' = replicate n' '\t'
     content :: [PdxValue] -> String
-    content xs = concatMap (\x -> indent (n+1) ++ toPdxScriptIndent (n+1) x ++ "\n") xs
+    content = concatMap (\x -> indent (n+1) ++ toPdxScriptIndent (n+1) x ++ "\n")
+
+setEntryMode :: String -> PdxValue -> PdxValue
+setEntryMode mode (PdxArray xs) = PdxArray (map prependToKey xs)
+  where
+    prependToKey :: PdxValue -> PdxValue
+    prependToKey (PdxPair (key, op, val)) = PdxPair (mode ++ key, op, val)
+    prependToKey other = other
+setEntryMode mode other = other
+
+isDatabase :: FilePath -> Bool
+isDatabase dstDir = 
+  let normalizedDst = map (\c -> if c == '\\' then '/' else c) dstDir
+  in any (`isSuffixOf` normalizedDst) databasePaths
+    where databasePaths = 
+            [ "common/acceptance_statuses"
+            , "common/ai_strategies"
+            , "common/amendments"
+            , "common/battle_conditions"
+            , "common/building_groups"
+            , "common/buildings"
+            , "common/buy_packages"
+            , "common/character_interactions"
+            , "common/character_templates"
+            , "common/character_traits"
+            , "common/cohesion_levels"
+            , "common/combat_unit_groups"
+            , "common/combat_unit_types"
+            , "common/combat_unit_experience_levels"
+            , "common/commander_orders"
+            , "common/company_charter_types"
+            , "common/company_types"
+            , "common/country_creation"
+            , "common/country_definitions"
+            , "common/country_formation"
+            , "common/country_ranks"
+            , "common/country_types"
+            , "common/culture_graphics"
+            , "common/cultures"
+            , "common/decisions"
+            , "common/decrees"
+            , "common/diplomatic_actions"
+            , "common/diplomatic_catalyst_categories"
+            , "common/diplomatic_catalysts"
+            , "common/diplomatic_plays"
+            , "common/discrimination_trait_groups"
+            , "common/discrimination_traits"
+            , "common/dna_data"
+            , "common/dynamic_company_names"
+            , "common/dynamic_country_names"
+            , "common/dynamic_country_map_colors"
+            , "common/dynamic_treaty_names"
+            , "common/technology"
+            , "common/flag_definitions"
+            , "common/game_concepts"
+            , "common/genes"
+            , "common/geographic_regions"
+            , "common/goods"
+            , "common/government_types"
+            , "common/harvest_condition_types"
+            , "common/ideologies"
+            , "common/institutions"
+            , "common/interest_group_traits"
+            , "common/interest_groups"
+            , "common/journal_entry_groups"
+            , "common/journal_entries"
+            , "common/law_groups"
+            , "common/laws"
+            , "common/legitimacy_levels"
+            , "common/liberty_desire_levels"
+            , "common/military_formation_flags"
+            , "common/mobilization_option_groups"
+            , "common/mobilization_options"
+            , "common/objective_subgoal_categories"
+            , "common/objective_subgoals"
+            , "common/objectives"
+            , "common/parties"
+            , "common/political_lobby_appeasement"
+            , "common/political_lobbies"
+            , "common/political_movement_categories"
+            , "common/political_movement_pop_support"
+            , "common/political_movements"
+            , "common/pop_needs"
+            , "common/pop_types"
+            , "common/power_bloc_coa_pieces"
+            , "common/power_bloc_identities"
+            , "common/power_bloc_map_textures"
+            , "common/power_bloc_names"
+            , "common/power_bloc_principle_groups"
+            , "common/power_bloc_principles"
+            , "common/prestige_goods"
+            , "common/production_method_groups"
+            , "common/production_methods"
+            , "common/proposal_types"
+            , "common/religions"
+            , "common/social_classes"
+            , "common/social_hierarchies"
+            , "common/state_traits"
+            , "common/strategic_regions"
+            , "common/subject_types"
+            , "common/terrain_manipulators"
+            , "common/terrain"
+            , "common/themes"
+            , "common/tutorial_lessons"
+            , "common/tutorial_lesson_chains"
+            , "common/labels"
+            , "common/war_goal_types"
+            , "common/alert_groups"
+            , "common/alert_types"
+            , "common/commander_ranks"
+            , "common/scripted_buttons"
+            , "common/scripted_progress_bars"
+            , "common/treaty_articles"
+            , "common/modifier_type_definitions"
+            , "common/ethnicities"
+            , "common/script_values"
+            , "common/scripted_guis"
+            , "common/scripted_lists"
+            , "common/scripted_modifiers"
+            , "common/achievements"
+            , "gfx/map/city_data/city_building_vfx"
+            , "gfx/map/fleet_dioramas"
+            , "gfx/map/fleet_entities"
+            , "gfx/map/army_dioramas"
+            , "gfx/map/front_entities"
+            , "gfx/portraits/accessories"
+            , "gfx/portraits/portrait_modifiers"
+            --, "map_data/state_regions" -- doesn't work even though its in the list from the dev diary idk
+            , "sound/persistent_objects"
+            , "music"
+            , "notifications"
+            , "gui_animations"
+            , "modifier_icons"
+            ]
 
 processDirectory :: [String] -> (PdxValue -> PdxValue) -> FilePath -> FilePath -> IO ()
 processDirectory excludePrefixes transform srcDir dstDir = do
@@ -179,12 +312,15 @@ processDirectory excludePrefixes transform srcDir dstDir = do
   entries <- listDirectory srcDir
   forM_ entries $ \entry -> do
     let srcPath = srcDir </> entry
-    let dstPath = dstDir </> entry
+    let dstPath = dstDir </> "bem_" ++ entry
     isFile <- doesFileExist srcPath
     let isBlacklisted = any (`isPrefixOf` entry) excludePrefixes
     when (isFile && takeExtension entry == ".txt" && not isBlacklisted) $ do
       result <- parseFile srcPath
       case result of
         Just parsed -> do
-          writeFile dstPath $ toPdxScript $ transform parsed
+          let finalTransform = if isDatabase dstDir 
+                               then setEntryMode "REPLACE:" . transform
+                               else transform
+          writeFile dstPath $ toPdxScript $ finalTransform parsed
         Nothing -> putStrLn $ "Failed to parse: " ++ srcPath

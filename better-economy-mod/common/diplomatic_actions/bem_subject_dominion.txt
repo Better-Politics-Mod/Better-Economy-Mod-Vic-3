@@ -1,4 +1,4 @@
-﻿dominion = {
+﻿REPLACE:dominion = {
 	groups= {
 		general # for breaking only
 	}

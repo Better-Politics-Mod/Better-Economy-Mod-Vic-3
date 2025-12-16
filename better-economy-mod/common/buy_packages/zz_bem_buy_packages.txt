@@ -1,4 +1,4 @@
-wealth_1 = {
+REPLACE_OR_CREATE:wealth_1 = {
 	political_strength = 0.03
 	goods = {
 		popneed_basic_food = 1962 # 73.75%
@@ -18,7 +18,7 @@ wealth_1 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_2 = {
+REPLACE_OR_CREATE:wealth_2 = {
 	political_strength = 0.06
 	goods = {
 		popneed_basic_food = 2032 # 72.41%
@@ -38,7 +38,7 @@ wealth_2 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_3 = {
+REPLACE_OR_CREATE:wealth_3 = {
 	political_strength = 0.09
 	goods = {
 		popneed_basic_food = 2122 # 71.55%
@@ -58,7 +58,7 @@ wealth_3 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_4 = {
+REPLACE_OR_CREATE:wealth_4 = {
 	political_strength = 0.12
 	goods = {
 		popneed_basic_food = 2233 # 71.1%
@@ -78,7 +78,7 @@ wealth_4 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_5 = {
+REPLACE_OR_CREATE:wealth_5 = {
 	political_strength = 0.15
 	goods = {
 		popneed_basic_food = 2038 # 61.16%
@@ -98,7 +98,7 @@ wealth_5 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_6 = {
+REPLACE_OR_CREATE:wealth_6 = {
 	political_strength = 0.18
 	goods = {
 		popneed_basic_food = 2072 # 58.5%
@@ -118,7 +118,7 @@ wealth_6 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_7 = {
+REPLACE_OR_CREATE:wealth_7 = {
 	political_strength = 0.21
 	goods = {
 		popneed_basic_food = 2098 # 55.63%
@@ -138,7 +138,7 @@ wealth_7 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_8 = {
+REPLACE_OR_CREATE:wealth_8 = {
 	political_strength = 0.24
 	goods = {
 		popneed_basic_food = 2157 # 53.62%
@@ -158,7 +158,7 @@ wealth_8 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_9 = {
+REPLACE_OR_CREATE:wealth_9 = {
 	political_strength = 0.27
 	goods = {
 		popneed_basic_food = 2261 # 52.6%
@@ -178,7 +178,7 @@ wealth_9 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_10 = {
+REPLACE_OR_CREATE:wealth_10 = {
 	political_strength = 0.3
 	goods = {
 		popneed_basic_food = 2376 # 51.65%
@@ -198,7 +198,7 @@ wealth_10 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_11 = {
+REPLACE_OR_CREATE:wealth_11 = {
 	political_strength = 0.78
 	goods = {
 		popneed_basic_food = 2259 # 45.82%
@@ -218,7 +218,7 @@ wealth_11 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_12 = {
+REPLACE_OR_CREATE:wealth_12 = {
 	political_strength = 1.26
 	goods = {
 		popneed_basic_food = 2305 # 43.56%
@@ -238,7 +238,7 @@ wealth_12 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_13 = {
+REPLACE_OR_CREATE:wealth_13 = {
 	political_strength = 1.74
 	goods = {
 		popneed_basic_food = 2392 # 42.06%
@@ -258,7 +258,7 @@ wealth_13 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_14 = {
+REPLACE_OR_CREATE:wealth_14 = {
 	political_strength = 2.2199999999999998
 	goods = {
 		popneed_basic_food = 2516 # 41.11%
@@ -278,7 +278,7 @@ wealth_14 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_15 = {
+REPLACE_OR_CREATE:wealth_15 = {
 	political_strength = 2.6999999999999997
 	goods = {
 		popneed_basic_food = 2507 # 38.01%
@@ -298,7 +298,7 @@ wealth_15 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_16 = {
+REPLACE_OR_CREATE:wealth_16 = {
 	political_strength = 3.1799999999999997
 	goods = {
 		popneed_basic_food = 2547 # 35.8%
@@ -318,7 +318,7 @@ wealth_16 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_17 = {
+REPLACE_OR_CREATE:wealth_17 = {
 	political_strength = 3.6599999999999997
 	goods = {
 		popneed_basic_food = 2604 # 33.89%
@@ -338,7 +338,7 @@ wealth_17 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_18 = {
+REPLACE_OR_CREATE:wealth_18 = {
 	political_strength = 4.14
 	goods = {
 		popneed_basic_food = 2677 # 32.23%
@@ -358,7 +358,7 @@ wealth_18 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_19 = {
+REPLACE_OR_CREATE:wealth_19 = {
 	political_strength = 4.62
 	goods = {
 		popneed_basic_food = 2713 # 30.18%
@@ -378,7 +378,7 @@ wealth_19 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_20 = {
+REPLACE_OR_CREATE:wealth_20 = {
 	political_strength = 5.1
 	goods = {
 		popneed_basic_food = 2348 # 24.12%
@@ -398,7 +398,7 @@ wealth_20 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_21 = {
+REPLACE_OR_CREATE:wealth_21 = {
 	political_strength = 5.579999999999999
 	goods = {
 		popneed_basic_food = 2392 # 22.66%
@@ -418,7 +418,7 @@ wealth_21 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_22 = {
+REPLACE_OR_CREATE:wealth_22 = {
 	political_strength = 6.06
 	goods = {
 		popneed_basic_food = 2441 # 21.32%
@@ -438,7 +438,7 @@ wealth_22 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_23 = {
+REPLACE_OR_CREATE:wealth_23 = {
 	political_strength = 6.54
 	goods = {
 		popneed_basic_food = 2494 # 20.06%
@@ -458,7 +458,7 @@ wealth_23 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_24 = {
+REPLACE_OR_CREATE:wealth_24 = {
 	political_strength = 7.02
 	goods = {
 		popneed_basic_food = 2550 # 18.88%
@@ -478,7 +478,7 @@ wealth_24 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_25 = {
+REPLACE_OR_CREATE:wealth_25 = {
 	political_strength = 7.499999999999999
 	goods = {
 		popneed_basic_food = 2640 # 17.98%
@@ -498,7 +498,7 @@ wealth_25 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_26 = {
+REPLACE_OR_CREATE:wealth_26 = {
 	political_strength = 44.4828726939094
 	goods = {
 		popneed_basic_food = 2666 # 16.69%
@@ -518,7 +518,7 @@ wealth_26 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_27 = {
+REPLACE_OR_CREATE:wealth_27 = {
 	political_strength = 49.569219381653056
 	goods = {
 		popneed_basic_food = 2685 # 15.45%
@@ -538,7 +538,7 @@ wealth_27 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_28 = {
+REPLACE_OR_CREATE:wealth_28 = {
 	political_strength = 54.87216658103186
 	goods = {
 		popneed_basic_food = 2696 # 14.25%
@@ -558,7 +558,7 @@ wealth_28 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_29 = {
+REPLACE_OR_CREATE:wealth_29 = {
 	political_strength = 60.38320341483518
 	goods = {
 		popneed_basic_food = 2698 # 13.09%
@@ -578,7 +578,7 @@ wealth_29 = {
 		popneed_financial_services = 0 # 0.0%
 	}
 }
-wealth_30 = {
+REPLACE_OR_CREATE:wealth_30 = {
 	political_strength = 66.09475019311125
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -598,7 +598,7 @@ wealth_30 = {
 		popneed_financial_services = 962 # 4.28%
 	}
 }
-wealth_31 = {
+REPLACE_OR_CREATE:wealth_31 = {
 	political_strength = 72.0
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -618,7 +618,7 @@ wealth_31 = {
 		popneed_financial_services = 993 # 4.05%
 	}
 }
-wealth_32 = {
+REPLACE_OR_CREATE:wealth_32 = {
 	political_strength = 78.09279563550022
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -638,7 +638,7 @@ wealth_32 = {
 		popneed_financial_services = 1023 # 3.83%
 	}
 }
-wealth_33 = {
+REPLACE_OR_CREATE:wealth_33 = {
 	political_strength = 84.36753236814714
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -658,7 +658,7 @@ wealth_33 = {
 		popneed_financial_services = 1052 # 3.61%
 	}
 }
-wealth_34 = {
+REPLACE_OR_CREATE:wealth_34 = {
 	political_strength = 90.8190799272728
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -678,7 +678,7 @@ wealth_34 = {
 		popneed_financial_services = 1080 # 3.4%
 	}
 }
-wealth_35 = {
+REPLACE_OR_CREATE:wealth_35 = {
 	political_strength = 97.44271909999159
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -698,7 +698,7 @@ wealth_35 = {
 		popneed_financial_services = 1109 # 3.19%
 	}
 }
-wealth_36 = {
+REPLACE_OR_CREATE:wealth_36 = {
 	political_strength = 104.23408959407264
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -718,7 +718,7 @@ wealth_36 = {
 		popneed_financial_services = 1138 # 3.0%
 	}
 }
-wealth_37 = {
+REPLACE_OR_CREATE:wealth_37 = {
 	political_strength = 111.18914671611545
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -738,7 +738,7 @@ wealth_37 = {
 		popneed_financial_services = 1169 # 2.82%
 	}
 }
-wealth_38 = {
+REPLACE_OR_CREATE:wealth_38 = {
 	political_strength = 118.30412503619254
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -758,7 +758,7 @@ wealth_38 = {
 		popneed_financial_services = 1205 # 2.66%
 	}
 }
-wealth_39 = {
+REPLACE_OR_CREATE:wealth_39 = {
 	political_strength = 125.57550765359255
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -778,7 +778,7 @@ wealth_39 = {
 		popneed_financial_services = 1344 # 2.72%
 	}
 }
-wealth_40 = {
+REPLACE_OR_CREATE:wealth_40 = {
 	political_strength = 133.0
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -798,7 +798,7 @@ wealth_40 = {
 		popneed_financial_services = 1389 # 2.57%
 	}
 }
-wealth_41 = {
+REPLACE_OR_CREATE:wealth_41 = {
 	political_strength = 140.5745073534124
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -818,7 +818,7 @@ wealth_41 = {
 		popneed_financial_services = 1447 # 2.45%
 	}
 }
-wealth_42 = {
+REPLACE_OR_CREATE:wealth_42 = {
 	political_strength = 148.29611541307906
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -838,7 +838,7 @@ wealth_42 = {
 		popneed_financial_services = 1522 # 2.36%
 	}
 }
-wealth_43 = {
+REPLACE_OR_CREATE:wealth_43 = {
 	political_strength = 156.1620734196171
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -858,7 +858,7 @@ wealth_43 = {
 		popneed_financial_services = 1621 # 2.3%
 	}
 }
-wealth_44 = {
+REPLACE_OR_CREATE:wealth_44 = {
 	political_strength = 164.16977940690063
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -878,7 +878,7 @@ wealth_44 = {
 		popneed_financial_services = 1749 # 2.27%
 	}
 }
-wealth_45 = {
+REPLACE_OR_CREATE:wealth_45 = {
 	political_strength = 172.31676725154983
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -898,7 +898,7 @@ wealth_45 = {
 		popneed_financial_services = 2027 # 2.4%
 	}
 }
-wealth_46 = {
+REPLACE_OR_CREATE:wealth_46 = {
 	political_strength = 72
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -918,7 +918,7 @@ wealth_46 = {
 		popneed_financial_services = 2235 # 2.42%
 	}
 }
-wealth_47 = {
+REPLACE_OR_CREATE:wealth_47 = {
 	political_strength = 78
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -938,7 +938,7 @@ wealth_47 = {
 		popneed_financial_services = 2503 # 2.48%
 	}
 }
-wealth_48 = {
+REPLACE_OR_CREATE:wealth_48 = {
 	political_strength = 88
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -958,7 +958,7 @@ wealth_48 = {
 		popneed_financial_services = 2844 # 2.58%
 	}
 }
-wealth_49 = {
+REPLACE_OR_CREATE:wealth_49 = {
 	political_strength = 102
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -978,7 +978,7 @@ wealth_49 = {
 		popneed_financial_services = 3275 # 2.71%
 	}
 }
-wealth_50 = {
+REPLACE_OR_CREATE:wealth_50 = {
 	political_strength = 120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -998,7 +998,7 @@ wealth_50 = {
 		popneed_financial_services = 3814 # 2.89%
 	}
 }
-wealth_51 = {
+REPLACE_OR_CREATE:wealth_51 = {
 	political_strength = 142
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1018,7 +1018,7 @@ wealth_51 = {
 		popneed_financial_services = 4488 # 3.1%
 	}
 }
-wealth_52 = {
+REPLACE_OR_CREATE:wealth_52 = {
 	political_strength = 168
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1038,7 +1038,7 @@ wealth_52 = {
 		popneed_financial_services = 5326 # 3.36%
 	}
 }
-wealth_53 = {
+REPLACE_OR_CREATE:wealth_53 = {
 	political_strength = 198
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1058,7 +1058,7 @@ wealth_53 = {
 		popneed_financial_services = 6364 # 3.67%
 	}
 }
-wealth_54 = {
+REPLACE_OR_CREATE:wealth_54 = {
 	political_strength = 232
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1078,7 +1078,7 @@ wealth_54 = {
 		popneed_financial_services = 7645 # 4.03%
 	}
 }
-wealth_55 = {
+REPLACE_OR_CREATE:wealth_55 = {
 	political_strength = 270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1098,7 +1098,7 @@ wealth_55 = {
 		popneed_financial_services = 9223 # 4.45%
 	}
 }
-wealth_56 = {
+REPLACE_OR_CREATE:wealth_56 = {
 	political_strength = 312
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1118,7 +1118,7 @@ wealth_56 = {
 		popneed_financial_services = 11161 # 4.92%
 	}
 }
-wealth_57 = {
+REPLACE_OR_CREATE:wealth_57 = {
 	political_strength = 358
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1138,7 +1138,7 @@ wealth_57 = {
 		popneed_financial_services = 13538 # 5.45%
 	}
 }
-wealth_58 = {
+REPLACE_OR_CREATE:wealth_58 = {
 	political_strength = 408
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1158,7 +1158,7 @@ wealth_58 = {
 		popneed_financial_services = 16445 # 6.05%
 	}
 }
-wealth_59 = {
+REPLACE_OR_CREATE:wealth_59 = {
 	political_strength = 462
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1178,7 +1178,7 @@ wealth_59 = {
 		popneed_financial_services = 19995 # 6.72%
 	}
 }
-wealth_60 = {
+REPLACE_OR_CREATE:wealth_60 = {
 	political_strength = 520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1198,7 +1198,7 @@ wealth_60 = {
 		popneed_financial_services = 24322 # 7.46%
 	}
 }
-wealth_61 = {
+REPLACE_OR_CREATE:wealth_61 = {
 	political_strength = 582
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1218,7 +1218,7 @@ wealth_61 = {
 		popneed_financial_services = 29584 # 8.29%
 	}
 }
-wealth_62 = {
+REPLACE_OR_CREATE:wealth_62 = {
 	political_strength = 648
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1238,7 +1238,7 @@ wealth_62 = {
 		popneed_financial_services = 35972 # 9.21%
 	}
 }
-wealth_63 = {
+REPLACE_OR_CREATE:wealth_63 = {
 	political_strength = 718
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1258,7 +1258,7 @@ wealth_63 = {
 		popneed_financial_services = 43711 # 10.22%
 	}
 }
-wealth_64 = {
+REPLACE_OR_CREATE:wealth_64 = {
 	political_strength = 792
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1278,7 +1278,7 @@ wealth_64 = {
 		popneed_financial_services = 53067 # 11.34%
 	}
 }
-wealth_65 = {
+REPLACE_OR_CREATE:wealth_65 = {
 	political_strength = 870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1298,7 +1298,7 @@ wealth_65 = {
 		popneed_financial_services = 64353 # 12.56%
 	}
 }
-wealth_66 = {
+REPLACE_OR_CREATE:wealth_66 = {
 	political_strength = 952
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1318,7 +1318,7 @@ wealth_66 = {
 		popneed_financial_services = 77933 # 13.89%
 	}
 }
-wealth_67 = {
+REPLACE_OR_CREATE:wealth_67 = {
 	political_strength = 1038
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1338,7 +1338,7 @@ wealth_67 = {
 		popneed_financial_services = 94235 # 15.34%
 	}
 }
-wealth_68 = {
+REPLACE_OR_CREATE:wealth_68 = {
 	political_strength = 1128
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1358,7 +1358,7 @@ wealth_68 = {
 		popneed_financial_services = 113751 # 16.91%
 	}
 }
-wealth_69 = {
+REPLACE_OR_CREATE:wealth_69 = {
 	political_strength = 1222
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1378,7 +1378,7 @@ wealth_69 = {
 		popneed_financial_services = 137048 # 18.61%
 	}
 }
-wealth_70 = {
+REPLACE_OR_CREATE:wealth_70 = {
 	political_strength = 1320
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1398,7 +1398,7 @@ wealth_70 = {
 		popneed_financial_services = 164776 # 20.44%
 	}
 }
-wealth_71 = {
+REPLACE_OR_CREATE:wealth_71 = {
 	political_strength = 1422
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1418,7 +1418,7 @@ wealth_71 = {
 		popneed_financial_services = 197673 # 22.4%
 	}
 }
-wealth_72 = {
+REPLACE_OR_CREATE:wealth_72 = {
 	political_strength = 1528
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1438,7 +1438,7 @@ wealth_72 = {
 		popneed_financial_services = 236573 # 24.48%
 	}
 }
-wealth_73 = {
+REPLACE_OR_CREATE:wealth_73 = {
 	political_strength = 1638
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1458,7 +1458,7 @@ wealth_73 = {
 		popneed_financial_services = 282409 # 26.69%
 	}
 }
-wealth_74 = {
+REPLACE_OR_CREATE:wealth_74 = {
 	political_strength = 1752
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1478,7 +1478,7 @@ wealth_74 = {
 		popneed_financial_services = 336222 # 29.02%
 	}
 }
-wealth_75 = {
+REPLACE_OR_CREATE:wealth_75 = {
 	political_strength = 1870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1498,7 +1498,7 @@ wealth_75 = {
 		popneed_financial_services = 399161 # 31.47%
 	}
 }
-wealth_76 = {
+REPLACE_OR_CREATE:wealth_76 = {
 	political_strength = 1992
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1518,7 +1518,7 @@ wealth_76 = {
 		popneed_financial_services = 472487 # 34.02%
 	}
 }
-wealth_77 = {
+REPLACE_OR_CREATE:wealth_77 = {
 	political_strength = 2118
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1538,7 +1538,7 @@ wealth_77 = {
 		popneed_financial_services = 557574 # 36.67%
 	}
 }
-wealth_78 = {
+REPLACE_OR_CREATE:wealth_78 = {
 	political_strength = 2248
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1558,7 +1558,7 @@ wealth_78 = {
 		popneed_financial_services = 655908 # 39.4%
 	}
 }
-wealth_79 = {
+REPLACE_OR_CREATE:wealth_79 = {
 	political_strength = 2382
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1578,7 +1578,7 @@ wealth_79 = {
 		popneed_financial_services = 769088 # 42.19%
 	}
 }
-wealth_80 = {
+REPLACE_OR_CREATE:wealth_80 = {
 	political_strength = 2520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1598,7 +1598,7 @@ wealth_80 = {
 		popneed_financial_services = 898827 # 45.03%
 	}
 }
-wealth_81 = {
+REPLACE_OR_CREATE:wealth_81 = {
 	political_strength = 2662
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1618,7 +1618,7 @@ wealth_81 = {
 		popneed_financial_services = 1046947 # 47.9%
 	}
 }
-wealth_82 = {
+REPLACE_OR_CREATE:wealth_82 = {
 	political_strength = 2808
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1638,7 +1638,7 @@ wealth_82 = {
 		popneed_financial_services = 1215381 # 50.79%
 	}
 }
-wealth_83 = {
+REPLACE_OR_CREATE:wealth_83 = {
 	political_strength = 2958
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1658,7 +1658,7 @@ wealth_83 = {
 		popneed_financial_services = 1406181 # 53.66%
 	}
 }
-wealth_84 = {
+REPLACE_OR_CREATE:wealth_84 = {
 	political_strength = 3112
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1678,7 +1678,7 @@ wealth_84 = {
 		popneed_financial_services = 1621515 # 56.52%
 	}
 }
-wealth_85 = {
+REPLACE_OR_CREATE:wealth_85 = {
 	political_strength = 3270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1698,7 +1698,7 @@ wealth_85 = {
 		popneed_financial_services = 1863681 # 59.32%
 	}
 }
-wealth_86 = {
+REPLACE_OR_CREATE:wealth_86 = {
 	political_strength = 3432
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1718,7 +1718,7 @@ wealth_86 = {
 		popneed_financial_services = 2135115 # 62.07%
 	}
 }
-wealth_87 = {
+REPLACE_OR_CREATE:wealth_87 = {
 	political_strength = 3598
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1738,7 +1738,7 @@ wealth_87 = {
 		popneed_financial_services = 2438408 # 64.74%
 	}
 }
-wealth_88 = {
+REPLACE_OR_CREATE:wealth_88 = {
 	political_strength = 3768
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1758,7 +1758,7 @@ wealth_88 = {
 		popneed_financial_services = 2776327 # 67.32%
 	}
 }
-wealth_89 = {
+REPLACE_OR_CREATE:wealth_89 = {
 	political_strength = 3942
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1778,7 +1778,7 @@ wealth_89 = {
 		popneed_financial_services = 3151839 # 69.79%
 	}
 }
-wealth_90 = {
+REPLACE_OR_CREATE:wealth_90 = {
 	political_strength = 4120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1798,7 +1798,7 @@ wealth_90 = {
 		popneed_financial_services = 3568134 # 72.16%
 	}
 }
-wealth_91 = {
+REPLACE_OR_CREATE:wealth_91 = {
 	political_strength = 4302
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1818,7 +1818,7 @@ wealth_91 = {
 		popneed_financial_services = 4028664 # 74.4%
 	}
 }
-wealth_92 = {
+REPLACE_OR_CREATE:wealth_92 = {
 	political_strength = 4488
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1838,7 +1838,7 @@ wealth_92 = {
 		popneed_financial_services = 4537175 # 76.53%
 	}
 }
-wealth_93 = {
+REPLACE_OR_CREATE:wealth_93 = {
 	political_strength = 4678
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1858,7 +1858,7 @@ wealth_93 = {
 		popneed_financial_services = 5097745 # 78.52%
 	}
 }
-wealth_94 = {
+REPLACE_OR_CREATE:wealth_94 = {
 	political_strength = 4872
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1878,7 +1878,7 @@ wealth_94 = {
 		popneed_financial_services = 5714827 # 80.39%
 	}
 }
-wealth_95 = {
+REPLACE_OR_CREATE:wealth_95 = {
 	political_strength = 5070
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1898,7 +1898,7 @@ wealth_95 = {
 		popneed_financial_services = 6393297 # 82.13%
 	}
 }
-wealth_96 = {
+REPLACE_OR_CREATE:wealth_96 = {
 	political_strength = 5272
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1918,7 +1918,7 @@ wealth_96 = {
 		popneed_financial_services = 7138498 # 83.75%
 	}
 }
-wealth_97 = {
+REPLACE_OR_CREATE:wealth_97 = {
 	political_strength = 5478
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1938,7 +1938,7 @@ wealth_97 = {
 		popneed_financial_services = 7956298 # 85.25%
 	}
 }
-wealth_98 = {
+REPLACE_OR_CREATE:wealth_98 = {
 	political_strength = 5688
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1958,7 +1958,7 @@ wealth_98 = {
 		popneed_financial_services = 8853139 # 86.63%
 	}
 }
-wealth_99 = {
+REPLACE_OR_CREATE:wealth_99 = {
 	political_strength = 5902
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1978,7 +1978,7 @@ wealth_99 = {
 		popneed_financial_services = 9836101 # 87.9%
 	}
 }
-wealth_100 = {
+REPLACE_OR_CREATE:wealth_100 = {
 	political_strength = 6120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -1998,7 +1998,7 @@ wealth_100 = {
 		popneed_financial_services = 10912965 # 89.06%
 	}
 }
-wealth_101 = {
+REPLACE_OR_CREATE:wealth_101 = {
 	political_strength = 6342
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2018,7 +2018,7 @@ wealth_101 = {
 		popneed_financial_services = 12092281 # 90.13%
 	}
 }
-wealth_102 = {
+REPLACE_OR_CREATE:wealth_102 = {
 	political_strength = 6568
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2038,7 +2038,7 @@ wealth_102 = {
 		popneed_financial_services = 13383444 # 91.1%
 	}
 }
-wealth_103 = {
+REPLACE_OR_CREATE:wealth_103 = {
 	political_strength = 6798
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2058,7 +2058,7 @@ wealth_103 = {
 		popneed_financial_services = 14796772 # 91.98%
 	}
 }
-wealth_104 = {
+REPLACE_OR_CREATE:wealth_104 = {
 	political_strength = 7032
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2078,7 +2078,7 @@ wealth_104 = {
 		popneed_financial_services = 16343594 # 92.78%
 	}
 }
-wealth_105 = {
+REPLACE_OR_CREATE:wealth_105 = {
 	political_strength = 7270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2098,7 +2098,7 @@ wealth_105 = {
 		popneed_financial_services = 18036349 # 93.51%
 	}
 }
-wealth_106 = {
+REPLACE_OR_CREATE:wealth_106 = {
 	political_strength = 7512
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2118,7 +2118,7 @@ wealth_106 = {
 		popneed_financial_services = 19888683 # 94.16%
 	}
 }
-wealth_107 = {
+REPLACE_OR_CREATE:wealth_107 = {
 	political_strength = 7758
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2138,7 +2138,7 @@ wealth_107 = {
 		popneed_financial_services = 21915568 # 94.76%
 	}
 }
-wealth_108 = {
+REPLACE_OR_CREATE:wealth_108 = {
 	political_strength = 8008
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2158,7 +2158,7 @@ wealth_108 = {
 		popneed_financial_services = 24133426 # 95.3%
 	}
 }
-wealth_109 = {
+REPLACE_OR_CREATE:wealth_109 = {
 	political_strength = 8262
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2178,7 +2178,7 @@ wealth_109 = {
 		popneed_financial_services = 26560257 # 95.78%
 	}
 }
-wealth_110 = {
+REPLACE_OR_CREATE:wealth_110 = {
 	political_strength = 8520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2198,7 +2198,7 @@ wealth_110 = {
 		popneed_financial_services = 29215800 # 96.22%
 	}
 }
-wealth_111 = {
+REPLACE_OR_CREATE:wealth_111 = {
 	political_strength = 8782
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2218,7 +2218,7 @@ wealth_111 = {
 		popneed_financial_services = 32121683 # 96.61%
 	}
 }
-wealth_112 = {
+REPLACE_OR_CREATE:wealth_112 = {
 	political_strength = 9048
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2238,7 +2238,7 @@ wealth_112 = {
 		popneed_financial_services = 35301609 # 96.96%
 	}
 }
-wealth_113 = {
+REPLACE_OR_CREATE:wealth_113 = {
 	political_strength = 9318
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2258,7 +2258,7 @@ wealth_113 = {
 		popneed_financial_services = 38781549 # 97.28%
 	}
 }
-wealth_114 = {
+REPLACE_OR_CREATE:wealth_114 = {
 	political_strength = 9592
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2278,7 +2278,7 @@ wealth_114 = {
 		popneed_financial_services = 42589956 # 97.56%
 	}
 }
-wealth_115 = {
+REPLACE_OR_CREATE:wealth_115 = {
 	political_strength = 9870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2298,7 +2298,7 @@ wealth_115 = {
 		popneed_financial_services = 46757996 # 97.82%
 	}
 }
-wealth_116 = {
+REPLACE_OR_CREATE:wealth_116 = {
 	political_strength = 10152
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2318,7 +2318,7 @@ wealth_116 = {
 		popneed_financial_services = 51319810 # 98.05%
 	}
 }
-wealth_117 = {
+REPLACE_OR_CREATE:wealth_117 = {
 	political_strength = 10438
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2338,7 +2338,7 @@ wealth_117 = {
 		popneed_financial_services = 56312790 # 98.25%
 	}
 }
-wealth_118 = {
+REPLACE_OR_CREATE:wealth_118 = {
 	political_strength = 10728
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2358,7 +2358,7 @@ wealth_118 = {
 		popneed_financial_services = 61777890 # 98.44%
 	}
 }
-wealth_119 = {
+REPLACE_OR_CREATE:wealth_119 = {
 	political_strength = 11022
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2378,7 +2378,7 @@ wealth_119 = {
 		popneed_financial_services = 67759961 # 98.6%
 	}
 }
-wealth_120 = {
+REPLACE_OR_CREATE:wealth_120 = {
 	political_strength = 11320
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2398,7 +2398,7 @@ wealth_120 = {
 		popneed_financial_services = 74308123 # 98.75%
 	}
 }
-wealth_121 = {
+REPLACE_OR_CREATE:wealth_121 = {
 	political_strength = 11622
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2418,7 +2418,7 @@ wealth_121 = {
 		popneed_financial_services = 81476166 # 98.88%
 	}
 }
-wealth_122 = {
+REPLACE_OR_CREATE:wealth_122 = {
 	political_strength = 11928
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2438,7 +2438,7 @@ wealth_122 = {
 		popneed_financial_services = 89322996 # 99.0%
 	}
 }
-wealth_123 = {
+REPLACE_OR_CREATE:wealth_123 = {
 	political_strength = 12238
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2458,7 +2458,7 @@ wealth_123 = {
 		popneed_financial_services = 97913118 # 99.11%
 	}
 }
-wealth_124 = {
+REPLACE_OR_CREATE:wealth_124 = {
 	political_strength = 12552
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2478,7 +2478,7 @@ wealth_124 = {
 		popneed_financial_services = 107317170 # 99.2%
 	}
 }
-wealth_125 = {
+REPLACE_OR_CREATE:wealth_125 = {
 	political_strength = 12870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2498,7 +2498,7 @@ wealth_125 = {
 		popneed_financial_services = 117612501 # 99.29%
 	}
 }
-wealth_126 = {
+REPLACE_OR_CREATE:wealth_126 = {
 	political_strength = 13192
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2518,7 +2518,7 @@ wealth_126 = {
 		popneed_financial_services = 128883813 # 99.36%
 	}
 }
-wealth_127 = {
+REPLACE_OR_CREATE:wealth_127 = {
 	political_strength = 13518
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2538,7 +2538,7 @@ wealth_127 = {
 		popneed_financial_services = 141223855 # 99.43%
 	}
 }
-wealth_128 = {
+REPLACE_OR_CREATE:wealth_128 = {
 	political_strength = 13848
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2558,7 +2558,7 @@ wealth_128 = {
 		popneed_financial_services = 154734189 # 99.49%
 	}
 }
-wealth_129 = {
+REPLACE_OR_CREATE:wealth_129 = {
 	political_strength = 14182
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2578,7 +2578,7 @@ wealth_129 = {
 		popneed_financial_services = 169526026 # 99.54%
 	}
 }
-wealth_130 = {
+REPLACE_OR_CREATE:wealth_130 = {
 	political_strength = 14520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2598,7 +2598,7 @@ wealth_130 = {
 		popneed_financial_services = 185721145 # 99.59%
 	}
 }
-wealth_131 = {
+REPLACE_OR_CREATE:wealth_131 = {
 	political_strength = 14862
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2618,7 +2618,7 @@ wealth_131 = {
 		popneed_financial_services = 203452892 # 99.64%
 	}
 }
-wealth_132 = {
+REPLACE_OR_CREATE:wealth_132 = {
 	political_strength = 15208
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2638,7 +2638,7 @@ wealth_132 = {
 		popneed_financial_services = 222867283 # 99.67%
 	}
 }
-wealth_133 = {
+REPLACE_OR_CREATE:wealth_133 = {
 	political_strength = 15558
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2658,7 +2658,7 @@ wealth_133 = {
 		popneed_financial_services = 244124206 # 99.71%
 	}
 }
-wealth_134 = {
+REPLACE_OR_CREATE:wealth_134 = {
 	political_strength = 15912
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2678,7 +2678,7 @@ wealth_134 = {
 		popneed_financial_services = 267398738 # 99.74%
 	}
 }
-wealth_135 = {
+REPLACE_OR_CREATE:wealth_135 = {
 	political_strength = 16270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2698,7 +2698,7 @@ wealth_135 = {
 		popneed_financial_services = 292882586 # 99.77%
 	}
 }
-wealth_136 = {
+REPLACE_OR_CREATE:wealth_136 = {
 	political_strength = 16632
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2718,7 +2718,7 @@ wealth_136 = {
 		popneed_financial_services = 320785673 # 99.79%
 	}
 }
-wealth_137 = {
+REPLACE_OR_CREATE:wealth_137 = {
 	political_strength = 16998
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2738,7 +2738,7 @@ wealth_137 = {
 		popneed_financial_services = 351337863 # 99.81%
 	}
 }
-wealth_138 = {
+REPLACE_OR_CREATE:wealth_138 = {
 	political_strength = 17368
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2758,7 +2758,7 @@ wealth_138 = {
 		popneed_financial_services = 384790855 # 99.83%
 	}
 }
-wealth_139 = {
+REPLACE_OR_CREATE:wealth_139 = {
 	political_strength = 17742
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2778,7 +2778,7 @@ wealth_139 = {
 		popneed_financial_services = 421420262 # 99.85%
 	}
 }
-wealth_140 = {
+REPLACE_OR_CREATE:wealth_140 = {
 	political_strength = 18120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2798,7 +2798,7 @@ wealth_140 = {
 		popneed_financial_services = 461527876 # 99.87%
 	}
 }
-wealth_141 = {
+REPLACE_OR_CREATE:wealth_141 = {
 	political_strength = 18502
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2818,7 +2818,7 @@ wealth_141 = {
 		popneed_financial_services = 505444163 # 99.88%
 	}
 }
-wealth_142 = {
+REPLACE_OR_CREATE:wealth_142 = {
 	political_strength = 18888
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2838,7 +2838,7 @@ wealth_142 = {
 		popneed_financial_services = 553530980 # 99.89%
 	}
 }
-wealth_143 = {
+REPLACE_OR_CREATE:wealth_143 = {
 	political_strength = 19278
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2858,7 +2858,7 @@ wealth_143 = {
 		popneed_financial_services = 606184560 # 99.91%
 	}
 }
-wealth_144 = {
+REPLACE_OR_CREATE:wealth_144 = {
 	political_strength = 19672
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2878,7 +2878,7 @@ wealth_144 = {
 		popneed_financial_services = 663838779 # 99.92%
 	}
 }
-wealth_145 = {
+REPLACE_OR_CREATE:wealth_145 = {
 	political_strength = 20070
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2898,7 +2898,7 @@ wealth_145 = {
 		popneed_financial_services = 726968729 # 99.92%
 	}
 }
-wealth_146 = {
+REPLACE_OR_CREATE:wealth_146 = {
 	political_strength = 20472
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2918,7 +2918,7 @@ wealth_146 = {
 		popneed_financial_services = 796094637 # 99.93%
 	}
 }
-wealth_147 = {
+REPLACE_OR_CREATE:wealth_147 = {
 	political_strength = 20878
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2938,7 +2938,7 @@ wealth_147 = {
 		popneed_financial_services = 871786149 # 99.94%
 	}
 }
-wealth_148 = {
+REPLACE_OR_CREATE:wealth_148 = {
 	political_strength = 21288
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2958,7 +2958,7 @@ wealth_148 = {
 		popneed_financial_services = 954667027 # 99.95%
 	}
 }
-wealth_149 = {
+REPLACE_OR_CREATE:wealth_149 = {
 	political_strength = 21702
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2978,7 +2978,7 @@ wealth_149 = {
 		popneed_financial_services = 1045420292 # 99.95%
 	}
 }
-wealth_150 = {
+REPLACE_OR_CREATE:wealth_150 = {
 	political_strength = 22120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -2998,7 +2998,7 @@ wealth_150 = {
 		popneed_financial_services = 1144793848 # 99.96%
 	}
 }
-wealth_151 = {
+REPLACE_OR_CREATE:wealth_151 = {
 	political_strength = 22542
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3018,7 +3018,7 @@ wealth_151 = {
 		popneed_financial_services = 1253606652 # 99.96%
 	}
 }
-wealth_152 = {
+REPLACE_OR_CREATE:wealth_152 = {
 	political_strength = 22968
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3038,7 +3038,7 @@ wealth_152 = {
 		popneed_financial_services = 1372755460 # 99.97%
 	}
 }
-wealth_153 = {
+REPLACE_OR_CREATE:wealth_153 = {
 	political_strength = 23398
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3058,7 +3058,7 @@ wealth_153 = {
 		popneed_financial_services = 1503222219 # 99.97%
 	}
 }
-wealth_154 = {
+REPLACE_OR_CREATE:wealth_154 = {
 	political_strength = 23832
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3078,7 +3078,7 @@ wealth_154 = {
 		popneed_financial_services = 1646082162 # 99.97%
 	}
 }
-wealth_155 = {
+REPLACE_OR_CREATE:wealth_155 = {
 	political_strength = 24270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3098,7 +3098,7 @@ wealth_155 = {
 		popneed_financial_services = 1802512667 # 99.98%
 	}
 }
-wealth_156 = {
+REPLACE_OR_CREATE:wealth_156 = {
 	political_strength = 24712
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3118,7 +3118,7 @@ wealth_156 = {
 		popneed_financial_services = 1973802962 # 99.98%
 	}
 }
-wealth_157 = {
+REPLACE_OR_CREATE:wealth_157 = {
 	political_strength = 25158
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3138,7 +3138,7 @@ wealth_157 = {
 		popneed_financial_services = 2161364751 # 99.98%
 	}
 }
-wealth_158 = {
+REPLACE_OR_CREATE:wealth_158 = {
 	political_strength = 25608
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3158,7 +3158,7 @@ wealth_158 = {
 		popneed_financial_services = 2366743853 # 99.98%
 	}
 }
-wealth_159 = {
+REPLACE_OR_CREATE:wealth_159 = {
 	political_strength = 26062
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3178,7 +3178,7 @@ wealth_159 = {
 		popneed_financial_services = 2591632933 # 99.98%
 	}
 }
-wealth_160 = {
+REPLACE_OR_CREATE:wealth_160 = {
 	political_strength = 26520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3198,7 +3198,7 @@ wealth_160 = {
 		popneed_financial_services = 2837885464 # 99.99%
 	}
 }
-wealth_161 = {
+REPLACE_OR_CREATE:wealth_161 = {
 	political_strength = 26982
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3218,7 +3218,7 @@ wealth_161 = {
 		popneed_financial_services = 3107530996 # 99.99%
 	}
 }
-wealth_162 = {
+REPLACE_OR_CREATE:wealth_162 = {
 	political_strength = 27448
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3238,7 +3238,7 @@ wealth_162 = {
 		popneed_financial_services = 3402791886 # 99.99%
 	}
 }
-wealth_163 = {
+REPLACE_OR_CREATE:wealth_163 = {
 	political_strength = 27918
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3258,7 +3258,7 @@ wealth_163 = {
 		popneed_financial_services = 3726101614 # 99.99%
 	}
 }
-wealth_164 = {
+REPLACE_OR_CREATE:wealth_164 = {
 	political_strength = 28392
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3278,7 +3278,7 @@ wealth_164 = {
 		popneed_financial_services = 4080124841 # 99.99%
 	}
 }
-wealth_165 = {
+REPLACE_OR_CREATE:wealth_165 = {
 	political_strength = 28870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3298,7 +3298,7 @@ wealth_165 = {
 		popneed_financial_services = 4467779370 # 99.99%
 	}
 }
-wealth_166 = {
+REPLACE_OR_CREATE:wealth_166 = {
 	political_strength = 29352
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3318,7 +3318,7 @@ wealth_166 = {
 		popneed_financial_services = 4892260193 # 99.99%
 	}
 }
-wealth_167 = {
+REPLACE_OR_CREATE:wealth_167 = {
 	political_strength = 29838
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3338,7 +3338,7 @@ wealth_167 = {
 		popneed_financial_services = 5357065830 # 99.99%
 	}
 }
-wealth_168 = {
+REPLACE_OR_CREATE:wealth_168 = {
 	political_strength = 30328
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3358,7 +3358,7 @@ wealth_168 = {
 		popneed_financial_services = 5866027156 # 99.99%
 	}
 }
-wealth_169 = {
+REPLACE_OR_CREATE:wealth_169 = {
 	political_strength = 30822
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3378,7 +3378,7 @@ wealth_169 = {
 		popneed_financial_services = 6423338980 # 99.99%
 	}
 }
-wealth_170 = {
+REPLACE_OR_CREATE:wealth_170 = {
 	political_strength = 31320
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3398,7 +3398,7 @@ wealth_170 = {
 		popneed_financial_services = 7033594618 # 100.0%
 	}
 }
-wealth_171 = {
+REPLACE_OR_CREATE:wealth_171 = {
 	political_strength = 31822
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3418,7 +3418,7 @@ wealth_171 = {
 		popneed_financial_services = 7701823749 # 100.0%
 	}
 }
-wealth_172 = {
+REPLACE_OR_CREATE:wealth_172 = {
 	political_strength = 32328
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3438,7 +3438,7 @@ wealth_172 = {
 		popneed_financial_services = 8433533874 # 100.0%
 	}
 }
-wealth_173 = {
+REPLACE_OR_CREATE:wealth_173 = {
 	political_strength = 32838
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3458,7 +3458,7 @@ wealth_173 = {
 		popneed_financial_services = 9234755702 # 100.0%
 	}
 }
-wealth_174 = {
+REPLACE_OR_CREATE:wealth_174 = {
 	political_strength = 33352
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3478,7 +3478,7 @@ wealth_174 = {
 		popneed_financial_services = 10112092863 # 100.0%
 	}
 }
-wealth_175 = {
+REPLACE_OR_CREATE:wealth_175 = {
 	political_strength = 33870
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3498,7 +3498,7 @@ wealth_175 = {
 		popneed_financial_services = 11072776329 # 100.0%
 	}
 }
-wealth_176 = {
+REPLACE_OR_CREATE:wealth_176 = {
 	political_strength = 34392
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3518,7 +3518,7 @@ wealth_176 = {
 		popneed_financial_services = 12124724015 # 100.0%
 	}
 }
-wealth_177 = {
+REPLACE_OR_CREATE:wealth_177 = {
 	political_strength = 34918
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3538,7 +3538,7 @@ wealth_177 = {
 		popneed_financial_services = 13276606037 # 100.0%
 	}
 }
-wealth_178 = {
+REPLACE_OR_CREATE:wealth_178 = {
 	political_strength = 35448
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3558,7 +3558,7 @@ wealth_178 = {
 		popneed_financial_services = 14537916172 # 100.0%
 	}
 }
-wealth_179 = {
+REPLACE_OR_CREATE:wealth_179 = {
 	political_strength = 35982
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3578,7 +3578,7 @@ wealth_179 = {
 		popneed_financial_services = 15919050105 # 100.0%
 	}
 }
-wealth_180 = {
+REPLACE_OR_CREATE:wealth_180 = {
 	political_strength = 36520
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3598,7 +3598,7 @@ wealth_180 = {
 		popneed_financial_services = 17431391112 # 100.0%
 	}
 }
-wealth_181 = {
+REPLACE_OR_CREATE:wealth_181 = {
 	political_strength = 37062
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3618,7 +3618,7 @@ wealth_181 = {
 		popneed_financial_services = 19087403879 # 100.0%
 	}
 }
-wealth_182 = {
+REPLACE_OR_CREATE:wealth_182 = {
 	political_strength = 37608
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3638,7 +3638,7 @@ wealth_182 = {
 		popneed_financial_services = 20900737236 # 100.0%
 	}
 }
-wealth_183 = {
+REPLACE_OR_CREATE:wealth_183 = {
 	political_strength = 38158
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3658,7 +3658,7 @@ wealth_183 = {
 		popneed_financial_services = 22886336653 # 100.0%
 	}
 }
-wealth_184 = {
+REPLACE_OR_CREATE:wealth_184 = {
 	political_strength = 38712
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3678,7 +3678,7 @@ wealth_184 = {
 		popneed_financial_services = 25060567418 # 100.0%
 	}
 }
-wealth_185 = {
+REPLACE_OR_CREATE:wealth_185 = {
 	political_strength = 39270
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3698,7 +3698,7 @@ wealth_185 = {
 		popneed_financial_services = 27441349523 # 100.0%
 	}
 }
-wealth_186 = {
+REPLACE_OR_CREATE:wealth_186 = {
 	political_strength = 39832
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3718,7 +3718,7 @@ wealth_186 = {
 		popneed_financial_services = 30048305356 # 100.0%
 	}
 }
-wealth_187 = {
+REPLACE_OR_CREATE:wealth_187 = {
 	political_strength = 40398
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3738,7 +3738,7 @@ wealth_187 = {
 		popneed_financial_services = 32902921435 # 100.0%
 	}
 }
-wealth_188 = {
+REPLACE_OR_CREATE:wealth_188 = {
 	political_strength = 40968
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3758,7 +3758,7 @@ wealth_188 = {
 		popneed_financial_services = 36028725495 # 100.0%
 	}
 }
-wealth_189 = {
+REPLACE_OR_CREATE:wealth_189 = {
 	political_strength = 41542
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3778,7 +3778,7 @@ wealth_189 = {
 		popneed_financial_services = 39451480405 # 100.0%
 	}
 }
-wealth_190 = {
+REPLACE_OR_CREATE:wealth_190 = {
 	political_strength = 42120
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3798,7 +3798,7 @@ wealth_190 = {
 		popneed_financial_services = 43199396507 # 100.0%
 	}
 }
-wealth_191 = {
+REPLACE_OR_CREATE:wealth_191 = {
 	political_strength = 42702
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3818,7 +3818,7 @@ wealth_191 = {
 		popneed_financial_services = 47303364126 # 100.0%
 	}
 }
-wealth_192 = {
+REPLACE_OR_CREATE:wealth_192 = {
 	political_strength = 43288
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3838,7 +3838,7 @@ wealth_192 = {
 		popneed_financial_services = 51797208167 # 100.0%
 	}
 }
-wealth_193 = {
+REPLACE_OR_CREATE:wealth_193 = {
 	political_strength = 43878
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3858,7 +3858,7 @@ wealth_193 = {
 		popneed_financial_services = 56717966900 # 100.0%
 	}
 }
-wealth_194 = {
+REPLACE_OR_CREATE:wealth_194 = {
 	political_strength = 44472
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3878,7 +3878,7 @@ wealth_194 = {
 		popneed_financial_services = 62106197232 # 100.0%
 	}
 }
-wealth_195 = {
+REPLACE_OR_CREATE:wealth_195 = {
 	political_strength = 45070
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3898,7 +3898,7 @@ wealth_195 = {
 		popneed_financial_services = 68006308974 # 100.0%
 	}
 }
-wealth_196 = {
+REPLACE_OR_CREATE:wealth_196 = {
 	political_strength = 45672
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3918,7 +3918,7 @@ wealth_196 = {
 		popneed_financial_services = 74466930870 # 100.0%
 	}
 }
-wealth_197 = {
+REPLACE_OR_CREATE:wealth_197 = {
 	political_strength = 46278
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3938,7 +3938,7 @@ wealth_197 = {
 		popneed_financial_services = 81541311395 # 100.0%
 	}
 }
-wealth_198 = {
+REPLACE_OR_CREATE:wealth_198 = {
 	political_strength = 46888
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3958,7 +3958,7 @@ wealth_198 = {
 		popneed_financial_services = 89287757628 # 100.0%
 	}
 }
-wealth_199 = {
+REPLACE_OR_CREATE:wealth_199 = {
 	political_strength = 47502
 	goods = {
 		popneed_basic_food = 0 # 0.0%
@@ -3978,7 +3978,7 @@ wealth_199 = {
 		popneed_financial_services = 97770115820 # 100.0%
 	}
 }
-wealth_200 = {
+REPLACE_OR_CREATE:wealth_200 = {
 	political_strength = 48120
 	goods = {
 		popneed_basic_food = 0 # 0.0%

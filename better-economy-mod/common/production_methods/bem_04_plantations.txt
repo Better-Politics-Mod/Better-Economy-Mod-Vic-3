@@ -1,0 +1,947 @@
+REPLACE:coffee_plantation_dry_process = {
+	texture = "gfx/interface/icons/production_method_icons/coffee_plantation_dry_process.dds"
+	unlocking_geographic_regions = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_coffee_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_farmers_add = 100
+		}
+		unscaled = {
+		}
+	}
+}
+REPLACE:coffee_plantation_wet_process_manual = {
+	texture = "gfx/interface/icons/production_method_icons/coffee_plantation_wet_process_manual.dds"
+	unlocking_technologies = {
+		mechanical_tools
+	}
+	unlocking_geographic_regions = {
+		geographic_region_wet_process_coffee_region
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 3
+			goods_output_coffee_add = 18.75
+		}
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_farmers_add = 150
+		}
+		unscaled = {
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+}
+REPLACE:coffee_plantation_wet_process_mechanical = {
+	texture = "gfx/interface/icons/production_method_icons/coffee_plantation_wet_process_mechanical.dds"
+	unlocking_technologies = {
+		mechanized_workshops
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 3
+			goods_input_engines_add = 2.7
+			goods_output_coffee_add = 26.25
+		}
+		level_scaled = {
+			building_employment_laborers_add = 350
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+		unscaled = {
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 1
+		}
+	}
+}
+REPLACE:coffee_plantation_patio_drying = {
+	texture = "gfx/interface/icons/production_method_icons/coffee_plantation_patio_drying.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_coffee_add = 3.75
+		}
+		level_scaled = {
+			building_employment_laborers_add = 150
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.005
+			building_slaves_mortality_mult = 0.01
+		}
+	}
+}
+REPLACE:coffee_plantation_mechanical_drying = {
+	texture = "gfx/interface/icons/production_method_icons/coffee_plantation_mechanical_drying.dds"
+	unlocking_technologies = {
+		mechanized_workshops
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 1.8
+			goods_input_engines_add = 1.8
+			goods_output_coffee_add = 11.25
+		}
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+		}
+		unscaled = {
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+}
+REPLACE:pm_steam_rail_transport = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 1
+		}
+	}
+	unlocking_technologies = {
+		railways
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_transportation_add = 2.25
+		}
+		level_scaled = {
+			building_employment_laborers_add = -100
+		}
+	}
+}
+REPLACE:default_building_cotton_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fabric_add = 13.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 700
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_cotton_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_fabric_add = 24
+		}
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_building_dye_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_dye_add = 18
+		}
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_dye_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_dye_add = 27
+		}
+		level_scaled = {
+			building_employment_laborers_add = 450
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_building_opium_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_opium_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_opium_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_opium_add = 30
+		}
+		level_scaled = {
+			building_employment_laborers_add = 250
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_building_tea_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tea_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_tea_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 3.6
+			goods_output_tea_add = 26.25
+		}
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_building_tobacco_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tobacco_add = 18
+		}
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_tobacco_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_tobacco_add = 27
+		}
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:hand_rolled = {
+	texture = "gfx/interface/icons/production_method_icons/hand_rolled.dds"
+	building_modifiers = {
+		level_scaled = {
+			building_employment_machinists_add = 50
+		}
+		unscaled = {
+			building_minimum_wage_mult = 0.005
+		}
+	}
+}
+REPLACE:molds = {
+	texture = "gfx/interface/icons/production_method_icons/molds.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tobacco_add = 3
+		}
+		level_scaled = {
+			building_employment_laborers_add = 100
+		}
+	}
+}
+REPLACE:electric_rollers = {
+	texture = "gfx/interface/icons/production_method_icons/electric_rollers.dds"
+	unlocking_technologies = {
+		electrical_generation
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_iron_add = 1.2
+			goods_input_electricity_add = 0.9
+			goods_output_tobacco_add = 12
+		}
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_laborers_add = -150
+		}
+	}
+	required_input_goods = electricity
+}
+REPLACE:default_building_sugar_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_sugar_add = 22.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 900
+			building_employment_farmers_add = 100
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.005
+			building_slaves_mortality_mult = 0.01
+			building_slaves_standard_of_living_add = -0.1
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_sugar_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_sugar_add = 36
+		}
+		level_scaled = {
+			building_employment_laborers_add = 700
+			building_employment_farmers_add = 100
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:ox_driven_rollers_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/ox_driven_rollers.dds"
+}
+REPLACE:vacuum_pan_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/vacuum_pan.dds"
+	unlocking_technologies = {
+		watertube_boiler
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_coal_add = 1.35
+			goods_output_sugar_add = 9
+		}
+		level_scaled = {
+			building_employment_laborers_add = -100
+		}
+	}
+}
+REPLACE:steam_powered_evaporation_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/steam_powered_evaporation.dds"
+	unlocking_technologies = {
+		fractional_distillation
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 0.9
+			goods_input_coal_add = 2.25
+			goods_output_sugar_add = 18
+		}
+		level_scaled = {
+			building_employment_laborers_add = -200
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:centrifugal_machine_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/centrifugal_machine.dds"
+	unlocking_technologies = {
+		rotary_valve_engine
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 1.8
+			goods_input_coal_add = 4.5
+			goods_output_sugar_add = 31.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -350
+			building_employment_machinists_add = 100
+			building_employment_engineers_add = 50
+		}
+	}
+}
+REPLACE:default_building_banana_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fruit_add = 18
+		}
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_banana_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_fruit_add = 22.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 300
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_building_silk_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_silk_add = 9
+		}
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_farmers_add = 100
+		}
+	}
+}
+REPLACE:automatic_irrigation_building_silk_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0.5
+		}
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 4.5
+			goods_output_silk_add = 24
+		}
+		level_scaled = {
+			building_employment_laborers_add = 300
+			building_employment_farmers_add = 150
+			building_employment_machinists_add = 50
+		}
+	}
+}
+REPLACE:default_labour = {
+	texture = "gfx/interface/icons/production_method_icons/standard_labor.dds"
+	disallowing_laws = {
+		law_slave_trade
+	}
+}
+REPLACE:slave_exploitation_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_sugar_add = 22.5
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.035
+			building_slaves_mortality_mult = 0.035
+			building_laborers_job_attractiveness_mult = -0.09
+			building_slaves_standard_of_living_add = -0.3
+			building_minimum_wage_mult = -0.015
+		}
+	}
+}
+REPLACE:worker_exploitation_sugar = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_sugar_add = 9
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.025
+			building_slaves_mortality_mult = 0.025
+			building_laborers_job_attractiveness_mult = -0.035
+			building_slaves_standard_of_living_add = -0.2
+			building_minimum_wage_mult = -0.015
+		}
+	}
+}
+REPLACE:slave_exploitation_coffee = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.003
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_coffee_add = 7.5
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.025
+			building_laborers_job_attractiveness_mult = -0.075
+			building_slaves_standard_of_living_add = -0.25
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:worker_exploitation_coffee = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_coffee_add = 3.75
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.015
+			building_laborers_job_attractiveness_mult = -0.025
+			building_slaves_standard_of_living_add = -0.15
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:slave_exploitation_cotton = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fabric_add = 6
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.02
+			building_laborers_job_attractiveness_mult = -0.075
+			building_slaves_standard_of_living_add = -0.2
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:worker_exploitation_cotton = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fabric_add = 3
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.01
+			building_slaves_standard_of_living_add = -0.1
+			building_laborers_job_attractiveness_mult = -0.025
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:slave_exploitation_dye = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_dye_add = 9
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.02
+			building_laborers_job_attractiveness_mult = -0.075
+			building_slaves_standard_of_living_add = -0.2
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:worker_exploitation_dye = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_dye_add = 6
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.01
+			building_slaves_standard_of_living_add = -0.1
+			building_laborers_job_attractiveness_mult = -0.025
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:slave_exploitation_banana = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fruit_add = 11.25
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.02
+			building_laborers_job_attractiveness_mult = -0.075
+			building_slaves_standard_of_living_add = -0.2
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:worker_exploitation_banana = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fruit_add = 9
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.01
+			building_slaves_standard_of_living_add = -0.1
+			building_laborers_job_attractiveness_mult = -0.025
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:slave_exploitation_tea = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tea_add = 15
+		}
+		unscaled = {
+			building_slaves_standard_of_living_add = -0.1
+			building_laborers_job_attractiveness_mult = -0.02
+			building_minimum_wage_mult = -0.035
+		}
+	}
+}
+REPLACE:worker_exploitation_tea = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tea_add = 11.25
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_slaves_standard_of_living_add = -0.05
+			building_laborers_job_attractiveness_mult = -0.02
+			building_minimum_wage_mult = -0.035
+		}
+	}
+}
+REPLACE:slave_exploitation_rubber = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.002
+		}
+	}
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_rubber_add = 15
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.05
+			building_laborers_job_attractiveness_mult = -0.085
+			building_slaves_standard_of_living_add = -0.25
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:worker_exploitation_rubber = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_rubber_add = 6
+		}
+		level_scaled = {
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.04
+			building_slaves_standard_of_living_add = -0.15
+			building_laborers_job_attractiveness_mult = -0.075
+			building_minimum_wage_mult = -0.025
+		}
+	}
+}
+REPLACE:default_labour_tobacco = {
+	texture = "gfx/interface/icons/production_method_icons/standard_labor.dds"
+}
+REPLACE:worker_exploitation_tobacco = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+	disallowing_laws = {
+		law_right_to_associate
+		law_corporatized_unions
+		law_factory_councils
+		law_guaranteed_liberties
+		law_regulatory_bodies
+		law_worker_protections
+		law_collectivized_agriculture
+		law_homesteading
+		law_multicultural
+		law_wage_subsidies
+		law_old_age_pension
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tobacco_add = 3
+		}
+		level_scaled = {
+			building_employment_laborers_add = 100
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.005
+			building_slaves_standard_of_living_add = -0.1
+			building_laborers_job_attractiveness_mult = -0.025
+			building_minimum_wage_mult = -0.01
+		}
+	}
+}
+REPLACE:lectors_tobacco = {
+	texture = "gfx/interface/icons/production_method_icons/lectors.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_loyalists_from_political_movements_mult = 0.001
+			state_radicals_from_political_movements_mult = 0.001
+		}
+	}
+	disallowing_laws = {
+		law_censorship
+	}
+	building_modifiers = {
+		unscaled = {
+			building_slaves_standard_of_living_add = 0.1
+			building_laborers_job_attractiveness_mult = 0.005
+			building_minimum_wage_mult = 0.005
+			goods_output_tobacco_add = 1.2
+		}
+	}
+}
+REPLACE:radio_stations_tobacco = {
+	texture = "gfx/interface/icons/production_method_icons/radio_stations.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_loyalists_from_political_movements_mult = 0
+			state_radicals_from_political_movements_mult = 0
+		}
+	}
+	unlocking_technologies = {
+		radio
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 1.2
+			goods_output_tobacco_add = 3
+		}
+		unscaled = {
+			building_slaves_standard_of_living_add = 0.2
+			building_laborers_job_attractiveness_mult = 0.01
+		}
+	}
+}

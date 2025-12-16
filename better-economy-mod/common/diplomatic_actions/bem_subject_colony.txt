@@ -1,4 +1,4 @@
-﻿colony = {
+﻿REPLACE:colony = {
 	groups= {
 		general # for breaking only
 	}

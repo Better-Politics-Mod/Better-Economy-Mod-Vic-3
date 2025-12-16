@@ -1,0 +1,452 @@
+REPLACE:bg_manufacturing = {
+	category = urban
+	always_possible = yes
+	economy_of_scale = yes
+	cash_reserves_max = 2500
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	foreign_investment_ai_factor = 0.25
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_light_industry = {
+	parent_group = bg_manufacturing
+	lens = light_industry
+	urbanization = 2
+	economy_of_scale_ai_factor = 3
+	infrastructure_usage_per_level = 0.15
+	construction_efficiency_modifier = yes
+}
+REPLACE:bg_heavy_industry = {
+	parent_group = bg_manufacturing
+	lens = heavy_industry
+	urbanization = 2
+	economy_of_scale_ai_factor = 5
+	infrastructure_usage_per_level = 0.25
+	construction_efficiency_modifier = yes
+}
+REPLACE:bg_military_industry = {
+	parent_group = bg_manufacturing
+	lens = heavy_industry
+	urbanization = 2
+	economy_of_scale_ai_factor = 5
+	infrastructure_usage_per_level = 0.2
+	construction_efficiency_modifier = yes
+}
+REPLACE:bg_agriculture = {
+	category = rural
+	land_usage = rural
+	lens = agriculture
+	economy_of_scale = yes
+	can_use_slaves = yes
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 2
+	foreign_investment_ai_factor = 0.75
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_staple_crops = {
+	parent_group = bg_agriculture
+}
+REPLACE:bg_subsistence_agriculture = {
+	parent_group = bg_agriculture
+	always_possible = yes
+	auto_place_buildings = yes
+	is_subsistence = yes
+	default_building = building_subsistence_farm
+	fired_pops_become_radical = no
+	hires_unemployed_only = yes
+	ignores_productivity_when_hiring = yes
+}
+REPLACE:bg_ranching = {
+	category = rural
+	land_usage = rural
+	lens = agriculture
+	economy_of_scale = yes
+	can_use_slaves = yes
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 2
+	foreign_investment_ai_factor = 0.75
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_subsistence_ranching = {
+	parent_group = bg_ranching
+	always_possible = yes
+	auto_place_buildings = yes
+	is_subsistence = yes
+	default_building = building_subsistence_pasture
+	fired_pops_become_radical = no
+	hires_unemployed_only = yes
+	ignores_productivity_when_hiring = yes
+}
+REPLACE:bg_plantations = {
+	category = rural
+	land_usage = rural
+	economy_of_scale = yes
+	lens = plantation
+	can_use_slaves = yes
+	cash_reserves_max = 2500
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 3
+	foreign_investment_ai_factor = 1.25
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_extraction = {
+	category = rural
+	capped_by_resources = yes
+	economy_of_scale = yes
+	cash_reserves_max = 2500
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_mining = {
+	parent_group = bg_extraction
+	lens = mine
+	can_use_slaves = yes
+	urbanization = 1
+	infrastructure_usage_per_level = 0.2
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 3
+	foreign_investment_ai_factor = 1
+}
+REPLACE:bg_gold_fields = {
+	parent_group = bg_extraction
+	lens = mine
+	auto_place_buildings = yes
+	discoverable_resource = yes
+	depletable_resource = yes
+	always_self_owning = yes
+	pays_taxes = no
+	infrastructure_usage_per_level = 0
+	default_building = building_gold_field
+	fired_pops_become_radical = no
+}
+REPLACE:bg_logging = {
+	parent_group = bg_extraction
+	can_use_slaves = yes
+	default_building = building_logging_camp
+	lens = forestry
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 2
+	foreign_investment_ai_factor = 1
+}
+REPLACE:bg_rubber = {
+	parent_group = bg_extraction
+	can_use_slaves = yes
+	discoverable_resource = yes
+	depletable_resource = no
+	default_building = building_rubber_plantation
+	lens = forestry
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 2
+	foreign_investment_ai_factor = 1
+}
+REPLACE:bg_whaling = {
+	parent_group = bg_extraction
+	default_building = building_whaling_station
+	lens = fishing
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 4
+	foreign_investment_ai_factor = 0.75
+}
+REPLACE:bg_fishing = {
+	parent_group = bg_extraction
+	default_building = building_fishing_wharf
+	lens = fishing
+	urbanization = 0.5
+	infrastructure_usage_per_level = 0.1
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 2.5
+	foreign_investment_ai_factor = 0.75
+}
+REPLACE:bg_oil_extraction = {
+	parent_group = bg_extraction
+	discoverable_resource = yes
+	default_building = building_oil_rig
+	lens = mine
+	urbanization = 1
+	infrastructure_usage_per_level = 0.2
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 4
+	foreign_investment_ai_factor = 1
+}
+REPLACE:bg_service = {
+	category = urban
+	land_usage = urban
+	always_possible = yes
+	auto_place_buildings = yes
+	always_self_owning = yes
+	economy_of_scale = yes
+	default_building = building_urban_center
+	cash_reserves_max = 2500
+}
+REPLACE:bg_urban_facilities = {
+	category = urban
+	lens = development
+	always_possible = yes
+	economy_of_scale = yes
+	cash_reserves_max = 2500
+	urbanization = 2
+	infrastructure_usage_per_level = 0.2
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 4
+	foreign_investment_ai_factor = 0.25
+}
+REPLACE:bg_arts = {
+	parent_group = bg_urban_facilities
+	infrastructure_usage_per_level = 0.05
+}
+REPLACE:bg_power = {
+	category = development
+	lens = development
+	always_possible = yes
+	economy_of_scale = yes
+	cash_reserves_max = 2500
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	economy_of_scale_ai_factor = 1.5
+	foreign_investment_ai_factor = 0.5
+	infrastructure_usage_per_level = 0.2
+	urbanization = 1
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_government = {
+	category = development
+	always_possible = yes
+	is_government_funded = yes
+	economy_of_scale = yes
+	lens = development
+	urbanization = 2
+	infrastructure_usage_per_level = 0.1
+	economy_of_scale_ai_factor = 3
+	construction_efficiency_modifier = yes
+}
+REPLACE:bg_technology = {
+	parent_group = bg_government
+}
+REPLACE:bg_bureaucracy = {
+	parent_group = bg_government
+}
+REPLACE:bg_trade = {
+	parent_group = bg_private_infrastructure
+	stateregion_max_level = no
+	lens = trade
+	subsidized = no
+	has_trade_revenue = yes
+	economy_of_scale = no
+	default_building = building_trade_center
+	can_use_slaves = yes
+	infrastructure_usage_per_level = 0.05
+}
+REPLACE:bg_financial_districts = {
+	parent_group = bg_owner_buildings
+	urbanization = 0.5
+}
+REPLACE:bg_manor_houses = {
+	parent_group = bg_owner_buildings
+	infrastructure_usage_per_level = 0
+}
+REPLACE:bg_company_headquarter = {
+	parent_group = bg_owner_buildings
+	company_headquarter = yes
+	urbanization = 0.5
+}
+REPLACE:bg_company_regional_headquarter = {
+	parent_group = bg_owner_buildings
+	regional_company_headquarter = yes
+	urbanization = 0.5
+}
+REPLACE:bg_owner_buildings = {
+	parent_group = bg_urban_facilities
+	min_productivity_to_hire = 10
+	category = urban
+	lens = trade
+	always_possible = yes
+	can_use_slaves = yes
+	auto_place_buildings = yes
+	owns_other_buildings = yes
+	always_self_owning = yes
+	ignores_productivity_when_hiring = yes
+	proportionality_limit = 1
+	economy_of_scale = no
+	default_building = building_financial_district
+	cash_reserves_max = 1000
+	urbanization = 0
+	infrastructure_usage_per_level = 0.01
+	fired_pops_become_radical = no
+	should_auto_expand = {
+		always = no
+	}
+}
+REPLACE:bg_infrastructure = {
+	category = development
+	always_possible = yes
+	lens = development
+	stateregion_max_level = yes
+	economy_of_scale_ai_factor = 2
+	foreign_investment_ai_factor = 0.75
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}
+REPLACE:bg_public_infrastructure = {
+	parent_group = bg_infrastructure
+	is_government_funded = yes
+	urbanization = 0.5
+}
+REPLACE:bg_construction = {
+	parent_group = bg_public_infrastructure
+	infrastructure_usage_per_level = 0.2
+	lens = development
+	is_government_funded = yes
+	can_use_slaves = yes
+	urbanization = 0.5
+	economy_of_scale_ai_factor = 5
+}
+REPLACE:bg_private_infrastructure = {
+	parent_group = bg_infrastructure
+	is_government_funded = no
+	subsidized = yes
+	cash_reserves_max = 2500
+	urbanization = 0.5
+}
+REPLACE:bg_canals = {
+	parent_group = bg_infrastructure
+	lens = special
+	is_government_funded = yes
+	inheritable_construction = yes
+	urbanization = 10
+}
+REPLACE:bg_monuments = {
+	parent_group = bg_government
+	lens = special
+	inheritable_construction = yes
+	economy_of_scale = no
+	default_building = building_eiffel_tower
+}
+REPLACE:bg_military = {
+	category = development
+	always_possible = yes
+	is_military = yes
+	is_government_funded = yes
+	infrastructure_usage_per_level = 0.02
+	lens = development
+	urbanization = 0.2
+	construction_efficiency_modifier = yes
+}
+REPLACE:bg_army = {
+	parent_group = bg_military
+}
+REPLACE:bg_conscription = {
+	parent_group = bg_army
+	urbanization = 0
+	fired_pops_become_radical = no
+}
+REPLACE:bg_navy = {
+	parent_group = bg_military
+}
+REPLACE:bg_skyscraper = {
+	parent_group = bg_government
+	economy_of_scale = no
+}
+REPLACE:bg_monuments_hidden = {
+	always_possible = yes
+	is_shown_in_outliner = no
+}
+REPLACE:bg_iron_mining = {
+	default_building = building_iron_mine
+}
+REPLACE:bg_sulfur_mining = {
+	default_building = building_sulfur_mine
+}
+REPLACE:bg_coal_mining = {
+	default_building = building_coal_mine
+}
+REPLACE:bg_gold_mining = {
+	default_building = building_gold_mine
+}
+REPLACE:bg_lead_mining = {
+	default_building = building_lead_mine
+}
+REPLACE:bg_rye_farms = {
+	default_building = building_rye_farm
+}
+REPLACE:bg_rice_farms = {
+	default_building = building_rice_farm
+}
+REPLACE:bg_maize_farms = {
+	default_building = building_maize_farm
+}
+REPLACE:bg_wheat_farms = {
+	default_building = building_wheat_farm
+}
+REPLACE:bg_millet_farms = {
+	default_building = building_millet_farm
+}
+REPLACE:bg_vineyard_plantations = {
+	default_building = building_vineyard
+}
+REPLACE:bg_cotton_plantations = {
+	default_building = building_cotton_plantation
+}
+REPLACE:bg_livestock_ranches = {
+	default_building = building_livestock_ranch
+}
+REPLACE:bg_tobacco_plantations = {
+	default_building = building_tobacco_plantation
+}
+REPLACE:bg_banana_plantations = {
+	default_building = building_banana_plantation
+}
+REPLACE:bg_coffee_plantations = {
+	default_building = building_coffee_plantation
+}
+REPLACE:bg_silk_plantations = {
+	default_building = building_silk_plantation
+}
+REPLACE:bg_dye_plantations = {
+	default_building = building_dye_plantation
+}
+REPLACE:bg_opium_plantations = {
+	default_building = building_opium_plantation
+}
+REPLACE:bg_tea_plantations = {
+	default_building = building_tea_plantation
+}
+REPLACE:bg_sugar_plantations = {
+	default_building = building_sugar_plantation
+}

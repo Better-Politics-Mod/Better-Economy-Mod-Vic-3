@@ -1,4 +1,4 @@
-﻿protectorate = {
+﻿REPLACE:protectorate = {
 	groups= {
 		general
 	}

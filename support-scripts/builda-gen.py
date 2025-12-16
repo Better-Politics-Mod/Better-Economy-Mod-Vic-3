@@ -10,9 +10,11 @@ def find_buildings(path):
     for root, dirs, files in os.walk(path):
         for file in files:
             if file.endswith(".txt"):
+                if file.startswith(('08', '12', '14')):
+                    continue
                 with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
                     content = f.read()
-                    matches = re.findall(r'building_(\w+)', content)
+                    matches = re.findall(r'building_(\w+)\s*=\s*{', content)
                     buildings.extend(matches)
     return set(buildings)
 

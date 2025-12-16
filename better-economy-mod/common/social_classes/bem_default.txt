@@ -1,0 +1,5 @@
+﻿INJECT:lower_class = {
+	allowed_professions = {
+		lumpen
+	}
+}

@@ -1,4 +1,4 @@
-﻿puppet = {
+﻿REPLACE:puppet = {
 	groups= {
 		general # for breaking only
 	}

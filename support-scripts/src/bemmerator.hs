@@ -68,7 +68,7 @@ normalizePMs costMap = go False
 normalizePotentials :: PdxValue -> PdxValue
 normalizePotentials v = case v of
     PdxPair (key, op, PdxNumber n) 
-        | "bg_" `isPrefixOf` key || "arable_land" == key -> PdxPair (key, op, PdxNumber $ n * throughputDivisor)
+        | "building_" `isPrefixOf` key || "arable_land" == key -> PdxPair (key, op, PdxNumber $ n * throughputDivisor)
     PdxPair (key, op, val) -> PdxPair (key, op, normalizePotentials  val)
     PdxArray xs ->  PdxArray (map normalizePotentials xs)
     other -> other
@@ -110,10 +110,9 @@ main = do
     vic3Common <- (</> ".local/share/Steam/steamapps/common/Victoria 3/game/common") <$> getHomeDirectory
     Just goods <- parseFile (vic3Common </> "goods/00_goods.txt")
     processDirectory ["00", "05", "08", "13"] (normalizePMs $ baseCosts goods) (vic3Common </> "production_methods") (bemCommon </> "production_methods")
-    writeFile (bemCommon </> "goods/zz_bem_goods.txt") (toPdxScript $ normalizeGoods goods)
+    processDirectory [] normalizeGoods (vic3Common </> "goods") (bemCommon </> "goods")
     processDirectory [] genPoptypes (vic3Common </> "pop_types") (bemCommon </> "pop_types")
     processDirectory ["99"] normalizePotentials (vic3Common </> "../map_data/state_regions") (bemCommon </> "../map_data/state_regions")
     processDirectory [] normalizeHistory (vic3Common </> "history/buildings") (bemCommon </> "history/buildings")
-    Just buildingGroups <- parseFile (vic3Common </> "building_groups/00_building_groups.txt")
-    writeFile (bemCommon </> "building_groups/00_building_groups.txt") $ toPdxScript $ normalizeBuildingGroups buildingGroups
+    processDirectory [] normalizeBuildingGroups (vic3Common </> "building_groups") (bemCommon </> "building_groups")
     writeFile (bemCommon </> "script_values/bem_trade_values.txt") $ toPdxScript $ PdxArray [PdxPair ("used_trade_capacity", "=", PdxArray [PdxPair ("value", "=", PdxUString "state_trade"), PdxPair ("divide", "=", PdxNumber $ targetBasePrice / baseTradeCap * nominalFactor)])]

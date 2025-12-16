@@ -1,4 +1,4 @@
-﻿chartered_company = {
+﻿REPLACE:chartered_company = {
 	groups= {
 		general # for breaking only
 	}

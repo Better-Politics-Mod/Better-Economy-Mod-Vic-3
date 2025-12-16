@@ -1,4 +1,4 @@
-﻿vassal = {
+﻿REPLACE:vassal = {
 	groups= {
 		general # for breaking only
 	}
