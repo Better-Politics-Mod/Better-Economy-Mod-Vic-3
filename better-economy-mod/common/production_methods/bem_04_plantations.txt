@@ -75,8 +75,8 @@ REPLACE:coffee_plantation_patio_drying = {
 			building_employment_laborers_add = 150
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.005
-			building_slaves_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.05
+			building_slaves_mortality_mult = 0.1
 		}
 	}
 }
@@ -300,7 +300,7 @@ REPLACE:hand_rolled = {
 			building_employment_machinists_add = 50
 		}
 		unscaled = {
-			building_minimum_wage_mult = 0.005
+			building_minimum_wage_mult = 0.05
 		}
 	}
 }
@@ -344,9 +344,9 @@ REPLACE:default_building_sugar_plantation = {
 			building_employment_farmers_add = 100
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.005
-			building_slaves_mortality_mult = 0.01
-			building_slaves_standard_of_living_add = -0.1
+			building_laborers_mortality_mult = 0.05
+			building_slaves_mortality_mult = 0.1
+			building_slaves_standard_of_living_add = -1
 		}
 	}
 }
@@ -516,11 +516,11 @@ REPLACE:slave_exploitation_sugar = {
 			goods_output_sugar_add = 22.5
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.035
-			building_slaves_mortality_mult = 0.035
-			building_laborers_job_attractiveness_mult = -0.09
-			building_slaves_standard_of_living_add = -0.3
-			building_minimum_wage_mult = -0.015
+			building_laborers_mortality_mult = 0.35
+			building_slaves_mortality_mult = 0.35
+			building_laborers_job_attractiveness_mult = -0.9
+			building_slaves_standard_of_living_add = -3
+			building_minimum_wage_mult = -0.15
 		}
 	}
 }
@@ -546,11 +546,11 @@ REPLACE:worker_exploitation_sugar = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.025
-			building_slaves_mortality_mult = 0.025
-			building_laborers_job_attractiveness_mult = -0.035
-			building_slaves_standard_of_living_add = -0.2
-			building_minimum_wage_mult = -0.015
+			building_laborers_mortality_mult = 0.25
+			building_slaves_mortality_mult = 0.25
+			building_laborers_job_attractiveness_mult = -0.35
+			building_slaves_standard_of_living_add = -2
+			building_minimum_wage_mult = -0.15
 		}
 	}
 }
@@ -571,10 +571,10 @@ REPLACE:slave_exploitation_coffee = {
 			goods_output_coffee_add = 7.5
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.025
-			building_laborers_job_attractiveness_mult = -0.075
-			building_slaves_standard_of_living_add = -0.25
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.25
+			building_laborers_job_attractiveness_mult = -0.75
+			building_slaves_standard_of_living_add = -2.5
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -600,10 +600,10 @@ REPLACE:worker_exploitation_coffee = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.015
-			building_laborers_job_attractiveness_mult = -0.025
-			building_slaves_standard_of_living_add = -0.15
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.15
+			building_laborers_job_attractiveness_mult = -0.25
+			building_slaves_standard_of_living_add = -1.5
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -624,10 +624,10 @@ REPLACE:slave_exploitation_cotton = {
 			goods_output_fabric_add = 6
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.02
-			building_laborers_job_attractiveness_mult = -0.075
-			building_slaves_standard_of_living_add = -0.2
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.2
+			building_laborers_job_attractiveness_mult = -0.75
+			building_slaves_standard_of_living_add = -2
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -653,10 +653,10 @@ REPLACE:worker_exploitation_cotton = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.01
-			building_slaves_standard_of_living_add = -0.1
-			building_laborers_job_attractiveness_mult = -0.025
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.1
+			building_slaves_standard_of_living_add = -1
+			building_laborers_job_attractiveness_mult = -0.25
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -677,10 +677,10 @@ REPLACE:slave_exploitation_dye = {
 			goods_output_dye_add = 9
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.02
-			building_laborers_job_attractiveness_mult = -0.075
-			building_slaves_standard_of_living_add = -0.2
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.2
+			building_laborers_job_attractiveness_mult = -0.75
+			building_slaves_standard_of_living_add = -2
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -706,10 +706,10 @@ REPLACE:worker_exploitation_dye = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.01
-			building_slaves_standard_of_living_add = -0.1
-			building_laborers_job_attractiveness_mult = -0.025
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.1
+			building_slaves_standard_of_living_add = -1
+			building_laborers_job_attractiveness_mult = -0.25
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -730,10 +730,10 @@ REPLACE:slave_exploitation_banana = {
 			goods_output_fruit_add = 11.25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.02
-			building_laborers_job_attractiveness_mult = -0.075
-			building_slaves_standard_of_living_add = -0.2
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.2
+			building_laborers_job_attractiveness_mult = -0.75
+			building_slaves_standard_of_living_add = -2
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -759,10 +759,10 @@ REPLACE:worker_exploitation_banana = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.01
-			building_slaves_standard_of_living_add = -0.1
-			building_laborers_job_attractiveness_mult = -0.025
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.1
+			building_slaves_standard_of_living_add = -1
+			building_laborers_job_attractiveness_mult = -0.25
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -783,9 +783,9 @@ REPLACE:slave_exploitation_tea = {
 			goods_output_tea_add = 15
 		}
 		unscaled = {
-			building_slaves_standard_of_living_add = -0.1
-			building_laborers_job_attractiveness_mult = -0.02
-			building_minimum_wage_mult = -0.035
+			building_slaves_standard_of_living_add = -1
+			building_laborers_job_attractiveness_mult = -0.2
+			building_minimum_wage_mult = -0.35
 		}
 	}
 }
@@ -811,9 +811,9 @@ REPLACE:worker_exploitation_tea = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_slaves_standard_of_living_add = -0.05
-			building_laborers_job_attractiveness_mult = -0.02
-			building_minimum_wage_mult = -0.035
+			building_slaves_standard_of_living_add = -0.5
+			building_laborers_job_attractiveness_mult = -0.2
+			building_minimum_wage_mult = -0.35
 		}
 	}
 }
@@ -834,10 +834,10 @@ REPLACE:slave_exploitation_rubber = {
 			goods_output_rubber_add = 15
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.05
-			building_laborers_job_attractiveness_mult = -0.085
-			building_slaves_standard_of_living_add = -0.25
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.5
+			building_laborers_job_attractiveness_mult = -0.85
+			building_slaves_standard_of_living_add = -2.5
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -863,10 +863,10 @@ REPLACE:worker_exploitation_rubber = {
 		level_scaled = {
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.04
-			building_slaves_standard_of_living_add = -0.15
-			building_laborers_job_attractiveness_mult = -0.075
-			building_minimum_wage_mult = -0.025
+			building_laborers_mortality_mult = 0.4
+			building_slaves_standard_of_living_add = -1.5
+			building_laborers_job_attractiveness_mult = -0.75
+			building_minimum_wage_mult = -0.25
 		}
 	}
 }
@@ -896,10 +896,10 @@ REPLACE:worker_exploitation_tobacco = {
 			building_employment_laborers_add = 100
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.005
-			building_slaves_standard_of_living_add = -0.1
-			building_laborers_job_attractiveness_mult = -0.025
-			building_minimum_wage_mult = -0.01
+			building_laborers_mortality_mult = 0.05
+			building_slaves_standard_of_living_add = -1
+			building_laborers_job_attractiveness_mult = -0.25
+			building_minimum_wage_mult = -0.1
 		}
 	}
 }
@@ -916,9 +916,9 @@ REPLACE:lectors_tobacco = {
 	}
 	building_modifiers = {
 		unscaled = {
-			building_slaves_standard_of_living_add = 0.1
-			building_laborers_job_attractiveness_mult = 0.005
-			building_minimum_wage_mult = 0.005
+			building_slaves_standard_of_living_add = 1
+			building_laborers_job_attractiveness_mult = 0.05
+			building_minimum_wage_mult = 0.05
 			goods_output_tobacco_add = 1.2
 		}
 	}
@@ -940,8 +940,8 @@ REPLACE:radio_stations_tobacco = {
 			goods_output_tobacco_add = 3
 		}
 		unscaled = {
-			building_slaves_standard_of_living_add = 0.2
-			building_laborers_job_attractiveness_mult = 0.01
+			building_slaves_standard_of_living_add = 2
+			building_laborers_job_attractiveness_mult = 0.1
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿building_government_administration = {
+﻿REPLACE:building_government_administration = {
 	building_group = bg_bureaucracy
 	city_type = city
 

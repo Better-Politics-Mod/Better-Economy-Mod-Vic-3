@@ -103,9 +103,9 @@ REPLACE:pm_nitroglycerin_building_coal_mine = {
 			building_employment_engineers_add = 25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.03
-			building_machinists_mortality_mult = 0.02
-			building_engineers_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
 		}
 	}
 }
@@ -262,9 +262,9 @@ REPLACE:pm_nitroglycerin_building_iron_mine = {
 			building_employment_engineers_add = 25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.03
-			building_machinists_mortality_mult = 0.02
-			building_engineers_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
 		}
 	}
 }
@@ -434,9 +434,9 @@ REPLACE:pm_nitroglycerin_building_lead_mine = {
 			building_employment_engineers_add = 25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.03
-			building_machinists_mortality_mult = 0.02
-			building_engineers_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
 		}
 	}
 }
@@ -564,9 +564,9 @@ REPLACE:pm_nitroglycerin_building_sulfur_mine = {
 			building_employment_engineers_add = 25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.03
-			building_machinists_mortality_mult = 0.02
-			building_engineers_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
 		}
 	}
 }
@@ -714,9 +714,9 @@ REPLACE:pm_nitroglycerin_building_gold_mine = {
 			building_employment_engineers_add = 25
 		}
 		unscaled = {
-			building_laborers_mortality_mult = 0.03
-			building_machinists_mortality_mult = 0.02
-			building_engineers_mortality_mult = 0.01
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
 		}
 	}
 	country_modifiers = {

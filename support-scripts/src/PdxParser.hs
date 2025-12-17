@@ -6,6 +6,7 @@ import Control.Monad
 import System.Directory 
 import System.FilePath 
 import Text.Printf
+import System.Process
 
 data PdxValue = PdxBool Bool
     | PdxNumber Double
@@ -181,133 +182,15 @@ setEntryMode mode (PdxArray xs) = PdxArray (map prependToKey xs)
     prependToKey other = other
 setEntryMode mode other = other
 
-isDatabase :: FilePath -> Bool
-isDatabase dstDir = 
-  let normalizedDst = map (\c -> if c == '\\' then '/' else c) dstDir
-  in any (`isSuffixOf` normalizedDst) databasePaths
-    where databasePaths = 
-            [ "common/acceptance_statuses"
-            , "common/ai_strategies"
-            , "common/amendments"
-            , "common/battle_conditions"
-            , "common/building_groups"
-            , "common/buildings"
-            , "common/buy_packages"
-            , "common/character_interactions"
-            , "common/character_templates"
-            , "common/character_traits"
-            , "common/cohesion_levels"
-            , "common/combat_unit_groups"
-            , "common/combat_unit_types"
-            , "common/combat_unit_experience_levels"
-            , "common/commander_orders"
-            , "common/company_charter_types"
-            , "common/company_types"
-            , "common/country_creation"
-            , "common/country_definitions"
-            , "common/country_formation"
-            , "common/country_ranks"
-            , "common/country_types"
-            , "common/culture_graphics"
-            , "common/cultures"
-            , "common/decisions"
-            , "common/decrees"
-            , "common/diplomatic_actions"
-            , "common/diplomatic_catalyst_categories"
-            , "common/diplomatic_catalysts"
-            , "common/diplomatic_plays"
-            , "common/discrimination_trait_groups"
-            , "common/discrimination_traits"
-            , "common/dna_data"
-            , "common/dynamic_company_names"
-            , "common/dynamic_country_names"
-            , "common/dynamic_country_map_colors"
-            , "common/dynamic_treaty_names"
-            , "common/technology"
-            , "common/flag_definitions"
-            , "common/game_concepts"
-            , "common/genes"
-            , "common/geographic_regions"
-            , "common/goods"
-            , "common/government_types"
-            , "common/harvest_condition_types"
-            , "common/ideologies"
-            , "common/institutions"
-            , "common/interest_group_traits"
-            , "common/interest_groups"
-            , "common/journal_entry_groups"
-            , "common/journal_entries"
-            , "common/law_groups"
-            , "common/laws"
-            , "common/legitimacy_levels"
-            , "common/liberty_desire_levels"
-            , "common/military_formation_flags"
-            , "common/mobilization_option_groups"
-            , "common/mobilization_options"
-            , "common/objective_subgoal_categories"
-            , "common/objective_subgoals"
-            , "common/objectives"
-            , "common/parties"
-            , "common/political_lobby_appeasement"
-            , "common/political_lobbies"
-            , "common/political_movement_categories"
-            , "common/political_movement_pop_support"
-            , "common/political_movements"
-            , "common/pop_needs"
-            , "common/pop_types"
-            , "common/power_bloc_coa_pieces"
-            , "common/power_bloc_identities"
-            , "common/power_bloc_map_textures"
-            , "common/power_bloc_names"
-            , "common/power_bloc_principle_groups"
-            , "common/power_bloc_principles"
-            , "common/prestige_goods"
-            , "common/production_method_groups"
-            , "common/production_methods"
-            , "common/proposal_types"
-            , "common/religions"
-            , "common/social_classes"
-            , "common/social_hierarchies"
-            , "common/state_traits"
-            , "common/strategic_regions"
-            , "common/subject_types"
-            , "common/terrain_manipulators"
-            , "common/terrain"
-            , "common/themes"
-            , "common/tutorial_lessons"
-            , "common/tutorial_lesson_chains"
-            , "common/labels"
-            , "common/war_goal_types"
-            , "common/alert_groups"
-            , "common/alert_types"
-            , "common/commander_ranks"
-            , "common/scripted_buttons"
-            , "common/scripted_progress_bars"
-            , "common/treaty_articles"
-            , "common/modifier_type_definitions"
-            , "common/ethnicities"
-            , "common/script_values"
-            , "common/scripted_guis"
-            , "common/scripted_lists"
-            , "common/scripted_modifiers"
-            , "common/achievements"
-            , "gfx/map/city_data/city_building_vfx"
-            , "gfx/map/fleet_dioramas"
-            , "gfx/map/fleet_entities"
-            , "gfx/map/army_dioramas"
-            , "gfx/map/front_entities"
-            , "gfx/portraits/accessories"
-            , "gfx/portraits/portrait_modifiers"
-            --, "map_data/state_regions" -- doesn't work even though its in the list from the dev diary idk
-            , "sound/persistent_objects"
-            , "music"
-            , "notifications"
-            , "gui_animations"
-            , "modifier_icons"
-            ]
+data EntryMode = Inject | Replace | TryInject | TryReplace | ReplaceOrCreate | InjectOrCreate | None
+  deriving (Show, Eq)
 
-processDirectory :: [String] -> (PdxValue -> PdxValue) -> FilePath -> FilePath -> IO ()
-processDirectory excludePrefixes transform srcDir dstDir = do
+processDirectory :: EntryMode -> [String] -> (PdxValue -> PdxValue) -> FilePath -> IO ()
+processDirectory mode excludePrefixes transform relPath = do
+  vic3Common <- (</> ".local/share/Steam/steamapps/common/Victoria 3/game/common") <$> getHomeDirectory
+  bemCommon <- (</> "better-economy-mod/common") . init <$> readProcess "git" ["rev-parse", "--show-toplevel"] ""
+  let srcDir = vic3Common </> relPath
+  let dstDir = bemCommon </> relPath
   createDirectoryIfMissing True dstDir
   entries <- listDirectory srcDir
   forM_ entries $ \entry -> do
@@ -319,8 +202,7 @@ processDirectory excludePrefixes transform srcDir dstDir = do
       result <- parseFile srcPath
       case result of
         Just parsed -> do
-          let finalTransform = if isDatabase dstDir 
-                               then setEntryMode "REPLACE:" . transform
-                               else transform
-          writeFile dstPath $ toPdxScript $ finalTransform parsed
+          let modeString = map toUpper (intercalate "_" $ groupBy (\a b -> not $ isUpper b) (show mode)) ++ ":"
+          let result = (if mode /= None then setEntryMode modeString . transform else transform) parsed
+          unless (result == PdxArray []) $ writeFile dstPath $ toPdxScript result
         Nothing -> putStrLn $ "Failed to parse: " ++ srcPath

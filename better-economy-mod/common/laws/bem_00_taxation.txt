@@ -1,0 +1,39 @@
+INJECT:law_land_based_taxation = {
+	tax_modifier_very_low = {
+		tax_land_add = 5.6
+	}
+	tax_modifier_low = {
+		tax_land_add = 7.7
+	}
+	tax_modifier_medium = {
+		tax_land_add = 9.8
+	}
+	tax_modifier_high = {
+		tax_land_add = 11.9
+	}
+	tax_modifier_very_high = {
+		tax_land_add = 14
+	}
+}
+INJECT:law_per_capita_based_taxation = {
+	tax_modifier_very_low = {
+		tax_per_capita_add = 5.6
+		tax_land_add = 2.8
+	}
+	tax_modifier_low = {
+		tax_per_capita_add = 7.7
+		tax_land_add = 3.85
+	}
+	tax_modifier_medium = {
+		tax_per_capita_add = 9.8
+		tax_land_add = 4.9
+	}
+	tax_modifier_high = {
+		tax_per_capita_add = 11.9
+		tax_land_add = 5.95
+	}
+	tax_modifier_very_high = {
+		tax_per_capita_add = 14
+		tax_land_add = 7
+	}
+}

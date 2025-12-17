@@ -1,1 +1,3 @@
 vscode-userdata:/
+support-scripts/src/*
+!support-scripts/src/*.hs

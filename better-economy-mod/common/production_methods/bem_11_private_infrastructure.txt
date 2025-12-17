@@ -358,7 +358,7 @@ REPLACE:pm_trade_center_trade_quantity_limited = {
 	}
 	state_modifiers = {
 		unscaled = {
-			state_trade_quantity_mult = -0.05
+			state_trade_quantity_mult = -0.5
 		}
 	}
 }
@@ -383,7 +383,7 @@ REPLACE:pm_trade_center_trade_quantity_high = {
 	}
 	state_modifiers = {
 		unscaled = {
-			state_trade_quantity_mult = 0.05
+			state_trade_quantity_mult = 0.5
 		}
 	}
 }
@@ -399,7 +399,7 @@ REPLACE:pm_trade_center_trade_quantity_very_high = {
 	}
 	state_modifiers = {
 		unscaled = {
-			state_trade_quantity_mult = 0.1
+			state_trade_quantity_mult = 1
 		}
 	}
 }
@@ -413,8 +413,8 @@ REPLACE:pm_financial_district_privately_owned = {
 			building_employment_clerks_add = 2.5
 		}
 		unscaled = {
-			building_capitalists_shares_add = 1
-			building_shopkeepers_shares_add = 0.1
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
 		}
 	}
 }
@@ -430,7 +430,7 @@ REPLACE:pm_financial_district_publicly_traded = {
 			building_employment_clerks_add = 2.5
 		}
 		unscaled = {
-			building_capitalists_shares_add = 1
+			building_capitalists_shares_add = 10
 		}
 	}
 }
@@ -448,8 +448,8 @@ REPLACE:pm_financial_district_principle_divine_economics_2 = {
 			building_employment_clerks_add = 2.5
 		}
 		unscaled = {
-			building_capitalists_shares_add = 1
-			building_clergymen_shares_add = 0.2
+			building_capitalists_shares_add = 10
+			building_clergymen_shares_add = 2
 		}
 	}
 }
@@ -461,7 +461,7 @@ REPLACE:pm_manor_house_privately_owned = {
 			building_employment_aristocrats_add = 5
 		}
 		unscaled = {
-			building_aristocrats_shares_add = 1
+			building_aristocrats_shares_add = 10
 		}
 	}
 }
@@ -478,8 +478,8 @@ REPLACE:pm_manor_house_principle_divine_economics_2 = {
 			building_employment_clergymen_add = 5
 		}
 		unscaled = {
-			building_aristocrats_shares_add = 1
-			building_clergymen_shares_add = 0.1
+			building_aristocrats_shares_add = 10
+			building_clergymen_shares_add = 1
 		}
 	}
 }
@@ -493,7 +493,7 @@ REPLACE:pm_manor_house_bureaucrat_ownership = {
 			building_employment_bureaucrats_add = 10
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 0.1
+			building_bureaucrats_shares_add = 1
 		}
 	}
 }
@@ -507,7 +507,7 @@ REPLACE:pm_manor_house_clergy_ownership = {
 			building_employment_clergymen_add = 10
 		}
 		unscaled = {
-			building_clergymen_shares_add = 0.1
+			building_clergymen_shares_add = 1
 		}
 	}
 }

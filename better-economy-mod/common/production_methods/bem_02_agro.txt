@@ -33,7 +33,7 @@ REPLACE:pm_fertilization = {
 	}
 	state_modifiers = {
 		unscaled = {
-			state_harvest_condition_drought_impact_mult = 0.005
+			state_harvest_condition_drought_impact_mult = 0.05
 		}
 	}
 	building_modifiers = {
@@ -54,7 +54,7 @@ REPLACE:pm_chemical_fertilizer = {
 	}
 	state_modifiers = {
 		unscaled = {
-			state_harvest_condition_drought_impact_mult = 0.01
+			state_harvest_condition_drought_impact_mult = 0.1
 		}
 	}
 	building_modifiers = {
@@ -197,7 +197,7 @@ REPLACE:pm_simple_farming_building_rice_farm = {
 			building_employment_farmers_add = 200
 		}
 		unscaled = {
-			building_slaves_mortality_mult = 0.02
+			building_slaves_mortality_mult = 0.2
 		}
 	}
 }
@@ -216,7 +216,7 @@ REPLACE:pm_soil_enriching_farming_building_rice_farm = {
 			building_employment_farmers_add = 300
 		}
 		unscaled = {
-			building_slaves_mortality_mult = 0.01
+			building_slaves_mortality_mult = 0.1
 		}
 	}
 }
