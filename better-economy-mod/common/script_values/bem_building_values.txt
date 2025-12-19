@@ -101,3 +101,11 @@ bem_profit_per_level = {
 	value = weekly_profit
 	divide = level
 }
+
+REPLACE:state_urbanization_rate = {
+    value = total_urbanization
+    divide = state_population
+    multiply = 100
+    min = 0
+    max = 1
+}

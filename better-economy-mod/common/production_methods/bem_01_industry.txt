@@ -1405,7 +1405,6 @@ REPLACE:pm_assembly_lines_building_automotive_industry = {
 		}
 		level_scaled = {
 			building_employment_laborers_add = -150
-			building_employment_machinists_add = -50
 		}
 	}
 	required_input_goods = electricity
@@ -1620,7 +1619,7 @@ REPLACE:pm_mass_automobile_production = {
 			goods_input_engines_add = 9
 			goods_input_rubber_add = 6
 			goods_input_oil_add = 6
-			goods_output_automobiles_add = 90
+			goods_output_automobiles_add = 75
 		}
 		level_scaled = {
 			building_employment_shopkeepers_add = 50

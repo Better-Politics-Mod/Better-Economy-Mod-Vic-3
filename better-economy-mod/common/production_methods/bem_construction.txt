@@ -8,9 +8,9 @@ REPLACE:pm_wooden_buildings = {
 			goods_output_construction_add = 33
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 10
-			building_employment_clerks_add = 10
-			building_employment_laborers_add = 80
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+			building_employment_laborers_add = 400
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
@@ -31,10 +31,10 @@ REPLACE:pm_iron_frame_buildings = {
 			goods_output_construction_add = 62
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 10
-			building_employment_clerks_add = 10
-			building_employment_machinists_add = 5
-			building_employment_laborers_add = 75
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+			building_employment_machinists_add = 25
+			building_employment_laborers_add = 375
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
@@ -55,10 +55,10 @@ REPLACE:pm_steel_frame_buildings = {
 			goods_output_construction_add = 109
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 10
-			building_employment_clerks_add = 10
-			building_employment_machinists_add = 15
-			building_employment_laborers_add = 65
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+			building_employment_machinists_add = 75
+			building_employment_laborers_add = 325
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
@@ -80,11 +80,11 @@ REPLACE:pm_arc_welded_buildings = {
 			goods_output_construction_add = 148
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 10
-			building_employment_clerks_add = 10
-			building_employment_engineers_add = 5
-			building_employment_machinists_add = 15
-			building_employment_laborers_add = 60
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+			building_employment_engineers_add = 25
+			building_employment_machinists_add = 75
+			building_employment_laborers_add = 300
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1

@@ -3836,7 +3836,7 @@ BUILDINGS = {
 						region = "STATE_PERNAMBUCO"
 					}
 				}
-				reserves = 2
+				reserves = 1
 			}
 			create_building = {
 				building = "building_textile_mill"

@@ -301,7 +301,7 @@ REPLACE:hand_rolled = {
 	texture = "gfx/interface/icons/production_method_icons/hand_rolled.dds"
 	building_modifiers = {
 		level_scaled = {
-			building_employment_machinists_add = 50
+			building_employment_laborers_add = 100
 		}
 		unscaled = {
 			building_minimum_wage_mult = 0.05
@@ -312,10 +312,11 @@ REPLACE:molds = {
 	texture = "gfx/interface/icons/production_method_icons/molds.dds"
 	building_modifiers = {
 		workforce_scaled = {
+			goods_input_iron_add = 0.6
 			goods_output_tobacco_add = 3
 		}
 		level_scaled = {
-			building_employment_laborers_add = 100
+			building_employment_machinists_add = 50
 		}
 	}
 }
@@ -341,7 +342,7 @@ REPLACE:default_building_sugar_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_sugar_add = 22.5
+			goods_output_sugar_add = 11.25
 		}
 		level_scaled = {
 			building_employment_laborers_add = 900
@@ -367,7 +368,7 @@ REPLACE:automatic_irrigation_building_sugar_plantation = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 4.5
-			goods_output_sugar_add = 36
+			goods_output_sugar_add = 22.5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 700
@@ -386,8 +387,8 @@ REPLACE:vacuum_pan_sugar = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 1.35
-			goods_output_sugar_add = 9
+			goods_input_coal_add = 0.45
+			goods_output_sugar_add = 2.25
 		}
 		level_scaled = {
 			building_employment_laborers_add = -100
@@ -402,8 +403,8 @@ REPLACE:steam_powered_evaporation_sugar = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 0.9
-			goods_input_coal_add = 2.25
-			goods_output_sugar_add = 18
+			goods_input_coal_add = 0.9
+			goods_output_sugar_add = 6.75
 		}
 		level_scaled = {
 			building_employment_laborers_add = -200
@@ -418,9 +419,9 @@ REPLACE:centrifugal_machine_sugar = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 1.8
-			goods_input_coal_add = 4.5
-			goods_output_sugar_add = 31.5
+			goods_input_engines_add = 0.9
+			goods_input_coal_add = 1.8
+			goods_output_sugar_add = 13.5
 		}
 		level_scaled = {
 			building_employment_laborers_add = -350
@@ -506,8 +507,8 @@ REPLACE:default_labour = {
 REPLACE:slave_exploitation_sugar = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -517,7 +518,7 @@ REPLACE:slave_exploitation_sugar = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_sugar_add = 22.5
+			goods_output_sugar_add = 18
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.35
@@ -561,8 +562,8 @@ REPLACE:worker_exploitation_sugar = {
 REPLACE:slave_exploitation_coffee = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.003
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -614,8 +615,8 @@ REPLACE:worker_exploitation_coffee = {
 REPLACE:slave_exploitation_cotton = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -667,8 +668,8 @@ REPLACE:worker_exploitation_cotton = {
 REPLACE:slave_exploitation_dye = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -720,8 +721,8 @@ REPLACE:worker_exploitation_dye = {
 REPLACE:slave_exploitation_banana = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -773,8 +774,8 @@ REPLACE:worker_exploitation_banana = {
 REPLACE:slave_exploitation_tea = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -824,8 +825,8 @@ REPLACE:worker_exploitation_tea = {
 REPLACE:slave_exploitation_rubber = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_slave_import_mult = 0.002
+		unscaled = {
+			state_slave_import_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -910,9 +911,10 @@ REPLACE:worker_exploitation_tobacco = {
 REPLACE:lectors_tobacco = {
 	texture = "gfx/interface/icons/production_method_icons/lectors.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_loyalists_from_political_movements_mult = 0.001
-			state_radicals_from_political_movements_mult = 0.001
+		unscaled = {
+			state_loyalists_from_political_movements_mult = 0.02
+			state_radicals_from_political_movements_mult = 0.02
+			state_conversion_mult = 0.1
 		}
 	}
 	disallowing_laws = {
@@ -920,7 +922,7 @@ REPLACE:lectors_tobacco = {
 	}
 	building_modifiers = {
 		unscaled = {
-			building_slaves_standard_of_living_add = 1
+			building_slaves_standard_of_living_add = 0.5
 			building_laborers_job_attractiveness_mult = 0.05
 			building_minimum_wage_mult = 0.05
 			goods_output_tobacco_add = 1.2
@@ -930,9 +932,9 @@ REPLACE:lectors_tobacco = {
 REPLACE:radio_stations_tobacco = {
 	texture = "gfx/interface/icons/production_method_icons/radio_stations.dds"
 	state_modifiers = {
-		workforce_scaled = {
-			state_loyalists_from_political_movements_mult = 0
-			state_radicals_from_political_movements_mult = 0
+		unscaled = {
+			state_loyalists_from_political_movements_mult = 0.05
+			state_radicals_from_political_movements_mult = 0.05
 		}
 	}
 	unlocking_technologies = {
@@ -944,7 +946,7 @@ REPLACE:radio_stations_tobacco = {
 			goods_output_tobacco_add = 3
 		}
 		unscaled = {
-			building_slaves_standard_of_living_add = 2
+			building_slaves_standard_of_living_add = 1
 			building_laborers_job_attractiveness_mult = 0.1
 		}
 	}

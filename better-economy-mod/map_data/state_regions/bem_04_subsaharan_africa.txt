@@ -202,11 +202,11 @@ STATE_SENEGAL = {
 	capped_resources = {
 		building_iron_mine = 300
 		building_sulfur_mine = 400
-		building_fishing_wharf = 60
+		building_fishing_wharf = 100
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 20
 	}
 	naval_exit_id = 3088
 }
@@ -987,12 +987,12 @@ STATE_GUINEA = {
 	}
 	capped_resources = {
 		building_logging_camp = 130
-		building_fishing_wharf = 70
+		building_fishing_wharf = 100
 		building_whaling_station = 20
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 22
+		undiscovered_amount = 28
 	}
 	naval_exit_id = 3088
 }

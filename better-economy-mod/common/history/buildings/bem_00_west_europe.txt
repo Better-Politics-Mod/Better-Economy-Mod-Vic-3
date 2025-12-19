@@ -3367,7 +3367,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 50
+						levels = 30
+						region = "STATE_ILE_DE_FRANCE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3384,7 +3390,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
+					}
+					building = {
+						type = "building_livestock_ranch"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3480,13 +3492,13 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_PROVENCE"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 30
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3520,13 +3532,13 @@ BUILDINGS = {
 					building = {
 						type = "building_textile_mill"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_PROVENCE"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 10
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3575,7 +3587,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 60
+						levels = 30
+						region = "STATE_PROVENCE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 30
 						region = "STATE_PROVENCE"
 					}
 				}
@@ -3643,13 +3661,13 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_NORMANDY"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 10
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3661,8 +3679,14 @@ BUILDINGS = {
 					building = {
 						type = "building_shipyard"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_NORMANDY"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -3676,8 +3700,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_NORMANDY"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -3691,7 +3721,7 @@ BUILDINGS = {
 					building = {
 						type = "building_textile_mill"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
 						region = "STATE_NORMANDY"
 					}
 					building = {
@@ -3699,6 +3729,12 @@ BUILDINGS = {
 						country = "c:FRA"
 						levels = 20
 						region = "STATE_NORMANDY"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -3730,7 +3766,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
+						region = "STATE_NORMANDY"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_NORMANDY"
 					}
 				}
@@ -3747,7 +3789,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
+						region = "STATE_NORMANDY"
+					}
+					building = {
+						type = "building_livestock_ranch"
+						country = "c:FRA"
+						levels = 10
 						region = "STATE_NORMANDY"
 					}
 				}
@@ -3855,13 +3903,13 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_LANGUEDOC"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 10
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3878,7 +3926,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 70
+						levels = 40
+						region = "STATE_LANGUEDOC"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 30
 						region = "STATE_LANGUEDOC"
 					}
 				}
@@ -3988,14 +4042,20 @@ BUILDINGS = {
 					building = {
 						type = "building_textile_mill"
 						country = "c:FRA"
-						levels = 30
+						levels = 10
 						region = "STATE_RHONE"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_RHONE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 30
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4011,12 +4071,18 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 10
 						region = "STATE_RHONE"
 					}
 					country = {
 						country = "c:FRA"
 						levels = 10
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4055,14 +4121,20 @@ BUILDINGS = {
 					building = {
 						type = "building_coal_mine"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_RHONE"
 					}
 					building = {
 						type = "building_coal_mine"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_RHONE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4101,7 +4173,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 90
+						levels = 50
+						region = "STATE_RHONE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 40
 						region = "STATE_RHONE"
 					}
 				}
@@ -4205,8 +4283,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 10
 						region = "STATE_FRENCH_LOW_COUNTRIES"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4221,7 +4305,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 50
+						levels = 30
+						region = "STATE_FRENCH_LOW_COUNTRIES"
+					}
+					building = {
+						type = "building_manor_house"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_FRENCH_LOW_COUNTRIES"
 					}
 				}
@@ -4269,13 +4359,13 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 60
+						levels = 30
 						region = "STATE_FRENCH_LOW_COUNTRIES"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 60
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -4312,8 +4402,14 @@ BUILDINGS = {
 					building = {
 						type = "building_textile_mill"
 						country = "c:FRA"
-						levels = 50
+						levels = 20
 						region = "STATE_PICARDY"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 30
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4405,8 +4501,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_ALSACE_LORRAINE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4459,8 +4561,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 50
+						levels = 30
 						region = "STATE_ALSACE_LORRAINE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4477,7 +4585,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 50
+						levels = 30
+						region = "STATE_ALSACE_LORRAINE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_ALSACE_LORRAINE"
 					}
 				}
@@ -4556,7 +4670,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
+						region = "STATE_POITOU"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 10
 						region = "STATE_POITOU"
 					}
 				}
@@ -4606,8 +4726,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_GUYENNE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4748,7 +4874,7 @@ BUILDINGS = {
 						type = "building_financial_district"
 						country = "c:FRA"
 						levels = 30
-						region = "STATE_AUVERGNE_LIMOUSIN"
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4765,7 +4891,7 @@ BUILDINGS = {
 						type = "building_financial_district"
 						country = "c:FRA"
 						levels = 20
-						region = "STATE_AUVERGNE_LIMOUSIN"
+						region = "STATE_ILE_DE_FRANCE"
 					}
 					building = {
 						type = "building_logging_camp"
@@ -4901,8 +5027,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
 						region = "STATE_BRITTANY"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -4935,7 +5067,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
+						region = "STATE_BRITTANY"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 10
 						region = "STATE_BRITTANY"
 					}
 				}
@@ -4952,11 +5090,17 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_ILE_DE_FRANCE"
 					}
 					building = {
 						type = "building_manor_house"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_BRITTANY"
+					}
+					building = {
+						type = "building_livestock_ranch"
 						country = "c:FRA"
 						levels = 30
 						region = "STATE_BRITTANY"
@@ -4993,13 +5137,13 @@ BUILDINGS = {
 					building = {
 						type = "building_tooling_workshop"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_BURGUNDY"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 10
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -5100,8 +5244,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 60
+						levels = 30
 						region = "STATE_CHAMPAGNE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 30
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -5164,7 +5314,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
+						region = "STATE_CHAMPAGNE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 10
 						region = "STATE_CHAMPAGNE"
 					}
 				}
@@ -5222,13 +5378,13 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_FRANCHE_COMTE"
 					}
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 10
+						levels = 20
 						region = "STATE_ILE_DE_FRANCE"
 					}
 					building = {
@@ -5297,7 +5453,7 @@ BUILDINGS = {
 						type = "building_financial_district"
 						country = "c:FRA"
 						levels = 20
-						region = "STATE_LORRAINE"
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -5369,8 +5525,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
 						region = "STATE_LORRAINE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 20
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -5458,8 +5620,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 30
+						levels = 20
 						region = "STATE_AQUITAINE"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -5516,7 +5684,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 60
+						levels = 30
+						region = "STATE_AQUITAINE"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 30
 						region = "STATE_AQUITAINE"
 					}
 				}
@@ -5550,8 +5724,14 @@ BUILDINGS = {
 					building = {
 						type = "building_financial_district"
 						country = "c:FRA"
-						levels = 20
+						levels = 10
 						region = "STATE_ORLEANS"
+					}
+					building = {
+						type = "building_financial_district"
+						country = "c:FRA"
+						levels = 10
+						region = "STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves = 1
@@ -5589,7 +5769,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 50
+						levels = 30
+						region = "STATE_ORLEANS"
+					}
+					building = {
+						type = "building_wheat_farm"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_ORLEANS"
 					}
 				}
@@ -5606,7 +5792,13 @@ BUILDINGS = {
 					building = {
 						type = "building_manor_house"
 						country = "c:FRA"
-						levels = 40
+						levels = 20
+						region = "STATE_ORLEANS"
+					}
+					building = {
+						type = "building_livestock_ranch"
+						country = "c:FRA"
+						levels = 20
 						region = "STATE_ORLEANS"
 					}
 				}

@@ -57,7 +57,7 @@ genPMs costMap = go False
         | key == "building_subsistence_output_add" = n * nominalFactor
         | otherwise = case snd <$> runParser prodModifierP key of
             Just goodName -> case lookup goodName costMap of
-                Just basePrice -> basePrice / basePrice * n / throughputDivisor * nominalFactor
+                Just oBasePrice -> oBasePrice / basePrice * n / throughputDivisor * nominalFactor
                 Nothing -> n
             Nothing -> case runParser employmentModifierP key of
                 Just _ -> n / employmentDivisor
@@ -115,7 +115,7 @@ genBuildingGroups :: PdxValue -> PdxValue
 genBuildingGroups v = case v of
     PdxPair (key, op, PdxNumber n) 
         | key == "infrastructure_usage_per_level" -> PdxPair (key, op, PdxNumber $ n / throughputDivisor)
-        | key == "cash_reserves_max" -> PdxPair (key, op, PdxNumber $ n / throughputDivisor * nominalFactor)
+        | key == "cash_reserves_max" -> PdxPair (key, op, PdxNumber $ n / throughputDivisor * nominalFactor * 2)
     PdxPair (key, op, val) -> PdxPair (key, op, genBuildingGroups val)
     PdxArray xs -> PdxArray (map genBuildingGroups xs)
     other -> other
@@ -128,9 +128,7 @@ genLaws v = case v of
         case genLaws val of
             PdxArray [] -> PdxArray []
             transformed -> PdxPair (key, op, transformed)
-    PdxArray xs -> 
-        let transformed = filter (\case PdxArray [] -> False; _ -> True) (map genLaws xs)
-        in PdxArray transformed
+    PdxArray xs -> PdxArray $ filter (\case PdxArray [] -> False; _ -> True) (map genLaws xs)
     _ -> PdxArray []
 
 genDefines :: PdxValue -> PdxValue
