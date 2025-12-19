@@ -1,0 +1,3 @@
+﻿l_english:
+  INVESTMENT_POOL: "[concept_investment_pool]: #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_BREAKDOWN,InvestmentPoolTooltip #v #!#!#!#v @money![GetPlayer.GetInvestmentPoolChange|D+=]#!"
+  concept_investment_pool: "Capital Expenditure"
