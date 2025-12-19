@@ -88,6 +88,11 @@ goods_output_construction_mult={
 	percent=yes
 }
 
+state_buy_orders_construction_add = {
+	decimals=0
+	color=neutral
+}
+
 building_employment_peasants_mult = {
 	decimals=0
 	color=neutral

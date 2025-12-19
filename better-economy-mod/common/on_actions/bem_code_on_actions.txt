@@ -89,10 +89,6 @@ on_bem_game_started = {
 				building = building_consec_dummy
 				level = 1
 			}
-			create_building = {
-				building = building_trade_center
-				level = 1
-			}
 		}
 
 		every_country = {
@@ -190,7 +186,6 @@ on_bem_monthly_pulse_state = {
 				prev = {bem_add_building_to_queue = yes}
 			}
 		}
-		bem_private_investment_oa = yes
 		bem_do_state_building = yes
 	}
 }

@@ -9,9 +9,6 @@
 
 	state_trade_advantage_from_capacity_add = 0
 	state_max_trade_advantage_from_capacity_add = 0
-
-	state_weekly_trades_add = 10
-	state_trade_capacity_add = 999999999
 }
 
 bem_urbanization_boost = {
@@ -115,4 +112,12 @@ economy_of_scale = {
 
 bem_trade = {
 	state_weekly_trades_add = 0.25
+}
+
+bem_state_capex = {
+	state_buy_orders_construction_add = 1
+}
+
+bem_state_conpow = {
+	state_construction_power_add = 0.01
 }

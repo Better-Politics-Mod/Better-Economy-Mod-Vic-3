@@ -8,23 +8,23 @@
 	on_monthly_pulse = {
 		effect = {
 			scope:journal_entry = {
-				if = {
-					limit = {
-						has_modifier = bem_capitalist_investment
-					}
-					remove_modifier = bem_capitalist_investment
-				}
-				if = {
-					limit = {
-						NOT = {
-							owner = { has_modifier = bem_capitalist_fear }
-						}
-					}
-					add_modifier = {
-						name = bem_capitalist_investment
-						multiplier = bem_heat_forth
-					}
-				}
+			#	if = {
+			#		limit = {
+			#			has_modifier = bem_capitalist_investment
+			#		}
+			#		remove_modifier = bem_capitalist_investment
+			#	}
+			#	if = {
+			#		limit = {
+			#			NOT = {
+			#				owner = { has_modifier = bem_capitalist_fear }
+			#			}
+			#		}
+			#		add_modifier = {
+			#			name = bem_capitalist_investment
+			#			multiplier = bem_heat_forth
+			#		}
+			#	}
 				if = {
 					limit = {
 						NOT = {
@@ -47,86 +47,107 @@
 			}
 		}
 		events = {
-			bem_market_crash_events.1
+			#bem_market_crash_events.1
 		}
 	}
 
 	on_weekly_pulse = {
 		effect = {
-			if = {
-				limit = {
-					has_variable = bem_previous_roi
-				}
-				set_variable = {
-					name = bem_roi_change
-					value = {
-						value = owner.bem_roi
-						subtract = var:bem_previous_roi
-						divide = owner.bem_roi
-					}
-				}
-			}
-
-			if = {
-				limit ={
-					NOT = {
-						has_variable = bem_economy_heat
-					}
-				}
-				set_variable = {
-					name = bem_economy_heat
-					value = 5
-				}
-			}
-
-			if = {
-				limit = {
-					has_variable = bem_previous_roi
-				}
-				change_variable = {
-					name = bem_economy_heat
-					multiply = {
-						value = 1
-						add = {
-							value = bem_roi_change
-							multiply = -1
-							multiply = bem_rchg_mult
-						}
-					}
-				}
-				clamp_variable = {
-					name = bem_economy_heat
-					min = 1
-					max = 20
-				}
-			}
-			set_variable = {
-				name = bem_heatchg
-				value = {
-					value = bem_roi_change
-						multiply = -1
-						multiply = bem_rchg_mult
-				}
-			}
-			set_variable = {
-				name = bem_roichg
-				value = bem_roi_change
-			}
-
-			set_variable = {
-				name = bem_previous_roi
-				value = owner.bem_roi
-			}
+			#if = {
+			#	limit = {
+			#		has_variable = bem_previous_roi
+			#	}
+			#	set_variable = {
+			#		name = bem_roi_change
+			#		value = {
+			#			value = owner.bem_roi
+			#			subtract = var:bem_previous_roi
+			#			divide = owner.bem_roi
+			#		}
+			#	}
+			#}
+#
+			#if = {
+			#	limit ={
+			#		NOT = {
+			#			has_variable = bem_economy_heat
+			#		}
+			#	}
+			#	set_variable = {
+			#		name = bem_economy_heat
+			#		value = 5
+			#	}
+			#}
+#
+			#if = {
+			#	limit = {
+			#		has_variable = bem_previous_roi
+			#	}
+			#	change_variable = {
+			#		name = bem_economy_heat
+			#		multiply = {
+			#			value = 1
+			#			add = {
+			#				value = bem_roi_change
+			#				multiply = -1
+			#				multiply = bem_rchg_mult
+			#			}
+			#		}
+			#	}
+			#	clamp_variable = {
+			#		name = bem_economy_heat
+			#		min = 1
+			#		max = 20
+			#	}
+			#}
+			#set_variable = {
+			#	name = bem_heatchg
+			#	value = {
+			#		value = bem_roi_change
+			#			multiply = -1
+			#			multiply = bem_rchg_mult
+			#	}
+			#}
+			#set_variable = {
+			#	name = bem_roichg
+			#	value = bem_roi_change
+			#}
+#
+			#set_variable = {
+			#	name = bem_previous_roi
+			#	value = owner.bem_roi
+			#}
 			owner = {
 				every_scope_state = {
 					set_local_variable = {
-						name = mult
+						name = trade_mult
 						value = used_trade_capacity
 					}
 					remove_modifier = bem_trade
 					add_modifier = {
 						name = bem_trade
-						multiplier = local_var:mult
+						multiplier = local_var:trade_mult
+					}
+					set_local_variable = {
+						name = capex_mult
+						value = bem_construction_buy_package
+					}
+					set_local_variable = {
+						name = conpow_mult
+						value = {
+							value = local_var:capex_mult
+							max = bem_cbp_upper_bound
+						}
+					}
+					remove_modifier = bem_state_capex
+					remove_modifier = bem_state_conpow
+					add_modifier = {
+						name = bem_state_capex
+						multiplier = local_var:capex_mult
+					}
+					add_modifier = {
+						name = bem_state_conpow
+						multiplier = local_var:conpow_mult
 					}
 				}
 			}

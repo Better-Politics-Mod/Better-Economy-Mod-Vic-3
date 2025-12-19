@@ -81,3 +81,13 @@ bg_trade = {
 	can_use_slaves = yes
 	infrastructure_usage_per_level = 0.05
 }
+
+REPLACE:bg_construction = {
+	parent_group = bg_public_infrastructure
+	infrastructure_usage_per_level = 0.2
+	lens = development
+	is_government_funded = no
+	can_use_slaves = yes
+	urbanization = 0.5
+	economy_of_scale_ai_factor = 5
+}
