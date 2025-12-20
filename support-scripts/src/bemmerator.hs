@@ -425,12 +425,27 @@ wealthEntry i =
 genBuyPackages :: Double -> PdxValue
 genBuyPackages n = PdxArray $ map wealthEntry [1..floor n]
 
+genGoodInputsGeneric :: [(String, Double)] -> PdxValue -> PdxValue
+genGoodInputsGeneric costMap v = case v of
+    PdxPair (key, op, PdxNumber n) -> case snd <$> runParser inputP key of
+        Just goodName -> case lookup goodName costMap of
+                Just oBasePrice -> PdxPair (key, op, PdxNumber $ oBasePrice / basePrice * n * nominalFactor)
+                Nothing -> PdxPair (key, op, PdxNumber n)
+        Nothing -> PdxPair (key, op, PdxNumber n)
+    PdxPair (key, op, val) -> PdxPair (key, op, genGoodInputsGeneric costMap val)
+    PdxArray xs ->  PdxArray (map (genGoodInputsGeneric costMap) xs)
+    other -> other
+    where
+        inputP = (\_ key -> key) 
+            <$> stringP "goods_input_" <*> spanUntilP "_add"
+
 main :: IO ()
 main = do 
     bemCommon <- (</> "better-economy-mod/common") . init <$> readProcess "git" ["rev-parse", "--show-toplevel"] ""
     vic3Common <- (</> ".local/share/Steam/steamapps/common/Victoria 3/game/common") <$> getHomeDirectory
     Just goods <- parseFile (vic3Common </> "goods/00_goods.txt")
-    processDirectory Replace ["00", "05", "08"] (genPMs $ baseCosts goods) "production_methods"
+    let costMap = baseCosts goods
+    processDirectory Replace ["00", "05", "08"] (genPMs costMap) "production_methods"
     processDirectory Replace [] genGoods "goods"
     processDirectory Replace [] genPoptypes "pop_types"
     processDirectory None ["99"] genStateRegions "../map_data/state_regions"
@@ -440,5 +455,7 @@ main = do
     processDirectory None [] genDefines "defines"
     processDirectory ReplaceOrCreate [] (const $ genBuyPackages wealthLevels) "buy_packages"
     processDirectory Replace [] genBuildings "buildings"
+    processDirectory Replace [] (genGoodInputsGeneric costMap) "combat_unit_types"
+    processDirectory Replace [] (genGoodInputsGeneric costMap) "mobilization_options"
     writeFile (bemCommon </> "script_values/bem_trade_values.txt") $ toPdxScript tradeValues
     writeFile (bemCommon </> "script_values/bem_investment_values.txt") $ toPdxScript cbpValues
