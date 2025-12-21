@@ -31,10 +31,8 @@ REPLACE:mobilization_option_basic_supplies = {
 REPLACE:mobilization_option_extra_supplies = {
 	texture = "gfx/interface/icons/mobilization_options/extra_supplies.dds"
 	possible = {
-		market
-		? = {
-			mg:groceries
-			? = {
+		market ?= {
+			mg:groceries ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -73,10 +71,8 @@ REPLACE:mobilization_option_extra_supplies = {
 		value = 1
 		if = {
 			limit = {
-				c:SPC
-				? = this
-				scope:military_formation
-				? = {
+				c:SPC ?= this
+				scope:military_formation ?= {
 					any_combat_unit = {
 						building = {
 							state = {
@@ -103,14 +99,11 @@ REPLACE:mobilization_option_luxurious_supplies = {
 		scope:military_formation = {
 			has_mobilization_option = mobilization_option:mobilization_option_extra_supplies
 		}
-		market
-		? = {
-			mg:meat
-			? = {
+		market ?= {
+			mg:meat ?= {
 				has_potential_supply = yes
 			}
-			mg:wine
-			? = {
+			mg:wine ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -154,10 +147,8 @@ REPLACE:mobilization_option_luxurious_supplies = {
 REPLACE:mobilization_option_chocolate = {
 	texture = "gfx/interface/icons/mobilization_options/chocolate.dds"
 	possible = {
-		market
-		? = {
-			mg:sugar
-			? = {
+		market ?= {
+			mg:sugar ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -183,10 +174,8 @@ REPLACE:mobilization_option_chocolate = {
 		value = 1
 		if = {
 			limit = {
-				c:SPC
-				? = this
-				scope:military_formation
-				? = {
+				c:SPC ?= this
+				scope:military_formation ?= {
 					any_combat_unit = {
 						building = {
 							state = {
@@ -210,10 +199,8 @@ REPLACE:mobilization_option_chocolate = {
 REPLACE:mobilization_option_tobacco = {
 	texture = "gfx/interface/icons/mobilization_options/tobacco.dds"
 	possible = {
-		market
-		? = {
-			mg:tobacco
-			? = {
+		market ?= {
+			mg:tobacco ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -239,10 +226,8 @@ REPLACE:mobilization_option_tobacco = {
 		value = 1
 		if = {
 			limit = {
-				c:SPC
-				? = this
-				scope:military_formation
-				? = {
+				c:SPC ?= this
+				scope:military_formation ?= {
 					any_combat_unit = {
 						building = {
 							state = {
@@ -266,10 +251,8 @@ REPLACE:mobilization_option_tobacco = {
 REPLACE:mobilization_option_liquor = {
 	texture = "gfx/interface/icons/mobilization_options/liquor.dds"
 	possible = {
-		market
-		? = {
-			mg:liquor
-			? = {
+		market ?= {
+			mg:liquor ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -295,10 +278,8 @@ REPLACE:mobilization_option_liquor = {
 		value = 1
 		if = {
 			limit = {
-				c:SPC
-				? = this
-				scope:military_formation
-				? = {
+				c:SPC ?= this
+				scope:military_formation ?= {
 					any_combat_unit = {
 						building = {
 							state = {
@@ -322,10 +303,8 @@ REPLACE:mobilization_option_liquor = {
 REPLACE:mobilization_option_opium = {
 	texture = "gfx/interface/icons/mobilization_options/opium.dds"
 	possible = {
-		market
-		? = {
-			mg:opium
-			? = {
+		market ?= {
+			mg:opium ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -351,10 +330,8 @@ REPLACE:mobilization_option_opium = {
 		value = 1
 		if = {
 			limit = {
-				c:SPC
-				? = this
-				scope:military_formation
-				? = {
+				c:SPC ?= this
+				scope:military_formation ?= {
 					any_combat_unit = {
 						building = {
 							state = {
@@ -408,8 +385,7 @@ REPLACE:mobilization_option_forced_march = {
 		if = {
 			limit = {
 				scope:military_formation = {
-					highest_ranked_commander
-					? = {
+					highest_ranked_commander ?= {
 						OR = {
 							has_trait = cruel
 							has_trait = reckless
@@ -432,10 +408,8 @@ REPLACE:mobilization_option_truck_transport = {
 				has_mobilization_option = mobilization_option:mobilization_option_rail_transport
 			}
 		}
-		market
-		? = {
-			mg:automobiles
-			? = {
+		market ?= {
+			mg:automobiles ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -482,10 +456,8 @@ REPLACE:mobilization_option_rail_transport = {
 				has_mobilization_option = mobilization_option:mobilization_option_truck_transport
 			}
 		}
-		market
-		? = {
-			mg:engines
-			? = {
+		market ?= {
+			mg:engines ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -526,10 +498,8 @@ REPLACE:mobilization_option_rail_transport = {
 REPLACE:mobilization_option_machinegunners = {
 	texture = "gfx/interface/icons/mobilization_options/machinegunners.dds"
 	possible = {
-		market
-		? = {
-			mg:ammunition
-			? = {
+		market ?= {
+			mg:ammunition ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -571,10 +541,8 @@ REPLACE:mobilization_option_machinegunners = {
 REPLACE:mobilization_option_chemical_weapons = {
 	texture = "gfx/interface/icons/mobilization_options/chemical_weapons.dds"
 	possible = {
-		market
-		? = {
-			mg:fertilizer
-			? = {
+		market ?= {
+			mg:fertilizer ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -616,10 +584,8 @@ REPLACE:mobilization_option_chemical_weapons = {
 REPLACE:mobilization_option_flamethrowers = {
 	texture = "gfx/interface/icons/mobilization_options/flamethrowers.dds"
 	possible = {
-		market
-		? = {
-			mg:oil
-			? = {
+		market ?= {
+			mg:oil ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -661,14 +627,11 @@ REPLACE:mobilization_option_flamethrowers = {
 REPLACE:mobilization_option_motorized_recon = {
 	texture = "gfx/interface/icons/mobilization_options/motorized_reconaissance.dds"
 	possible = {
-		market
-		? = {
-			mg:automobiles
-			? = {
+		market ?= {
+			mg:automobiles ?= {
 				has_potential_supply = yes
 			}
-			mg:oil
-			? = {
+			mg:oil ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -714,14 +677,11 @@ REPLACE:mobilization_option_balloon_recon = {
 		principle_military_industry_3
 	}
 	possible = {
-		market
-		? = {
-			mg:fabric
-			? = {
+		market ?= {
+			mg:fabric ?= {
 				has_potential_supply = yes
 			}
-			mg:oil
-			? = {
+			mg:oil ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -761,14 +721,11 @@ REPLACE:mobilization_option_balloon_recon = {
 REPLACE:mobilization_option_aerial_recon = {
 	texture = "gfx/interface/icons/mobilization_options/aerial_reconaissance.dds"
 	possible = {
-		market
-		? = {
-			mg:aeroplanes
-			? = {
+		market ?= {
+			mg:aeroplanes ?= {
 				has_potential_supply = yes
 			}
-			mg:oil
-			? = {
+			mg:oil ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -818,14 +775,11 @@ REPLACE:mobilization_option_first_aid = {
 				has_mobilization_option = mobilization_option:mobilization_option_field_hospitals
 			}
 		}
-		market
-		? = {
-			mg:fabric
-			? = {
+		market ?= {
+			mg:fabric ?= {
 				has_potential_supply = yes
 			}
-			mg:liquor
-			? = {
+			mg:liquor ?= {
 				has_potential_supply = yes
 			}
 		}
@@ -878,14 +832,11 @@ REPLACE:mobilization_option_field_hospitals = {
 				has_mobilization_option = mobilization_option:mobilization_option_first_aid
 			}
 		}
-		market
-		? = {
-			mg:opium
-			? = {
+		market ?= {
+			mg:opium ?= {
 				has_potential_supply = yes
 			}
-			mg:tools
-			? = {
+			mg:tools ?= {
 				has_potential_supply = yes
 			}
 		}

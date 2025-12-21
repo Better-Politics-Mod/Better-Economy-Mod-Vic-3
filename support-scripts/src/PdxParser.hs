@@ -129,7 +129,7 @@ intLiteral :: Parser String
 intLiteral = notNull $ spanP isDigit
 
 opLiteral :: Parser String
-opLiteral = notNull $ spanP (`elem` "=<>!")
+opLiteral = notNull $ spanP (`elem` "?=<>!")
 
 pdxPair :: Parser PdxValue
 pdxPair = PdxPair <$> ((,,) 

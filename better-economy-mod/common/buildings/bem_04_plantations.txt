@@ -45,8 +45,7 @@ REPLACE:building_cotton_plantation = {
 			limit = {
 				owner = {
 					has_journal_entry = je_british_dictate_plantations
-					var:dictate_plantation_type
-					? = 4
+					var:dictate_plantation_type ?= 4
 				}
 			}
 			add = 2000
@@ -78,8 +77,7 @@ REPLACE:building_dye_plantation = {
 			limit = {
 				owner = {
 					has_journal_entry = je_british_dictate_plantations
-					var:dictate_plantation_type
-					? = 3
+					var:dictate_plantation_type ?= 3
 				}
 			}
 			add = 2000
@@ -117,8 +115,7 @@ REPLACE:building_opium_plantation = {
 			limit = {
 				owner = {
 					has_journal_entry = je_british_dictate_plantations
-					var:dictate_plantation_type
-					? = 1
+					var:dictate_plantation_type ?= 1
 				}
 			}
 			add = 2000
@@ -150,8 +147,7 @@ REPLACE:building_tea_plantation = {
 			limit = {
 				owner = {
 					has_journal_entry = je_british_dictate_plantations
-					var:dictate_plantation_type
-					? = 2
+					var:dictate_plantation_type ?= 2
 				}
 			}
 			add = 2000
@@ -184,8 +180,7 @@ REPLACE:building_tobacco_plantation = {
 			limit = {
 				owner = {
 					has_journal_entry = je_british_dictate_plantations
-					var:dictate_plantation_type
-					? = 5
+					var:dictate_plantation_type ?= 5
 				}
 			}
 			add = 2000

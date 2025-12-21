@@ -137,10 +137,8 @@ REPLACE:building_railway = {
 		}
 		else_if = {
 			limit = {
-				owner
-				? = {
-					c:AUS
-					? = this
+				owner ?= {
+					c:AUS ?= this
 					has_journal_entry = je_metternich
 				}
 				is_incorporated = yes
@@ -172,8 +170,7 @@ REPLACE:building_railway = {
 		if = {
 			limit = {
 				exists = c:RUS
-				c:RUS
-				? = owner
+				c:RUS ?= owner
 				OR = {
 					region = sr:region_manchuria
 				}

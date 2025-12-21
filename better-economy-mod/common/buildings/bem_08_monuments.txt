@@ -790,8 +790,7 @@ REPLACE:building_power_bloc_statue = {
 		always = yes
 	}
 	potential = {
-		owner
-		? = {
+		owner ?= {
 			is_in_power_bloc = yes
 		}
 		has_dlc_feature = power_bloc_features
@@ -903,8 +902,7 @@ REPLACE:building_victoria_terminus = {
 	possible = {
 		custom_tooltip = {
 			text = owns_bombay_province_tt
-			owner
-			? = p:xB0D0E0.state.owner
+			owner ?= p:xB0D0E0.state.owner
 		}
 	}
 	ai_value = 10000
@@ -949,8 +947,7 @@ REPLACE:building_kaiserforum_1 = {
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_kaiserforum
 		}
 	}
@@ -988,8 +985,7 @@ REPLACE:building_kaiserforum_2 = {
 	potential = {
 		has_dlc_feature = ip3_content
 		state_region = s:STATE_AUSTRIA
-		owner
-		? = {
+		owner ?= {
 			has_variable = kaiserforum_stage_complete_1_var
 			NOT = {
 				has_variable = kaiserforum_stage_complete_2_var
@@ -1030,8 +1026,7 @@ REPLACE:building_kaiserforum_3 = {
 	potential = {
 		has_dlc_feature = ip3_content
 		state_region = s:STATE_AUSTRIA
-		owner
-		? = {
+		owner ?= {
 			has_variable = kaiserforum_stage_complete_2_var
 			NOT = {
 				has_variable = accepted_kaisergelb_kaiserforum
@@ -1039,8 +1034,7 @@ REPLACE:building_kaiserforum_3 = {
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			custom_tooltip = {
 				text = accepted_kaiserforum_tt
 				has_variable = accepted_kaiserforum
@@ -1079,15 +1073,13 @@ REPLACE:building_kaiserforum_4 = {
 	potential = {
 		has_dlc_feature = ip3_content
 		state_region = s:STATE_AUSTRIA
-		owner
-		? = {
+		owner ?= {
 			has_variable = kaiserforum_stage_complete_2_var
 			has_variable = accepted_kaisergelb_kaiserforum
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_kaiserforum
 			custom_tooltip = {
 				text = accepted_kaisergelb_kaiserforum_tt
@@ -1146,8 +1138,7 @@ REPLACE:building_sagrada_familia_cathedral_1 = {
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_sagrada_familia
 			custom_tooltip = {
 				text = sagrada_familia_1_construct_tt
@@ -1188,8 +1179,7 @@ REPLACE:building_sagrada_familia_cathedral_2 = {
 	potential = {
 		has_dlc_feature = ip4_content
 		state_region = s:STATE_CATALONIA
-		owner
-		? = {
+		owner ?= {
 			has_variable = sagrada_familia_stage_complete_1_var
 			NOT = {
 				has_variable = sagrada_familia_stage_complete_2_var
@@ -1197,8 +1187,7 @@ REPLACE:building_sagrada_familia_cathedral_2 = {
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_sagrada_familia
 		}
 	}
@@ -1237,14 +1226,12 @@ REPLACE:building_sagrada_familia_cathedral_3 = {
 	potential = {
 		has_dlc_feature = ip4_content
 		state_region = s:STATE_CATALONIA
-		owner
-		? = {
+		owner ?= {
 			has_variable = sagrada_familia_stage_complete_2_var
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_sagrada_familia
 			has_technology_researched = pneumatic_tools
 		}
@@ -1317,8 +1304,7 @@ REPLACE:building_pena_palace = {
 		mechanical_tools
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_pena_palace
 			custom_tooltip = {
 				text = pena_palace_construct_tt
@@ -1363,8 +1349,7 @@ REPLACE:building_gran_teatro_de_la_habana = {
 		state_region = s:STATE_WESTERN_CUBA
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_gran_teatro
 			custom_tooltip = {
 				text = gran_teatro_construct_tt
@@ -1410,8 +1395,7 @@ REPLACE:building_estacion_de_madrid_atocha = {
 		state_region = s:STATE_NEW_CASTILE
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			has_journal_entry = je_atocha_railway
 			custom_tooltip = {
 				text = atocha_railway_construct_tt
@@ -1487,16 +1471,14 @@ REPLACE:building_manila_cathedral_monument = {
 	potential = {
 		has_dlc_feature = ip4_content
 		state_region = s:STATE_LUZON
-		owner
-		? = {
+		owner ?= {
 			any_scope_state = {
 				has_building = building_manila_cathedral_ruins
 			}
 		}
 	}
 	possible = {
-		owner
-		? = {
+		owner ?= {
 			NOT = {
 				has_law_or_variant = law_type:law_state_atheism
 			}

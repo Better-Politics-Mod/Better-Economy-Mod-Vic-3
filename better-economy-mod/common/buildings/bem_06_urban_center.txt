@@ -50,10 +50,8 @@ REPLACE:building_art_academy = {
 		value = 1000
 		if = {
 			limit = {
-				owner
-				? = {
-					c:AUS
-					? = this
+				owner ?= {
+					c:AUS ?= this
 					has_journal_entry = je_metternich
 				}
 			}
