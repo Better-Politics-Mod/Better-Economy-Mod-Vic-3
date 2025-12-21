@@ -52,7 +52,7 @@ bem_fromnumbuls = {
 				type = prev.var:bem_queue_ptr_0
 			}
 			add = {
-				value = 2.5
+				value = 0.25
 				multiply = level
 			}
 		}

@@ -150,6 +150,11 @@ on_bem_monthly_pulse_state = {
 		if = {
 			limit = {NOT = {has_variable_list = bem_state_building_queue}}
 			if = {
+				limit = {NOT = {exists = b:building_construction_sector}}
+				bt:building_construction_sector = {save_scope_as = target_building}
+				prev = {bem_add_building_to_queue = yes}
+			}
+			else_if = {
 				limit = {infrastructure_delta > 2}
 				ordered_scope_building = {
 					limit = {
