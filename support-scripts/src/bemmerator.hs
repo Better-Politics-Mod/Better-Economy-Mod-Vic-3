@@ -124,12 +124,9 @@ genLaws :: PdxValue -> PdxValue
 genLaws v = case v of
     PdxPair (key, op, PdxNumber n)
         | key `elem` ["tax_per_capita_add", "tax_land_add"] -> PdxPair (key, op, PdxNumber $ n * nominalFactor - n)
-    PdxPair (key, op, val) -> 
-        case genLaws val of
-            PdxArray [] -> PdxArray []
-            transformed -> PdxPair (key, op, transformed)
-    PdxArray xs -> PdxArray $ filter (\case PdxArray [] -> False; _ -> True) (map genLaws xs)
-    _ -> PdxArray []
+    PdxPair (key, op, val) -> PdxPair (key, op, genLaws val)
+    PdxArray xs -> PdxArray (map genLaws xs)
+    other -> other
 
 genDefines :: PdxValue -> PdxValue
 genDefines v = case v of
@@ -451,7 +448,7 @@ main = do
     processDirectory None ["99"] genStateRegions "../map_data/state_regions"
     processDirectory None [] genHistory "history/buildings"
     processDirectory Replace [] genBuildingGroups "building_groups"
-    processDirectory Inject [] genLaws "laws"
+    processDirectory Replace [] genLaws "laws"
     processDirectory None [] genDefines "defines"
     processDirectory ReplaceOrCreate [] (const $ genBuyPackages wealthLevels) "buy_packages"
     processDirectory Replace [] genBuildings "buildings"

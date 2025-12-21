@@ -186,7 +186,7 @@ setEntryMode mode other = other
 data EntryMode = Inject | Replace | TryInject | TryReplace | ReplaceOrCreate | InjectOrCreate | None
   deriving (Show, Eq)
 
-processDirectory :: EntryMode -> [String] -> (PdxValue -> PdxValue) -> FilePath -> IO ()
+processDirectory :: EntryMode -> [FilePath] -> (PdxValue -> PdxValue) -> FilePath -> IO ()
 processDirectory mode excludePrefixes transform relPath = do
   vic3Common <- (</> ".local/share/Steam/steamapps/common/Victoria 3/game/common") <$> getHomeDirectory
   bemCommon <- (</> "better-economy-mod/common") . init <$> readProcess "git" ["rev-parse", "--show-toplevel"] ""
@@ -203,7 +203,9 @@ processDirectory mode excludePrefixes transform relPath = do
       result <- parseFile srcPath
       case result of
         Just parsed -> do
-          let modeString = map toUpper (intercalate "_" $ groupBy (\a b -> not $ isUpper b) (show mode)) ++ ":"
-          let result = (if mode /= None then setEntryMode modeString . transform else transform) parsed
-          unless (result == PdxArray []) $ writeFile dstPath $ toPdxScript result
+          let transformed = transform parsed
+          when (transformed /= parsed) $ do
+            let modeString = map toUpper (intercalate "_" $ groupBy (\a b -> not $ isUpper b) (show mode)) ++ ":"
+            let result = (if mode /= None then setEntryMode modeString else id) transformed
+            unless (result == PdxArray []) $ writeFile dstPath $ toPdxScript result
         Nothing -> error $ "this shouldn't be able to happen :clueless: Critical parsing error at: " ++ srcPath
