@@ -27,14 +27,14 @@ bem_build_army = {
 						value = 1
 						if = {
 							limit = {
-								has_building = building_barracks
+								has_building = building_barrack
 							}
-							add = b:building_barracks.level
+							add = b:building_barrack.level
 						}
 					}
 				}
 				create_building = {
-					building = building_barracks
+					building = building_barrack
 					level = scope:exlvl
 				}	
 			owner = {	

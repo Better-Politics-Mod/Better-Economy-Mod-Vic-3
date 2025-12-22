@@ -153,9 +153,11 @@ genDefines v = case v of
         , ("EARNINGS_ABSOLUTE_LOW_THRESHOLD", \(PdxNumber n) -> PdxNumber $ n * nominalFactor * employmentDivisor / throughputDivisor)
         , ("PRIVATIZATION_PER_LEVEL_COST", const $ PdxNumber 0.1)
         , ("BUILDING_PRIVATIZATION_CHANCE", const $ PdxNumber 100)
-        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE", const $ PdxNumber $ 5 * nominalFactor)
-        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE", const $ PdxNumber $ 10 * nominalFactor)
+        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE", const $ PdxNumber $ 4 * nominalFactor)
+        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE", const $ PdxNumber $ 8 * nominalFactor)
         , ("CONSTRUCTION_CAMP_BUILDING", const $ PdxQString "building_consec_dummy")
+        , ("BLOCKADE_TARGET_STRENGTH_PER_TRADED_UNIT", \(PdxNumber n) -> PdxNumber $ n / nominalFactor)
+        , ("BLOCKADE_TARGET_STRENGTH_PER_PRODUCED_UNIT", \(PdxNumber n) -> PdxNumber $ n / nominalFactor)
         ]
 
 tradeValues = PdxArray [PdxPair ("used_trade_capacity", "=", PdxArray [

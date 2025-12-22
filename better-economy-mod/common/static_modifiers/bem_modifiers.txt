@@ -1,4 +1,4 @@
-﻿base_values = {
+﻿REPLACE:base_values = {
 	country_weekly_innovation_add = 50
 	country_weekly_innovation_max_add = 50
 	country_tech_spread_add = 25
@@ -65,9 +65,9 @@
 
 	country_minting_add = 7500
 
-	country_company_throughput_bonus_add = 0
-	country_company_construction_efficiency_bonus_add = 0
-	country_max_companies_add = -1000
+	#country_company_throughput_bonus_add = 0
+	#country_company_construction_efficiency_bonus_add = 0
+	#country_max_companies_add = -1000
 
 	state_trade_advantage_from_capacity_add = 0
 	state_max_trade_advantage_from_capacity_add = 0
