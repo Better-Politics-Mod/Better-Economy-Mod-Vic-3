@@ -1,7 +1,7 @@
 REPLACE:building_trade_center = {
-    buildable = no
+    buildable = yes
     expandable = no
-    downsizeable = no
+    downsizeable = yes
 	building_group = bg_trade
 	city_type = city
 	levels_per_mesh = 50

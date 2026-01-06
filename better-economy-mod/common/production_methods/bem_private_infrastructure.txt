@@ -4,13 +4,13 @@ REPLACE:pm_trade_center = {
 	is_hidden_when_unavailable = yes
 	building_modifiers = {
 		unscaled = {
-			building_employment_clerks_add = 800
-			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 8000
+			building_employment_shopkeepers_add = 2000
 		}
 	}
 	state_modifiers = {
 		unscaled = {
-            state_weekly_trades_add = 100
+            state_weekly_trades_add = 1
 			state_trade_capacity_add = 10000000
         }
 	}
@@ -29,14 +29,69 @@ REPLACE:pm_trade_center_principle_external_trade_2 = {
 	}
 	building_modifiers = {
 		unscaled = {
-			building_employment_clerks_add = 800
-			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 8000
+			building_employment_shopkeepers_add = 2000
 		}
 	}
 	state_modifiers = {
         unscaled = {
-            state_weekly_trades_add = 100
+            state_weekly_trades_add = 1
 			state_trade_capacity_add = 10000000
         }
+	}
+}
+REPLACE:pm_trade_center_trade_quantity_limited = {
+	texture = "gfx/interface/icons/production_method_icons/trade_quantity_1.dds"
+	low_pop_method = yes
+	building_modifiers = {
+		unscaled = {
+			goods_input_merchant_marine_add = 2.25
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = -0.5
+		}
+	}
+}
+REPLACE:pm_trade_center_trade_quantity_normal = {
+	texture = "gfx/interface/icons/production_method_icons/trade_quantity_2.dds"
+	is_default = yes
+	building_modifiers = {
+		unscaled = {
+			goods_input_merchant_marine_add = 3
+		}
+	}
+}
+REPLACE:pm_trade_center_trade_quantity_high = {
+	texture = "gfx/interface/icons/production_method_icons/trade_quantity_3.dds"
+	unlocking_technologies = {
+		hydraulic_cranes
+	}
+	building_modifiers = {
+		unscaled = {
+			goods_input_merchant_marine_add = 3.75
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 0.5
+		}
+	}
+}
+REPLACE:pm_trade_center_trade_quantity_very_high = {
+	texture = "gfx/interface/icons/production_method_icons/trade_quantity_4.dds"
+	unlocking_technologies = {
+		floating_harbor
+	}
+	building_modifiers = {
+		unscaled = {
+			goods_input_merchant_marine_add = 4.5
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 1
+		}
 	}
 }

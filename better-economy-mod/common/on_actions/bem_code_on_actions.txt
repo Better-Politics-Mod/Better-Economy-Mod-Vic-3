@@ -59,20 +59,20 @@ on_bem_game_started = {
 		
 		every_state = {
 			every_scope_building = {update_mining_efficiency = yes}
-			save_scope_value_as = {
-				name = multi
-				value = {
-					value = bem_state_investment_levels
-					subtract = 1
-				}
-			}
-			every_scope_building = {
-				remove_modifier = bem_investment_level
-				add_modifier = {
-					name = bem_investment_level
-					multiplier = scope:multi
-				}
-			}
+			#save_scope_value_as = {
+			#	name = multi
+			#	value = {
+			#		value = bem_state_investment_levels
+			#		subtract = 1
+			#	}
+			#}
+			#every_scope_building = {
+			#	remove_modifier = bem_investment_level
+			#	add_modifier = {
+			#		name = bem_investment_level
+			#		multiplier = scope:multi
+			#	}
+			#}
 			set_local_variable = {
 				name = mult
 				value = used_trade_capacity
@@ -87,6 +87,19 @@ on_bem_game_started = {
 			limit = {is_capital = yes}
 			create_building = {
 				building = building_consec_dummy
+				level = 1
+			}
+		}
+
+		every_state = {
+			limit = {
+				b:building_trade_center ?= {
+					level > 1
+				} 
+			}
+			remove_building = building_trade_center
+			create_building = {
+				building = building_trade_center
 				level = 1
 			}
 		}
@@ -114,6 +127,18 @@ on_bem_monthly_pulse_state = {
 	effect = {
 		if = {
 			limit = {
+				b:building_trade_center ?= {
+					level > 1
+				} 
+			}
+			remove_building = building_trade_center
+			create_building = {
+				building = building_trade_center
+				level = 1
+			}
+		}
+		if = {
+			limit = {
 				has_modifier = bem_urbanization_boost
 			}
 			remove_modifier = bem_urbanization_boost
@@ -126,19 +151,23 @@ on_bem_monthly_pulse_state = {
 		}
 		if = {
 			limit = {
-				bem_urbanization_rate > 0.25
+				state_urbanization_rate > 0.50
 			}
 			add_modifier = {
 				name = bem_urbanization_boost
-				multiplier = bem_urbanization_rate
+				multiplier = {
+					value = state_urbanization_rate
+					subtract = 0.5
+				}
 			}
 		}
 		else = {
 			add_modifier = {
 				name = state_rural_nerf
 				multiplier = {
-					value = 1
-					subtract = bem_urbanization_rate
+					value = 0.5
+					subtract = state_urbanization_rate
+					multiply = 2
 				}
 			}
 		}
@@ -156,14 +185,29 @@ on_bem_monthly_pulse_state = {
 			}
 			else_if = {
 				limit = {infrastructure_delta > 2}
-				ordered_scope_building = {
+				if = {
+					limit = {
+						exists = b:building_government_administration
+						owner = {
+							OR = {
+								approaching_bureaucracy_shortage = yes
+								relative_bureaucracy <= 0
+							}
+						}
+					}
+					bt:building_government_administration = {save_scope_as = target_building}
+					prev = {bem_add_building_to_queue = yes}
+				}
+				else = {
+					ordered_scope_building = {
 					limit = {
 						is_buildable = yes
 						type = {
 							NOT = {
 								OR = {
 									this = bt:building_naval_base
-									this = bt:building_barracks
+									this = bt:building_barrack
+									this = bt:building_trade_center
 								}
 							}
 						}
@@ -172,6 +216,7 @@ on_bem_monthly_pulse_state = {
 					position = 0
 					type = {save_scope_as = target_building}
 					prev = {bem_add_building_to_queue = yes}
+					}
 				}
 			}
 			else_if = {

@@ -9,7 +9,7 @@ bem_state_construction_sell_orders = {
 }
 bem_state_capex = {
 	value = owner.investment_pool_income
-	multiply = bem_state_urbanization_share
+	multiply = bem_state_investment_share
 }
 bem_cbp_b_lower = {
 	value = bem_state_capex

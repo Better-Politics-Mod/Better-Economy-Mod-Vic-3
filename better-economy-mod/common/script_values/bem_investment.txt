@@ -157,3 +157,24 @@ bem_initial_investment_pool = {
 	value = gdp
 	multiply = 2
 }
+
+bem_state_investment_attraction = {
+	value = total_urbanization
+	if = {
+		limit = {has_decree = decree_encourage_investment}
+		multiply = 1.5
+		add = 500
+	}
+}
+
+bem_country_total_investment_attraction = {
+	value = 0
+	every_scope_state = {
+		add = bem_state_investment_attraction
+	}
+}
+
+bem_state_investment_share = {
+	value = bem_state_investment_attraction
+	divide = owner.bem_country_total_investment_attraction
+}

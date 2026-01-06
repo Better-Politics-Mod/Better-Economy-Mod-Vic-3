@@ -364,7 +364,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:AUS"
-						levels = 10
+						levels = 1
 					}
 				}
 				reserves = 1
@@ -806,7 +806,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:AUS"
-						levels = 50
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -873,7 +873,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:KRA"
-						levels = 20
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -925,7 +925,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:AUS"
-						levels = 30
+						levels = 3
 					}
 				}
 				reserves = 1
@@ -979,7 +979,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:HUN"
-						levels = 50
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -1019,7 +1019,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:HUN"
-						levels = 20
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -1362,7 +1362,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:HUN"
-						levels = 30
+						levels = 3
 					}
 				}
 				reserves = 1
@@ -1590,7 +1590,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:TRS"
-						levels = 20
+						levels = 2
 					}
 				}
 				reserves = 1
@@ -1827,7 +1827,7 @@ BUILDINGS = {
 				add_ownership = {
 					country = {
 						country = "c:WAL"
-						levels = 10
+						levels = 1
 					}
 				}
 				reserves = 1

@@ -86,7 +86,7 @@ genHistory = go Nothing
         PdxPair ("create_building", op, val@(PdxArray xs)) -> PdxPair ("create_building", op, go (setBuilding xs) val)
         PdxPair ("levels", op, PdxNumber n) 
             -- | building == Just "building_trade_center" -> PdxPair ("levels", op, PdxNumber 0)
-            | building /= Just "building_barracks" -> PdxPair ("levels", op, PdxNumber $ n * throughputDivisor)
+            | building `notElem` [Just "building_barrack", Just "building_government_administration", Just "building_university"] -> PdxPair ("levels", op, PdxNumber $ n * throughputDivisor)
         PdxPair (key, op, val) -> PdxPair (key, op, go building val)
         PdxArray xs -> PdxArray (map (go building) xs)
         other -> other
@@ -97,6 +97,7 @@ genHistory = go Nothing
 genPoptypes :: PdxValue -> PdxValue
 genPoptypes v = case v of
     PdxPair ("dependent_wage", op, PdxNumber n) -> PdxPair ("dependent_wage", op, PdxNumber $ n * nominalFactor)
+    PdxPair ("consumption_mult", op, PdxNumber n) -> PdxPair ("consumption_mult", op, PdxNumber 0.02)
     PdxPair ("laborers", op, PdxArray n) -> PdxPair ("laborers", op, PdxArray (map genPoptypes $ filter (\case PdxPair (x, _, _) -> x /= "unemployment_wealth"; _ -> True) n))
     PdxPair (key, op, val) -> PdxPair (key, op, genPoptypes val)
     PdxArray xs -> PdxArray (map genPoptypes xs)
@@ -153,11 +154,12 @@ genDefines v = case v of
         , ("EARNINGS_ABSOLUTE_LOW_THRESHOLD", \(PdxNumber n) -> PdxNumber $ n * nominalFactor * employmentDivisor / throughputDivisor)
         , ("PRIVATIZATION_PER_LEVEL_COST", const $ PdxNumber 0.1)
         , ("BUILDING_PRIVATIZATION_CHANCE", const $ PdxNumber 100)
-        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE", const $ PdxNumber $ 4 * nominalFactor)
-        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE", const $ PdxNumber $ 8 * nominalFactor)
+        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE", const $ PdxNumber $ 5 * nominalFactor)
+        , ("AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE", const $ PdxNumber $ 10 * nominalFactor)
         , ("CONSTRUCTION_CAMP_BUILDING", const $ PdxQString "building_consec_dummy")
         , ("BLOCKADE_TARGET_STRENGTH_PER_TRADED_UNIT", \(PdxNumber n) -> PdxNumber $ n / nominalFactor)
         , ("BLOCKADE_TARGET_STRENGTH_PER_PRODUCED_UNIT", \(PdxNumber n) -> PdxNumber $ n / nominalFactor)
+        , ("AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY_FRACTION", const $ PdxNumber 2)
         ]
 
 tradeValues = PdxArray [PdxPair ("used_trade_capacity", "=", PdxArray [
@@ -173,7 +175,7 @@ Just (_,cbpValues) = runParser pdxValue $ unlines [
     "}",
     "bem_state_capex = {",
     "    value = owner.investment_pool_income",
-    "    multiply = bem_state_urbanization_share",
+    "    multiply = bem_state_investment_share",
     "}",
     "bem_cbp_b_lower = {",
     "    value = bem_state_capex",
@@ -444,7 +446,7 @@ main = do
     vic3Common <- (</> ".local/share/Steam/steamapps/common/Victoria 3/game/common") <$> getHomeDirectory
     Just goods <- parseFile (vic3Common </> "goods/00_goods.txt")
     let costMap = baseCosts goods
-    processDirectory Replace ["00", "05", "08"] (genPMs costMap) "production_methods"
+    processDirectory Replace ["00", "05", "07", "08"] (genPMs costMap) "production_methods"
     processDirectory Replace [] genGoods "goods"
     processDirectory Replace [] genPoptypes "pop_types"
     processDirectory None ["99"] genStateRegions "../map_data/state_regions"

@@ -153,3 +153,9 @@ goods_input_services_add = {
 	color=bad
 	percent=no
 }
+
+goods_input_merchant_marine_mult = {
+	decimals=1
+	color=bad
+	percent=yes
+}

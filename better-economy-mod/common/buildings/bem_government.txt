@@ -22,8 +22,6 @@
 		pmg_base_building_government_administration
 		pmg_government_administration_bureaucrat_professionalism
 		pmg_government_administration_religious_administration
-		pmg_bem_gov_services
-		pmg_bem_gov_plan
 	}
 
 	icon = "gfx/interface/icons/building_icons/building_government_administration.dds"

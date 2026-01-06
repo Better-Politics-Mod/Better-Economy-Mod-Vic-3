@@ -149,6 +149,20 @@
 						name = bem_state_conpow
 						multiplier = local_var:conpow_mult
 					}
+					b:building_trade_center ?= {
+						remove_modifier = bem_merchant_marine_usage
+						set_local_variable = {
+							name = mm_mult
+							value = {
+								prev = {value = used_trade_capacity}
+								divide = 5
+							}
+						}
+						add_modifier = {
+							name = bem_merchant_marine_usage
+							multiplier = local_var:mm_mult
+						}
+					}
 				}
 			}
 		}

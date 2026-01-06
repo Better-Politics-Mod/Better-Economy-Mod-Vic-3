@@ -104,8 +104,8 @@ bem_profit_per_level = {
 
 REPLACE:state_urbanization_rate = {
     value = total_urbanization
+	multiply = 150
     divide = state_population
-    multiply = 100
     min = 0
     max = 1
 }
