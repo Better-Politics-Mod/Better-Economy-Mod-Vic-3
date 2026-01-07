@@ -56,7 +56,7 @@ REPLACE:bpm_auth_decree_count_in_state = {
 	}
     if = {
         limit = {
-            has_decree = decree_encourage_investment
+            has_decree = bem_decree_encourage_investment
         }
         add = 2
     }

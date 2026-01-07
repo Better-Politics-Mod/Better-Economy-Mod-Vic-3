@@ -10,7 +10,7 @@ REPLACE:pm_trade_center = {
 	}
 	state_modifiers = {
 		unscaled = {
-            state_weekly_trades_add = 1
+            state_weekly_trades_add = 100
 			state_trade_capacity_add = 10000000
         }
 	}
@@ -35,7 +35,7 @@ REPLACE:pm_trade_center_principle_external_trade_2 = {
 	}
 	state_modifiers = {
         unscaled = {
-            state_weekly_trades_add = 1
+            state_weekly_trades_add = 100
 			state_trade_capacity_add = 10000000
         }
 	}

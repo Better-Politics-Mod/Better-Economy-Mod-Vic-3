@@ -158,13 +158,19 @@ bem_initial_investment_pool = {
 	multiply = 2
 }
 
+bem_state_construction_sell_orders = {
+	sg:construction = {
+		value = state_goods_production
+	}
+}
+
 bem_state_investment_attraction = {
 	value = total_urbanization
-	if = {
-		limit = {has_decree = decree_encourage_investment}
-		multiply = 1.5
-		add = 500
+	multiply = {
+		value = 1
+		add = modifier:state_investment_attraction_mult
 	}
+	add = modifier:state_investment_attraction_add
 }
 
 bem_country_total_investment_attraction = {
@@ -177,4 +183,19 @@ bem_country_total_investment_attraction = {
 bem_state_investment_share = {
 	value = bem_state_investment_attraction
 	divide = owner.bem_country_total_investment_attraction
+}
+
+bem_country_capex = {
+	value = investment_pool_income
+}
+
+bem_state_capex = {
+	value = owner.bem_country_capex
+	multiply = bem_state_investment_share
+	multiply = bem_state_investment_efficiency
+}
+
+bem_state_investment_efficiency = {
+	value = 1
+	add = modifier:state_investment_efficiency_mult
 }

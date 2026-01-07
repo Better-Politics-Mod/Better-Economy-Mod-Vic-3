@@ -1,0 +1,5 @@
+﻿l_english:
+  STATE_INVESTMENT_VALUE: "Weekly [Concept('concept_investment_pool', 'State Investment')]: #v @money![State.MakeScope.ScriptValue('bem_state_capex')|D=+]#!"
+  STATE_INVESTMENT_ATTRACTION: "[Concept('concept_state_investment_attractiveness', 'Investment Attractiveness')]: [State.MakeScope.ScriptValue('bem_state_investment_attraction')|D+]"
+  STATE_INVESTMENT_EFFICIENCY: "Investment Efficiency: #v [State.MakeScope.ScriptValue('bem_state_investment_efficiency')|%]#"
+  STATE_INVESTMENT_SHARE: "Market [Concept('concept_investment_pool', 'CapEx')] Share: #v [State.MakeScope.ScriptValue('bem_state_investment_share')|%]#"

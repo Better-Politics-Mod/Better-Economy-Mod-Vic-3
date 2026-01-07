@@ -170,13 +170,6 @@ tradeValues = PdxArray [PdxPair ("used_trade_capacity", "=", PdxArray [
 
 Just (_,cbpValues) = runParser pdxValue $ unlines [
     "{",
-    "bem_state_construction_sell_orders = {",
-    "    sg:construction = {value = state_goods_production}",
-    "}",
-    "bem_state_capex = {",
-    "    value = owner.investment_pool_income",
-    "    multiply = bem_state_investment_share",
-    "}",
     "bem_cbp_b_lower = {",
     "    value = bem_state_capex",
     "    divide = " ++ show (basePrice - (basePrice * priceRange)), 

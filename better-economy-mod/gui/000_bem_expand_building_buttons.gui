@@ -20,6 +20,67 @@ template visible_if_produces {
 
 types building_panels
 {
+
+	type bem_investment_attraction = flowcontainer {
+		direction = vertical
+		minimumsize = { @panel_width_plus_14_half 40 }
+		margin = { 15 0 }
+		widget = {
+			#tooltip = "TOOLTIP_STATE_MIGRATION"
+			size = { @panel_width 80 }
+			#onmousehierarchyenter = "[SetTempMapModeByKey('mm_migration')]"
+			#onmousehierarchyleave = "[RemoveTempMapMode]"
+			alwaystransparent = no
+
+			background = {
+				using = entry_bg_simple
+			}
+			vbox = {
+				margin = { 15 0 }
+				spacing = 0
+				hbox = {
+					layoutpolicy_horizontal = expanding
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_capex'))]"
+						text = "STATE_INVESTMENT_VALUE"
+						align = left|nobaseline
+					}
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
+						text = "STATE_INVESTMENT_ATTRACTION"
+						align = right|nobaseline
+					}
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+				
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_capex'))]"
+						text = "STATE_INVESTMENT_EFFICIENCY"
+						align = left|nobaseline
+					}
+				
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
+						text = "STATE_INVESTMENT_SHARE"
+						align = right|nobaseline
+					}
+				}
+			}
+		}
+		
+	}
+
 	type bem_building_queue = flowcontainer {
 		direction = vertical
 		minimumsize = { @panel_width_plus_14_half 80 }
@@ -577,10 +638,9 @@ types building_panels
 			}
 		}
 
-
+		bem_investment_attraction = {}
 		flowcontainer = {
 			direction = horizontal
-
 
 			bem_building_queue = {}
 			

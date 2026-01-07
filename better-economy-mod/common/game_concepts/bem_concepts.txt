@@ -1,0 +1,3 @@
+concept_state_investment_attractiveness = {
+    is_loading_tip = yes
+}

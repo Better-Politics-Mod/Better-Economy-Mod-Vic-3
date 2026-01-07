@@ -7,9 +7,12 @@
 # state_trigger										A trigger in state context that determines if the Decree is permitted or not; should invalidate the Decree on a weekly basis if found invalid
 # ai_weight											Scripted value which determines the chance of getting the Decree by AI
 
-decree_encourage_investment = {
+bem_decree_encourage_investment = {
 	texture = "gfx/interface/icons/decree/decree_road_maintenance.dds"
 	modifier = {
+		state_investment_attraction_mult = 0.5
+		state_investment_attraction_add = 500
+		state_investment_efficiency_mult = -0.05
 	}
 	unlocking_technologies = {
 		central_banking

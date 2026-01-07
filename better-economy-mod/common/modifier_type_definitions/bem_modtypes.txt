@@ -159,3 +159,26 @@ goods_input_merchant_marine_mult = {
 	color=bad
 	percent=yes
 }
+
+### INVESTMENT
+
+state_investment_attraction_add = {
+	decimals=0
+	color=good
+	percent=no
+	script_only=yes
+}
+
+state_investment_attraction_mult = {
+	decimals=1
+	color=good
+	percent=yes
+	script_only=yes
+}
+
+state_investment_efficiency_mult = {
+	decimals=1
+	color=good
+	percent=yes
+	script_only=yes
+}

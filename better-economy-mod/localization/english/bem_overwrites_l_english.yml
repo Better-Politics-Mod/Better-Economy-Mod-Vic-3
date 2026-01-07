@@ -1,3 +1,4 @@
 ﻿l_english:
   INVESTMENT_POOL: "[concept_investment_pool]: #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_BREAKDOWN,InvestmentPoolTooltip #v #!#!#!#v @money![GetPlayer.GetInvestmentPoolChange|D+=]#!"
   concept_investment_pool: "Capital Expenditure"
+  concept_investment_pool_desc: "[concept_reinvestment] from [Concept('concept_pop','$concept_pops$')] with [concept_privately_owned] [Concept('concept_building','$concept_buildings$')] is allocated to $concept_investment_pool$, where [Concept('concept_state','$concept_state$s')] use it for purchasing @construction! Construction."

@@ -1,2 +1,3 @@
 ﻿l_english:
-  decree_encourage_investment: "Encourage Investment"
+  bem_decree_encourage_investment: "Encourage Investment"
+  bem_decree_encourage_investment_desc: "Encourage @construction! Construction demand"
