@@ -328,7 +328,7 @@ STATE_WEST_GALICIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 }
 STATE_EAST_GALICIA = {
@@ -368,7 +368,7 @@ STATE_EAST_GALICIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 100
+		undiscovered_amount = 1000
 	}
 }
 STATE_CENTRAL_HUNGARY = {
@@ -514,7 +514,7 @@ STATE_DELVIDEK = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_BANAT = {
@@ -718,7 +718,7 @@ STATE_MOLDAVIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_BUKOVINA = {
@@ -799,7 +799,7 @@ STATE_WALLACHIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 }
 STATE_BESSARABIA = {

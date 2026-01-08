@@ -278,11 +278,11 @@ STATE_ASSAM = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 44
+		undiscovered_amount = 440
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 }
 STATE_DELHI = {
@@ -551,7 +551,7 @@ STATE_GUJARAT = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3048
 }
@@ -883,7 +883,7 @@ STATE_PUNJAB = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 7
+		undiscovered_amount = 70
 	}
 }
 STATE_HILL_PUNJAB = {
@@ -1307,7 +1307,7 @@ STATE_CEYLON = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3049
 }
@@ -1518,7 +1518,7 @@ STATE_MYSORE = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3049
 }
@@ -1568,7 +1568,7 @@ STATE_TRAVANCORE = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3049
 }
@@ -1633,7 +1633,7 @@ STATE_MADRAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 7
+		undiscovered_amount = 70
 	}
 	naval_exit_id = 3049
 }
@@ -1890,7 +1890,7 @@ STATE_TENASSERIM = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	naval_exit_id = 3051
 }
@@ -2029,7 +2029,7 @@ STATE_SHAN_STATES = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 2
+		undiscovered_amount = 20
 	}
 }
 STATE_MANDALAY = {
@@ -2086,11 +2086,11 @@ STATE_MANDALAY = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 26
+		undiscovered_amount = 260
 	}
 }
 STATE_PEGU = {
@@ -2144,11 +2144,11 @@ STATE_PEGU = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 9
+		undiscovered_amount = 90
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 5
+		undiscovered_amount = 50
 	}
 	naval_exit_id = 3050
 }
@@ -2187,7 +2187,7 @@ STATE_ARAKAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 7
+		undiscovered_amount = 70
 	}
 	naval_exit_id = 3050
 }

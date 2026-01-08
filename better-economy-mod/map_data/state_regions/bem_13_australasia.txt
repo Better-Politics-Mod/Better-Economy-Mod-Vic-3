@@ -232,11 +232,11 @@ STATE_NEW_SOUTH_WALES = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3122
 }
@@ -330,7 +330,7 @@ STATE_VICTORIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3122
 }
@@ -387,7 +387,7 @@ STATE_TASMANIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3122
 }
@@ -1958,7 +1958,7 @@ STATE_WESTERN_AUSTRALIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3123
 }
@@ -2483,7 +2483,7 @@ STATE_NORTH_ISLAND = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3122
 }
@@ -2564,7 +2564,7 @@ STATE_SOUTH_ISLAND = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3122
 }

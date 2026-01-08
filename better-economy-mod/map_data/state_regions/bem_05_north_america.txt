@@ -83,7 +83,7 @@ STATE_LOUISIANA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3060
 }
@@ -1905,7 +1905,7 @@ STATE_ALASKA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3119
 }
@@ -2294,11 +2294,11 @@ STATE_COLORADO = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_WYOMING = {
@@ -2395,7 +2395,7 @@ STATE_WYOMING = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_MONTANA = {
@@ -2553,7 +2553,7 @@ STATE_MONTANA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_NORTH_DAKOTA = {
@@ -2642,7 +2642,7 @@ STATE_NORTH_DAKOTA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_SOUTH_DAKOTA = {
@@ -2727,11 +2727,11 @@ STATE_SOUTH_DAKOTA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_NEBRASKA = {
@@ -2819,7 +2819,7 @@ STATE_NEBRASKA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_KANSAS = {
@@ -2901,7 +2901,7 @@ STATE_KANSAS = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_OKLAHOMA = {
@@ -2973,7 +2973,7 @@ STATE_OKLAHOMA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 }
 STATE_ARKANSAS = {
@@ -3037,7 +3037,7 @@ STATE_ARKANSAS = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_MISSOURI = {
@@ -3110,7 +3110,7 @@ STATE_MISSOURI = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_IOWA = {
@@ -3528,7 +3528,7 @@ STATE_OHIO = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_KENTUCKY = {
@@ -3701,7 +3701,7 @@ STATE_MISSISSIPPI = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3060
 }
@@ -3764,7 +3764,7 @@ STATE_ALABAMA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3060
 }
@@ -3832,7 +3832,7 @@ STATE_FLORIDA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3060
 }
@@ -4067,7 +4067,7 @@ STATE_PENNSYLVANIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_NEW_JERSEY = {
@@ -4536,7 +4536,7 @@ STATE_UTAH = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_SOUTH_CAROLINA = {
@@ -5111,7 +5111,7 @@ STATE_ONTARIO = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 }
 STATE_NEW_BRUNSWICK = {
@@ -6491,7 +6491,7 @@ STATE_ALBERTA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 }
 STATE_BRITISH_COLUMBIA = {
@@ -6937,7 +6937,7 @@ STATE_BRITISH_COLUMBIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3154
 }
@@ -7230,7 +7230,7 @@ STATE_SASKATCHEWAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_MANITOBA = {
@@ -7523,7 +7523,7 @@ STATE_MANITOBA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_YUKON_TERRITORY = {
@@ -8195,7 +8195,7 @@ STATE_YUKON_TERRITORY = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 }
 STATE_NORTHWEST_TERRITORIES = {
@@ -12161,7 +12161,7 @@ STATE_TEXAS = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 100
+		undiscovered_amount = 1000
 	}
 	naval_exit_id = 3060
 }
@@ -12269,7 +12269,7 @@ STATE_NEVADA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 15
+		undiscovered_amount = 150
 	}
 }
 STATE_ARIZONA = {
@@ -12371,7 +12371,7 @@ STATE_ARIZONA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 5
+		undiscovered_amount = 50
 	}
 }
 STATE_NEW_MEXICO = {
@@ -12618,11 +12618,11 @@ STATE_CALIFORNIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 	naval_exit_id = 3153
 }
@@ -12687,7 +12687,7 @@ STATE_SONORA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3153
 }
@@ -12870,7 +12870,7 @@ STATE_RIO_GRANDE = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 	naval_exit_id = 3060
 }
@@ -13058,7 +13058,7 @@ STATE_YUCATAN = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	naval_exit_id = 3060
 }
@@ -13108,7 +13108,7 @@ STATE_MEXICO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 }
 STATE_VERACRUZ = {
@@ -13160,11 +13160,11 @@ STATE_VERACRUZ = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 	naval_exit_id = 3060
 }
@@ -13213,11 +13213,11 @@ STATE_GUERRERO = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 3
+		undiscovered_amount = 30
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3155
 }
@@ -13273,11 +13273,11 @@ STATE_OAXACA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 2
+		undiscovered_amount = 20
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3155
 }
@@ -13347,7 +13347,7 @@ STATE_JALISCO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3155
 }
@@ -13399,7 +13399,7 @@ STATE_ZACATECAS = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 }
 STATE_CHIAPAS = {
@@ -13445,7 +13445,7 @@ STATE_CHIAPAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 24
+		undiscovered_amount = 240
 	}
 	naval_exit_id = 3155
 }

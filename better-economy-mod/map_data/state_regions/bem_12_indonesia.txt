@@ -55,7 +55,7 @@ STATE_MALAYA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 	naval_exit_id = 3052
 }
@@ -136,15 +136,15 @@ STATE_NORTH_BORNEO = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3055
 }
@@ -232,12 +232,12 @@ STATE_WEST_BORNEO = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
-		discovered_amount = 4
+		undiscovered_amount = 60
+		discovered_amount = 40
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3052
 }
@@ -342,11 +342,11 @@ STATE_EAST_BORNEO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 28
+		undiscovered_amount = 280
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3125
 }
@@ -391,11 +391,11 @@ STATE_WEST_JAVA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3052
 }
@@ -446,11 +446,11 @@ STATE_EAST_JAVA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3052
 }
@@ -497,7 +497,7 @@ STATE_CENTRAL_JAVA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3052
 }
@@ -579,7 +579,7 @@ STATE_NORTH_SUMATRA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 28
+		undiscovered_amount = 280
 	}
 	naval_exit_id = 3120
 }
@@ -642,11 +642,11 @@ STATE_SOUTH_SUMATRA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 28
+		undiscovered_amount = 280
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3120
 }
@@ -703,11 +703,11 @@ STATE_ACEH = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 18
+		undiscovered_amount = 180
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 25
+		undiscovered_amount = 250
 	}
 	naval_exit_id = 3051
 }
@@ -816,11 +816,11 @@ STATE_WESTERN_NEW_GUINEA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 15
+		undiscovered_amount = 150
 	}
 	naval_exit_id = 3125
 }
@@ -866,7 +866,7 @@ STATE_MOLUCCAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3125
 }
@@ -934,7 +934,7 @@ STATE_CELEBES = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3125
 }
@@ -1054,11 +1054,11 @@ STATE_EASTERN_NEW_GUINEA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 15
+		undiscovered_amount = 150
 	}
 	naval_exit_id = 3129
 }
@@ -1110,7 +1110,7 @@ STATE_SUNDA_ISLANDS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3052
 }
@@ -1162,7 +1162,7 @@ STATE_MINDANAO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 	naval_exit_id = 3055
 }
@@ -1223,7 +1223,7 @@ STATE_LUZON = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3056
 }
@@ -1272,7 +1272,7 @@ STATE_VISAYAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3127
 }

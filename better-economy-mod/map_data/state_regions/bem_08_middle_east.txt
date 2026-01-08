@@ -300,7 +300,7 @@ STATE_NEJD = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3046
 }
@@ -393,7 +393,7 @@ STATE_OMAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3048
 }
@@ -441,7 +441,7 @@ STATE_ABU_DHABI = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 80
+		undiscovered_amount = 800
 	}
 	naval_exit_id = 3046
 }
@@ -588,7 +588,7 @@ STATE_YEMEN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3047
 }
@@ -1211,7 +1211,7 @@ STATE_BAGHDAD = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 }
 STATE_MOSUL = {
@@ -1256,7 +1256,7 @@ STATE_MOSUL = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 }
 STATE_DEIR_EZ_ZOR = {
@@ -1347,7 +1347,7 @@ STATE_BASRA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3046
 }
@@ -1417,7 +1417,7 @@ STATE_FARS = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3046
 }
@@ -1471,7 +1471,7 @@ STATE_LARISTAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 	naval_exit_id = 3046
 }
@@ -1718,7 +1718,7 @@ STATE_KHORASAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_KHUZESTAN = {
@@ -1759,7 +1759,7 @@ STATE_KHUZESTAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3046
 }
@@ -1872,7 +1872,7 @@ STATE_MAZANDARAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_IRAKAJEMI = {
@@ -2120,7 +2120,7 @@ STATE_LURISTAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	capped_resources = {
 		building_logging_camp = 30
@@ -2163,7 +2163,7 @@ STATE_PERSIAN_KURDISTAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	capped_resources = {
 		building_logging_camp = 40

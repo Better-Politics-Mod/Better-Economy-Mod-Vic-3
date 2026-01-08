@@ -37,7 +37,7 @@ STATE_LOMBARDY = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_PIEDMONT = {
@@ -1356,7 +1356,7 @@ STATE_ALBANIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3033
 }

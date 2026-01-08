@@ -35,7 +35,7 @@ STATE_SAN_SALVADOR = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 	naval_exit_id = 3155
 }
@@ -95,7 +95,7 @@ STATE_GUATEMALA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3026
 }
@@ -152,7 +152,7 @@ STATE_HONDURAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	naval_exit_id = 3026
 }
@@ -209,7 +209,7 @@ STATE_NICARAGUA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 14
+		undiscovered_amount = 140
 	}
 	naval_exit_id = 3026
 }
@@ -254,7 +254,7 @@ STATE_COSTA_RICA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3026
 }
@@ -298,7 +298,7 @@ STATE_PANAMA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3026
 }
@@ -338,7 +338,7 @@ STATE_HAITI = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3061
 }
@@ -379,7 +379,7 @@ STATE_SANTO_DOMINGO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3061
 }
@@ -413,7 +413,7 @@ STATE_PUERTO_RICO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3025
 }
@@ -494,7 +494,7 @@ STATE_WEST_INDIES = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3025
 }
@@ -566,11 +566,11 @@ STATE_WESTERN_CUBA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 	naval_exit_id = 3061
 }

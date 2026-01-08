@@ -1,0 +1,206 @@
+bem_country_total_urbanization = {
+	value = 0
+	every_scope_state = {
+		add = total_urbanization
+	}
+}
+
+# Share of the country's urbanization in the state
+bem_state_urbanization_share = {
+	value = total_urbanization
+	divide = owner.bem_country_total_urbanization
+}
+
+bem_country_total_investment_levels = {
+	value = investment_pool
+	if = {
+		limit = {
+			has_law = law_type:law_command_economy
+		}
+		value = gold_reserves
+	}
+	divide = 1000000
+}
+
+bem_state_investment_levels = {
+	value = owner.bem_country_total_investment_levels
+	multiply = bem_state_urbanization_share
+}
+
+bem_heat_forth = {
+	value = {
+		value = 20
+		subtract = bem_economy_heat
+	}
+	# divide = 5
+	round_to = 0.1
+}
+
+bem_investment_weekly_loss = {
+	if = {
+		value = bem_state_investment_levels
+		multiply = {
+			value = -1000
+			multiply = owner.bem_economy_heat
+		}
+	}
+}
+
+bem_investment_equilibrium_r = {
+	value = investment_pool_net_income
+	divide = {
+		value = bem_economy_heat
+		min = 1
+	}
+	multiply = 1000
+}
+
+bem_investment_equilibrium = {
+	if = {
+		limit = {
+			bem_investment_equilibrium_r > investment_pool_net_income
+		}
+		value = bem_investment_equilibrium_r
+	}
+	else = {
+		value = {
+			value = investment_pool_net_income
+			subtract = {
+				value = bem_total_investment_weekly_loss
+			}
+		}
+	}
+	min=10000000
+}
+
+diff_from_equi = {
+	value = investment_pool
+	subtract = bem_investment_equilibrium
+	divide = bem_investment_equilibrium
+}
+
+bem_total_investment_weekly_loss = {
+	value = 0
+	every_scope_state = {
+		add = bem_investment_weekly_loss
+	}
+}
+
+bem_roi = {
+	value = gdp
+}
+
+bem_rchg_mult = {
+	value = 0.5
+}
+
+bem_roi_change = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_previous_roi
+		}
+		add = {
+			value = owner.bem_roi
+			subtract = var:bem_previous_roi
+			divide = {
+				value = var:bem_previous_roi
+				min = 1
+			}
+		}
+	}
+}
+
+bem_previous_roi = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_previous_roi
+		}
+		add = {
+			value = var:bem_previous_roi
+		}
+	}
+}
+
+bem_heatchg = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_heatchg
+		}
+		value = var:bem_heatchg
+	}
+}
+bem_roichg = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_roichg
+		}
+		add = var:bem_roichg
+	}
+}
+
+
+bem_economy_heat = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = bem_economy_heat
+		}
+		add = var:bem_economy_heat
+	}
+}
+
+bem_initial_investment_pool = {
+	value = gdp
+	multiply = 2
+}
+
+bem_state_construction_sell_orders = {
+	sg:construction = {
+		value = state_goods_production
+	}
+}
+
+bem_state_investment_attraction = {
+	value = total_urbanization
+	multiply = {
+		value = 1
+		add = modifier:state_investment_attraction_mult
+	}
+	add = modifier:state_investment_attraction_add
+}
+
+bem_country_total_investment_attraction = {
+	value = 0
+	every_scope_state = {
+		add = bem_state_investment_attraction
+	}
+}
+
+bem_state_investment_share = {
+	value = bem_state_investment_attraction
+	divide = owner.bem_country_total_investment_attraction
+}
+
+bem_country_capex = {
+	value = investment_pool_income
+}
+
+bem_state_capex = {
+	value = owner.bem_country_capex
+	multiply = bem_state_investment_share
+	multiply = bem_state_investment_efficiency
+}
+
+bem_state_investment_efficiency = {
+	value = 1
+	add = modifier:state_investment_efficiency_mult
+}
+
+bem_state_weekly_construction = {
+	value = bem_construction_buy_package
+	max = bem_cbp_upper_bound
+}

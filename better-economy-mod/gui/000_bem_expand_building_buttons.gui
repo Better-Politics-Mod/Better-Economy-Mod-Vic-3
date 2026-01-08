@@ -26,59 +26,60 @@ types building_panels
 		minimumsize = { @panel_width_plus_14_half 40 }
 		margin = { 15 0 }
 		widget = {
-			#tooltip = "TOOLTIP_STATE_MIGRATION"
-			size = { @panel_width 80 }
-			#onmousehierarchyenter = "[SetTempMapModeByKey('mm_migration')]"
-			#onmousehierarchyleave = "[RemoveTempMapMode]"
-			alwaystransparent = no
-
+			size = { 530 90 }
 			background = {
 				using = entry_bg_simple
 			}
-			vbox = {
-				margin = { 15 0 }
-				spacing = 0
-				hbox = {
-					layoutpolicy_horizontal = expanding
-
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_capex'))]"
-						text = "STATE_INVESTMENT_VALUE"
-						align = left|nobaseline
-					}
-
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
-						text = "STATE_INVESTMENT_ATTRACTION"
-						align = right|nobaseline
-					}
-				}
-				hbox = {
-					layoutpolicy_horizontal = expanding
-				
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_capex'))]"
-						text = "STATE_INVESTMENT_EFFICIENCY"
-						align = left|nobaseline
-					}
-				
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						alpha = "[TransparentIfZero_int64(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
-						text = "STATE_INVESTMENT_SHARE"
-						align = right|nobaseline
-					}
-				}
-			}
+            hbox = {
+                margin = { 15 0 }
+                vbox = {
+                    layoutpolicy_horizontal = expanding
+                    text_single = {
+			    		layoutpolicy_horizontal = expanding
+			    		alpha = "[TransparentIfZero(State.MakeScope.ScriptValue('bem_state_capex'))]"
+			    		text = "STATE_INVESTMENT_VALUE"
+			    		align = left
+			    	}
+                    text_single = {
+			    		layoutpolicy_horizontal = expanding
+			    		alpha = "[TransparentIfZero(State.MakeScope.ScriptValue('bem_state_capex'))]"
+			    		text = "STATE_INVESTMENT_EFFICIENCY"
+			    		align = left
+			    	}
+                    text_single = {
+			    		layoutpolicy_horizontal = expanding
+			    		alpha = "[TransparentIfZero(State.MakeScope.ScriptValue('bem_state_capex'))]"
+			    		text = "STATE_CONSTRUCTION_DEMAND"
+			    		align = left
+			    	}
+                }
+			    vbox = {
+                    layoutpolicy_horizontal = expanding
+			    	text_single = {
+			    		layoutpolicy_horizontal = expanding
+			    		alpha = "[TransparentIfZero(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
+			    		text = "STATE_INVESTMENT_ATTRACTION"
+			    		align = left
+			    	}
+                    text_single = {
+			    		layoutpolicy_horizontal = expanding
+			    		alpha = "[TransparentIfZero(State.MakeScope.ScriptValue('bem_state_investment_attraction'))]"
+			    		text = "STATE_INVESTMENT_SHARE"
+			    		align = left
+			    	}
+				    text_single = {
+                        layoutpolicy_horizontal = expanding
+                        datacontext = "[GetGoods('construction').WithStateContext(StatesPanel.AccessState.Self)]"
+                        alpha = "[TransparentIfZero(Goods.GetStateProduction)]"
+				    	text = "STATE_BUILDING_TAB_LOCAL_GOODS_INFO"
+				    	align = left
+				    	tooltipwidget = {
+				    		FancyTooltip_Goods = {}
+				    	}
+				    }
+			    }
+            }
 		}
-		
 	}
 
 	type bem_building_queue = flowcontainer {
@@ -634,7 +635,7 @@ types building_panels
 
 		default_header = {
 			blockoverride "text" {
-				text = "BEM_STATE_CONSTRUCTION"
+				text = "STATE_CONSTRUCTION"
 			}
 		}
 

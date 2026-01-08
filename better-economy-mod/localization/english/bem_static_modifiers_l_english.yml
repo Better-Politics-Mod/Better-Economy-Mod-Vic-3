@@ -1,6 +1,8 @@
 ﻿l_english:
   bem_urbanization_boost: "Urban State"
   state_rural_nerf: "Rural State"
+  bem_trade: "Weekly Trades"
+  bem_state_capex: "Weekly Construction"
 
   building_group_bg_subsistence_agriculture_employee_mult: "Subsistence Agriculture Employee Multiplier"
   building_group_bg_subsistence_agriculture_employee_mult_desc: "Multiplier for the number of employees in Subsistence Agriculture buildings."
@@ -21,8 +23,6 @@
 
   bem_completing_loc: "#tooltippable Completes in [StatesPanel.GetState.MakeScope.ScriptValue('bem_number_months_left')|v0] Month(s).\nWill result in [StatesPanel.GetState.MakeScope.ScriptValue('bem_number_produced_max')|v0] Level(s).#!"
   bem_conpow_tt: "#tooltip_header Construction Infrastructure: [StatesPanel.GetState.MakeScope.ScriptValue('bem_current_conpow')|v0]#!\n$TOOLTIP_DELIMITER$\n[StatesPanel.GetState.GetModifier.GetFullEntryDescFor('state_construction_power_add')]\n#tooltippable [StatesPanel.GetState.MakeScope.ScriptValue('bem_fromnumbuls')|v0=]#!: Number of buildings\n\n[StatesPanel.GetState.GetModifier.GetFullEntryDescFor('state_construction_mult')]"
-
-  BEM_STATE_CONSTRUCTION: "State Construction"
 
   state_construction_power_add_desc: "The amount of @construction! Local Construction produced by a [concept_state]."
 

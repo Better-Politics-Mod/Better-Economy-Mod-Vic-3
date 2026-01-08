@@ -1580,7 +1580,7 @@ STATE_LANCASHIRE = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3030
 }
@@ -1773,7 +1773,7 @@ STATE_EAST_ANGLIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3028
 }
@@ -2637,7 +2637,7 @@ STATE_FRIESLAND = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3027
 }
@@ -3008,7 +3008,7 @@ STATE_ELBE = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3027
 }
@@ -3379,7 +3379,7 @@ STATE_HANNOVER = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 	naval_exit_id = 3027
 }

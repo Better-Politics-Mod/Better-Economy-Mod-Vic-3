@@ -3,3 +3,6 @@
   STATE_INVESTMENT_ATTRACTION: "[Concept('concept_state_investment_attractiveness', 'Investment Attractiveness')]: [State.MakeScope.ScriptValue('bem_state_investment_attraction')|D+]"
   STATE_INVESTMENT_EFFICIENCY: "Investment Efficiency: #v [State.MakeScope.ScriptValue('bem_state_investment_efficiency')|%]#"
   STATE_INVESTMENT_SHARE: "Market [Concept('concept_investment_pool', 'CapEx')] Share: #v [State.MakeScope.ScriptValue('bem_state_investment_share')|%]#"
+  STATE_CONSTRUCTION_DEMAND: "Weekly Construction: @construction! #v #tooltippable;tooltip:tooltip_bem_weekly_construction [State.MakeScope.ScriptValue('bem_state_weekly_construction')|0]#!#"
+  tooltip_bem_weekly_construction: "This value is the current state @construction! Construction [Concept('concept_buy_orders', 'Demand')] clamped to the number of [concept_buy_orders] which would cause a [concept_shortage]."
+  STATE_CONSTRUCTION: "State Construction Statistics"

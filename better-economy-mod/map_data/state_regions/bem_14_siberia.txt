@@ -154,7 +154,7 @@ STATE_URAL = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 }
 STATE_TOMSK = {
@@ -759,7 +759,7 @@ STATE_TOBOLSK = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 }
 STATE_UPPER_YENISEYSK = {
@@ -4285,7 +4285,7 @@ STATE_OB = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 60
+		undiscovered_amount = 600
 	}
 }
 STATE_CHUKOTKA = {
@@ -5151,7 +5151,7 @@ STATE_CHUKOTKA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	naval_exit_id = 3128
 }
@@ -5476,7 +5476,7 @@ STATE_KAMCHATKA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 2
+		undiscovered_amount = 20
 	}
 	naval_exit_id = 3118
 }
@@ -5889,7 +5889,7 @@ STATE_OKHOTSK = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3118
 }
@@ -7757,11 +7757,11 @@ STATE_YAKUTSK = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 5
+		undiscovered_amount = 50
 	}
 }
 STATE_TRANS_BAIKAL = {
@@ -7989,7 +7989,7 @@ STATE_TRANS_BAIKAL = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }
 STATE_IRKUTSK = {
@@ -8366,6 +8366,6 @@ STATE_IRKUTSK = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }

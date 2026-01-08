@@ -88,7 +88,7 @@ STATE_ECUADOR = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3024
 }
@@ -198,15 +198,15 @@ STATE_GUAYANA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3062
 }
@@ -263,11 +263,11 @@ STATE_ZULIA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 100
+		undiscovered_amount = 1000
 	}
 	naval_exit_id = 3025
 }
@@ -346,11 +346,11 @@ STATE_MIRANDA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 100
+		undiscovered_amount = 1000
 	}
 	naval_exit_id = 3025
 }
@@ -524,11 +524,11 @@ STATE_BOLIVAR = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 	naval_exit_id = 3025
 }
@@ -620,11 +620,11 @@ STATE_ANTIOQUIA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3025
 }
@@ -778,7 +778,7 @@ STATE_GUAVIARE = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 18
+		undiscovered_amount = 180
 	}
 }
 STATE_CUNDINAMARCA = {
@@ -828,7 +828,7 @@ STATE_CUNDINAMARCA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }
 STATE_CAUCA = {
@@ -881,7 +881,7 @@ STATE_CAUCA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3155
 }
@@ -986,12 +986,12 @@ STATE_PASTAZA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 15
-		discovered_amount = 1
+		undiscovered_amount = 150
+		discovered_amount = 10
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_TARAPACA = {
@@ -1087,7 +1087,7 @@ STATE_ANTOFAGASTA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 	naval_exit_id = 3152
 }
@@ -1213,12 +1213,12 @@ STATE_SANTA_CRUZ = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
-		discovered_amount = 14
+		undiscovered_amount = 80
+		discovered_amount = 140
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_LA_PAZ = {
@@ -1336,11 +1336,11 @@ STATE_LA_PAZ = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_POTOSI = {
@@ -1468,11 +1468,11 @@ STATE_CAJAMARCA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3024
 }
@@ -1788,7 +1788,7 @@ STATE_URUGUAY = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3065
 }
@@ -1956,7 +1956,7 @@ STATE_ALTO_PARAGUAY = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_BAJO_PARAGUAY = {
@@ -2018,7 +2018,7 @@ STATE_BAJO_PARAGUAY = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_BUENOS_AIRES = {
@@ -2381,7 +2381,7 @@ STATE_PATAGONIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3066
 }
@@ -2655,7 +2655,7 @@ STATE_SANTA_FE = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3065
 }
@@ -2716,7 +2716,7 @@ STATE_CORRIENTES = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_TUCUMAN = {
@@ -3189,11 +3189,11 @@ STATE_ARAUCANIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3151
 }
@@ -3560,11 +3560,11 @@ STATE_PARA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 22
+		discovered_amount = 220
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3062
 }
@@ -3652,7 +3652,7 @@ STATE_MARANHAO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 16
+		discovered_amount = 160
 	}
 	naval_exit_id = 3062
 }
@@ -4166,11 +4166,11 @@ STATE_AMAZONAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 25
+		discovered_amount = 250
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_ACRE = {
@@ -4227,7 +4227,7 @@ STATE_ACRE = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 15
+		discovered_amount = 150
 	}
 }
 STATE_GOIAS = {
@@ -4373,7 +4373,7 @@ STATE_GOIAS = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 16
+		discovered_amount = 160
 	}
 }
 STATE_MATO_GROSSO = {
@@ -4701,11 +4701,11 @@ STATE_MATO_GROSSO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 26
+		discovered_amount = 260
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_RIO_GRANDE_DO_SUL = {
@@ -4802,7 +4802,7 @@ STATE_RIO_GRANDE_DO_SUL = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3064
 }
@@ -5022,11 +5022,11 @@ STATE_SAO_PAULO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 10
+		discovered_amount = 100
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3064
 }
@@ -5176,15 +5176,15 @@ STATE_MINAS_GERAIS = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 7
+		discovered_amount = 70
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_RIO_DE_JANEIRO = {
@@ -5233,7 +5233,7 @@ STATE_RIO_DE_JANEIRO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 7
+		discovered_amount = 70
 	}
 	naval_exit_id = 3064
 }
@@ -5378,7 +5378,7 @@ STATE_BAHIA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 3
+		discovered_amount = 30
 	}
 	naval_exit_id = 3063
 }
@@ -5420,7 +5420,7 @@ STATE_RIO_GRANDE_DO_NORTE = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 2
+		discovered_amount = 20
 	}
 	naval_exit_id = 3063
 }
@@ -5481,7 +5481,7 @@ STATE_CEARA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 3
+		discovered_amount = 30
 	}
 	naval_exit_id = 3063
 }
@@ -5564,7 +5564,7 @@ STATE_PIAUI = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 4
+		discovered_amount = 40
 	}
 	naval_exit_id = 3063
 }
@@ -5606,7 +5606,7 @@ STATE_PARAIBA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 1
+		discovered_amount = 10
 	}
 	naval_exit_id = 3063
 }
@@ -5669,7 +5669,7 @@ STATE_PERNAMBUCO = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		discovered_amount = 2
+		discovered_amount = 20
 	}
 	naval_exit_id = 3063
 }

@@ -1,82 +1,3 @@
-﻿REPLACE:base_values = {
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 25
-
-	country_loan_interest_rate_add = 0.2
-
-	country_legitimacy_govt_size_add = 1
-
-	country_bureaucracy_add = 100
-	country_authority_add = 100
-	country_influence_add = 100
-
-	country_secession_progress_add = 0.1
-
-	country_law_enactment_max_setbacks_add = 3
-
-	country_government_dividends_efficiency_add = 0.25
-
-	state_tax_capacity_add = 100
-	state_infrastructure_add = 3
-	state_infrastructure_from_automobiles_consumption_add = 0.25
-
-	state_lower_strata_expected_sol_add = 5
-	state_middle_strata_expected_sol_add = 10
-	state_upper_strata_expected_sol_add = 15
-	state_expected_sol_from_literacy = 5
-
-	state_machinists_investment_pool_contribution_add = 0.10
-	state_farmers_investment_pool_contribution_add = 0.10
-	state_engineers_investment_pool_contribution_add = 0.15
-	state_bureaucrats_investment_pool_contribution_add = 0.15
-	state_shopkeepers_investment_pool_contribution_add = 0.20
-	state_clergymen_investment_pool_contribution_add = 0.20
-	state_aristocrats_investment_pool_contribution_add = 0.20
-	state_capitalists_investment_pool_contribution_add = 0.30
-
-	# To balance for unincorporated states not paying taxes
-	state_unincorporated_starting_wages_mult = -0.20
-	building_unincorporated_subsistence_output_mult = -0.20
-
-	building_economy_of_scale_level_cap_add = 20
-
-	state_market_access_price_impact = 0.75
-
-	country_company_throughput_bonus_add = 0.1
-	country_company_construction_efficiency_bonus_add = 0.3
-
-	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
-
-	state_urbanization_per_level_add = 100
-
-	unit_experience_gain_add = 0.5
-
-	# To account for the power derived from bearing arms
-	country_officers_pol_str_mult = 3
-	country_soldiers_pol_str_mult = 1.5
-
-	country_support_separatism_strength_mult = 1.0
-	country_support_separatism_resistance_mult = 1.0
-
-	country_party_whip_impact_add = 0.5
-	
-	state_blockade_resistance_add = 100
-
-	country_minting_add = 7500
-
-	#country_company_throughput_bonus_add = 0
-	#country_company_construction_efficiency_bonus_add = 0
-	#country_max_companies_add = -1000
-
-	state_trade_advantage_from_capacity_add = 0
-	state_max_trade_advantage_from_capacity_add = 0
-}
-
-REPLACE:country_gdp_construction = {
-	country_construction_add = -10000
-}
-
 bem_urbanization_boost = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	building_group_bg_manufacturing_throughput_add = 0.5
@@ -171,16 +92,13 @@ prestige_ranking = {
 top_prestige_ranking = {
 }
 
-economy_of_scale = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	building_throughput_add = 0.001
-}
-
 bem_trade = {
+	icon = "gfx/interface/main_hud/trade_overview_btn.dds"
 	state_weekly_trades_add = 0.05
 }
 
 bem_state_capex = {
+	icon = "gfx/interface/icons/state_status_icons/has_construction.dds"
 	state_buy_orders_construction_add = 1
 }
 

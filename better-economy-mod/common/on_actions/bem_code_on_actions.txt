@@ -81,6 +81,14 @@ on_bem_game_started = {
 				name = bem_trade
 				multiplier = local_var:mult
 			}
+			set_local_variable = {
+				name = capex_mult
+				value = bem_construction_buy_package
+			}
+			add_modifier = {
+				name = bem_state_capex
+				multiplier = local_var:capex_mult
+			}
 		}
 
 		every_state = {

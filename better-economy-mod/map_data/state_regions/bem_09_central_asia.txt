@@ -40,7 +40,7 @@ STATE_DAGESTAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_KUBAN = {
@@ -105,7 +105,7 @@ STATE_KUBAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3036
 }
@@ -174,7 +174,7 @@ STATE_AZERBAIJAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 100
+		undiscovered_amount = 1000
 	}
 }
 STATE_GREATER_CAUCASUS = {
@@ -330,7 +330,7 @@ STATE_SAMARA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 90
+		undiscovered_amount = 900
 	}
 }
 STATE_TARTARIA = {
@@ -404,7 +404,7 @@ STATE_TARTARIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 15
+		undiscovered_amount = 150
 	}
 }
 STATE_ASTRAKHAN = {
@@ -465,7 +465,7 @@ STATE_ASTRAKHAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_UZBEKIA = {
@@ -802,7 +802,7 @@ STATE_TURKMENIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_PASHTUNISTAN = {

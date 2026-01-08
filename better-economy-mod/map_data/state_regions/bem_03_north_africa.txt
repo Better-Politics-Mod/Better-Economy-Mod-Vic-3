@@ -680,7 +680,7 @@ STATE_DONGOLA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 5
+		undiscovered_amount = 50
 	}
 	naval_exit_id = 3047
 }
@@ -805,7 +805,7 @@ STATE_KORDOFAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_DARFUR = {
@@ -941,7 +941,7 @@ STATE_DARFUR = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_BLUE_NILE = {
@@ -1373,7 +1373,7 @@ STATE_CONSTANTINE = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3032
 }
@@ -1600,7 +1600,7 @@ STATE_TRIPOLI = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3033
 }
@@ -1870,7 +1870,7 @@ STATE_LIBYA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 40
+		undiscovered_amount = 400
 	}
 	naval_exit_id = 3033
 }
@@ -2037,7 +2037,7 @@ STATE_LIBYAN_DESERT = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_SAHARA = {
@@ -2254,7 +2254,7 @@ STATE_SAHARA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_EAST_SAHARA = {
@@ -2635,7 +2635,7 @@ STATE_EAST_SAHARA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_WEST_SAHARA = {
@@ -3042,7 +3042,7 @@ STATE_INNER_MAURITANIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_EASTERN_MALI = {
@@ -3421,7 +3421,7 @@ STATE_TIMBUKTU = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_NIGER = {
@@ -3654,7 +3654,7 @@ STATE_NIGER = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 50
+		undiscovered_amount = 500
 	}
 }
 STATE_CHAD = {
@@ -3941,6 +3941,6 @@ STATE_CHAD = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }

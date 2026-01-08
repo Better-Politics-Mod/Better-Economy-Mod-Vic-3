@@ -261,7 +261,7 @@ STATE_DZUNGARIA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }
 STATE_TIANSHAN = {
@@ -988,7 +988,7 @@ STATE_ALXA = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }
 STATE_HINGGAN = {
@@ -1447,7 +1447,7 @@ STATE_SHENGJING = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3057
 }
@@ -1585,11 +1585,11 @@ STATE_OUTER_MANCHURIA = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3059
 }
@@ -2021,7 +2021,7 @@ STATE_SHANXI = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 }
 STATE_NINGXIA = {
@@ -2266,7 +2266,7 @@ STATE_XIAN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 }
 STATE_QINGHAI = {
@@ -2519,7 +2519,7 @@ STATE_CHONGQING = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 }
 STATE_GUANGDONG = {
@@ -3286,7 +3286,7 @@ STATE_SHANDONG = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 20
+		undiscovered_amount = 200
 	}
 	naval_exit_id = 3057
 }
@@ -3976,7 +3976,7 @@ STATE_CAMBODIA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 12
+		undiscovered_amount = 120
 	}
 	naval_exit_id = 3053
 }
@@ -4033,7 +4033,7 @@ STATE_BANGKOK = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	naval_exit_id = 3053
 }
@@ -4093,7 +4093,7 @@ STATE_TONKIN = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 16
+		undiscovered_amount = 160
 	}
 	naval_exit_id = 3054
 }
@@ -4147,7 +4147,7 @@ STATE_ANNAM = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 6
+		undiscovered_amount = 60
 	}
 	naval_exit_id = 3054
 }
@@ -4222,7 +4222,7 @@ STATE_MEKONG = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3053
 }
@@ -4357,7 +4357,7 @@ STATE_CHIANG_MAI = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 4
+		undiscovered_amount = 40
 	}
 }
 STATE_NAKHON_RATCHASIMA = {
@@ -4430,7 +4430,7 @@ STATE_NAKHON_RATCHASIMA = {
 	}
 	resource = {
 		type = "building_rubber_plantation"
-		undiscovered_amount = 2
+		undiscovered_amount = 20
 	}
 	naval_exit_id = 3053
 }
@@ -4483,7 +4483,7 @@ STATE_SAKHALIN = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 10
+		undiscovered_amount = 100
 	}
 	naval_exit_id = 3059
 }
@@ -4550,7 +4550,7 @@ STATE_HOKKAIDO = {
 	resource = {
 		type = "building_gold_field"
 		depleted_type = "building_gold_mine"
-		undiscovered_amount = 8
+		undiscovered_amount = 80
 	}
 	naval_exit_id = 3059
 }
@@ -4690,7 +4690,7 @@ STATE_CHUBU = {
 	}
 	resource = {
 		type = "building_oil_rig"
-		undiscovered_amount = 30
+		undiscovered_amount = 300
 	}
 	naval_exit_id = 3059
 }

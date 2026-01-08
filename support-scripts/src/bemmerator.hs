@@ -74,7 +74,7 @@ genPMs costMap = go False
 genStateRegions :: PdxValue -> PdxValue
 genStateRegions v = case v of
     PdxPair (key, op, PdxNumber n) 
-        | "building_" `isPrefixOf` key || "arable_land" == key -> PdxPair (key, op, PdxNumber $ n * throughputDivisor)
+        | "building_" `isPrefixOf` key || "arable_land" == key || "undiscovered_amount" == key || "discovered_amount" == key -> PdxPair (key, op, PdxNumber $ n * throughputDivisor)
     PdxPair (key, op, val) -> PdxPair (key, op, genStateRegions  val)
     PdxArray xs ->  PdxArray (map genStateRegions xs)
     other -> other
