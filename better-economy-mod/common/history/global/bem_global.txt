@@ -1,6 +1,7 @@
 ﻿
 GLOBAL = {
 	every_country = {
+			add_modifier = bem_allworkown
 			if = {
 				limit = {
 					has_technology_researched = joint_stock_companies

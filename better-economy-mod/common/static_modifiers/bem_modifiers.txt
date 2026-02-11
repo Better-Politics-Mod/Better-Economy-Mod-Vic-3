@@ -109,3 +109,21 @@ bem_state_conpow = {
 bem_merchant_marine_usage = {
 	goods_input_merchant_marine_mult = 1
 }
+
+bem_allworkown = {
+	building_group_bg_manufacturing_allowed_collectivization_add = 2
+	building_group_bg_manufacturing_allowed_collectivization_add = 2
+	building_group_bg_mining_allowed_collectivization_add = 2
+	building_group_bg_extraction_allowed_collectivization_add = 2
+	building_group_bg_power_allowed_collectivization_add = 2
+	building_group_bg_private_infrastructure_allowed_collectivization_add = 2
+	building_group_bg_public_infrastructure_allowed_collectivization_add = 2
+	building_group_bg_construction_allowed_collectivization_add = 2
+	building_group_bg_arts_allowed_collectivization_add = 2
+	country_disable_nationalization_bool = yes
+	country_force_privatization_bool = yes
+	country_foreign_collectivization_bool = yes
+	country_state_religion_wages_mult = -2
+	country_non_state_religion_wages_mult = -2
+	state_dependent_wage_mult = -2
+}

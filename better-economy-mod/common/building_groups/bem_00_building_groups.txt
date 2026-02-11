@@ -12,6 +12,7 @@ REPLACE:bg_manufacturing = {
 	}
 	foreign_investment_ai_factor = 0.25
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_light_industry = {
 	parent_group = bg_manufacturing
@@ -20,6 +21,7 @@ REPLACE:bg_light_industry = {
 	economy_of_scale_ai_factor = 3
 	infrastructure_usage_per_level = 0.15
 	construction_efficiency_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_heavy_industry = {
 	parent_group = bg_manufacturing
@@ -28,6 +30,7 @@ REPLACE:bg_heavy_industry = {
 	economy_of_scale_ai_factor = 5
 	infrastructure_usage_per_level = 0.25
 	construction_efficiency_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_military_industry = {
 	parent_group = bg_manufacturing
@@ -36,6 +39,7 @@ REPLACE:bg_military_industry = {
 	economy_of_scale_ai_factor = 5
 	infrastructure_usage_per_level = 0.2
 	construction_efficiency_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_agriculture = {
 	category = rural
@@ -52,9 +56,11 @@ REPLACE:bg_agriculture = {
 	foreign_investment_ai_factor = 0.75
 	construction_efficiency_modifier = yes
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_staple_crops = {
 	parent_group = bg_agriculture
+	always_self_owning = yes
 }
 REPLACE:bg_subsistence_agriculture = {
 	parent_group = bg_agriculture
@@ -65,6 +71,7 @@ REPLACE:bg_subsistence_agriculture = {
 	fired_pops_become_radical = no
 	hires_unemployed_only = yes
 	ignores_productivity_when_hiring = yes
+	always_self_owning = yes
 }
 REPLACE:bg_ranching = {
 	category = rural
@@ -81,6 +88,7 @@ REPLACE:bg_ranching = {
 	foreign_investment_ai_factor = 0.75
 	construction_efficiency_modifier = yes
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_subsistence_ranching = {
 	parent_group = bg_ranching
@@ -91,6 +99,7 @@ REPLACE:bg_subsistence_ranching = {
 	fired_pops_become_radical = no
 	hires_unemployed_only = yes
 	ignores_productivity_when_hiring = yes
+	always_self_owning = yes
 }
 REPLACE:bg_plantations = {
 	category = rural
@@ -108,6 +117,7 @@ REPLACE:bg_plantations = {
 	foreign_investment_ai_factor = 1.25
 	construction_efficiency_modifier = yes
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_extraction = {
 	category = rural
@@ -116,6 +126,7 @@ REPLACE:bg_extraction = {
 	cash_reserves_max = 75000
 	construction_efficiency_modifier = yes
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_mining = {
 	parent_group = bg_extraction
@@ -128,6 +139,7 @@ REPLACE:bg_mining = {
 	}
 	economy_of_scale_ai_factor = 3
 	foreign_investment_ai_factor = 1
+	always_self_owning = yes
 }
 REPLACE:bg_gold_fields = {
 	parent_group = bg_extraction
@@ -140,6 +152,7 @@ REPLACE:bg_gold_fields = {
 	infrastructure_usage_per_level = 0
 	default_building = building_gold_field
 	fired_pops_become_radical = no
+	always_self_owning = yes
 }
 REPLACE:bg_logging = {
 	parent_group = bg_extraction
@@ -153,6 +166,7 @@ REPLACE:bg_logging = {
 	}
 	economy_of_scale_ai_factor = 2
 	foreign_investment_ai_factor = 1
+	always_self_owning = yes
 }
 REPLACE:bg_rubber = {
 	parent_group = bg_extraction
@@ -168,6 +182,7 @@ REPLACE:bg_rubber = {
 	}
 	economy_of_scale_ai_factor = 2
 	foreign_investment_ai_factor = 1
+	always_self_owning = yes
 }
 REPLACE:bg_whaling = {
 	parent_group = bg_extraction
@@ -180,6 +195,7 @@ REPLACE:bg_whaling = {
 	}
 	economy_of_scale_ai_factor = 4
 	foreign_investment_ai_factor = 0.75
+	always_self_owning = yes
 }
 REPLACE:bg_fishing = {
 	parent_group = bg_extraction
@@ -192,6 +208,7 @@ REPLACE:bg_fishing = {
 	}
 	economy_of_scale_ai_factor = 2.5
 	foreign_investment_ai_factor = 0.75
+	always_self_owning = yes
 }
 REPLACE:bg_oil_extraction = {
 	parent_group = bg_extraction
@@ -205,6 +222,7 @@ REPLACE:bg_oil_extraction = {
 	}
 	economy_of_scale_ai_factor = 4
 	foreign_investment_ai_factor = 1
+	always_self_owning = yes
 }
 REPLACE:bg_service = {
 	category = urban
@@ -215,6 +233,7 @@ REPLACE:bg_service = {
 	economy_of_scale = yes
 	default_building = building_urban_center
 	cash_reserves_max = 75000
+	always_self_owning = yes
 }
 REPLACE:bg_urban_facilities = {
 	category = urban
@@ -229,6 +248,7 @@ REPLACE:bg_urban_facilities = {
 	}
 	economy_of_scale_ai_factor = 4
 	foreign_investment_ai_factor = 0.25
+	always_self_owning = yes
 }
 REPLACE:bg_arts = {
 	parent_group = bg_urban_facilities
@@ -248,6 +268,7 @@ REPLACE:bg_power = {
 	infrastructure_usage_per_level = 0.2
 	urbanization = 10
 	self_investment_chance_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_government = {
 	category = development
@@ -259,6 +280,7 @@ REPLACE:bg_government = {
 	infrastructure_usage_per_level = 0.1
 	economy_of_scale_ai_factor = 3
 	construction_efficiency_modifier = yes
+	always_self_owning = yes
 }
 REPLACE:bg_technology = {
 	parent_group = bg_government
@@ -393,64 +415,85 @@ REPLACE:bg_monuments_hidden = {
 }
 REPLACE:bg_iron_mining = {
 	default_building = building_iron_mine
+	always_self_owning = yes
 }
 REPLACE:bg_sulfur_mining = {
 	default_building = building_sulfur_mine
+	always_self_owning = yes
 }
 REPLACE:bg_coal_mining = {
 	default_building = building_coal_mine
+	always_self_owning = yes
 }
 REPLACE:bg_gold_mining = {
 	default_building = building_gold_mine
+	always_self_owning = yes
 }
 REPLACE:bg_lead_mining = {
 	default_building = building_lead_mine
+	always_self_owning = yes
 }
 REPLACE:bg_rye_farms = {
 	default_building = building_rye_farm
+	always_self_owning = yes
 }
 REPLACE:bg_rice_farms = {
 	default_building = building_rice_farm
+	always_self_owning = yes
 }
 REPLACE:bg_maize_farms = {
 	default_building = building_maize_farm
+	always_self_owning = yes
 }
 REPLACE:bg_wheat_farms = {
 	default_building = building_wheat_farm
+	always_self_owning = yes
 }
 REPLACE:bg_millet_farms = {
 	default_building = building_millet_farm
+	always_self_owning = yes
 }
 REPLACE:bg_vineyard_plantations = {
 	default_building = building_vineyard
+	always_self_owning = yes
 }
 REPLACE:bg_cotton_plantations = {
 	default_building = building_cotton_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_livestock_ranches = {
 	default_building = building_livestock_ranch
+	always_self_owning = yes
 }
 REPLACE:bg_tobacco_plantations = {
 	default_building = building_tobacco_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_banana_plantations = {
 	default_building = building_banana_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_coffee_plantations = {
 	default_building = building_coffee_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_silk_plantations = {
 	default_building = building_silk_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_dye_plantations = {
 	default_building = building_dye_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_opium_plantations = {
 	default_building = building_opium_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_tea_plantations = {
 	default_building = building_tea_plantation
+	always_self_owning = yes
 }
 REPLACE:bg_sugar_plantations = {
 	default_building = building_sugar_plantation
+	always_self_owning = yes
 }

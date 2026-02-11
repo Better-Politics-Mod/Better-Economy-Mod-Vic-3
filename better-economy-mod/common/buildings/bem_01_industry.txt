@@ -111,6 +111,7 @@ REPLACE:building_tooling_workshop = {
 	required_construction = construction_cost_high
 	ai_value = 2000
 	ownership_type = self
+	#can_switch_owner = no
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	can_build_private = {
 		always = no

@@ -45,7 +45,7 @@ bg_owner_buildings = {
 
 	auto_place_buildings = yes
 
-	owns_other_buildings = yes
+	owns_other_buildings = no
 
 	always_self_owning = yes
 

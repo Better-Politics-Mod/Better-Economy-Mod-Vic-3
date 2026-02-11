@@ -182,3 +182,22 @@ state_investment_efficiency_mult = {
 	percent=yes
 	script_only=yes
 }
+
+
+building_group_bg_public_infrastructure_allowed_collectivization_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_group_bg_construction_allowed_collectivization_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
