@@ -1,0 +1,159 @@
+bem_calculate_col_sum_subp_subp = { i = 0 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 1 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 2 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 3 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 4 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 5 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 6 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 7 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 8 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 9 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 10 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 11 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 12 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 13 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 14 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 15 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 16 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 17 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 18 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 19 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 20 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 21 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 22 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 23 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 24 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 25 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 26 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 27 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 28 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 29 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 30 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 31 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 32 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 33 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 34 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 35 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 36 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 37 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 38 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 39 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 40 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 41 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 42 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 43 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 44 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 45 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 46 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 47 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 48 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 49 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 50 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 51 j = $j$ }
+bem_calculate_col_sum_subp_subp = { i = 52 j = $j$ }
+set_variable = { name = bem_production_matrix_sum_col_0 value = 0 }
+bem_calculate_col_sum_subp = { j = 0 }
+set_variable = { name = bem_production_matrix_sum_col_1 value = 0 }
+bem_calculate_col_sum_subp = { j = 1 }
+set_variable = { name = bem_production_matrix_sum_col_2 value = 0 }
+bem_calculate_col_sum_subp = { j = 2 }
+set_variable = { name = bem_production_matrix_sum_col_3 value = 0 }
+bem_calculate_col_sum_subp = { j = 3 }
+set_variable = { name = bem_production_matrix_sum_col_4 value = 0 }
+bem_calculate_col_sum_subp = { j = 4 }
+set_variable = { name = bem_production_matrix_sum_col_5 value = 0 }
+bem_calculate_col_sum_subp = { j = 5 }
+set_variable = { name = bem_production_matrix_sum_col_6 value = 0 }
+bem_calculate_col_sum_subp = { j = 6 }
+set_variable = { name = bem_production_matrix_sum_col_7 value = 0 }
+bem_calculate_col_sum_subp = { j = 7 }
+set_variable = { name = bem_production_matrix_sum_col_8 value = 0 }
+bem_calculate_col_sum_subp = { j = 8 }
+set_variable = { name = bem_production_matrix_sum_col_9 value = 0 }
+bem_calculate_col_sum_subp = { j = 9 }
+set_variable = { name = bem_production_matrix_sum_col_10 value = 0 }
+bem_calculate_col_sum_subp = { j = 10 }
+set_variable = { name = bem_production_matrix_sum_col_11 value = 0 }
+bem_calculate_col_sum_subp = { j = 11 }
+set_variable = { name = bem_production_matrix_sum_col_12 value = 0 }
+bem_calculate_col_sum_subp = { j = 12 }
+set_variable = { name = bem_production_matrix_sum_col_13 value = 0 }
+bem_calculate_col_sum_subp = { j = 13 }
+set_variable = { name = bem_production_matrix_sum_col_14 value = 0 }
+bem_calculate_col_sum_subp = { j = 14 }
+set_variable = { name = bem_production_matrix_sum_col_15 value = 0 }
+bem_calculate_col_sum_subp = { j = 15 }
+set_variable = { name = bem_production_matrix_sum_col_16 value = 0 }
+bem_calculate_col_sum_subp = { j = 16 }
+set_variable = { name = bem_production_matrix_sum_col_17 value = 0 }
+bem_calculate_col_sum_subp = { j = 17 }
+set_variable = { name = bem_production_matrix_sum_col_18 value = 0 }
+bem_calculate_col_sum_subp = { j = 18 }
+set_variable = { name = bem_production_matrix_sum_col_19 value = 0 }
+bem_calculate_col_sum_subp = { j = 19 }
+set_variable = { name = bem_production_matrix_sum_col_20 value = 0 }
+bem_calculate_col_sum_subp = { j = 20 }
+set_variable = { name = bem_production_matrix_sum_col_21 value = 0 }
+bem_calculate_col_sum_subp = { j = 21 }
+set_variable = { name = bem_production_matrix_sum_col_22 value = 0 }
+bem_calculate_col_sum_subp = { j = 22 }
+set_variable = { name = bem_production_matrix_sum_col_23 value = 0 }
+bem_calculate_col_sum_subp = { j = 23 }
+set_variable = { name = bem_production_matrix_sum_col_24 value = 0 }
+bem_calculate_col_sum_subp = { j = 24 }
+set_variable = { name = bem_production_matrix_sum_col_25 value = 0 }
+bem_calculate_col_sum_subp = { j = 25 }
+set_variable = { name = bem_production_matrix_sum_col_26 value = 0 }
+bem_calculate_col_sum_subp = { j = 26 }
+set_variable = { name = bem_production_matrix_sum_col_27 value = 0 }
+bem_calculate_col_sum_subp = { j = 27 }
+set_variable = { name = bem_production_matrix_sum_col_28 value = 0 }
+bem_calculate_col_sum_subp = { j = 28 }
+set_variable = { name = bem_production_matrix_sum_col_29 value = 0 }
+bem_calculate_col_sum_subp = { j = 29 }
+set_variable = { name = bem_production_matrix_sum_col_30 value = 0 }
+bem_calculate_col_sum_subp = { j = 30 }
+set_variable = { name = bem_production_matrix_sum_col_31 value = 0 }
+bem_calculate_col_sum_subp = { j = 31 }
+set_variable = { name = bem_production_matrix_sum_col_32 value = 0 }
+bem_calculate_col_sum_subp = { j = 32 }
+set_variable = { name = bem_production_matrix_sum_col_33 value = 0 }
+bem_calculate_col_sum_subp = { j = 33 }
+set_variable = { name = bem_production_matrix_sum_col_34 value = 0 }
+bem_calculate_col_sum_subp = { j = 34 }
+set_variable = { name = bem_production_matrix_sum_col_35 value = 0 }
+bem_calculate_col_sum_subp = { j = 35 }
+set_variable = { name = bem_production_matrix_sum_col_36 value = 0 }
+bem_calculate_col_sum_subp = { j = 36 }
+set_variable = { name = bem_production_matrix_sum_col_37 value = 0 }
+bem_calculate_col_sum_subp = { j = 37 }
+set_variable = { name = bem_production_matrix_sum_col_38 value = 0 }
+bem_calculate_col_sum_subp = { j = 38 }
+set_variable = { name = bem_production_matrix_sum_col_39 value = 0 }
+bem_calculate_col_sum_subp = { j = 39 }
+set_variable = { name = bem_production_matrix_sum_col_40 value = 0 }
+bem_calculate_col_sum_subp = { j = 40 }
+set_variable = { name = bem_production_matrix_sum_col_41 value = 0 }
+bem_calculate_col_sum_subp = { j = 41 }
+set_variable = { name = bem_production_matrix_sum_col_42 value = 0 }
+bem_calculate_col_sum_subp = { j = 42 }
+set_variable = { name = bem_production_matrix_sum_col_43 value = 0 }
+bem_calculate_col_sum_subp = { j = 43 }
+set_variable = { name = bem_production_matrix_sum_col_44 value = 0 }
+bem_calculate_col_sum_subp = { j = 44 }
+set_variable = { name = bem_production_matrix_sum_col_45 value = 0 }
+bem_calculate_col_sum_subp = { j = 45 }
+set_variable = { name = bem_production_matrix_sum_col_46 value = 0 }
+bem_calculate_col_sum_subp = { j = 46 }
+set_variable = { name = bem_production_matrix_sum_col_47 value = 0 }
+bem_calculate_col_sum_subp = { j = 47 }
+set_variable = { name = bem_production_matrix_sum_col_48 value = 0 }
+bem_calculate_col_sum_subp = { j = 48 }
+set_variable = { name = bem_production_matrix_sum_col_49 value = 0 }
+bem_calculate_col_sum_subp = { j = 49 }
+set_variable = { name = bem_production_matrix_sum_col_50 value = 0 }
+bem_calculate_col_sum_subp = { j = 50 }
+set_variable = { name = bem_production_matrix_sum_col_51 value = 0 }
+bem_calculate_col_sum_subp = { j = 51 }
+set_variable = { name = bem_production_matrix_sum_col_52 value = 0 }
+bem_calculate_col_sum_subp = { j = 52 }

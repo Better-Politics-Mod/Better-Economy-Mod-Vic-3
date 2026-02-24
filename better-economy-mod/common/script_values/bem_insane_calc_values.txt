@@ -1,0 +1,18 @@
+bem_building_total_employment_lw = {
+	value = 0
+	add = modifier:building_employment_academics_add
+	add = modifier:building_employment_aristocrats_add
+	add = modifier:building_employment_bureaucrats_add
+	add = modifier:building_employment_capitalists_add
+	add = modifier:building_employment_clergymen_add
+	add = modifier:building_employment_clerks_add
+	add = modifier:building_employment_engineers_add
+	add = modifier:building_employment_farmers_add
+	add = modifier:building_employment_laborers_add
+	add = modifier:building_employment_machinists_add
+	add = modifier:building_employment_officers_add
+	add = modifier:building_employment_peasants_add
+	add = modifier:building_employment_shopkeepers_add
+	add = modifier:building_employment_slaves_add
+	add = modifier:building_employment_soldiers_add
+}

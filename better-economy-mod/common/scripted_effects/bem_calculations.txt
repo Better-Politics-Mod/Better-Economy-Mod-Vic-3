@@ -15,10 +15,26 @@ bem_add_to_matrix_if_consumed_subp = {
 				value = 0
 			}
 		} } 
+		owner = { if = {
+			limit = {
+				AND = {
+					NOT = { has_local_variable = bem_employment_qt_$j$_$i$ }
+					has_variable = bem_v_$i$
+				}
+			}
+			set_variable = {
+				name = bem_v_$i$
+				value = 0
+			}
+		}}
         set_local_variable = {
             name = bem_production_matrix_$j$_$i$
             value = modifier:goods_input_$gj$_add
         }
+		set_local_variable = {
+			name = bem_employment_qt_$j$_$i$
+			value = bem_building_total_employment_lw
+		}
 		owner = {
 			if = {
 				limit = {
@@ -31,6 +47,17 @@ bem_add_to_matrix_if_consumed_subp = {
 					value = 0
 				}
 			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = bem_v_$i$
+					}
+				}
+				set_variable = {
+					name = bem_v_$i$
+					value = 0
+				}
+			}
 			change_variable = {
 				name = bem_production_matrix_$j$_$i$
 				add = {
@@ -38,9 +65,17 @@ bem_add_to_matrix_if_consumed_subp = {
 					divide = market.mg:$gi$.market_goods_production
 				}
 			}
+			change_variable = {
+				name = bem_v_$i$
+				add = {
+					value = local_var:bem_employment_qt_$j$_$i$
+					divide = market.mg:$gi$.market_goods_production
+				}
+			}
 		}
     }
 }
+
 
 bem_calculate_consumption_of_good_subp = {
 	every_scope_building = {
@@ -56,115 +91,85 @@ bem_calculate_consumption_of_good_subp = {
 	}
 }
 
-bem_calculate_consumption_of_good = {
-	bem_calculate_consumption_of_good_subp = { i = 0 gi = ammunition }
-	bem_calculate_consumption_of_good_subp = { i = 1 gi = small_arms }
-	bem_calculate_consumption_of_good_subp = { i = 2 gi = artillery }
-	bem_calculate_consumption_of_good_subp = { i = 3 gi = tanks }
-	bem_calculate_consumption_of_good_subp = { i = 4 gi = aeroplanes }
-	bem_calculate_consumption_of_good_subp = { i = 5 gi = manowars }
-	bem_calculate_consumption_of_good_subp = { i = 6 gi = ironclads }
-	bem_calculate_consumption_of_good_subp = { i = 7 gi = grain }
-	bem_calculate_consumption_of_good_subp = { i = 8 gi = fish }
-	bem_calculate_consumption_of_good_subp = { i = 9 gi = fabric }
-	bem_calculate_consumption_of_good_subp = { i = 10 gi = wood }
-	bem_calculate_consumption_of_good_subp = { i = 11 gi = groceries }
-	bem_calculate_consumption_of_good_subp = { i = 12 gi = clothes }
-	bem_calculate_consumption_of_good_subp = { i = 13 gi = furniture }
-	bem_calculate_consumption_of_good_subp = { i = 14 gi = paper }
-	bem_calculate_consumption_of_good_subp = { i = 15 gi = services }
-	bem_calculate_consumption_of_good_subp = { i = 16 gi = transportation }
-	bem_calculate_consumption_of_good_subp = { i = 17 gi = electricity }
-	bem_calculate_consumption_of_good_subp = { i = 18 gi = merchant_marine }
-	bem_calculate_consumption_of_good_subp = { i = 19 gi = clippers }
-	bem_calculate_consumption_of_good_subp = { i = 20 gi = steamers }
-	bem_calculate_consumption_of_good_subp = { i = 21 gi = silk }
-	bem_calculate_consumption_of_good_subp = { i = 22 gi = dye }
-	bem_calculate_consumption_of_good_subp = { i = 23 gi = sulfur }
-	bem_calculate_consumption_of_good_subp = { i = 24 gi = coal }
-	bem_calculate_consumption_of_good_subp = { i = 25 gi = iron }
-	bem_calculate_consumption_of_good_subp = { i = 26 gi = lead }
-	bem_calculate_consumption_of_good_subp = { i = 27 gi = hardwood }
-	bem_calculate_consumption_of_good_subp = { i = 28 gi = rubber }
-	bem_calculate_consumption_of_good_subp = { i = 29 gi = oil }
-	bem_calculate_consumption_of_good_subp = { i = 30 gi = engines }
-	bem_calculate_consumption_of_good_subp = { i = 31 gi = steel }
-	bem_calculate_consumption_of_good_subp = { i = 32 gi = glass }
-	bem_calculate_consumption_of_good_subp = { i = 33 gi = fertilizer }
-	bem_calculate_consumption_of_good_subp = { i = 34 gi = tools }
-	bem_calculate_consumption_of_good_subp = { i = 35 gi = explosives }
-	bem_calculate_consumption_of_good_subp = { i = 36 gi = porcelain }
-	bem_calculate_consumption_of_good_subp = { i = 37 gi = meat }
-	bem_calculate_consumption_of_good_subp = { i = 38 gi = fruit }
-	bem_calculate_consumption_of_good_subp = { i = 39 gi = liquor }
-	bem_calculate_consumption_of_good_subp = { i = 40 gi = wine }
-	bem_calculate_consumption_of_good_subp = { i = 41 gi = tea }
-	bem_calculate_consumption_of_good_subp = { i = 42 gi = coffee }
-	bem_calculate_consumption_of_good_subp = { i = 43 gi = sugar }
-	bem_calculate_consumption_of_good_subp = { i = 44 gi = tobacco }
-	bem_calculate_consumption_of_good_subp = { i = 45 gi = opium }
-	bem_calculate_consumption_of_good_subp = { i = 46 gi = automobiles }
-	bem_calculate_consumption_of_good_subp = { i = 47 gi = telephones }
-	bem_calculate_consumption_of_good_subp = { i = 48 gi = radios }
-	bem_calculate_consumption_of_good_subp = { i = 49 gi = luxury_clothes }
-	bem_calculate_consumption_of_good_subp = { i = 50 gi = luxury_furniture }
-	bem_calculate_consumption_of_good_subp = { i = 51 gi = gold }
-	bem_calculate_consumption_of_good_subp = { i = 52 gi = fine_art }
+bem_tr_matrix_subp_subp_subp = {
+	change_variable = {
+		name = bem_tr_matrix_$i$_$j$
+		add = {
+			value = 0
+			if = {
+				limit = {
+					has_variable = bem_production_matrix_$i$_$k$
+					has_variable = bem_production_matrix_$k$_$j$
+				}
+				add = var:bem_production_matrix_$i$_$k$
+				multiply = var:bem_production_matrix_$k$_$j$
+			}
+		}
+	}
+}
+# Forward substitution: y_i -= var_i_k_tr * y_k, for k < i
+bem_forward_sub_subp_subp_subp = {
+    if = {
+        limit = {
+            has_variable = bem_tr_matrix_$i$_$k$
+            has_variable = bem_y_$k$
+			has_variable = bem_y_$i$
+        }
+        change_variable = {
+            name = bem_y_$i$
+            add = {
+                value = 0
+                add = var:bem_tr_matrix_$i$_$k$
+                multiply = var:bem_y_$k$
+                multiply = -1
+            }
+        }
+    }
 }
 
-bem_add_to_matrix_if_consumed = {
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 0 gj = ammunition }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 1 gj = small_arms }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 2 gj = artillery }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 3 gj = tanks }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 4 gj = aeroplanes }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 5 gj = manowars }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 6 gj = ironclads }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 7 gj = grain }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 8 gj = fish }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 9 gj = fabric }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 10 gj = wood }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 11 gj = groceries }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 12 gj = clothes }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 13 gj = furniture }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 14 gj = paper }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 15 gj = services }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 16 gj = transportation }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 17 gj = electricity }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 18 gj = merchant_marine }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 19 gj = clippers }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 20 gj = steamers }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 21 gj = silk }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 22 gj = dye }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 23 gj = sulfur }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 24 gj = coal }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 25 gj = iron }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 26 gj = lead }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 27 gj = hardwood }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 28 gj = rubber }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 29 gj = oil }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 30 gj = engines }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 31 gj = steel }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 32 gj = glass }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 33 gj = fertilizer }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 34 gj = tools }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 35 gj = explosives }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 36 gj = porcelain }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 37 gj = meat }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 38 gj = fruit }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 39 gj = liquor }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 40 gj = wine }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 41 gj = tea }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 42 gj = coffee }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 43 gj = sugar }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 44 gj = tobacco }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 45 gj = opium }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 46 gj = automobiles }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 47 gj = telephones }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 48 gj = radios }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 49 gj = luxury_clothes }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 50 gj = luxury_furniture }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 51 gj = gold }
-	bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 52 gj = fine_art }
+bem_clear_subp_subp = {
+	remove_variable = bem_tr_matrix_$i$_$j$
+}
 
+# Back substitution: x_i -= var_i_k_tr * x_k, for k > i
+bem_back_sub_subp_subp_subp = {
+    if = {
+        limit = {
+            has_variable = bem_tr_matrix_$i$_$k$
+            has_variable = bem_x_$k$
+        }
+        change_variable = {
+            name = bem_x_$i$
+            add = {
+                value = 0
+                add = var:bem_tr_matrix_$i$_$k$
+                multiply = var:bem_x_$k$
+                multiply = -1
+            }
+        }
+    }
+}
+
+# Back substitution diagonal divide: x_i /= var_i_i_tr
+bem_back_sub_divide_subp = {
+    change_variable = {
+        name = bem_x_$i$
+        divide = var:bem_tr_matrix_$i$_$i$
+    }
+    set_variable = {
+        name = bem_$gi$_lw_content
+        value = var:bem_x_$i$
+    }
+	remove_variable = bem_x_$i$
+}
+bem_calculate_elem = {
+  bem_calculate_L_elem = yes
+  bem_calculate_U_elem = yes
+}
+bem_all_calculations = {
+    bem_calculate_consumption_of_good = yes   # build raw matrix from buildings
+    bem_calculate_elem = yes                  # LU decompose: compute L\U elements
+    bem_forward_sub_subp = yes               # solve Ly = v
+    bem_back_sub_subp = yes                  # solve Ux = y, store results
+	bem_clear = yes
 }

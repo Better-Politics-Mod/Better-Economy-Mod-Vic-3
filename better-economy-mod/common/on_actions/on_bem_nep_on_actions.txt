@@ -1,0 +1,19 @@
+on_monthly_pulse_country = {
+	on_actions = {
+		on_bem_monthly_pulse_country
+	}
+}
+
+on_bem_monthly_pulse_country = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					is_player = yes
+					country_rank >= rank_value:major_power
+				}
+			}
+			bem_all_calculations = yes
+		}
+	}
+}

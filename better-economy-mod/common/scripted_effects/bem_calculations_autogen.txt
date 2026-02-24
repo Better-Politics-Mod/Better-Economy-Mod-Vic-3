@@ -1,0 +1,1465 @@
+bem_clear_subp = {
+  bem_clear_subp_subp = { i = 0 j = $j$ }
+  bem_clear_subp_subp = { i = 1 j = $j$ }
+  bem_clear_subp_subp = { i = 2 j = $j$ }
+  bem_clear_subp_subp = { i = 3 j = $j$ }
+  bem_clear_subp_subp = { i = 4 j = $j$ }
+  bem_clear_subp_subp = { i = 5 j = $j$ }
+  bem_clear_subp_subp = { i = 6 j = $j$ }
+  bem_clear_subp_subp = { i = 7 j = $j$ }
+  bem_clear_subp_subp = { i = 8 j = $j$ }
+  bem_clear_subp_subp = { i = 9 j = $j$ }
+  bem_clear_subp_subp = { i = 10 j = $j$ }
+  bem_clear_subp_subp = { i = 11 j = $j$ }
+  bem_clear_subp_subp = { i = 12 j = $j$ }
+  bem_clear_subp_subp = { i = 13 j = $j$ }
+  bem_clear_subp_subp = { i = 14 j = $j$ }
+  bem_clear_subp_subp = { i = 15 j = $j$ }
+  bem_clear_subp_subp = { i = 16 j = $j$ }
+  bem_clear_subp_subp = { i = 17 j = $j$ }
+  bem_clear_subp_subp = { i = 18 j = $j$ }
+  bem_clear_subp_subp = { i = 19 j = $j$ }
+  bem_clear_subp_subp = { i = 20 j = $j$ }
+  bem_clear_subp_subp = { i = 21 j = $j$ }
+  bem_clear_subp_subp = { i = 22 j = $j$ }
+  bem_clear_subp_subp = { i = 23 j = $j$ }
+  bem_clear_subp_subp = { i = 24 j = $j$ }
+  bem_clear_subp_subp = { i = 25 j = $j$ }
+  bem_clear_subp_subp = { i = 26 j = $j$ }
+  bem_clear_subp_subp = { i = 27 j = $j$ }
+  bem_clear_subp_subp = { i = 28 j = $j$ }
+  bem_clear_subp_subp = { i = 29 j = $j$ }
+  bem_clear_subp_subp = { i = 30 j = $j$ }
+  bem_clear_subp_subp = { i = 31 j = $j$ }
+  bem_clear_subp_subp = { i = 32 j = $j$ }
+  bem_clear_subp_subp = { i = 33 j = $j$ }
+  bem_clear_subp_subp = { i = 34 j = $j$ }
+  bem_clear_subp_subp = { i = 35 j = $j$ }
+  bem_clear_subp_subp = { i = 36 j = $j$ }
+  bem_clear_subp_subp = { i = 37 j = $j$ }
+  bem_clear_subp_subp = { i = 38 j = $j$ }
+  bem_clear_subp_subp = { i = 39 j = $j$ }
+  bem_clear_subp_subp = { i = 40 j = $j$ }
+  bem_clear_subp_subp = { i = 41 j = $j$ }
+  bem_clear_subp_subp = { i = 42 j = $j$ }
+  bem_clear_subp_subp = { i = 43 j = $j$ }
+  bem_clear_subp_subp = { i = 44 j = $j$ }
+  bem_clear_subp_subp = { i = 45 j = $j$ }
+  bem_clear_subp_subp = { i = 46 j = $j$ }
+  bem_clear_subp_subp = { i = 47 j = $j$ }
+  bem_clear_subp_subp = { i = 48 j = $j$ }
+  bem_clear_subp_subp = { i = 49 j = $j$ }
+  bem_clear_subp_subp = { i = 50 j = $j$ }
+  bem_clear_subp_subp = { i = 51 j = $j$ }
+  bem_clear_subp_subp = { i = 52 j = $j$ }
+}
+bem_clear = {
+  bem_clear_subp = { j = 0 }
+  bem_clear_subp = { j = 1 }
+  bem_clear_subp = { j = 2 }
+  bem_clear_subp = { j = 3 }
+  bem_clear_subp = { j = 4 }
+  bem_clear_subp = { j = 5 }
+  bem_clear_subp = { j = 6 }
+  bem_clear_subp = { j = 7 }
+  bem_clear_subp = { j = 8 }
+  bem_clear_subp = { j = 9 }
+  bem_clear_subp = { j = 10 }
+  bem_clear_subp = { j = 11 }
+  bem_clear_subp = { j = 12 }
+  bem_clear_subp = { j = 13 }
+  bem_clear_subp = { j = 14 }
+  bem_clear_subp = { j = 15 }
+  bem_clear_subp = { j = 16 }
+  bem_clear_subp = { j = 17 }
+  bem_clear_subp = { j = 18 }
+  bem_clear_subp = { j = 19 }
+  bem_clear_subp = { j = 20 }
+  bem_clear_subp = { j = 21 }
+  bem_clear_subp = { j = 22 }
+  bem_clear_subp = { j = 23 }
+  bem_clear_subp = { j = 24 }
+  bem_clear_subp = { j = 25 }
+  bem_clear_subp = { j = 26 }
+  bem_clear_subp = { j = 27 }
+  bem_clear_subp = { j = 28 }
+  bem_clear_subp = { j = 29 }
+  bem_clear_subp = { j = 30 }
+  bem_clear_subp = { j = 31 }
+  bem_clear_subp = { j = 32 }
+  bem_clear_subp = { j = 33 }
+  bem_clear_subp = { j = 34 }
+  bem_clear_subp = { j = 35 }
+  bem_clear_subp = { j = 36 }
+  bem_clear_subp = { j = 37 }
+  bem_clear_subp = { j = 38 }
+  bem_clear_subp = { j = 39 }
+  bem_clear_subp = { j = 40 }
+  bem_clear_subp = { j = 41 }
+  bem_clear_subp = { j = 42 }
+  bem_clear_subp = { j = 43 }
+  bem_clear_subp = { j = 44 }
+  bem_clear_subp = { j = 45 }
+  bem_clear_subp = { j = 46 }
+  bem_clear_subp = { j = 47 }
+  bem_clear_subp = { j = 48 }
+  bem_clear_subp = { j = 49 }
+  bem_clear_subp = { j = 50 }
+  bem_clear_subp = { j = 51 }
+  bem_clear_subp = { j = 52 }
+}
+bem_calculate_consumption_of_good = {
+  bem_calculate_consumption_of_good_subp = { i = 0 gi = ammunition }
+  bem_calculate_consumption_of_good_subp = { i = 1 gi = small_arms }
+  bem_calculate_consumption_of_good_subp = { i = 2 gi = artillery }
+  bem_calculate_consumption_of_good_subp = { i = 3 gi = tanks }
+  bem_calculate_consumption_of_good_subp = { i = 4 gi = aeroplanes }
+  bem_calculate_consumption_of_good_subp = { i = 5 gi = manowars }
+  bem_calculate_consumption_of_good_subp = { i = 6 gi = ironclads }
+  bem_calculate_consumption_of_good_subp = { i = 7 gi = grain }
+  bem_calculate_consumption_of_good_subp = { i = 8 gi = fish }
+  bem_calculate_consumption_of_good_subp = { i = 9 gi = fabric }
+  bem_calculate_consumption_of_good_subp = { i = 10 gi = wood }
+  bem_calculate_consumption_of_good_subp = { i = 11 gi = groceries }
+  bem_calculate_consumption_of_good_subp = { i = 12 gi = clothes }
+  bem_calculate_consumption_of_good_subp = { i = 13 gi = furniture }
+  bem_calculate_consumption_of_good_subp = { i = 14 gi = paper }
+  bem_calculate_consumption_of_good_subp = { i = 15 gi = services }
+  bem_calculate_consumption_of_good_subp = { i = 16 gi = transportation }
+  bem_calculate_consumption_of_good_subp = { i = 17 gi = electricity }
+  bem_calculate_consumption_of_good_subp = { i = 18 gi = merchant_marine }
+  bem_calculate_consumption_of_good_subp = { i = 19 gi = clippers }
+  bem_calculate_consumption_of_good_subp = { i = 20 gi = steamers }
+  bem_calculate_consumption_of_good_subp = { i = 21 gi = silk }
+  bem_calculate_consumption_of_good_subp = { i = 22 gi = dye }
+  bem_calculate_consumption_of_good_subp = { i = 23 gi = sulfur }
+  bem_calculate_consumption_of_good_subp = { i = 24 gi = coal }
+  bem_calculate_consumption_of_good_subp = { i = 25 gi = iron }
+  bem_calculate_consumption_of_good_subp = { i = 26 gi = lead }
+  bem_calculate_consumption_of_good_subp = { i = 27 gi = hardwood }
+  bem_calculate_consumption_of_good_subp = { i = 28 gi = rubber }
+  bem_calculate_consumption_of_good_subp = { i = 29 gi = oil }
+  bem_calculate_consumption_of_good_subp = { i = 30 gi = engines }
+  bem_calculate_consumption_of_good_subp = { i = 31 gi = steel }
+  bem_calculate_consumption_of_good_subp = { i = 32 gi = glass }
+  bem_calculate_consumption_of_good_subp = { i = 33 gi = fertilizer }
+  bem_calculate_consumption_of_good_subp = { i = 34 gi = tools }
+  bem_calculate_consumption_of_good_subp = { i = 35 gi = explosives }
+  bem_calculate_consumption_of_good_subp = { i = 36 gi = porcelain }
+  bem_calculate_consumption_of_good_subp = { i = 37 gi = meat }
+  bem_calculate_consumption_of_good_subp = { i = 38 gi = fruit }
+  bem_calculate_consumption_of_good_subp = { i = 39 gi = liquor }
+  bem_calculate_consumption_of_good_subp = { i = 40 gi = wine }
+  bem_calculate_consumption_of_good_subp = { i = 41 gi = tea }
+  bem_calculate_consumption_of_good_subp = { i = 42 gi = coffee }
+  bem_calculate_consumption_of_good_subp = { i = 43 gi = sugar }
+  bem_calculate_consumption_of_good_subp = { i = 44 gi = tobacco }
+  bem_calculate_consumption_of_good_subp = { i = 45 gi = opium }
+  bem_calculate_consumption_of_good_subp = { i = 46 gi = automobiles }
+  bem_calculate_consumption_of_good_subp = { i = 47 gi = telephones }
+  bem_calculate_consumption_of_good_subp = { i = 48 gi = radios }
+  bem_calculate_consumption_of_good_subp = { i = 49 gi = luxury_clothes }
+  bem_calculate_consumption_of_good_subp = { i = 50 gi = luxury_furniture }
+  bem_calculate_consumption_of_good_subp = { i = 51 gi = gold }
+  bem_calculate_consumption_of_good_subp = { i = 52 gi = fine_art }
+}
+bem_add_to_matrix_if_consumed = {
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 0 gj = ammunition }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 1 gj = small_arms }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 2 gj = artillery }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 3 gj = tanks }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 4 gj = aeroplanes }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 5 gj = manowars }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 6 gj = ironclads }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 7 gj = grain }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 8 gj = fish }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 9 gj = fabric }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 10 gj = wood }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 11 gj = groceries }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 12 gj = clothes }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 13 gj = furniture }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 14 gj = paper }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 15 gj = services }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 16 gj = transportation }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 17 gj = electricity }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 18 gj = merchant_marine }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 19 gj = clippers }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 20 gj = steamers }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 21 gj = silk }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 22 gj = dye }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 23 gj = sulfur }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 24 gj = coal }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 25 gj = iron }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 26 gj = lead }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 27 gj = hardwood }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 28 gj = rubber }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 29 gj = oil }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 30 gj = engines }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 31 gj = steel }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 32 gj = glass }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 33 gj = fertilizer }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 34 gj = tools }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 35 gj = explosives }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 36 gj = porcelain }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 37 gj = meat }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 38 gj = fruit }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 39 gj = liquor }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 40 gj = wine }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 41 gj = tea }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 42 gj = coffee }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 43 gj = sugar }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 44 gj = tobacco }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 45 gj = opium }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 46 gj = automobiles }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 47 gj = telephones }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 48 gj = radios }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 49 gj = luxury_clothes }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 50 gj = luxury_furniture }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 51 gj = gold }
+  bem_add_to_matrix_if_consumed_subp = { i = $i$ gi = $gi$ j = 52 gj = fine_art }
+}
+bem_calculate_L_elem_subp_subp = {
+  set_variable = { name = bem_tr_matrix_$i$_$j$ value = 0 }
+  if = { limit = { $j$ > 0 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 0 }
+  }
+  if = { limit = { $j$ > 1 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 1 }
+  }
+  if = { limit = { $j$ > 2 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 2 }
+  }
+  if = { limit = { $j$ > 3 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 3 }
+  }
+  if = { limit = { $j$ > 4 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 4 }
+  }
+  if = { limit = { $j$ > 5 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 5 }
+  }
+  if = { limit = { $j$ > 6 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 6 }
+  }
+  if = { limit = { $j$ > 7 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 7 }
+  }
+  if = { limit = { $j$ > 8 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 8 }
+  }
+  if = { limit = { $j$ > 9 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 9 }
+  }
+  if = { limit = { $j$ > 10 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 10 }
+  }
+  if = { limit = { $j$ > 11 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 11 }
+  }
+  if = { limit = { $j$ > 12 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 12 }
+  }
+  if = { limit = { $j$ > 13 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 13 }
+  }
+  if = { limit = { $j$ > 14 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 14 }
+  }
+  if = { limit = { $j$ > 15 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 15 }
+  }
+  if = { limit = { $j$ > 16 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 16 }
+  }
+  if = { limit = { $j$ > 17 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 17 }
+  }
+  if = { limit = { $j$ > 18 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 18 }
+  }
+  if = { limit = { $j$ > 19 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 19 }
+  }
+  if = { limit = { $j$ > 20 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 20 }
+  }
+  if = { limit = { $j$ > 21 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 21 }
+  }
+  if = { limit = { $j$ > 22 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 22 }
+  }
+  if = { limit = { $j$ > 23 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 23 }
+  }
+  if = { limit = { $j$ > 24 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 24 }
+  }
+  if = { limit = { $j$ > 25 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 25 }
+  }
+  if = { limit = { $j$ > 26 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 26 }
+  }
+  if = { limit = { $j$ > 27 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 27 }
+  }
+  if = { limit = { $j$ > 28 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 28 }
+  }
+  if = { limit = { $j$ > 29 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 29 }
+  }
+  if = { limit = { $j$ > 30 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 30 }
+  }
+  if = { limit = { $j$ > 31 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 31 }
+  }
+  if = { limit = { $j$ > 32 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 32 }
+  }
+  if = { limit = { $j$ > 33 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 33 }
+  }
+  if = { limit = { $j$ > 34 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 34 }
+  }
+  if = { limit = { $j$ > 35 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 35 }
+  }
+  if = { limit = { $j$ > 36 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 36 }
+  }
+  if = { limit = { $j$ > 37 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 37 }
+  }
+  if = { limit = { $j$ > 38 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 38 }
+  }
+  if = { limit = { $j$ > 39 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 39 }
+  }
+  if = { limit = { $j$ > 40 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 40 }
+  }
+  if = { limit = { $j$ > 41 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 41 }
+  }
+  if = { limit = { $j$ > 42 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 42 }
+  }
+  if = { limit = { $j$ > 43 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 43 }
+  }
+  if = { limit = { $j$ > 44 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 44 }
+  }
+  if = { limit = { $j$ > 45 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 45 }
+  }
+  if = { limit = { $j$ > 46 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 46 }
+  }
+  if = { limit = { $j$ > 47 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 47 }
+  }
+  if = { limit = { $j$ > 48 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 48 }
+  }
+  if = { limit = { $j$ > 49 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 49 }
+  }
+  if = { limit = { $j$ > 50 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 50 }
+  }
+  if = { limit = { $j$ > 51 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 51 }
+  }
+  if = { limit = { $j$ > 52 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 52 }
+  }
+  change_variable = {
+    name = bem_tr_matrix_$i$_$j$
+    divide = var:bem_production_matrix_$j$_$j$
+  }
+}
+bem_calculate_L_elem_subp = {
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 0 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 1 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 2 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 3 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 4 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 5 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 6 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 7 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 8 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 9 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 10 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 11 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 12 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 13 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 14 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 15 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 16 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 17 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 18 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 19 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 20 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 21 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 22 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 23 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 24 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 25 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 26 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 27 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 28 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 29 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 30 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 31 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 32 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 33 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 34 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 35 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 36 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 37 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 38 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 39 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 40 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 41 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 42 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 43 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 44 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 45 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 46 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 47 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 48 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 49 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 50 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 51 }
+  bem_calculate_L_elem_subp_subp = { i = $i$ j = 52 }
+}
+bem_calculate_L_elem = {
+  bem_calculate_L_elem_subp = { i = 0 }
+  bem_calculate_L_elem_subp = { i = 1 }
+  bem_calculate_L_elem_subp = { i = 2 }
+  bem_calculate_L_elem_subp = { i = 3 }
+  bem_calculate_L_elem_subp = { i = 4 }
+  bem_calculate_L_elem_subp = { i = 5 }
+  bem_calculate_L_elem_subp = { i = 6 }
+  bem_calculate_L_elem_subp = { i = 7 }
+  bem_calculate_L_elem_subp = { i = 8 }
+  bem_calculate_L_elem_subp = { i = 9 }
+  bem_calculate_L_elem_subp = { i = 10 }
+  bem_calculate_L_elem_subp = { i = 11 }
+  bem_calculate_L_elem_subp = { i = 12 }
+  bem_calculate_L_elem_subp = { i = 13 }
+  bem_calculate_L_elem_subp = { i = 14 }
+  bem_calculate_L_elem_subp = { i = 15 }
+  bem_calculate_L_elem_subp = { i = 16 }
+  bem_calculate_L_elem_subp = { i = 17 }
+  bem_calculate_L_elem_subp = { i = 18 }
+  bem_calculate_L_elem_subp = { i = 19 }
+  bem_calculate_L_elem_subp = { i = 20 }
+  bem_calculate_L_elem_subp = { i = 21 }
+  bem_calculate_L_elem_subp = { i = 22 }
+  bem_calculate_L_elem_subp = { i = 23 }
+  bem_calculate_L_elem_subp = { i = 24 }
+  bem_calculate_L_elem_subp = { i = 25 }
+  bem_calculate_L_elem_subp = { i = 26 }
+  bem_calculate_L_elem_subp = { i = 27 }
+  bem_calculate_L_elem_subp = { i = 28 }
+  bem_calculate_L_elem_subp = { i = 29 }
+  bem_calculate_L_elem_subp = { i = 30 }
+  bem_calculate_L_elem_subp = { i = 31 }
+  bem_calculate_L_elem_subp = { i = 32 }
+  bem_calculate_L_elem_subp = { i = 33 }
+  bem_calculate_L_elem_subp = { i = 34 }
+  bem_calculate_L_elem_subp = { i = 35 }
+  bem_calculate_L_elem_subp = { i = 36 }
+  bem_calculate_L_elem_subp = { i = 37 }
+  bem_calculate_L_elem_subp = { i = 38 }
+  bem_calculate_L_elem_subp = { i = 39 }
+  bem_calculate_L_elem_subp = { i = 40 }
+  bem_calculate_L_elem_subp = { i = 41 }
+  bem_calculate_L_elem_subp = { i = 42 }
+  bem_calculate_L_elem_subp = { i = 43 }
+  bem_calculate_L_elem_subp = { i = 44 }
+  bem_calculate_L_elem_subp = { i = 45 }
+  bem_calculate_L_elem_subp = { i = 46 }
+  bem_calculate_L_elem_subp = { i = 47 }
+  bem_calculate_L_elem_subp = { i = 48 }
+  bem_calculate_L_elem_subp = { i = 49 }
+  bem_calculate_L_elem_subp = { i = 50 }
+  bem_calculate_L_elem_subp = { i = 51 }
+  bem_calculate_L_elem_subp = { i = 52 }
+}
+bem_calculate_U_elem_subp_subp = {
+  set_variable = { name = bem_tr_matrix_$i$_$j$ value = 0 }
+  if = { limit = { $i$ > 0 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 0 }
+  }
+  if = { limit = { $i$ > 1 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 1 }
+  }
+  if = { limit = { $i$ > 2 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 2 }
+  }
+  if = { limit = { $i$ > 3 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 3 }
+  }
+  if = { limit = { $i$ > 4 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 4 }
+  }
+  if = { limit = { $i$ > 5 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 5 }
+  }
+  if = { limit = { $i$ > 6 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 6 }
+  }
+  if = { limit = { $i$ > 7 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 7 }
+  }
+  if = { limit = { $i$ > 8 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 8 }
+  }
+  if = { limit = { $i$ > 9 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 9 }
+  }
+  if = { limit = { $i$ > 10 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 10 }
+  }
+  if = { limit = { $i$ > 11 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 11 }
+  }
+  if = { limit = { $i$ > 12 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 12 }
+  }
+  if = { limit = { $i$ > 13 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 13 }
+  }
+  if = { limit = { $i$ > 14 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 14 }
+  }
+  if = { limit = { $i$ > 15 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 15 }
+  }
+  if = { limit = { $i$ > 16 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 16 }
+  }
+  if = { limit = { $i$ > 17 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 17 }
+  }
+  if = { limit = { $i$ > 18 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 18 }
+  }
+  if = { limit = { $i$ > 19 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 19 }
+  }
+  if = { limit = { $i$ > 20 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 20 }
+  }
+  if = { limit = { $i$ > 21 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 21 }
+  }
+  if = { limit = { $i$ > 22 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 22 }
+  }
+  if = { limit = { $i$ > 23 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 23 }
+  }
+  if = { limit = { $i$ > 24 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 24 }
+  }
+  if = { limit = { $i$ > 25 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 25 }
+  }
+  if = { limit = { $i$ > 26 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 26 }
+  }
+  if = { limit = { $i$ > 27 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 27 }
+  }
+  if = { limit = { $i$ > 28 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 28 }
+  }
+  if = { limit = { $i$ > 29 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 29 }
+  }
+  if = { limit = { $i$ > 30 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 30 }
+  }
+  if = { limit = { $i$ > 31 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 31 }
+  }
+  if = { limit = { $i$ > 32 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 32 }
+  }
+  if = { limit = { $i$ > 33 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 33 }
+  }
+  if = { limit = { $i$ > 34 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 34 }
+  }
+  if = { limit = { $i$ > 35 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 35 }
+  }
+  if = { limit = { $i$ > 36 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 36 }
+  }
+  if = { limit = { $i$ > 37 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 37 }
+  }
+  if = { limit = { $i$ > 38 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 38 }
+  }
+  if = { limit = { $i$ > 39 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 39 }
+  }
+  if = { limit = { $i$ > 40 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 40 }
+  }
+  if = { limit = { $i$ > 41 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 41 }
+  }
+  if = { limit = { $i$ > 42 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 42 }
+  }
+  if = { limit = { $i$ > 43 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 43 }
+  }
+  if = { limit = { $i$ > 44 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 44 }
+  }
+  if = { limit = { $i$ > 45 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 45 }
+  }
+  if = { limit = { $i$ > 46 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 46 }
+  }
+  if = { limit = { $i$ > 47 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 47 }
+  }
+  if = { limit = { $i$ > 48 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 48 }
+  }
+  if = { limit = { $i$ > 49 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 49 }
+  }
+  if = { limit = { $i$ > 50 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 50 }
+  }
+  if = { limit = { $i$ > 51 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 51 }
+  }
+  if = { limit = { $i$ > 52 }
+    bem_tr_matrix_subp_subp_subp = { i = $i$ j = $j$ k = 52 }
+  }
+}
+bem_calculate_U_elem_subp = {
+  if = { limit = { $i$ <= 0 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 0 }
+  }
+  if = { limit = { $i$ <= 1 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 1 }
+  }
+  if = { limit = { $i$ <= 2 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 2 }
+  }
+  if = { limit = { $i$ <= 3 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 3 }
+  }
+  if = { limit = { $i$ <= 4 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 4 }
+  }
+  if = { limit = { $i$ <= 5 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 5 }
+  }
+  if = { limit = { $i$ <= 6 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 6 }
+  }
+  if = { limit = { $i$ <= 7 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 7 }
+  }
+  if = { limit = { $i$ <= 8 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 8 }
+  }
+  if = { limit = { $i$ <= 9 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 9 }
+  }
+  if = { limit = { $i$ <= 10 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 10 }
+  }
+  if = { limit = { $i$ <= 11 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 11 }
+  }
+  if = { limit = { $i$ <= 12 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 12 }
+  }
+  if = { limit = { $i$ <= 13 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 13 }
+  }
+  if = { limit = { $i$ <= 14 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 14 }
+  }
+  if = { limit = { $i$ <= 15 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 15 }
+  }
+  if = { limit = { $i$ <= 16 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 16 }
+  }
+  if = { limit = { $i$ <= 17 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 17 }
+  }
+  if = { limit = { $i$ <= 18 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 18 }
+  }
+  if = { limit = { $i$ <= 19 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 19 }
+  }
+  if = { limit = { $i$ <= 20 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 20 }
+  }
+  if = { limit = { $i$ <= 21 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 21 }
+  }
+  if = { limit = { $i$ <= 22 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 22 }
+  }
+  if = { limit = { $i$ <= 23 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 23 }
+  }
+  if = { limit = { $i$ <= 24 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 24 }
+  }
+  if = { limit = { $i$ <= 25 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 25 }
+  }
+  if = { limit = { $i$ <= 26 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 26 }
+  }
+  if = { limit = { $i$ <= 27 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 27 }
+  }
+  if = { limit = { $i$ <= 28 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 28 }
+  }
+  if = { limit = { $i$ <= 29 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 29 }
+  }
+  if = { limit = { $i$ <= 30 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 30 }
+  }
+  if = { limit = { $i$ <= 31 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 31 }
+  }
+  if = { limit = { $i$ <= 32 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 32 }
+  }
+  if = { limit = { $i$ <= 33 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 33 }
+  }
+  if = { limit = { $i$ <= 34 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 34 }
+  }
+  if = { limit = { $i$ <= 35 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 35 }
+  }
+  if = { limit = { $i$ <= 36 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 36 }
+  }
+  if = { limit = { $i$ <= 37 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 37 }
+  }
+  if = { limit = { $i$ <= 38 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 38 }
+  }
+  if = { limit = { $i$ <= 39 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 39 }
+  }
+  if = { limit = { $i$ <= 40 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 40 }
+  }
+  if = { limit = { $i$ <= 41 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 41 }
+  }
+  if = { limit = { $i$ <= 42 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 42 }
+  }
+  if = { limit = { $i$ <= 43 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 43 }
+  }
+  if = { limit = { $i$ <= 44 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 44 }
+  }
+  if = { limit = { $i$ <= 45 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 45 }
+  }
+  if = { limit = { $i$ <= 46 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 46 }
+  }
+  if = { limit = { $i$ <= 47 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 47 }
+  }
+  if = { limit = { $i$ <= 48 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 48 }
+  }
+  if = { limit = { $i$ <= 49 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 49 }
+  }
+  if = { limit = { $i$ <= 50 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 50 }
+  }
+  if = { limit = { $i$ <= 51 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 51 }
+  }
+  if = { limit = { $i$ <= 52 }
+    bem_calculate_U_elem_subp_subp = { i = $i$ j = 52 }
+  }
+}
+bem_calculate_U_elem = {
+  bem_calculate_U_elem_subp = { i = 0 }
+  bem_calculate_U_elem_subp = { i = 1 }
+  bem_calculate_U_elem_subp = { i = 2 }
+  bem_calculate_U_elem_subp = { i = 3 }
+  bem_calculate_U_elem_subp = { i = 4 }
+  bem_calculate_U_elem_subp = { i = 5 }
+  bem_calculate_U_elem_subp = { i = 6 }
+  bem_calculate_U_elem_subp = { i = 7 }
+  bem_calculate_U_elem_subp = { i = 8 }
+  bem_calculate_U_elem_subp = { i = 9 }
+  bem_calculate_U_elem_subp = { i = 10 }
+  bem_calculate_U_elem_subp = { i = 11 }
+  bem_calculate_U_elem_subp = { i = 12 }
+  bem_calculate_U_elem_subp = { i = 13 }
+  bem_calculate_U_elem_subp = { i = 14 }
+  bem_calculate_U_elem_subp = { i = 15 }
+  bem_calculate_U_elem_subp = { i = 16 }
+  bem_calculate_U_elem_subp = { i = 17 }
+  bem_calculate_U_elem_subp = { i = 18 }
+  bem_calculate_U_elem_subp = { i = 19 }
+  bem_calculate_U_elem_subp = { i = 20 }
+  bem_calculate_U_elem_subp = { i = 21 }
+  bem_calculate_U_elem_subp = { i = 22 }
+  bem_calculate_U_elem_subp = { i = 23 }
+  bem_calculate_U_elem_subp = { i = 24 }
+  bem_calculate_U_elem_subp = { i = 25 }
+  bem_calculate_U_elem_subp = { i = 26 }
+  bem_calculate_U_elem_subp = { i = 27 }
+  bem_calculate_U_elem_subp = { i = 28 }
+  bem_calculate_U_elem_subp = { i = 29 }
+  bem_calculate_U_elem_subp = { i = 30 }
+  bem_calculate_U_elem_subp = { i = 31 }
+  bem_calculate_U_elem_subp = { i = 32 }
+  bem_calculate_U_elem_subp = { i = 33 }
+  bem_calculate_U_elem_subp = { i = 34 }
+  bem_calculate_U_elem_subp = { i = 35 }
+  bem_calculate_U_elem_subp = { i = 36 }
+  bem_calculate_U_elem_subp = { i = 37 }
+  bem_calculate_U_elem_subp = { i = 38 }
+  bem_calculate_U_elem_subp = { i = 39 }
+  bem_calculate_U_elem_subp = { i = 40 }
+  bem_calculate_U_elem_subp = { i = 41 }
+  bem_calculate_U_elem_subp = { i = 42 }
+  bem_calculate_U_elem_subp = { i = 43 }
+  bem_calculate_U_elem_subp = { i = 44 }
+  bem_calculate_U_elem_subp = { i = 45 }
+  bem_calculate_U_elem_subp = { i = 46 }
+  bem_calculate_U_elem_subp = { i = 47 }
+  bem_calculate_U_elem_subp = { i = 48 }
+  bem_calculate_U_elem_subp = { i = 49 }
+  bem_calculate_U_elem_subp = { i = 50 }
+  bem_calculate_U_elem_subp = { i = 51 }
+  bem_calculate_U_elem_subp = { i = 52 }
+}
+bem_forward_sub_subp_subp = {
+  if = { limit = { $i$ > 0 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 0 }
+  }
+  if = { limit = { $i$ > 1 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 1 }
+  }
+  if = { limit = { $i$ > 2 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 2 }
+  }
+  if = { limit = { $i$ > 3 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 3 }
+  }
+  if = { limit = { $i$ > 4 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 4 }
+  }
+  if = { limit = { $i$ > 5 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 5 }
+  }
+  if = { limit = { $i$ > 6 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 6 }
+  }
+  if = { limit = { $i$ > 7 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 7 }
+  }
+  if = { limit = { $i$ > 8 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 8 }
+  }
+  if = { limit = { $i$ > 9 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 9 }
+  }
+  if = { limit = { $i$ > 10 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 10 }
+  }
+  if = { limit = { $i$ > 11 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 11 }
+  }
+  if = { limit = { $i$ > 12 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 12 }
+  }
+  if = { limit = { $i$ > 13 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 13 }
+  }
+  if = { limit = { $i$ > 14 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 14 }
+  }
+  if = { limit = { $i$ > 15 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 15 }
+  }
+  if = { limit = { $i$ > 16 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 16 }
+  }
+  if = { limit = { $i$ > 17 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 17 }
+  }
+  if = { limit = { $i$ > 18 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 18 }
+  }
+  if = { limit = { $i$ > 19 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 19 }
+  }
+  if = { limit = { $i$ > 20 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 20 }
+  }
+  if = { limit = { $i$ > 21 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 21 }
+  }
+  if = { limit = { $i$ > 22 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 22 }
+  }
+  if = { limit = { $i$ > 23 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 23 }
+  }
+  if = { limit = { $i$ > 24 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 24 }
+  }
+  if = { limit = { $i$ > 25 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 25 }
+  }
+  if = { limit = { $i$ > 26 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 26 }
+  }
+  if = { limit = { $i$ > 27 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 27 }
+  }
+  if = { limit = { $i$ > 28 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 28 }
+  }
+  if = { limit = { $i$ > 29 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 29 }
+  }
+  if = { limit = { $i$ > 30 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 30 }
+  }
+  if = { limit = { $i$ > 31 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 31 }
+  }
+  if = { limit = { $i$ > 32 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 32 }
+  }
+  if = { limit = { $i$ > 33 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 33 }
+  }
+  if = { limit = { $i$ > 34 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 34 }
+  }
+  if = { limit = { $i$ > 35 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 35 }
+  }
+  if = { limit = { $i$ > 36 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 36 }
+  }
+  if = { limit = { $i$ > 37 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 37 }
+  }
+  if = { limit = { $i$ > 38 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 38 }
+  }
+  if = { limit = { $i$ > 39 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 39 }
+  }
+  if = { limit = { $i$ > 40 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 40 }
+  }
+  if = { limit = { $i$ > 41 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 41 }
+  }
+  if = { limit = { $i$ > 42 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 42 }
+  }
+  if = { limit = { $i$ > 43 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 43 }
+  }
+  if = { limit = { $i$ > 44 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 44 }
+  }
+  if = { limit = { $i$ > 45 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 45 }
+  }
+  if = { limit = { $i$ > 46 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 46 }
+  }
+  if = { limit = { $i$ > 47 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 47 }
+  }
+  if = { limit = { $i$ > 48 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 48 }
+  }
+  if = { limit = { $i$ > 49 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 49 }
+  }
+  if = { limit = { $i$ > 50 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 50 }
+  }
+  if = { limit = { $i$ > 51 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 51 }
+  }
+  if = { limit = { $i$ > 52 }
+    bem_forward_sub_subp_subp_subp = { i = $i$ k = 52 }
+  }
+}
+bem_forward_sub_subp = {
+  set_variable = { name = bem_y_0 value = var:bem_v_0 }
+  bem_forward_sub_subp_subp = { i = 0 }
+  set_variable = { name = bem_y_1 value = var:bem_v_1 }
+  bem_forward_sub_subp_subp = { i = 1 }
+  set_variable = { name = bem_y_2 value = var:bem_v_2 }
+  bem_forward_sub_subp_subp = { i = 2 }
+  set_variable = { name = bem_y_3 value = var:bem_v_3 }
+  bem_forward_sub_subp_subp = { i = 3 }
+  set_variable = { name = bem_y_4 value = var:bem_v_4 }
+  bem_forward_sub_subp_subp = { i = 4 }
+  set_variable = { name = bem_y_5 value = var:bem_v_5 }
+  bem_forward_sub_subp_subp = { i = 5 }
+  set_variable = { name = bem_y_6 value = var:bem_v_6 }
+  bem_forward_sub_subp_subp = { i = 6 }
+  set_variable = { name = bem_y_7 value = var:bem_v_7 }
+  bem_forward_sub_subp_subp = { i = 7 }
+  set_variable = { name = bem_y_8 value = var:bem_v_8 }
+  bem_forward_sub_subp_subp = { i = 8 }
+  set_variable = { name = bem_y_9 value = var:bem_v_9 }
+  bem_forward_sub_subp_subp = { i = 9 }
+  set_variable = { name = bem_y_10 value = var:bem_v_10 }
+  bem_forward_sub_subp_subp = { i = 10 }
+  set_variable = { name = bem_y_11 value = var:bem_v_11 }
+  bem_forward_sub_subp_subp = { i = 11 }
+  set_variable = { name = bem_y_12 value = var:bem_v_12 }
+  bem_forward_sub_subp_subp = { i = 12 }
+  set_variable = { name = bem_y_13 value = var:bem_v_13 }
+  bem_forward_sub_subp_subp = { i = 13 }
+  set_variable = { name = bem_y_14 value = var:bem_v_14 }
+  bem_forward_sub_subp_subp = { i = 14 }
+  set_variable = { name = bem_y_15 value = var:bem_v_15 }
+  bem_forward_sub_subp_subp = { i = 15 }
+  set_variable = { name = bem_y_16 value = var:bem_v_16 }
+  bem_forward_sub_subp_subp = { i = 16 }
+  set_variable = { name = bem_y_17 value = var:bem_v_17 }
+  bem_forward_sub_subp_subp = { i = 17 }
+  set_variable = { name = bem_y_18 value = var:bem_v_18 }
+  bem_forward_sub_subp_subp = { i = 18 }
+  set_variable = { name = bem_y_19 value = var:bem_v_19 }
+  bem_forward_sub_subp_subp = { i = 19 }
+  set_variable = { name = bem_y_20 value = var:bem_v_20 }
+  bem_forward_sub_subp_subp = { i = 20 }
+  set_variable = { name = bem_y_21 value = var:bem_v_21 }
+  bem_forward_sub_subp_subp = { i = 21 }
+  set_variable = { name = bem_y_22 value = var:bem_v_22 }
+  bem_forward_sub_subp_subp = { i = 22 }
+  set_variable = { name = bem_y_23 value = var:bem_v_23 }
+  bem_forward_sub_subp_subp = { i = 23 }
+  set_variable = { name = bem_y_24 value = var:bem_v_24 }
+  bem_forward_sub_subp_subp = { i = 24 }
+  set_variable = { name = bem_y_25 value = var:bem_v_25 }
+  bem_forward_sub_subp_subp = { i = 25 }
+  set_variable = { name = bem_y_26 value = var:bem_v_26 }
+  bem_forward_sub_subp_subp = { i = 26 }
+  set_variable = { name = bem_y_27 value = var:bem_v_27 }
+  bem_forward_sub_subp_subp = { i = 27 }
+  set_variable = { name = bem_y_28 value = var:bem_v_28 }
+  bem_forward_sub_subp_subp = { i = 28 }
+  set_variable = { name = bem_y_29 value = var:bem_v_29 }
+  bem_forward_sub_subp_subp = { i = 29 }
+  set_variable = { name = bem_y_30 value = var:bem_v_30 }
+  bem_forward_sub_subp_subp = { i = 30 }
+  set_variable = { name = bem_y_31 value = var:bem_v_31 }
+  bem_forward_sub_subp_subp = { i = 31 }
+  set_variable = { name = bem_y_32 value = var:bem_v_32 }
+  bem_forward_sub_subp_subp = { i = 32 }
+  set_variable = { name = bem_y_33 value = var:bem_v_33 }
+  bem_forward_sub_subp_subp = { i = 33 }
+  set_variable = { name = bem_y_34 value = var:bem_v_34 }
+  bem_forward_sub_subp_subp = { i = 34 }
+  set_variable = { name = bem_y_35 value = var:bem_v_35 }
+  bem_forward_sub_subp_subp = { i = 35 }
+  set_variable = { name = bem_y_36 value = var:bem_v_36 }
+  bem_forward_sub_subp_subp = { i = 36 }
+  set_variable = { name = bem_y_37 value = var:bem_v_37 }
+  bem_forward_sub_subp_subp = { i = 37 }
+  set_variable = { name = bem_y_38 value = var:bem_v_38 }
+  bem_forward_sub_subp_subp = { i = 38 }
+  set_variable = { name = bem_y_39 value = var:bem_v_39 }
+  bem_forward_sub_subp_subp = { i = 39 }
+  set_variable = { name = bem_y_40 value = var:bem_v_40 }
+  bem_forward_sub_subp_subp = { i = 40 }
+  set_variable = { name = bem_y_41 value = var:bem_v_41 }
+  bem_forward_sub_subp_subp = { i = 41 }
+  set_variable = { name = bem_y_42 value = var:bem_v_42 }
+  bem_forward_sub_subp_subp = { i = 42 }
+  set_variable = { name = bem_y_43 value = var:bem_v_43 }
+  bem_forward_sub_subp_subp = { i = 43 }
+  set_variable = { name = bem_y_44 value = var:bem_v_44 }
+  bem_forward_sub_subp_subp = { i = 44 }
+  set_variable = { name = bem_y_45 value = var:bem_v_45 }
+  bem_forward_sub_subp_subp = { i = 45 }
+  set_variable = { name = bem_y_46 value = var:bem_v_46 }
+  bem_forward_sub_subp_subp = { i = 46 }
+  set_variable = { name = bem_y_47 value = var:bem_v_47 }
+  bem_forward_sub_subp_subp = { i = 47 }
+  set_variable = { name = bem_y_48 value = var:bem_v_48 }
+  bem_forward_sub_subp_subp = { i = 48 }
+  set_variable = { name = bem_y_49 value = var:bem_v_49 }
+  bem_forward_sub_subp_subp = { i = 49 }
+  set_variable = { name = bem_y_50 value = var:bem_v_50 }
+  bem_forward_sub_subp_subp = { i = 50 }
+  set_variable = { name = bem_y_51 value = var:bem_v_51 }
+  bem_forward_sub_subp_subp = { i = 51 }
+  set_variable = { name = bem_y_52 value = var:bem_v_52 }
+  bem_forward_sub_subp_subp = { i = 52 }
+}
+bem_back_sub_subp_subp = {
+  if = { limit = { $i$ < 0 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 0 }
+  }
+  if = { limit = { $i$ < 1 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 1 }
+  }
+  if = { limit = { $i$ < 2 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 2 }
+  }
+  if = { limit = { $i$ < 3 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 3 }
+  }
+  if = { limit = { $i$ < 4 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 4 }
+  }
+  if = { limit = { $i$ < 5 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 5 }
+  }
+  if = { limit = { $i$ < 6 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 6 }
+  }
+  if = { limit = { $i$ < 7 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 7 }
+  }
+  if = { limit = { $i$ < 8 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 8 }
+  }
+  if = { limit = { $i$ < 9 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 9 }
+  }
+  if = { limit = { $i$ < 10 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 10 }
+  }
+  if = { limit = { $i$ < 11 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 11 }
+  }
+  if = { limit = { $i$ < 12 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 12 }
+  }
+  if = { limit = { $i$ < 13 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 13 }
+  }
+  if = { limit = { $i$ < 14 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 14 }
+  }
+  if = { limit = { $i$ < 15 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 15 }
+  }
+  if = { limit = { $i$ < 16 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 16 }
+  }
+  if = { limit = { $i$ < 17 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 17 }
+  }
+  if = { limit = { $i$ < 18 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 18 }
+  }
+  if = { limit = { $i$ < 19 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 19 }
+  }
+  if = { limit = { $i$ < 20 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 20 }
+  }
+  if = { limit = { $i$ < 21 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 21 }
+  }
+  if = { limit = { $i$ < 22 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 22 }
+  }
+  if = { limit = { $i$ < 23 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 23 }
+  }
+  if = { limit = { $i$ < 24 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 24 }
+  }
+  if = { limit = { $i$ < 25 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 25 }
+  }
+  if = { limit = { $i$ < 26 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 26 }
+  }
+  if = { limit = { $i$ < 27 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 27 }
+  }
+  if = { limit = { $i$ < 28 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 28 }
+  }
+  if = { limit = { $i$ < 29 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 29 }
+  }
+  if = { limit = { $i$ < 30 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 30 }
+  }
+  if = { limit = { $i$ < 31 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 31 }
+  }
+  if = { limit = { $i$ < 32 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 32 }
+  }
+  if = { limit = { $i$ < 33 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 33 }
+  }
+  if = { limit = { $i$ < 34 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 34 }
+  }
+  if = { limit = { $i$ < 35 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 35 }
+  }
+  if = { limit = { $i$ < 36 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 36 }
+  }
+  if = { limit = { $i$ < 37 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 37 }
+  }
+  if = { limit = { $i$ < 38 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 38 }
+  }
+  if = { limit = { $i$ < 39 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 39 }
+  }
+  if = { limit = { $i$ < 40 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 40 }
+  }
+  if = { limit = { $i$ < 41 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 41 }
+  }
+  if = { limit = { $i$ < 42 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 42 }
+  }
+  if = { limit = { $i$ < 43 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 43 }
+  }
+  if = { limit = { $i$ < 44 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 44 }
+  }
+  if = { limit = { $i$ < 45 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 45 }
+  }
+  if = { limit = { $i$ < 46 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 46 }
+  }
+  if = { limit = { $i$ < 47 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 47 }
+  }
+  if = { limit = { $i$ < 48 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 48 }
+  }
+  if = { limit = { $i$ < 49 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 49 }
+  }
+  if = { limit = { $i$ < 50 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 50 }
+  }
+  if = { limit = { $i$ < 51 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 51 }
+  }
+  if = { limit = { $i$ < 52 }
+    bem_back_sub_subp_subp_subp = { i = $i$ k = 52 }
+  }
+}
+bem_back_sub_subp = {
+  set_variable = { name = bem_x_52 value = var:bem_y_52 }
+  bem_back_sub_subp_subp = { i = 52 }
+  bem_back_sub_divide_subp = { i = 52 gi = fine_art }
+  set_variable = { name = bem_x_51 value = var:bem_y_51 }
+  bem_back_sub_subp_subp = { i = 51 }
+  bem_back_sub_divide_subp = { i = 51 gi = gold }
+  set_variable = { name = bem_x_50 value = var:bem_y_50 }
+  bem_back_sub_subp_subp = { i = 50 }
+  bem_back_sub_divide_subp = { i = 50 gi = luxury_furniture }
+  set_variable = { name = bem_x_49 value = var:bem_y_49 }
+  bem_back_sub_subp_subp = { i = 49 }
+  bem_back_sub_divide_subp = { i = 49 gi = luxury_clothes }
+  set_variable = { name = bem_x_48 value = var:bem_y_48 }
+  bem_back_sub_subp_subp = { i = 48 }
+  bem_back_sub_divide_subp = { i = 48 gi = radios }
+  set_variable = { name = bem_x_47 value = var:bem_y_47 }
+  bem_back_sub_subp_subp = { i = 47 }
+  bem_back_sub_divide_subp = { i = 47 gi = telephones }
+  set_variable = { name = bem_x_46 value = var:bem_y_46 }
+  bem_back_sub_subp_subp = { i = 46 }
+  bem_back_sub_divide_subp = { i = 46 gi = automobiles }
+  set_variable = { name = bem_x_45 value = var:bem_y_45 }
+  bem_back_sub_subp_subp = { i = 45 }
+  bem_back_sub_divide_subp = { i = 45 gi = opium }
+  set_variable = { name = bem_x_44 value = var:bem_y_44 }
+  bem_back_sub_subp_subp = { i = 44 }
+  bem_back_sub_divide_subp = { i = 44 gi = tobacco }
+  set_variable = { name = bem_x_43 value = var:bem_y_43 }
+  bem_back_sub_subp_subp = { i = 43 }
+  bem_back_sub_divide_subp = { i = 43 gi = sugar }
+  set_variable = { name = bem_x_42 value = var:bem_y_42 }
+  bem_back_sub_subp_subp = { i = 42 }
+  bem_back_sub_divide_subp = { i = 42 gi = coffee }
+  set_variable = { name = bem_x_41 value = var:bem_y_41 }
+  bem_back_sub_subp_subp = { i = 41 }
+  bem_back_sub_divide_subp = { i = 41 gi = tea }
+  set_variable = { name = bem_x_40 value = var:bem_y_40 }
+  bem_back_sub_subp_subp = { i = 40 }
+  bem_back_sub_divide_subp = { i = 40 gi = wine }
+  set_variable = { name = bem_x_39 value = var:bem_y_39 }
+  bem_back_sub_subp_subp = { i = 39 }
+  bem_back_sub_divide_subp = { i = 39 gi = liquor }
+  set_variable = { name = bem_x_38 value = var:bem_y_38 }
+  bem_back_sub_subp_subp = { i = 38 }
+  bem_back_sub_divide_subp = { i = 38 gi = fruit }
+  set_variable = { name = bem_x_37 value = var:bem_y_37 }
+  bem_back_sub_subp_subp = { i = 37 }
+  bem_back_sub_divide_subp = { i = 37 gi = meat }
+  set_variable = { name = bem_x_36 value = var:bem_y_36 }
+  bem_back_sub_subp_subp = { i = 36 }
+  bem_back_sub_divide_subp = { i = 36 gi = porcelain }
+  set_variable = { name = bem_x_35 value = var:bem_y_35 }
+  bem_back_sub_subp_subp = { i = 35 }
+  bem_back_sub_divide_subp = { i = 35 gi = explosives }
+  set_variable = { name = bem_x_34 value = var:bem_y_34 }
+  bem_back_sub_subp_subp = { i = 34 }
+  bem_back_sub_divide_subp = { i = 34 gi = tools }
+  set_variable = { name = bem_x_33 value = var:bem_y_33 }
+  bem_back_sub_subp_subp = { i = 33 }
+  bem_back_sub_divide_subp = { i = 33 gi = fertilizer }
+  set_variable = { name = bem_x_32 value = var:bem_y_32 }
+  bem_back_sub_subp_subp = { i = 32 }
+  bem_back_sub_divide_subp = { i = 32 gi = glass }
+  set_variable = { name = bem_x_31 value = var:bem_y_31 }
+  bem_back_sub_subp_subp = { i = 31 }
+  bem_back_sub_divide_subp = { i = 31 gi = steel }
+  set_variable = { name = bem_x_30 value = var:bem_y_30 }
+  bem_back_sub_subp_subp = { i = 30 }
+  bem_back_sub_divide_subp = { i = 30 gi = engines }
+  set_variable = { name = bem_x_29 value = var:bem_y_29 }
+  bem_back_sub_subp_subp = { i = 29 }
+  bem_back_sub_divide_subp = { i = 29 gi = oil }
+  set_variable = { name = bem_x_28 value = var:bem_y_28 }
+  bem_back_sub_subp_subp = { i = 28 }
+  bem_back_sub_divide_subp = { i = 28 gi = rubber }
+  set_variable = { name = bem_x_27 value = var:bem_y_27 }
+  bem_back_sub_subp_subp = { i = 27 }
+  bem_back_sub_divide_subp = { i = 27 gi = hardwood }
+  set_variable = { name = bem_x_26 value = var:bem_y_26 }
+  bem_back_sub_subp_subp = { i = 26 }
+  bem_back_sub_divide_subp = { i = 26 gi = lead }
+  set_variable = { name = bem_x_25 value = var:bem_y_25 }
+  bem_back_sub_subp_subp = { i = 25 }
+  bem_back_sub_divide_subp = { i = 25 gi = iron }
+  set_variable = { name = bem_x_24 value = var:bem_y_24 }
+  bem_back_sub_subp_subp = { i = 24 }
+  bem_back_sub_divide_subp = { i = 24 gi = coal }
+  set_variable = { name = bem_x_23 value = var:bem_y_23 }
+  bem_back_sub_subp_subp = { i = 23 }
+  bem_back_sub_divide_subp = { i = 23 gi = sulfur }
+  set_variable = { name = bem_x_22 value = var:bem_y_22 }
+  bem_back_sub_subp_subp = { i = 22 }
+  bem_back_sub_divide_subp = { i = 22 gi = dye }
+  set_variable = { name = bem_x_21 value = var:bem_y_21 }
+  bem_back_sub_subp_subp = { i = 21 }
+  bem_back_sub_divide_subp = { i = 21 gi = silk }
+  set_variable = { name = bem_x_20 value = var:bem_y_20 }
+  bem_back_sub_subp_subp = { i = 20 }
+  bem_back_sub_divide_subp = { i = 20 gi = steamers }
+  set_variable = { name = bem_x_19 value = var:bem_y_19 }
+  bem_back_sub_subp_subp = { i = 19 }
+  bem_back_sub_divide_subp = { i = 19 gi = clippers }
+  set_variable = { name = bem_x_18 value = var:bem_y_18 }
+  bem_back_sub_subp_subp = { i = 18 }
+  bem_back_sub_divide_subp = { i = 18 gi = merchant_marine }
+  set_variable = { name = bem_x_17 value = var:bem_y_17 }
+  bem_back_sub_subp_subp = { i = 17 }
+  bem_back_sub_divide_subp = { i = 17 gi = electricity }
+  set_variable = { name = bem_x_16 value = var:bem_y_16 }
+  bem_back_sub_subp_subp = { i = 16 }
+  bem_back_sub_divide_subp = { i = 16 gi = transportation }
+  set_variable = { name = bem_x_15 value = var:bem_y_15 }
+  bem_back_sub_subp_subp = { i = 15 }
+  bem_back_sub_divide_subp = { i = 15 gi = services }
+  set_variable = { name = bem_x_14 value = var:bem_y_14 }
+  bem_back_sub_subp_subp = { i = 14 }
+  bem_back_sub_divide_subp = { i = 14 gi = paper }
+  set_variable = { name = bem_x_13 value = var:bem_y_13 }
+  bem_back_sub_subp_subp = { i = 13 }
+  bem_back_sub_divide_subp = { i = 13 gi = furniture }
+  set_variable = { name = bem_x_12 value = var:bem_y_12 }
+  bem_back_sub_subp_subp = { i = 12 }
+  bem_back_sub_divide_subp = { i = 12 gi = clothes }
+  set_variable = { name = bem_x_11 value = var:bem_y_11 }
+  bem_back_sub_subp_subp = { i = 11 }
+  bem_back_sub_divide_subp = { i = 11 gi = groceries }
+  set_variable = { name = bem_x_10 value = var:bem_y_10 }
+  bem_back_sub_subp_subp = { i = 10 }
+  bem_back_sub_divide_subp = { i = 10 gi = wood }
+  set_variable = { name = bem_x_9 value = var:bem_y_9 }
+  bem_back_sub_subp_subp = { i = 9 }
+  bem_back_sub_divide_subp = { i = 9 gi = fabric }
+  set_variable = { name = bem_x_8 value = var:bem_y_8 }
+  bem_back_sub_subp_subp = { i = 8 }
+  bem_back_sub_divide_subp = { i = 8 gi = fish }
+  set_variable = { name = bem_x_7 value = var:bem_y_7 }
+  bem_back_sub_subp_subp = { i = 7 }
+  bem_back_sub_divide_subp = { i = 7 gi = grain }
+  set_variable = { name = bem_x_6 value = var:bem_y_6 }
+  bem_back_sub_subp_subp = { i = 6 }
+  bem_back_sub_divide_subp = { i = 6 gi = ironclads }
+  set_variable = { name = bem_x_5 value = var:bem_y_5 }
+  bem_back_sub_subp_subp = { i = 5 }
+  bem_back_sub_divide_subp = { i = 5 gi = manowars }
+  set_variable = { name = bem_x_4 value = var:bem_y_4 }
+  bem_back_sub_subp_subp = { i = 4 }
+  bem_back_sub_divide_subp = { i = 4 gi = aeroplanes }
+  set_variable = { name = bem_x_3 value = var:bem_y_3 }
+  bem_back_sub_subp_subp = { i = 3 }
+  bem_back_sub_divide_subp = { i = 3 gi = tanks }
+  set_variable = { name = bem_x_2 value = var:bem_y_2 }
+  bem_back_sub_subp_subp = { i = 2 }
+  bem_back_sub_divide_subp = { i = 2 gi = artillery }
+  set_variable = { name = bem_x_1 value = var:bem_y_1 }
+  bem_back_sub_subp_subp = { i = 1 }
+  bem_back_sub_divide_subp = { i = 1 gi = small_arms }
+  set_variable = { name = bem_x_0 value = var:bem_y_0 }
+  bem_back_sub_subp_subp = { i = 0 }
+  bem_back_sub_divide_subp = { i = 0 gi = ammunition }
+}
