@@ -128,7 +128,12 @@ bem_forward_sub_subp_subp_subp = {
 }
 
 bem_clear_subp_subp = {
-	remove_variable = bem_tr_matrix_$i$_$j$
+	if = {
+		limit = {
+			var:bem_tr_matrix_$i$_$j$ = 0
+		}
+		remove_variable = bem_tr_matrix_$i$_$j$
+	}
 }
 
 # Back substitution: x_i -= var_i_k_tr * x_k, for k > i
