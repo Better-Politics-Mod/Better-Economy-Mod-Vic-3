@@ -171,6 +171,7 @@ bem_calculate_elem = {
   bem_calculate_L_elem = yes
   bem_calculate_U_elem = yes
 }
+
 bem_all_calculations = {
     bem_calculate_consumption_of_good = yes   # build raw matrix from buildings
     bem_calculate_elem = yes                  # LU decompose: compute L\U elements
